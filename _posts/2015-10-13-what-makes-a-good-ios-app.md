@@ -3,6 +3,7 @@ published: true
 ---
 
 
+
 ##What makes a good iOS App?
 
 
@@ -40,7 +41,7 @@ My favorite apps that showcase great UI/UX and great design are:
 * [Workflow](https://my.workflow.is/) by DeskConnect
 
 ####Here is a short video showcasing the User Interface of Paper:
-
+[Paper - By Fiftythree](https://fiftythree.github.io/assets.fiftythree.com/videos/paper/paper-web-1080.mp4)
 ###Delivers on Features
 An application is only as good as the service(s) that it provides. It's important to keep in mind that applications are used by iOS users in order for them to expand on their mobile experience. Apps are what makes the iOS platform so amazing.  You can turn the computer in your pocket into almost anything!  You can use it as a flashlight, a level, a ruler, a notebook, or for productivity tasks, such as word processing or as an audio production tool. 
 
