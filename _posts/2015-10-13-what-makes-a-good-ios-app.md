@@ -1,4 +1,6 @@
 ---
+layout: post
+title: "What Makes a Good iOS App?"
 published: true
 ---
 
