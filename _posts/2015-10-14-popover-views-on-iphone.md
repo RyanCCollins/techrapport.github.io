@@ -34,4 +34,56 @@ Next, select your newly created Segue by clicking the arrow that just appeared b
 
 ###Setting up the Presenting ViewController
 Within your main ViewController class file, you will need to do the following:
-1. 
+1. Make the main view controller the UIPopoverPresentationControllerDelegate
+2. Implement a Popover Delegate function
+3. Override the prepareForSegue function of the presenting View Controller.
+
+Let's take a look at how I've done this.
+
+First, after the class definition's Parent Class name insert a comma followed by: UIPopoverPresentationViewControllerDelegate as shown below (note: for brevity, I have removed all of the other delegates/protocols from the class definition):
+---Swift---
+class MemeEditorViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+---Swift---
+
+Next, add the function below somewhere within your presenting view controller's class:
+'''
+    //# -- Mark: Popover delegate func
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) - UIModalPresentationStyle {
+        >return UIModalPresentationStyle.None
+    }
+'''
+The reason we implement this function is because we implemented the UIPopoverPresentationControllerDelegate and this function must return UIModalPresentationStyle.None in order for our view to be presented in a Popover View.
+
+This would be the place where we could setup checks to see what size screen the view is being presented on and we could choose to show a done button when the screen is small, or we could have it present modally on certain phones.  This is important, because our view could show up covering the entire screen and we might not be able to dismiss it, which would be a real pain for the user.
+
+Finally, we must override the prepareForSegue method in order to check for when the Segue is called.  Within this method, we can set the presentation style, set the delegate and pass any data that needs to be passed.
+,,,swift
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "fontPopoverSegue" {
+            
+            //-Set the Type of the Destination View Controller
+            let popoverVC = segue.destinationViewController as! 	TextSizePopoverViewController 
+            
+            //Set the presentation of the popover view controller to .Popover:
+            popoverVC.modalPresentationStyle = UIModalPresentationStyle.Popover
+            
+            //-Set the delegate of the popover vc to self and pass model data:
+            popoverVC.popoverPresentationController!.delegate = self
+            popoverVC.fontAttributes = fontAttributes
+        }
+,,,
+
+This will get you up and running.  I'll leave it up to you to figure out how you implement this.  
+
+###Implementation and a few Afterthoughts
+Just for the sake of clarity, I'll quickly show you what I did to have the popover view controller update the main view.
+
+In my case, I wanted the view to update the size and type of the font of the text in the main view.  To do this, I implemented a few methods in both the popover view controller and main view controller.  To increase the font size, I created an @IBAction that updated the TextSizePopoverViewController's fontAttributes object, passed the object back to the MemeEditor and then call a function to update the view in the MemeEditorViewController.  Check out this code below:
+
+,,,swift
+
+,,,
+
+Please take a look at my app in action in the following video.  You can also take a look at the images below:
+
+Please feel free to leave me some comments if you got tripped up, or if you liked this guide and thanks for visiting!
