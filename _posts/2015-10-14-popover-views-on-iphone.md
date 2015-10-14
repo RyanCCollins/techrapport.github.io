@@ -1,15 +1,17 @@
 ---
 published: true
 layout: post
-title: "Extensions Demystified"
-tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
+title: "Popover Views on the iPhone"
+tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0, Popover, UIPopover, UIPopoverController, Popover Views, UIPopoverPresentationControllerDelegate"
 ---
 
-## Popover Views on the iPhone -UIPopoverView
+## Popover Views on the iPhone - UIPopoverController in Action
 
 With the expansion of screen and resolution on the iOS platform, we as developers have to adapt our applications to make use of the amazing screens that we carry in our pockets.  It is generally bad style to present a modal view on an iPad, because it is such a big screen and doing so would be rather bothersome to the user.  Instead, UIPopover views are used.  If you have an iPad, you have more than likely used UIPopoverViews without even realizing it.  They are presented within the context of a full-screen view and allow the user to see related data/controls, then easily dismiss the view, without obscuring the entire screen.  On iPhones smaller than the iPhone 6, it makes sense to present views modally in a lot of cases where you need the users attention.  The iPhone 6 and later fall somewhere in the middle.  
 
-Although Apple doesn't recommend the use of popover views on iPhones, I think that it makes perfect sense as long as you use a bit of caution.  It requires a little extra work to configure the views, but I think it is worth it from a design point-of-view.  What you have to be careful of is what happens to your view if the user is seeing it on a smaller phone.  There are several ways to handle smaller screens, which I will go into at a later time.  For now, let's look at how we can get UIPopoverViews to show on our favorit phablets.
+Although Apple doesn't recommend the use of popover views on iPhones, I think that it makes perfect sense as long as you use a bit of caution.  It requires a little extra work to configure the views, but I think it is worth it from a design point-of-view.  Check out [Apple's documentation on UIPopoverController](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverController_class/index.html)
+
+What you have to be careful of is what happens to your view if the user is seeing it on a smaller phone.  There are several ways to handle smaller screens, which I will go into at a later time.  For now, let's look at how we can get UIPopoverViews to show on our favorit phablets.
 
 ###Setup:
 For this project, I will demonstrate how I went about incorporating a color picker and a font picker in Popover views in my Meme-Maker app.  If you are following along, feel free to start a new project and design a View Controller similiar to the MemeEditorViewController as shown below.  Make sure that you have a button or two to call the popover views.
@@ -35,33 +37,34 @@ First of all, in the Storyboard, control-click your button and drag it to the vi
 Next, select your newly created Segue by clicking the arrow that just appeared between the Main View and the Font View and set the StoryBoard Identifier in the Attributes Inspector to: "fontPopoverSegue".  You don't need to change anything else here, but I suggest you play around with the various settings.
 ![Screen Shot 2015-10-14 at 4.43.52 PM.png]({{site.baseurl}}/_posts/Screen Shot 2015-10-14 at 4.43.52 PM.png)
 
-###Setting up the Presenting ViewController
+###Setting up the Presenting View Controller
 Within your main ViewController class file, you will need to do the following:
-1. Make the main view controller the UIPopoverPresentationControllerDelegate
+1. Make the main view controller folow the UIPopoverPresentationControllerDelegate protocol
 2. Implement a Popover Delegate function
 3. Override the prepareForSegue function of the presenting View Controller.
 
 Let's take a look at how I've done this.
 
-First, after the class definition's Parent Class name insert a comma followed by: UIPopoverPresentationViewControllerDelegate as shown below (note: for brevity, I have removed all of the other delegates/protocols from the class definition):
+First, after the class definition's Parent Class name insert a comma followed by: [UIPopoverPresentationViewControllerDelegate](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverPresentationControllerDelegate_protocol/index.html) as shown below (note: for brevity, I have removed all of the other delegates/protocols from the class definition):
 ---Swift---
 class MemeEditorViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 ---Swift---
 
 Next, add the function below somewhere within your presenting view controller's class:
-'''
+'''swift
     //# -- Mark: Popover delegate func
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) - UIModalPresentationStyle {
         >return UIModalPresentationStyle.None
     }
 '''
-The reason we implement this function is because we implemented the UIPopoverPresentationControllerDelegate and this function must return UIModalPresentationStyle.None in order for our view to be presented in a Popover View.
+The reason we implement this function is because we implemented the [UIPopoverPresentationControllerDelegate](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverPresentationControllerDelegate_protocol/index.html) and this function must return UIModalPresentationStyle.None in order for our view to be presented in a Popover View.  There are other optional protocol methods, which you should read about in [Apple's Documention](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverPresentationControllerDelegate_protocol/index.html).
 
 This would be the place where we could setup checks to see what size screen the view is being presented on and we could choose to show a done button when the screen is small, or we could have it present modally on certain phones.  This is important, because our view could show up covering the entire screen and we might not be able to dismiss it, which would be a real pain for the user.
 
 Finally, we must override the prepareForSegue method in order to check for when the Segue is called.  Within this method, we can set the presentation style, set the delegate and pass any data that needs to be passed.
 ,,,swift
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //Check for the fontPopoverSegue
         if segue.identifier == "fontPopoverSegue" {
             
             //-Set the Type of the Destination View Controller

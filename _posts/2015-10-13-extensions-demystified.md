@@ -8,10 +8,69 @@ tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, 
 
 Often times when one is learning a new concept, it is easy to get hung up on a new topic by overthinking it outside of the context of the intended use. That has been the case throughout my Swift learning experience and most recently I had an ah-ha moment about just how powerful Swift Extensions are when I was developing the Meme-Me app for the Udacity iOS nanodegree. 
 
-I had read and studied Apple's [Swift documentation](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/) and taken the [iOS Swift Syntax Course](https://www.udacity.com/course/learn-swift-programming-syntax--ud902), both of which are excellent resources I might add, but it wasn't until I dug my teeth in that i really understood the power of the language.  After I had worked through the project, I decided to add some [extra credit features](LINK) to change the font color, size and type.  When I had finished this, I realized that a shake-to-reset feature would be great for you to undo any changes to the font you had made. I started writing the code for this and I realized that I would have to do this for three seperate view controllers. At that moment, a light bulb went off in my head and I went about creating an extension to UIViewController. It was brilliantly simple to add the functionality that I needed to the extension and then call a method or two from each view controller to customize the shake gesture. 
+I had read and studied Apple's [Swift documentation](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/) and taken the [iOS Swift Syntax Course](https://www.udacity.com/course/learn-swift-programming-syntax--ud902), both of which are excellent resources I might add, but it wasn't until I dug my teeth in that i really understood the power of the language.  After I had worked through the project, I decided to add some [extra credit features](https://discussions.udacity.com/t/added-a-some-extra-features-to-meme-me-color-picker-font-picker-font-size-would-like-some-feedback-check-out-the-video/34620) to change the font color, size and type.  You can see my code on [GitHub](https://github.com/TechRapport/Meme-Me)
+
+When I had finished this, I realized that a shake-to-reset feature would be great for you to undo any changes to the font you had made. I started writing the code for this and I realized that I would have to do this for three seperate view controllers. At that moment, a light bulb went off in my head and I went about creating an extension to UIViewController. It was brilliantly simple to add the functionality that I needed to the extension and then call a method or two from each view controller to customize the shake gesture. 
+
+Here is the Extension, in all of its glory:
+,,,swift
+extension UIViewController {
+    //#--MARK: Subsribe to shake notifications:
+    func subscribeToShakeNotifications() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "alertForReset", name: "shake", object: nil)
+    }
+    
+    func unsubsribeToShakeNotification() {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "shake", object: nil)
+    }
+    
+    override public func canBecomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    //Handle motion events:
+    override public func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if motion == UIEventSubtype.MotionShake {
+            NSNotificationCenter.defaultCenter().postNotificationName("shake", object: self)
+        }
+    }
+}
+,,,
+
+Seriously.. That's all I had to do in order to get the shake to reset functionality working in all of my views.  Of course, a small amount of code still needs to be written to customize the action of the shake to reset functionality.
+
+Not yet convinced?  I'll show you another example of how I was able to implement three functions in a UIViewController extension in order to make fancy fade in/out animations for nearly any UIKit control.  I used this in my [Pitch Perfect](https://review.udacity.com/#!/reviews/56812) app:
+'''swift
+extension UIView {
+    func fadeIn(duration: NSTimeInterval = 1.0, delay: NSTimeInterval = 0.0, completion: ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+        UIView.animateWithDuration(duration, delay: delay, options: .CurveEaseIn, animations: {
+                self.alpha = 1.0
+            }, completion: completion)
+    }
+    
+    func fadeOut(duration: NSTimeInterval = 1.0, delay: NSTimeInterval = 0.0, completion: ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+        UIView.animateWithDuration(duration, delay: delay, options: .CurveEaseIn, animations: {
+            self.alpha = 0.2
+            }, completion: completion)
+    }
+
+    func fadeOutAndIn(duration: NSTimeInterval = 1.0, delay: NSTimeInterval = 0.0, completion: ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+        UIView.animateWithDuration(duration, delay: delay, options: [.Repeat, .Autoreverse], animations: {
+                self.alpha = 0.3
+            },
+            completion: ({finished in
+                if finished {
+                    UIView.animateWithDuration(duration, delay: delay, options: [.Repeat, .Autoreverse], animations: {
+                            self.alpha = 1.0
+                        }, completion: nil)
+                }
+            }))
+    }
+,,,
+
 
 I strongly recommend that you start using extensions in your code. It will save you a whole lot of time and I guarantee you will thank me later. 
 
-By the way, check out this post about my extra credit features to see extensions in practice. 
+By the way, check out this post to read about how [I utilized popover views]({{site.baseurl}}/_posts/popover-views-on-iphone/) in my Meme Maker app. 
 
-Adios! 
+Thanks so much for visiting my site; please send me an [email](mailto:info@techrapport.com) and leave a comment below if you have any questions or would like to give me some feedback.
