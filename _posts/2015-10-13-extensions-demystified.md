@@ -13,7 +13,7 @@ I had read and studied Apple's [Swift documentation](https://developer.apple.com
 When I had finished this, I realized that a shake-to-reset feature would be great for you to undo any changes to the font you had made. I started writing the code for this and I realized that I would have to do this for three seperate view controllers. At that moment, a light bulb went off in my head and I went about creating an extension to UIViewController. It was brilliantly simple to add the functionality that I needed to the extension and then call a method or two from each view controller to customize the shake gesture. 
 
 Here is the Extension, in all of its glory:
-,,,swift
+,,,
 extension UIViewController {
     //#--MARK: Subsribe to shake notifications:
     func subscribeToShakeNotifications() {
@@ -40,7 +40,7 @@ extension UIViewController {
 Seriously.. That's all I had to do in order to get the shake to reset functionality working in all of my views.  Of course, a small amount of code still needs to be written to customize the action of the shake to reset functionality.
 
 Not yet convinced?  I'll show you another example of how I was able to implement three functions in a UIViewController extension in order to make fancy fade in/out animations for nearly any UIKit control.  I used this in my [Pitch Perfect](https://review.udacity.com/#!/reviews/56812) app:
-'''swift
+'''
 extension UIView {
     func fadeIn(duration: NSTimeInterval = 1.0, delay: NSTimeInterval = 0.0, completion: ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
         UIView.animateWithDuration(duration, delay: delay, options: .CurveEaseIn, animations: {
