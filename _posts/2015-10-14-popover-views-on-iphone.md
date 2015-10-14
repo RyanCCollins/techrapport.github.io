@@ -12,7 +12,7 @@ With the expansion of screen size and resolution on the iOS platform, we as deve
 
 It is generally bad style to present a modal view on an iPad, because it has such a big screen and doing so would be rather bothersome to the user.  Instead, UIPopoverViews are used.  If you have an iPad, you have more than likely used UIPopoverViews without even realizing it.  They are presented within the context of a full-screen view and allow the user to see related data and controls, then easily dismiss the view once a task has been completed, without obscuring the entire screen.  
 
-On iPhones smaller than the iPhone 6, it makes sense to present views modally in cases where you need the user's attention immediately.  The newer generations of iPhones, starting with the iPhone 6 fall somewhere in the middle.  
+On iPhones smaller than the iPhone 6, it makes sense to present views modally in cases where you need the user's attention immediately.  The newer generations of iPhones, starting with the iPhone 6, fall somewhere in the middle.  
 
 Although Apple doesn't recommend the use of popover views on iPhones, I think that it makes perfect sense as long as you use a bit of caution.  It requires a little extra work to configure the views, but I think it is worth it from a design point-of-view.  Check out [Apple's documentation on UIPopoverController](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverController_class/index.html)
 
@@ -118,4 +118,4 @@ In my case, I wanted the view to update the size and type of the font of the tex
 Please take a look at my app in action in the following video: [Meme Maker Beta Test Flight](https://www.youtube.com/watch?v=2aUd8Y6TG0E)  You can also take a look at the images below and checkout my Meme Maker code here: [github.com/TechRapport/Meme-Me](https://github.com/TechRapport/Meme-Me)
 ![bd721c87281c1eb293577962544ab57d1f4c8ca3.png]({{site.baseurl}}/images/bd721c87281c1eb293577962544ab57d1f4c8ca3.png)![9957fac4b23ef18266ca48437116a1c390b1b41a.png]({{site.baseurl}}/images/9957fac4b23ef18266ca48437116a1c390b1b41a.png)
 
-Please feel free to leave me some comments if you got tripped up, or if you liked this guide and thanks for visiting!
+Please feel free to leave me some comments if you got tripped up, or if you liked this guide and thanks for visiting
