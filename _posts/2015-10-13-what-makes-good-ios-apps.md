@@ -2,7 +2,7 @@
 layout: post
 title: "What Makes a Good iOS App?"
 published: true
-tags: iOS, apps, swift, development
+tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
 ---
 
 ##What makes a good iOS App?

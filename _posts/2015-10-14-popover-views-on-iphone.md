@@ -1,5 +1,8 @@
 ---
-published: false
+published: true
+layout: post
+title: "Extensions Demystified"
+tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
 ---
 
 ## Popover Views on the iPhone -UIPopoverView

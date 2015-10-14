@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Extensions Demystified"
-tags: Swift, ios, apps, app development, techrapport, 
+tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
 ---
 
 ##Swift Extensions Demystified
