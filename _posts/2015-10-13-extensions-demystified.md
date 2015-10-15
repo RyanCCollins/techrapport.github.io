@@ -14,11 +14,11 @@ When I had finished this, I realized that a shake-to-reset feature would be a gr
 
 Here is the Extension, in all of its glory:
 
-,,,
-    extension UIVieweController {
-    //#--MARK: Subsribe to shake notifications:
-    func subscribeToShakeNotifications() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "alertForReset", name: "shake", object: nil)
+,,,extension UIViewController {
+        //#--MARK: Subsribe to shake   notifications:
+        func subscribeToShakeNotifications() {
+                NSNotificationCenter.defaultCenter().addObserver(self, selector: "alertForReset", name: "shake", object: nil)
+>>>>>>> origin/master
     }
     
     func unsubsribeToShakeNotification() {
@@ -35,15 +35,13 @@ Here is the Extension, in all of its glory:
             NSNotificationCenter.defaultCenter().postNotificationName("shake", object: self)
               }
       }
-    }
-,,,
+    },,,
 
-Seriously.. That's all I had to do in order to get the shake to reset functionality working in all of my views.  Of course, a small amount of code still needs to be written to customize the action of the shake to reset functionality.
+Seriously.. that's all I had to do in order to get the shake to reset functionality working in all of my views.  Of course, a small amount of code still needs to be written to customize the action of the shake to reset functionality.
 
 Not yet convinced?  I'll show you another example of how I was able to implement three functions in a UIViewController extension in order to make fancy fade in/out animations for nearly any UIKit control.  I used this in my [Pitch Perfect](https://review.udacity.com/#!/reviews/56812) app:
 
-'''
-    extension UIView {
+'''extension UIView {
     func fadeIn(duration: NSTimeInterval = 1.0, delay: NSTimeInterval = 0.0, completion: ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
         UIView.animateWithDuration(duration, delay: delay, options: .CurveEaseIn, animations: {
                 self.alpha = 1.0
@@ -67,9 +65,9 @@ Not yet convinced?  I'll show you another example of how I was able to implement
                         }, completion: nil)
                 }
             }))
-    }
-,,,
+    },,,
 
+Pretty cool, eh?
 
 I strongly recommend that you start using extensions in your code. It will save you a whole lot of time and I guarantee you will thank me later. 
 
