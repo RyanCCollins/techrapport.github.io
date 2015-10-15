@@ -17,7 +17,7 @@ avatar: https://developer.apple.com/swift/images/swift-og.png
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
+  dribbble: 
   email: info@techrapport.com
   facebook:
   flickr: techrapport
@@ -25,11 +25,11 @@ footer-links:
   instagram:
   linkedin: techrapport
   pinterest:
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: techrapport
-  stackoverflow: techrapport
-  youtube: user/techrapport
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  rss: work# just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: tech_rapport
+  stackoverflow: 
+  youtube: channel/UC2iYWXVQlPa76aQlADYocow
+  googleplus: /101168809038593931433/# anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
