@@ -96,7 +96,6 @@ Just for the sake of clarity, I'll quickly show you what I did to have the popov
 
 In my case, I wanted the view to update the size and type of the font of the text in the main view.  To do this, I implemented a few methods in both the popover view controller and main view controller.  To increase the font size, I created an @IBAction that updated the TextSizePopoverViewController's fontAttributes object, passed the object back to the MemeEditor and then call a function to update the view in the MemeEditorViewController.  Check out this code below:
 
-    ,,,
     //In the TextPopoverViewController file:
     func updateMemeFont(){
         //update the MemeEditor font and reconfigure the view:
@@ -113,9 +112,8 @@ In my case, I wanted the view to update the size and type of the font of the tex
         //Update the Meme's Font on the presenting view
         updateMemeFont()
     }
-    ,,,
 
 Please take a look at my app in action in the following video: [Meme Maker Beta Test Flight](https://www.youtube.com/watch?v=2aUd8Y6TG0E)  You can also take a look at the images below and checkout my Meme Maker code here: [github.com/TechRapport/Meme-Me](https://github.com/TechRapport/Meme-Me)
-![bd721c87281c1eb293577962544ab57d1f4c8ca3.png]({{site.baseurl}}/images/bd721c87281c1eb293577962544ab57d1f4c8ca3.png)![9957fac4b23ef18266ca48437116a1c390b1b41a.png]({{site.baseurl}}/images/9957fac4b23ef18266ca48437116a1c390b1b41a.png)
+![bd721c87281c1eb293577962544ab57d1f4c8ca3.png]({{site.baseurl}}/images/bd721c87281c1eb293577962544ab57d1f4c8ca3.png) [9957fac4b23ef18266ca48437116a1c390b1b41a.png]({{site.baseurl}}/images/9957fac4b23ef18266ca48437116a1c390b1b41a.png)
 
 Please feel free to leave me some comments if you got tripped up, or if you liked this guide and thanks for visiting
