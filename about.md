@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hello, my name is Ryan and I am a software developer and implementation specialist.  I have been working in the field since completing my Bachelor's degree in engineering.  My focus has primarily been on software implementation, database development and software development in C# & VB .NET.  I also specialize in mobile development, primarily on the iOS (iPhone/iPad) platform.  
+Hello, my name is Ryan and I am a software developer and implementation specialist.  I have been working in the field since completing my Bachelor's degree in engineering.  My focus has primarily been on software implementation, database development and software development in C# & VB .NET.  I also specialize in mobile development, primarily on the iOS (iPhone/iPad) platform although I have developed mobile web applications and am proficient in Java & Android development.  
 
 I have experience leading the implementation of several large-scale web applications and have taken part in all aspects of product implementation from idea to implementation to iteration.
 
