@@ -18,4 +18,4 @@ Please feel free to look over my GitHub repository for my iOS development.  Also
 
 ### Contact me
 
-[techrapportrc@gmail.com](techrapportrc@gmail.com)
+[techrapportrc@gmail.com](mailto:techrapportrc@gmail.com)

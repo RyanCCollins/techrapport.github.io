@@ -3,6 +3,7 @@ layout: post
 title: "NSNotifications; what are they good for?"
 tags: "ios, ios development, software, iphone, ipad, swift, code"
 published: true
+category: swift
 ---
 
 ##A quick look at NSNotifications

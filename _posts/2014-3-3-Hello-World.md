@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Swift Blogging"
+category: swift
 published: true
 ---
 
