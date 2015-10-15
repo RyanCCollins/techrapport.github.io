@@ -5,9 +5,6 @@ published: true
 tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
 ---
 
-##What makes a good iOS App?
-
-
 Think about some of your favorite iPhone applications.  What do they do better than others?  What is different about them?  What makes them so great?
 
 I think it is the combination of several key factors.

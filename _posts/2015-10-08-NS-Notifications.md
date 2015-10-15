@@ -5,7 +5,8 @@ tags: "ios, ios development, software, iphone, ipad, swift, code"
 published: true
 ---
 
-##NSNotifications
+##A quick look at NSNotifications
+
 Today, I decided to dive a little bit deeper into some of the design patterns, particularly NSNotifactions and delegation/protocols to a lesser extent, used in Apple's code libraries. 
 
 ###First of all, what problem(s) do NSNotifications attempt to solve?  

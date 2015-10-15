@@ -6,7 +6,7 @@ tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, 
 ---
 
 
-## Popover Views on the iPhone - UIPopoverController in Action
+##UIPopoverController in Action
 
 With the expansion of screen size and resolution on the iOS platform, we as developers have to adapt our applications to make use of the amazing screens that we carry in our pockets.  
 

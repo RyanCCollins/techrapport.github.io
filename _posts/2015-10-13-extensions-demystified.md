@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Extensions Demystified"
+title: "Swift Extensions Demystified"
 tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
 ---
-
-##Swift Extensions Demystified
 
 Often times when one is learning a new concept, it is easy to get hung up on the subject by overthinking it outside of the context of the intended use. That has been the case throughout my Swift learning experience and most recently I had a lightbulb moment about just how powerful Swift Extensions are when I was developing the Meme-Me app for the Udacity iOS nanodegree. 
 
