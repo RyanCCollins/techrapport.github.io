@@ -20,10 +20,10 @@ footer-links:
   dribbble:
   email: info@techrapport.com
   facebook:
-  flickr: http://flickr.com/techrapport
-  github: http://github.com/techrapport
+  flickr: techrapport
+  github: techrapport
   instagram:
-  linkedin: http://linkedin.com/techrapport
+  linkedin: techrapport
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: techrapport
@@ -41,7 +41,7 @@ google_analytics: UA-68833574-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://techrapport/github.io
+url: http://techrapport.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -67,7 +67,10 @@ sass:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-mentions
+  
 # Exclude these files from your production _site
 exclude:
     - Gemfile
