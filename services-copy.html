@@ -1,0 +1,13 @@
+---
+layout: default
+title: Services
+---
+{% for service in site.services %}
+  <div class="col-lg-3 col-md-6 text-center">
+    <div class="service-box">
+      <img src="{{ service.image_path }}" alt="{{ service.title }}"/>
+      <h3>{{ service.title }}</h3>
+      <p class="text-muted">{{ service.content }}</p>
+    </div>
+  </div>
+{% endfor %}
