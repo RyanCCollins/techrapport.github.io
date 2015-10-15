@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Services
+title: Portfolio
 ---
-{% for service in site.services %}
+{% for project in site.portfolioproject %}
   <div class="col-lg-3 col-md-6 text-center">
-    <div class="service-box">
-      <img src="{{ service.image_path }}" alt="{{ service.title }}"/>
-      <h3>{{ service.title }}</h3>
-      <p class="text-muted">{{ service.content }}</p>
+    <div class="project-box">
+      <img src="{{ project.image_path }}" alt="{{ project.title }}"/>
+      <h3>{{ project.title }}</h3>
+      <p class="text-muted">{{ project.content }}</p>
     </div>
   </div>
 {% endfor %}
