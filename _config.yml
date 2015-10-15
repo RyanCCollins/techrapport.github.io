@@ -53,8 +53,8 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 collections:
-- portfolio
-- services
+    - portfolio
+    - services
 
 markdown: redcarpet
 highlighter: pygments
