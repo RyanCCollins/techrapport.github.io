@@ -1,8 +1,5 @@
 ---
 layout: default
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 title: Blog
 ---
 
@@ -15,48 +12,21 @@ title: Blog
 <section>
   <div class="container">
     <div class="row">
-      <div class="posts">
-=======
----
+      <div class="posts"><div class="posts">
+        <div class="posts">
+        {% for post in site.posts %}
+        <article class="post">
 
-<div class="posts">
->>>>>>> new-layout
-=======
----
+            <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-<div class="posts">
->>>>>>> new-layout
-=======
----
-
-<div class="posts">
->>>>>>> new-layout
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
+        <div class="entry">
         {{ post.excerpt }}
-      </div>
+        </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 </div>
     </div>
   </div>
 </section>
-
-=======
-</div>
->>>>>>> new-layout
-=======
-</div>
->>>>>>> new-layout
-=======
-</div>
->>>>>>> new-layout
