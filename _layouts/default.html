@@ -1,63 +1,187 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    
+    <!-- Site Title -->
     <title>
-        {% if page.title %}
-            {{ page.title }}
-        {% else %}
-            Default Page Title
-        {% endif %}
+    {% if page.title %}
+        {{ page.title }}
+    {% else %}
+        Default Page Title
+    {% endif %}
     </title>
+    
+    <meta name="description" content="Creative Resume Template">
+    <meta name="keywords" content="berg, creative, resume, template">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/creative.css" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Font icons CSS -->
+    <link href="/assets/plugins/icons-mind/style.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Plugins CSS -->
+    <link href="/assets/plugins/jpreloader/css/jpreloader.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="/assets/plugins/flexSlider/flexslider.css" rel="stylesheet" type="text/css">
+    
+    <!-- Main CSS -->
+    <link href="/assets/css/berg.css" rel="stylesheet" type="text/css">
+    
+    <!-- Color CSS -->
+    <!--<link href="/assets/css/colors/green.css" rel="stylesheet" type="text/css">-->
+    
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 8]>
+    <script src="/assets/plugins/modernizr.min.js"></script>
     <![endif]-->
-
 </head>
 
-<body id="page-top">
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="66">
+    <!--[if lt IE 10]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  
+    <!-- HERO START -->
+    <header id="home" class="hero parallax-yes">
+        <div class="pattern-overlay"></div>
+        
+        <div id="parallax-1" class="parallax">
+            <div class="bcg skrollable skrollable-between" data-anchor-target="#parallax-1" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;">
+                <div class="hero-body">
+                    <div class="hero-text text-center">
+                        <h1 class="small">
+                            I'm Nick Berg <span class="blinker"></span>
+                        </h1>
+
+                        <h1>Creative Developer</h1>
+
+                        <p>28 years young, husband and father, coffee addict.</p>
+
+                        <div class="page-scroll">
+                            <a href="#profile" class="btn btn-lg btn-custom">
+                                Know Me Better
+                            </a>
+                        </div>
+                        <!-- //.page-scroll -->
+                    </div>
+                    <!-- //.hero-text -->
+                </div>
+                <!-- //.hero-body -->
+            </div>
+            <!-- //.bcg -->
+        </div>
+        <!-- //.parallax -->
+    </header>
+    <!-- //HERO END -->
+
+    <!-- //NAV START -->
+        {% include nav.html %}
+    <!-- //NAV END -->
+    <!-- FOOTER START -->
     
-    {% include nav.html %}
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-scroll">
+                        <a href="#page-top"><i class="icon-Arrow-Up"></i></a>
+                    </div>
+                    <!-- //.page-scroll -->
+                    
+                    <ul class="list-inline social-icons">
+                        <li>
+                            <div class="item">
+                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </div>
+                            <!-- //.item -->
+                        </li>
+                        
+                        <li>
+                            <div class="item">
+                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </div>
+                            <!-- //.item -->
+                        </li>
+                        
+                        <li>
+                            <div class="item">
+                                <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                            <!-- //.item -->
+                        </li>
+                        
+                        <li>
+                            <div class="item">
+                                <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
+                            </div>
+                            <!-- //.item -->
+                        </li>
+                        
+                        <li>
+                            <div class="item">
+                                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                            <!-- //.item -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright text-center">
+                        <p class="text-grey">&copy; 2015 Nick Berg. All rights reserved.</p>
+                    </div>
+                    <!-- //.copyright -->
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+    </footer>
+    <!-- //FOOTER END -->
     {{ content }}
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
+    
+    <!-- Plugins JS -->
+    <script src="/assets/plugins/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/plugins/jpreloader/js/jpreloader.min.js"></script>
+    <script src="/assets/plugins/detectmobilebrowser/detectmobilebrowser.js"></script>
+    <script src="/assets/plugins/debouncer/debouncer.js"></script>
+    <script src="/assets/plugins/easing/jquery.easing.min.js"></script>
+    <script src="/assets/plugins/sticky/jquery.sticky.js"></script>
+    <script src="/assets/plugins/inview/jquery.inview.min.js"></script>
+    <script src="/assets/plugins/matchHeight/jquery.matchHeight-min.js"></script>
+    <script src="/assets/plugins/magnificPopup/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/plugins/flexSlider/jquery.flexslider-min.js"></script>
+    <script src="/assets/plugins/countTo/jquery.countTo.js"></script>
+    <script src="/assets/plugins/skrollr/skrollr.min.js"></script>
+    
+    <!-- Main JS -->
+    <script src="/assets/js/main.js"></script>
+    
+    <!-- Parallax JS -->
+    <script src="/assets/js/parallax.js"></script>
+    
+    <!-- Animation JS (Optional) -->
+    <script src="/assets/js/animation.js"></script>
 
 </body>
 

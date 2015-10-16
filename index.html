@@ -1,43 +1,1092 @@
 ---
 layout: default
-title: Home
+title: Home Page
 ---
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 class = "editable">Welcome to Tech Rapport</h1>
-                <hr>
-                <p class="editable">Please browse our site to learn more about what we can do to help your business thrive.</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find out more</a>
-            </div>
-        </div>
-    </header>
+{% include profile %}
+{% include portfolio %}
+{% include service %}    
+{% include strengths %}
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2 class="editable">Please view my portfolio to see the type of work I can do for your business</h2>
-                <a href="/portolio" class="btn btn-default btn-xl wow tada">View Portfolio</a>
-            </div>
-        </div>
-    </aside>
+    
+    
+    <!-- RESUME SECTION START -->
+    <section id="resume" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">My Resume</h2>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                        <p class="section-subtitle">
+                            If you call failures experiments, you can put them in your resume and claim them as achievements.
+                        </p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>617-299-9722</p>
+                <!-- //.row -->
+                
+                <!-- EDUCATION START -->
+                <div class="row education">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h3>
+                            My Education
+                            <br>
+                            2003 - 2012
+                        </h3>
+
+                        <div class="panel-group resume" id="education">
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">2010 - 2012</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#education1" data-toggle="collapse" data-parent="#education"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title">Masters Degree - University Name</h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="education1" class="panel-collapse collapse in">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+                            <!-- //.resume-item -->
+
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">2005 - 2008</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#education2" class="collapsed" data-toggle="collapse" data-parent="#education"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title">Bachelors Degree - University Name</h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="education2" class="panel-collapse collapse">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+                            <!-- //.resume-item -->
+
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">2003 - 2005</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#education3" class="collapsed" data-toggle="collapse" data-parent="#education"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title">Graduation - College Name</h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="education3" class="panel-collapse collapse">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+                            <!-- //.resume-item -->
+                        </div>
+                        <!-- //.panel-group -->
+                    </div>
+                    <!-- //.col-md-10 -->
                 </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p class="editable"><a href="info@techrapport.com">info@techrapport.com</a></p>
+                <!-- //EDUCATION END -->
+            
+                <!-- WORK EXPERIENCE START -->
+                <div class="row work-experience">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h3>
+                            Work Experience
+                            <br>
+                            2006 - Now
+                        </h3>
+
+                        <div class="panel-group resume" id="work">
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">2013 - Now</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#work1" data-toggle="collapse" data-parent="#work"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title">Senior Designer - Galley La Company</h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="work1" class="panel-collapse collapse in">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                Responsibilities:
+                                                <br>
+                                                Design of print collateral and websites for various clients and markets, development of new and existing brands, 3D modeling of floor and site plans.
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+                            <!-- //.resume-item -->
+
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">2010 - 2013</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#work2" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title">Graphic Designer - Company Name</h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="work2" class="panel-collapse collapse">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                Responsibilities:
+                                                <br>
+                                                Design of print collateral and trade show displays, redesign of company website and microsites, design and development of email blasts, development of brands for affiliate organizations.
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+                            <!-- //.resume-item -->
+
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">2007 - 2010</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#work3" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title">IT Specialist - Company Name</h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="work3" class="panel-collapse collapse">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                Responsibilities:
+                                                <br>
+                                                Filming and editing of promotional videos, administration of system and network integrity.
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+                            <!-- //.resume-item -->
+
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">2006 - 2007</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#work4" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title">Graphic Designer Intern - Company Name</h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="work4" class="panel-collapse collapse">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                Responsibilities:
+                                                <br>
+                                                Redesign of brand guidelines and standards microsite, design of departmental logo lock-ups, photography of products for marketing collateral, design of corporate Twitter layout.
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+                            <!-- //.resume-item -->
+                        </div>
+                        <!-- //.panel-group -->
+                    </div>
+                    <!-- //.col-md-10 -->
                 </div>
+                <!-- //WORK EXPERIENCE END -->
             </div>
+            <!-- //.section-content -->
         </div>
+        <!-- //.container -->
+    </section>
+    <!-- //RESUME SECTION END -->
+    
+    
+    <!-- REFERENCES SECTION START -->
+    <section id="references" class="section bg-image-yes">
+        <div class="container-fluid section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="section-title uppercase">References</h2>
+
+                        <p class="section-subtitle">Testimonials are enough to convince people for now.</p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+                
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="flexslider references">
+                            <div class="slides">
+                                <div class="item">
+                                    <div class="animated" data-animation-effect="flipInX">
+                                        <div class="profile hidden-xs">
+                                            <img src="/assets/images/references/profile-image-1.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>Lorena Group</h3>
+
+                                            <p>
+                                                "Berg is officially the man! His level of professionalism and the understanding of the subject matter is the reason i will be looking forward to working with him in the future."
+                                            </p>
+
+                                            <p class="source">
+                                                Eka Sari Lorena
+                                                <br>
+                                                <span>President Director</span>
+                                            </p>
+                                        </div>
+                                        <!-- //.content -->
+                                    </div>
+                                    <!-- //.animated -->
+                                </div>
+                                <!-- //.item -->
+
+                                <div class="item">
+                                    <div class="animated" data-animation-effect="flipInX">
+                                        <div class="profile hidden-xs">
+                                            <img src="/assets/images/references/profile-image-2.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>NET TV</h3>
+
+                                            <p>
+                                                "As always Berg did an excellent job in just few hours. Great communication and fast excecution. Thanks for great work :)"
+                                            </p>
+
+                                            <p class="source">
+                                                Wishnutama Kusubandio
+                                                <br>
+                                                <span>CO-FOUNDER / CEO</span>
+                                            </p>
+                                        </div>
+                                        <!-- //.content -->
+                                    </div>
+                                    <!-- //.animated -->
+                                </div>
+                                <!-- //.item -->
+
+                                <div class="item">
+                                    <div class="animated" data-animation-effect="flipInX">
+                                        <div class="profile hidden-xs">
+                                            <img src="/assets/images/references/profile-image-3.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>MNC Group</h3>
+
+                                            <p>
+                                                "As always, great creative thinking for the best solution. Berg is by far the most professional and knowledgeable provider I worked with. I will hire him again :)"
+                                            </p>
+
+                                            <p class="source">
+                                                Hary Tanoesoedibjo
+                                                <br>
+                                                <span>President Director</span>
+                                            </p>
+                                        </div>
+                                        <!-- //.content -->
+                                    </div>
+                                    <!-- //.animated -->
+                                </div>
+                                <!-- //.item -->
+
+                                <div class="item">
+                                    <div class="animated" data-animation-effect="flipInX">
+                                        <div class="profile hidden-xs">
+                                            <img src="/assets/images/references/profile-image-4.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>CT Corp</h3>
+
+                                            <p>
+                                                "We called on Berg to help us deliver on few projects with tight deadlines. He seamlessly integrated into our workflow and quickly became a key part of our team. Great job!"
+                                            </p>
+
+                                            <p class="source">
+                                                Chairul Tanjung
+                                                <br>
+                                                <span>Founder and Chairman</span>
+                                            </p>
+                                        </div>
+                                        <!-- //.content -->
+                                    </div>
+                                    <!-- //.animated -->
+                                </div>
+                                <!-- //.item -->
+
+                                <div class="item">
+                                    <div class="animated" data-animation-effect="flipInX">
+                                        <div class="profile hidden-xs">
+                                            <img src="/assets/images/references/profile-image-5.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>Mustika Ratu</h3>
+
+                                            <p>
+                                                "Berg technical knowledge and branding experience came together and resulted in a site that is not only catching and interesting, but also one that is user-friendly. Thanks again."
+                                            </p>
+
+                                            <p class="source">
+                                                Mooryati Soedibyo
+                                                <br>
+                                                <span>President Director</span>
+                                            </p>
+                                        </div>
+                                        <!-- //.content -->
+                                    </div>
+                                    <!-- //.animated -->
+                                </div>
+                                <!-- //.item -->
+                            </div>
+                            <!-- //.slides -->
+
+                            <div class="flexslider-controls">
+                                <ul class="flex-control-nav">
+                                    <li>
+                                        <img src="/assets/images/references/profile-image-1.jpg" alt="" class="img-responsive"/>
+                                    </li>
+
+                                    <li>
+                                        <img src="/assets/images/references/profile-image-2.jpg" alt="" class="img-responsive"/>
+                                    </li>
+
+                                    <li>
+                                        <img src="/assets/images/references/profile-image-3.jpg" alt="" class="img-responsive"/>
+                                    </li>
+
+                                    <li>
+                                        <img src="/assets/images/references/profile-image-4.jpg" alt="" class="img-responsive"/>
+                                    </li>
+
+                                    <li>
+                                        <img src="/assets/images/references/profile-image-5.jpg" alt="" class="img-responsive"/>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //.flexslider-controls -->
+
+                            <ul class="flex-direction-nav-custom list-inline hidden-xs">
+                                <li>
+                                    <a class="flex-prev" href="#">
+                                        <i class="icon-Left-3"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="flex-next" href="#">
+                                        <i class="icon-Right-3"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //.flexslider -->
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //REFERENCES SECTION END -->
+    
+    
+    <!-- SKILLS SECTION START -->
+    <section id="skills" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">Skills & Expertise</h2>
+
+                        <p class="section-subtitle">A winner is someone who recognizes his God-given talents, works his tail off to develop them into skills, and uses these skills to accomplish his goals.</p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <!-- CIRCLE CHART START -->
+                <div class="circle-chart">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="45"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">45%</span>
+
+                                <h4 class="text-center uppercase">HTML5 + CSS3</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="65"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">65%</span>
+
+                                <h4 class="text-center uppercase">Angular JS</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="55"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">55%</span>
+
+                                <h4 class="text-center uppercase">Laravel</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="45"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">45%</span>
+
+                                <h4 class="text-center uppercase">Photoshop</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="65"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">65%</span>
+
+                                <h4 class="text-center uppercase">Cinema 4D</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+
+                        <div class="col-sm-4 col-md-2">
+                            <div class="item last">
+                                <div class="circle">
+                                    <span class="item-progress" data-percent="55"></span>
+                                </div>
+                                <!-- //.circle -->
+
+                                <span class="percent">55%</span>
+
+                                <h4 class="text-center uppercase">After Effects</h4>
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.col-md-2 -->
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //CIRCLE CHART END -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //SKILLS SECTION END -->
+    
+    
+    <!-- KNOWLEDGE SECTION START -->
+    <section id="knowledge" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">Knowledge</h2>
+
+                        <p class="section-subtitle">Human behavior flows from three main sources: desire, emotion, and knowledge.</p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <!-- BAR CHART START -->
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="bar-chart">
+                            <div class="item">
+                                <h4 class="uppercase">Brand Marketing</h4>
+
+                                <div class="bar">
+                                    <span class="percent">45%</span>
+                                    <span class="item-progress" data-percent="45"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Web Development</h4>
+
+                                <div class="bar">
+                                    <span class="percent">65%</span>
+                                    <span class="item-progress" data-percent="65"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Digital Design</h4>
+
+                                <div class="bar">
+                                    <span class="percent">55%</span>
+                                    <span class="item-progress" data-percent="55"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.bar-chart -->
+                    </div>
+                    <!-- //.col-md-6 -->
+
+                    <div class="col-sm-6 col-md-6">
+                        <div class="bar-chart">
+                            <div class="item">
+                                <h4 class="uppercase">Brand Design</h4>
+
+                                <div class="bar">
+                                    <span class="percent">45%</span>
+                                    <span class="item-progress" data-percent="45"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Internet Marketing</h4>
+
+                                <div class="bar">
+                                    <span class="percent">65%</span>
+                                    <span class="item-progress" data-percent="65"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <h4 class="uppercase">Video Editing</h4>
+
+                                <div class="bar">
+                                    <span class="percent">55%</span>
+                                    <span class="item-progress" data-percent="55"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.bar-chart -->
+                    </div>
+                    <!-- //.col-md-6 -->
+                </div>
+                <!-- //BAR CHART END -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+        
+    </section>
+    <!-- //KNOWLEDGE SECTION END -->
+    
+    
+    <!-- ACCOLADES SECTION START -->
+    <section id="accolades" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">Accolades</h2>
+
+                        <p class="section-subtitle">The accolades, just like the scrapes and bruises, fade in the end, and all you're left with is your ambition.</p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+
+                        <!-- ACCOLADES START -->
+                        <div class="accolades">
+                            <div class="item">
+                                <i class="icon-Twitter"></i>
+
+                                <div class="content">
+                                    <h3>Marketing Excellence Awards 2014</h3>
+
+                                    <p class="text-grey">Excellence in Social Media Marketing</p>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <i class="icon-Idea-2"></i>
+
+                                <div class="content">
+                                    <h3>The "Big Idea" Competition 2012</h3>
+
+                                    <p class="text-grey">Top 3 Team</p>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <i class="icon-Brush"></i>
+
+                                <div class="content">
+                                    <h3>Water Seven Art Directors Club Awards 2010</h3>
+
+                                    <p class="text-grey">Finalist - Design</p>
+
+                                    <p class="text-grey">Finalist - Print Ad</p>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <i class="icon-Funky"></i>
+
+                                <div class="content">
+                                    <h3>Young Guns Award 2009</h3>
+
+                                    <p class="text-grey">Finalist - Digital Campaign</p>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //ACCOLADES END -->
+
+                        <div class="bookmark text-grey text-center">
+                            <i class="icon-Bookmark"></i>
+                        </div>
+                        <!-- //.bookmark -->
+                    </div>
+                    <!-- //.col-md-6 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //ACCOLADES SECTION END -->
+    
+    
+    <!-- MILESTONES SECTION START -->
+    <section id="milestones" class="section bg-image-yes">
+        <div class="container-fluid section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">Milestones Achieved</h2>
+
+                        <p class="section-subtitle">My path has not been determined. I shall have more experiences and pass many more milestones.</p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <!-- MILESTONES START -->
+                <div class="milestones">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <div class="circle">
+                                <i class="icon-Coffee"></i>
+                            </div>
+                            <!-- //.circle -->
+
+                            <span class="number" data-from="10" data-to="5012" data-refresh-interval="100">
+                                10
+                            </span>
+
+                            <h4>Cups of Coffee</h4>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-6 col-md-3 item">
+                            <div class="circle">
+                                <i class="icon-Clock"></i>
+                            </div>
+                            <!-- //.circle -->
+
+                            <span class="number" data-from="5" data-to="4210" data-refresh-interval="5">
+                                10
+                            </span>
+
+                            <h4>Hours Worked</h4>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-6 col-md-3 item">
+                            <div class="circle">
+                                <i class="icon-Coding"></i>
+                            </div>
+                            <!-- //.circle -->
+
+                            <span class="number" data-from="10" data-to="505" data-refresh-interval="10">
+                                10
+                            </span>
+
+                            <h4>Succesful Projects</h4>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-6 col-md-3 item">
+                            <div class="circle">
+                                <i class="icon-Smile"></i>
+                            </div>
+                            <!-- //.circle -->
+
+                            <span class="number" data-from="5" data-to="253" data-refresh-interval="5">
+                                5
+                            </span>
+
+                            <h4>Happy Clients</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //MILESTONES END -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //MILESTONES SECTION END -->
+    
+    
+    <!-- WORK PROCESS SECTION START -->
+    <section id="work-process" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="section-title uppercase">Work Process</h2>
+
+                        <p class="section-subtitle">
+                            As a human being, I'm work in process.
+                        </p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-grey text-justify">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+                
+                <!-- WORK PROCESS START -->
+                <div class="work-process">
+                    <div class="row">
+                        <div class="col-sm-2 col-md-2 item no-margin first">
+                            <div class="inner-content">
+                                <i class="icon-Light-Bulb2"></i>
+
+                                <span class="title">1. Idea</span>
+
+                                <span class="dot"></span>
+                            </div>
+                            <!-- //.inner-content -->
+
+                            <i class="icon-Arrow icon-Down-3"></i>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-2 col-md-2 item">
+                            <div class="inner-content">
+                                <i class="icon-Pencil"></i>
+
+                                <span class="title">2. Sketch</span>
+                            </div>
+                            <!-- //.inner-content -->
+
+                            <i class="icon-Arrow icon-Up-3"></i>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-2 col-md-2 item no-margin">
+                            <div class="inner-content">
+                                <i class="icon-Monitor-2"></i>
+
+                                <span class="title">3. Design</span>
+                            </div>
+                            <!-- //.inner-content -->
+
+                            <i class="icon-Arrow icon-Down-3"></i>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-2 col-md-2 item">
+                            <div class="inner-content">
+                                <i class="icon-Coding"></i>
+
+                                <span class="title">4. Develop</span>
+                            </div>
+                            <!-- //.inner-content -->
+
+                            <i class="icon-Arrow icon-Up-3"></i>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-2 col-md-2 item no-margin">
+                            <div class="inner-content">
+                                <i class="icon-Bug"></i>
+
+                                <span class="title">5. Test</span>
+                            </div>
+                            <!-- //.inner-content -->
+
+                            <i class="icon-Arrow icon-Down-3"></i>
+                        </div>
+                        <!-- //.item -->
+
+                        <div class="col-sm-2 col-md-2 item last">
+                            <div class="inner-content">
+                                <i class="icon-Rocket"></i>
+
+                                <span class="title">6. Launch</span>
+
+                                <span class="dot"></span>
+                            </div>
+                            <!-- //.inner-content -->
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //WORK PROCESS END -->
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-grey text-justify">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //WORK PROCESS SECTION END -->
+    
+    
+    <!-- CONTACT SECTION START -->
+    <section id="contact" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="section-title uppercase">Contact Me</h2>
+
+                        <p class="section-subtitle">
+                            Have a project you'd like to discuss?
+                        </p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+                
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <!-- CONTACT DETAILS START -->
+                        <div class="contact-details text-center">
+                            <div class="speech-bubble">
+                                <i class="icon-Speach-Bubble11"></i>
+
+                                <h4 class="uppercase text-grey">
+                                    Say<br>Hello
+                                </h4>
+                            </div>
+                            <!-- //.speech-bubble -->
+
+                            <h2 class="uppercase">Nick <strong>Berg</strong></h2>
+
+                            <h4 class="text-grey">hello@nickberg.com</h4>
+
+                            <span class="divider center"></span>
+                        </div>
+                        <!-- //CONTACT DETAILS END -->
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //CONTACT SECTION END -->
+    
+    
