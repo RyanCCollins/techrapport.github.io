@@ -1,13 +1,22 @@
 /*!
+<<<<<<< HEAD
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+=======
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+>>>>>>> new-layout
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
+<<<<<<< HEAD
   src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
   src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+=======
+  src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+>>>>>>> new-layout
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +27,10 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
   transform: translate(0, 0);
+=======
+>>>>>>> new-layout
 }
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
@@ -81,10 +93,13 @@
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
+<<<<<<< HEAD
 .fa-pulse {
   -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
 }
+=======
+>>>>>>> new-layout
 @-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -615,7 +630,10 @@
 .fa-twitter:before {
   content: "\f099";
 }
+<<<<<<< HEAD
 .fa-facebook-f:before,
+=======
+>>>>>>> new-layout
 .fa-facebook:before {
   content: "\f09a";
 }
@@ -1265,8 +1283,12 @@
 .fa-male:before {
   content: "\f183";
 }
+<<<<<<< HEAD
 .fa-gittip:before,
 .fa-gratipay:before {
+=======
+.fa-gittip:before {
+>>>>>>> new-layout
   content: "\f184";
 }
 .fa-sun-o:before {
@@ -1533,7 +1555,10 @@
 .fa-history:before {
   content: "\f1da";
 }
+<<<<<<< HEAD
 .fa-genderless:before,
+=======
+>>>>>>> new-layout
 .fa-circle-thin:before {
   content: "\f1db";
 }
@@ -1678,6 +1703,7 @@
 .fa-meanpath:before {
   content: "\f20c";
 }
+<<<<<<< HEAD
 .fa-buysellads:before {
   content: "\f20d";
 }
@@ -1799,3 +1825,5 @@
 .fa-medium:before {
   content: "\f23a";
 }
+=======
+>>>>>>> new-layout
