@@ -7,7 +7,7 @@ title: Portfolio
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                { for project in site.projects %}
+                {% for project in site.projects %}
                     <a href="#" class="portfolio-box">
                         <img src="{{ project.image }}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
