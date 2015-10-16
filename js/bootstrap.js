@@ -1,6 +1,10 @@
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap v3.3.2 (http://getbootstrap.com)
+=======
+ * Bootstrap v3.3.4 (http://getbootstrap.com)
+>>>>>>> new-layout
 =======
  * Bootstrap v3.3.4 (http://getbootstrap.com)
 >>>>>>> new-layout
@@ -22,7 +26,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: transition.js v3.3.2
+=======
+ * Bootstrap: transition.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: transition.js v3.3.4
 >>>>>>> new-layout
@@ -86,7 +94,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: alert.js v3.3.2
+=======
+ * Bootstrap: alert.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: alert.js v3.3.4
 >>>>>>> new-layout
@@ -109,7 +121,11 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Alert.VERSION = '3.3.2'
+=======
+  Alert.VERSION = '3.3.4'
+>>>>>>> new-layout
 =======
   Alert.VERSION = '3.3.4'
 >>>>>>> new-layout
@@ -189,7 +205,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: button.js v3.3.2
+=======
+ * Bootstrap: button.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: button.js v3.3.4
 >>>>>>> new-layout
@@ -213,7 +233,11 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Button.VERSION  = '3.3.2'
+=======
+  Button.VERSION  = '3.3.4'
+>>>>>>> new-layout
 =======
   Button.VERSION  = '3.3.4'
 >>>>>>> new-layout
@@ -314,7 +338,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: carousel.js v3.3.2
+=======
+ * Bootstrap: carousel.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: carousel.js v3.3.4
 >>>>>>> new-layout
@@ -336,15 +364,21 @@ if (typeof jQuery === 'undefined') {
     this.$indicators = this.$element.find('.carousel-indicators')
     this.options     = options
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.paused      =
     this.sliding     =
     this.interval    =
     this.$active     =
 =======
+=======
+>>>>>>> new-layout
     this.paused      = null
     this.sliding     = null
     this.interval    = null
     this.$active     = null
+<<<<<<< HEAD
+>>>>>>> new-layout
+=======
 >>>>>>> new-layout
     this.$items      = null
 
@@ -356,7 +390,11 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Carousel.VERSION  = '3.3.2'
+=======
+  Carousel.VERSION  = '3.3.4'
+>>>>>>> new-layout
 =======
   Carousel.VERSION  = '3.3.4'
 >>>>>>> new-layout
@@ -567,7 +605,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: collapse.js v3.3.2
+=======
+ * Bootstrap: collapse.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: collapse.js v3.3.4
 >>>>>>> new-layout
@@ -588,7 +630,12 @@ if (typeof jQuery === 'undefined') {
     this.$element      = $(element)
     this.options       = $.extend({}, Collapse.DEFAULTS, options)
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.$trigger      = $(this.options.trigger).filter('[href="#' + element.id + '"], [data-target="#' + element.id + '"]')
+=======
+    this.$trigger      = $('[data-toggle="collapse"][href="#' + element.id + '"],' +
+                           '[data-toggle="collapse"][data-target="#' + element.id + '"]')
+>>>>>>> new-layout
 =======
     this.$trigger      = $('[data-toggle="collapse"][href="#' + element.id + '"],' +
                            '[data-toggle="collapse"][data-target="#' + element.id + '"]')
@@ -605,7 +652,11 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Collapse.VERSION  = '3.3.2'
+=======
+  Collapse.VERSION  = '3.3.4'
+>>>>>>> new-layout
 =======
   Collapse.VERSION  = '3.3.4'
 >>>>>>> new-layout
@@ -614,8 +665,12 @@ if (typeof jQuery === 'undefined') {
 
   Collapse.DEFAULTS = {
 <<<<<<< HEAD
+<<<<<<< HEAD
     toggle: true,
     trigger: '[data-toggle="collapse"]'
+=======
+    toggle: true
+>>>>>>> new-layout
 =======
     toggle: true
 >>>>>>> new-layout
@@ -757,7 +812,11 @@ if (typeof jQuery === 'undefined') {
       var options = $.extend({}, Collapse.DEFAULTS, $this.data(), typeof option == 'object' && option)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (!data && options.toggle && option == 'show') options.toggle = false
+=======
+      if (!data && options.toggle && /show|hide/.test(option)) options.toggle = false
+>>>>>>> new-layout
 =======
       if (!data && options.toggle && /show|hide/.test(option)) options.toggle = false
 >>>>>>> new-layout
@@ -792,7 +851,11 @@ if (typeof jQuery === 'undefined') {
     var $target = getTargetFromTrigger($this)
     var data    = $target.data('bs.collapse')
 <<<<<<< HEAD
+<<<<<<< HEAD
     var option  = data ? 'toggle' : $.extend({}, $this.data(), { trigger: this })
+=======
+    var option  = data ? 'toggle' : $this.data()
+>>>>>>> new-layout
 =======
     var option  = data ? 'toggle' : $this.data()
 >>>>>>> new-layout
@@ -804,7 +867,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: dropdown.js v3.3.2
+=======
+ * Bootstrap: dropdown.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: dropdown.js v3.3.4
 >>>>>>> new-layout
@@ -828,7 +895,11 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Dropdown.VERSION = '3.3.2'
+=======
+  Dropdown.VERSION = '3.3.4'
+>>>>>>> new-layout
 =======
   Dropdown.VERSION = '3.3.4'
 >>>>>>> new-layout
@@ -885,7 +956,11 @@ if (typeof jQuery === 'undefined') {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var desc = ' li:not(.divider):visible a'
+=======
+    var desc = ' li:not(.disabled):visible a'
+>>>>>>> new-layout
 =======
     var desc = ' li:not(.disabled):visible a'
 >>>>>>> new-layout
@@ -978,7 +1053,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: modal.js v3.3.2
+=======
+ * Bootstrap: modal.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: modal.js v3.3.4
 >>>>>>> new-layout
@@ -997,6 +1076,7 @@ if (typeof jQuery === 'undefined') {
 
   var Modal = function (element, options) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.options        = options
     this.$body          = $(document.body)
     this.$element       = $(element)
@@ -1004,6 +1084,8 @@ if (typeof jQuery === 'undefined') {
     this.isShown        = null
     this.scrollbarWidth = 0
 =======
+=======
+>>>>>>> new-layout
     this.options             = options
     this.$body               = $(document.body)
     this.$element            = $(element)
@@ -1013,6 +1095,9 @@ if (typeof jQuery === 'undefined') {
     this.originalBodyPad     = null
     this.scrollbarWidth      = 0
     this.ignoreBackdropClick = false
+<<<<<<< HEAD
+>>>>>>> new-layout
+=======
 >>>>>>> new-layout
 
     if (this.options.remote) {
@@ -1025,7 +1110,11 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Modal.VERSION  = '3.3.2'
+=======
+  Modal.VERSION  = '3.3.4'
+>>>>>>> new-layout
 =======
   Modal.VERSION  = '3.3.4'
 >>>>>>> new-layout
@@ -1063,13 +1152,19 @@ if (typeof jQuery === 'undefined') {
     this.$element.on('click.dismiss.bs.modal', '[data-dismiss="modal"]', $.proxy(this.hide, this))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> new-layout
     this.$dialog.on('mousedown.dismiss.bs.modal', function () {
       that.$element.one('mouseup.dismiss.bs.modal', function (e) {
         if ($(e.target).is(that.$element)) that.ignoreBackdropClick = true
       })
     })
 
+<<<<<<< HEAD
+>>>>>>> new-layout
+=======
 >>>>>>> new-layout
     this.backdrop(function () {
       var transition = $.support.transition && that.$element.hasClass('fade')
@@ -1083,7 +1178,10 @@ if (typeof jQuery === 'undefined') {
         .scrollTop(0)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (that.options.backdrop) that.adjustBackdrop()
+=======
+>>>>>>> new-layout
 =======
 >>>>>>> new-layout
       that.adjustDialog()
@@ -1102,7 +1200,11 @@ if (typeof jQuery === 'undefined') {
 
       transition ?
 <<<<<<< HEAD
+<<<<<<< HEAD
         that.$element.find('.modal-dialog') // wait for modal to slide in
+=======
+        that.$dialog // wait for modal to slide in
+>>>>>>> new-layout
 =======
         that.$dialog // wait for modal to slide in
 >>>>>>> new-layout
@@ -1135,6 +1237,12 @@ if (typeof jQuery === 'undefined') {
       .attr('aria-hidden', true)
       .off('click.dismiss.bs.modal')
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      .off('mouseup.dismiss.bs.modal')
+
+    this.$dialog.off('mousedown.dismiss.bs.modal')
+>>>>>>> new-layout
 =======
       .off('mouseup.dismiss.bs.modal')
 
@@ -1201,6 +1309,7 @@ if (typeof jQuery === 'undefined') {
 
       this.$backdrop = $('<div class="modal-backdrop ' + animate + '" />')
 <<<<<<< HEAD
+<<<<<<< HEAD
         .prependTo(this.$element)
         .on('click.dismiss.bs.modal', $.proxy(function (e) {
           if (e.target !== e.currentTarget) return
@@ -1209,6 +1318,8 @@ if (typeof jQuery === 'undefined') {
             : this.hide.call(this)
         }, this))
 =======
+=======
+>>>>>>> new-layout
         .appendTo(this.$body)
 
       this.$element.on('click.dismiss.bs.modal', $.proxy(function (e) {
@@ -1221,6 +1332,9 @@ if (typeof jQuery === 'undefined') {
           ? this.$element[0].focus()
           : this.hide()
       }, this))
+<<<<<<< HEAD
+>>>>>>> new-layout
+=======
 >>>>>>> new-layout
 
       if (doAnimate) this.$backdrop[0].offsetWidth // force reflow
@@ -1257,6 +1371,7 @@ if (typeof jQuery === 'undefined') {
 
   Modal.prototype.handleUpdate = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (this.options.backdrop) this.adjustBackdrop()
     this.adjustDialog()
   }
@@ -1267,6 +1382,11 @@ if (typeof jQuery === 'undefined') {
       .css('height', this.$element[0].scrollHeight)
   }
 
+=======
+    this.adjustDialog()
+  }
+
+>>>>>>> new-layout
 =======
     this.adjustDialog()
   }
@@ -1290,14 +1410,20 @@ if (typeof jQuery === 'undefined') {
 
   Modal.prototype.checkScrollbar = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.bodyIsOverflowing = document.body.scrollHeight > document.documentElement.clientHeight
 =======
+=======
+>>>>>>> new-layout
     var fullWindowWidth = window.innerWidth
     if (!fullWindowWidth) { // workaround for missing window.innerWidth in IE8
       var documentElementRect = document.documentElement.getBoundingClientRect()
       fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left)
     }
     this.bodyIsOverflowing = document.body.clientWidth < fullWindowWidth
+<<<<<<< HEAD
+>>>>>>> new-layout
+=======
 >>>>>>> new-layout
     this.scrollbarWidth = this.measureScrollbar()
   }
@@ -1305,6 +1431,10 @@ if (typeof jQuery === 'undefined') {
   Modal.prototype.setScrollbar = function () {
     var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    this.originalBodyPad = document.body.style.paddingRight || ''
+>>>>>>> new-layout
 =======
     this.originalBodyPad = document.body.style.paddingRight || ''
 >>>>>>> new-layout
@@ -1313,7 +1443,11 @@ if (typeof jQuery === 'undefined') {
 
   Modal.prototype.resetScrollbar = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.$body.css('padding-right', '')
+=======
+    this.$body.css('padding-right', this.originalBodyPad)
+>>>>>>> new-layout
 =======
     this.$body.css('padding-right', this.originalBodyPad)
 >>>>>>> new-layout
@@ -1383,7 +1517,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: tooltip.js v3.3.2
+=======
+ * Bootstrap: tooltip.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: tooltip.js v3.3.4
 >>>>>>> new-layout
@@ -1403,17 +1541,23 @@ if (typeof jQuery === 'undefined') {
 
   var Tooltip = function (element, options) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.type       =
     this.options    =
     this.enabled    =
     this.timeout    =
     this.hoverState =
 =======
+=======
+>>>>>>> new-layout
     this.type       = null
     this.options    = null
     this.enabled    = null
     this.timeout    = null
     this.hoverState = null
+<<<<<<< HEAD
+>>>>>>> new-layout
+=======
 >>>>>>> new-layout
     this.$element   = null
 
@@ -1421,7 +1565,11 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Tooltip.VERSION  = '3.3.2'
+=======
+  Tooltip.VERSION  = '3.3.4'
+>>>>>>> new-layout
 =======
   Tooltip.VERSION  = '3.3.4'
 >>>>>>> new-layout
@@ -1452,11 +1600,17 @@ if (typeof jQuery === 'undefined') {
     this.$viewport = this.options.viewport && $(this.options.viewport.selector || this.options.viewport)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> new-layout
     if (this.$element[0] instanceof document.constructor && !this.options.selector) {
       throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!')
     }
 
+<<<<<<< HEAD
+>>>>>>> new-layout
+=======
 >>>>>>> new-layout
     var triggers = this.options.trigger.split(' ')
 
@@ -1679,15 +1833,21 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Tooltip.prototype.replaceArrow = function (delta, dimension, isHorizontal) {
     this.arrow()
       .css(isHorizontal ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
       .css(isHorizontal ? 'top' : 'left', '')
 =======
+=======
+>>>>>>> new-layout
   Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
     this.arrow()
       .css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
       .css(isVertical ? 'top' : 'left', '')
+<<<<<<< HEAD
+>>>>>>> new-layout
+=======
 >>>>>>> new-layout
   }
 
@@ -1702,7 +1862,11 @@ if (typeof jQuery === 'undefined') {
   Tooltip.prototype.hide = function (callback) {
     var that = this
 <<<<<<< HEAD
+<<<<<<< HEAD
     var $tip = this.tip()
+=======
+    var $tip = $(this.$tip)
+>>>>>>> new-layout
 =======
     var $tip = $(this.$tip)
 >>>>>>> new-layout
@@ -1723,7 +1887,11 @@ if (typeof jQuery === 'undefined') {
     $tip.removeClass('in')
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $.support.transition && this.$tip.hasClass('fade') ?
+=======
+    $.support.transition && $tip.hasClass('fade') ?
+>>>>>>> new-layout
 =======
     $.support.transition && $tip.hasClass('fade') ?
 >>>>>>> new-layout
@@ -1871,7 +2039,11 @@ if (typeof jQuery === 'undefined') {
       var options = typeof option == 'object' && option
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (!data && option == 'destroy') return
+=======
+      if (!data && /destroy|hide/.test(option)) return
+>>>>>>> new-layout
 =======
       if (!data && /destroy|hide/.test(option)) return
 >>>>>>> new-layout
@@ -1898,7 +2070,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: popover.js v3.3.2
+=======
+ * Bootstrap: popover.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: popover.js v3.3.4
 >>>>>>> new-layout
@@ -1922,7 +2098,11 @@ if (typeof jQuery === 'undefined') {
   if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Popover.VERSION  = '3.3.2'
+=======
+  Popover.VERSION  = '3.3.4'
+>>>>>>> new-layout
 =======
   Popover.VERSION  = '3.3.4'
 >>>>>>> new-layout
@@ -1982,11 +2162,14 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Popover.prototype.tip = function () {
     if (!this.$tip) this.$tip = $(this.options.template)
     return this.$tip
   }
 
+=======
+>>>>>>> new-layout
 =======
 >>>>>>> new-layout
 
@@ -2000,7 +2183,11 @@ if (typeof jQuery === 'undefined') {
       var options = typeof option == 'object' && option
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (!data && option == 'destroy') return
+=======
+      if (!data && /destroy|hide/.test(option)) return
+>>>>>>> new-layout
 =======
       if (!data && /destroy|hide/.test(option)) return
 >>>>>>> new-layout
@@ -2027,7 +2214,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: scrollspy.js v3.3.2
+=======
+ * Bootstrap: scrollspy.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: scrollspy.js v3.3.4
 >>>>>>> new-layout
@@ -2046,10 +2237,15 @@ if (typeof jQuery === 'undefined') {
 
   function ScrollSpy(element, options) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var process  = $.proxy(this.process, this)
 
     this.$body          = $('body')
     this.$scrollElement = $(element).is('body') ? $(window) : $(element)
+=======
+    this.$body          = $(document.body)
+    this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
+>>>>>>> new-layout
 =======
     this.$body          = $(document.body)
     this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
@@ -2062,7 +2258,11 @@ if (typeof jQuery === 'undefined') {
     this.scrollHeight   = 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.$scrollElement.on('scroll.bs.scrollspy', process)
+=======
+    this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
+>>>>>>> new-layout
 =======
     this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
 >>>>>>> new-layout
@@ -2071,7 +2271,11 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   ScrollSpy.VERSION  = '3.3.2'
+=======
+  ScrollSpy.VERSION  = '3.3.4'
+>>>>>>> new-layout
 =======
   ScrollSpy.VERSION  = '3.3.4'
 >>>>>>> new-layout
@@ -2086,9 +2290,12 @@ if (typeof jQuery === 'undefined') {
 
   ScrollSpy.prototype.refresh = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var offsetMethod = 'offset'
     var offsetBase   = 0
 =======
+=======
+>>>>>>> new-layout
     var that          = this
     var offsetMethod  = 'offset'
     var offsetBase    = 0
@@ -2096,6 +2303,9 @@ if (typeof jQuery === 'undefined') {
     this.offsets      = []
     this.targets      = []
     this.scrollHeight = this.getScrollHeight()
+<<<<<<< HEAD
+>>>>>>> new-layout
+=======
 >>>>>>> new-layout
 
     if (!$.isWindow(this.$scrollElement[0])) {
@@ -2104,12 +2314,15 @@ if (typeof jQuery === 'undefined') {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.offsets = []
     this.targets = []
     this.scrollHeight = this.getScrollHeight()
 
     var self     = this
 
+=======
+>>>>>>> new-layout
 =======
 >>>>>>> new-layout
     this.$body
@@ -2127,8 +2340,13 @@ if (typeof jQuery === 'undefined') {
       .sort(function (a, b) { return a[0] - b[0] })
       .each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         self.offsets.push(this[0])
         self.targets.push(this[1])
+=======
+        that.offsets.push(this[0])
+        that.targets.push(this[1])
+>>>>>>> new-layout
 =======
         that.offsets.push(this[0])
         that.targets.push(this[1])
@@ -2162,7 +2380,11 @@ if (typeof jQuery === 'undefined') {
       activeTarget != targets[i]
         && scrollTop >= offsets[i]
 <<<<<<< HEAD
+<<<<<<< HEAD
         && (!offsets[i + 1] || scrollTop <= offsets[i + 1])
+=======
+        && (offsets[i + 1] === undefined || scrollTop < offsets[i + 1])
+>>>>>>> new-layout
 =======
         && (offsets[i + 1] === undefined || scrollTop < offsets[i + 1])
 >>>>>>> new-layout
@@ -2177,8 +2399,13 @@ if (typeof jQuery === 'undefined') {
 
     var selector = this.selector +
 <<<<<<< HEAD
+<<<<<<< HEAD
         '[data-target="' + target + '"],' +
         this.selector + '[href="' + target + '"]'
+=======
+      '[data-target="' + target + '"],' +
+      this.selector + '[href="' + target + '"]'
+>>>>>>> new-layout
 =======
       '[data-target="' + target + '"],' +
       this.selector + '[href="' + target + '"]'
@@ -2247,7 +2474,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: tab.js v3.3.2
+=======
+ * Bootstrap: tab.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: tab.js v3.3.4
 >>>>>>> new-layout
@@ -2269,7 +2500,11 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Tab.VERSION = '3.3.2'
+=======
+  Tab.VERSION = '3.3.4'
+>>>>>>> new-layout
 =======
   Tab.VERSION = '3.3.4'
 >>>>>>> new-layout
@@ -2344,7 +2579,11 @@ if (typeof jQuery === 'undefined') {
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (element.parent('.dropdown-menu')) {
+=======
+      if (element.parent('.dropdown-menu').length) {
+>>>>>>> new-layout
 =======
       if (element.parent('.dropdown-menu').length) {
 >>>>>>> new-layout
@@ -2413,7 +2652,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Bootstrap: affix.js v3.3.2
+=======
+ * Bootstrap: affix.js v3.3.4
+>>>>>>> new-layout
 =======
  * Bootstrap: affix.js v3.3.4
 >>>>>>> new-layout
@@ -2439,8 +2682,13 @@ if (typeof jQuery === 'undefined') {
 
     this.$element     = $(element)
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.affixed      =
     this.unpin        =
+=======
+    this.affixed      = null
+    this.unpin        = null
+>>>>>>> new-layout
 =======
     this.affixed      = null
     this.unpin        = null
@@ -2451,7 +2699,11 @@ if (typeof jQuery === 'undefined') {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   Affix.VERSION  = '3.3.2'
+=======
+  Affix.VERSION  = '3.3.4'
+>>>>>>> new-layout
 =======
   Affix.VERSION  = '3.3.4'
 >>>>>>> new-layout
@@ -2505,7 +2757,11 @@ if (typeof jQuery === 'undefined') {
     var offsetTop    = offset.top
     var offsetBottom = offset.bottom
 <<<<<<< HEAD
+<<<<<<< HEAD
     var scrollHeight = $('body').height()
+=======
+    var scrollHeight = $(document.body).height()
+>>>>>>> new-layout
 =======
     var scrollHeight = $(document.body).height()
 >>>>>>> new-layout
