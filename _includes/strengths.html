@@ -1,28 +1,4 @@
----
-layout: default
-title: strengths
-
-strengths:
-    - title: Ingenuity
-      percentage: 87
-      
-    - title: Passion
-      percentage: 97
-      
-    - title: Work Ethic
-      percentage: 100
-      
-    - title: Design
-      percentage: 73
-    
-    - title: Adaptibility
-      percentage: 95
-      
-    - title: Timeliness
-      percentage: 88
----
-    
-    <!-- STRENGHTS SECTION START -->
+     <!-- STRENGTHS SECTION START -->
     <section id="strenghts" class="section bg-image-yes">
         <div class="container-fluid section-wrapper">
             <div class="section-content">
@@ -72,7 +48,7 @@ strengths:
                             <!-- //.legend -->
 
                             <div class="chart clearfix">
-                                {% for strength in page.strengths %}
+                                {% for strength in site.strengths %}
                                 <div class="item">
                                     <div class="bar">
                                         <span class="percent">{{ strength.percentage }}</span>

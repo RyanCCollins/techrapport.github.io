@@ -1,8 +1,4 @@
----
-layout: default
-title: services
----
-    <!-- SERVICES SECTION START -->
+   <!-- SERVICES SECTION START -->
     <section id="services" class="section">
         <div class="container section-wrapper">
             <div class="section-content">
@@ -26,9 +22,9 @@ title: services
                         {% for service in site.services %}
                         <div class="col-sm-4 col-md-4 item top dark-bg match-height">
                             <div class="inner-content">
-                                <i class="icon-Chess colored-text"></i>
+                                <i class="{{ icon-class }} colored-text"></i>
 
-                                <h4 class="uppercase">{{ service.title }}</h4>
+                                <h4 class="uppercase">{{ forloop.index }}. {{ service.title }}</h4>
 
                                 <p class="text-grey">
                                     {{ service.content }}

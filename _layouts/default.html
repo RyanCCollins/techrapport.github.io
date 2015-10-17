@@ -22,8 +22,8 @@ copyright: Tech Rapport - all rights reserved
     {% endif %}
     </title>
     
-    <meta name="description" content="Creative Resume Template">
-    <meta name="keywords" content="berg, creative, resume, template">
+    <meta name="description" content="Tech Rapport, Creative Software Development">
+    <meta name="keywords" content="Tech Rapport, creative, resume">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
     <!-- Google Font -->
@@ -62,48 +62,13 @@ copyright: Tech Rapport - all rights reserved
     <![endif]-->
 
   
-    <!-- HERO START -->
-    <header id="home" class="hero parallax-yes">
-        <div class="pattern-overlay"></div>
-        
-        <div id="parallax-1" class="parallax">
-            <div class="bcg skrollable skrollable-between" data-anchor-target="#parallax-1" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;">
-                <div class="hero-body">
-                    <div class="hero-text text-center">
-                        <h1 class="small">
-                            {{ page.header }} <span class="blinker"></span>
-                        </h1>
-
-                        <h1>
-                            {{ page.sub-header }}
-                        </h1>
-
-                        <p>
-                            {{ page.p1 }}
-                        </p>
-
-                        <div class="page-scroll">
-                            <a href="#profile" class="btn btn-lg btn-custom">
-                                
-                            </a>
-                        </div>
-                        <!-- //.page-scroll -->
-                    </div>
-                    <!-- //.hero-text -->
-                </div>
-                <!-- //.hero-body -->
-            </div>
-            <!-- //.bcg -->
-        </div>
-        <!-- //.parallax -->
-    </header>
-    <!-- //HERO END -->
+    {% include hero.html %}
 
     <!-- //NAV START -->
-        {% include nav.html %}
+    {% include nav.html %}
     <!-- //NAV END -->
+    {{ content }}
     <!-- FOOTER START -->
-    
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -114,7 +79,6 @@ copyright: Tech Rapport - all rights reserved
                     <!-- //.page-scroll -->
                 {% include social-icons.html %}
                 {% include svg-icons.html %}
-
                 </div>
                 <!-- //.col-md-12 -->
             </div>
@@ -136,7 +100,7 @@ copyright: Tech Rapport - all rights reserved
         <!-- //.container -->
     </footer>
     <!-- //FOOTER END -->
-    {{ content }}
+
     
     <!-- Plugins JS -->
     <script src="/assets/plugins/jquery.min.js"></script>
@@ -161,8 +125,7 @@ copyright: Tech Rapport - all rights reserved
     
     <!-- Animation JS (Optional) -->
     <script src="/assets/js/animation.js"></script>
-    {% include social-icons.html %}
-    {% include analytics.html %}
+
 </body>
 
 </html>
