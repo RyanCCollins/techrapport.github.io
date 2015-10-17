@@ -1,3 +1,10 @@
+---
+header: Tech Rapport
+sub-header: Creative Software
+p1: Creating excellent software and data solutions since 1986
+copyright: Tech Rapport - all rights reserved
+---
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -64,16 +71,20 @@
                 <div class="hero-body">
                     <div class="hero-text text-center">
                         <h1 class="small">
-                            I'm Nick Berg <span class="blinker"></span>
+                            {{ page.header }} <span class="blinker"></span>
                         </h1>
 
-                        <h1>Creative Developer</h1>
+                        <h1>
+                            {{ page.sub-header }}
+                        </h1>
 
-                        <p>28 years young, husband and father, coffee addict.</p>
+                        <p>
+                            {{ page.p1 }}
+                        </p>
 
                         <div class="page-scroll">
                             <a href="#profile" class="btn btn-lg btn-custom">
-                                Know Me Better
+                                
                             </a>
                         </div>
                         <!-- //.page-scroll -->
@@ -105,35 +116,35 @@
                     <ul class="list-inline social-icons">
                         <li>
                             <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="{{ page.facebook-url }}" target="_blank"><i class="fa fa-facebook"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
                         
                         <li>
                             <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="{{ page.twitter-url }}" target="_blank"><i class="fa fa-twitter"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
                         
                         <li>
                             <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                <a href="{{ page.linkedin-url }}" target="_blank"><i class="fa fa-linkedin"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
                         
                         <li>
                             <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
+                                <a href="{{ page.dribbble-url }}" target="_blank"><i class="fa fa-dribbble"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
                         
                         <li>
                             <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                <a href="{{ page.facebook-url }}" target="_blank"><i class="fa fa-pinterest"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
@@ -146,7 +157,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright text-center">
-                        <p class="text-grey">&copy; 2015 Nick Berg. All rights reserved.</p>
+                        <p class="text-grey">
+                            &copy; {{ date: "%Y" }} {{ page.copyright }}
+                        </p>
                     </div>
                     <!-- //.copyright -->
                 </div>
