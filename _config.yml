@@ -2,3 +2,30 @@ collections:
 - services
 - strengths
 - projects
+
+footer-links:
+  dribbble: 
+  email: info@techrapport.com
+  facebook:
+  flickr: techrapport
+  github: techrapport
+  instagram:
+  linkedin: techrapport
+  pinterest:
+  rss: work# just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: tech_rapport
+  stackoverflow: 
+  youtube: channel/UC2iYWXVQlPa76aQlADYocow
+  googleplus: /101168809038593931433/# anything in your profile username that comes after plus.google.com/
+
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqus: techrapportcom
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: UA-68833574-1
+
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
+url: http://techrapport.com
