@@ -1,0 +1,16 @@
+title: "Skill Level & Expertise"
+subtitle: A winner is someone who recognizes his God-given talents, works his tail off to develop them into skills, and uses these skills to accomplish his goals.
+
+area:
+  - areatitle: "Swift & Cocoa"
+    percentage: 96
+  - areatitle: "Java + Android"
+    category: 75
+  - areatitle: "CSS3 & HTML 5"
+    percentage: 89
+  - areatitle: "Ruby"
+    category: 83
+  - areatitle: "Liquid, Jekyll & Bootstrap"
+    percentage: 91
+  - areatitle: "C#.NET"
+    category: 95

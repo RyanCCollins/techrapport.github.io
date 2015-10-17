@@ -1,17 +1,16 @@
-title: "Knoweldge"
+title: "Knowledge"
 subtitle: "Human behavior flows from three main sources: desire, emotion, and knowledge."
+
 area:
-  - title: Mobile Development
-	percentage: 95
-  - title: Data Science & Architecture
-	percentage: 87
-  - title: Web Design & Development
-	percentage: 75
-  - title: Web Marketing
-	percentage: 69
-  - title: Software Implementation
-	percentage: 93
-  - title: Audio Engineering
-	percentage: 82
-  - title: Engineering
-	percentage: 65
+  - areatitle: "Mobile Development"
+    percentage: 95
+  - areatitle: "Data Science & Architecture"
+    category: 87
+  - areatitle: "Web Design & Development"
+    percentage: 89
+  - areatitle: "Web Marketing"
+    category: 79
+  - areatitle: "Software Implementation"
+    percentage: 93
+  - areatitle: "Engineering"
+    category: 87
