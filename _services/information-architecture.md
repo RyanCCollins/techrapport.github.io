@@ -1,5 +1,5 @@
 ---
 title: Information Architecture
-image_path: ''
+icon-class: icon-Big-Data
 ---
 
