@@ -5,14 +5,14 @@ collections:
 
 footer-links:
     -title: Email
-     username: info@techrapport.com
-     url: mailto:
-     iclass: svg-icon email
+    username: info@techrapport.com
+    url: mailto
+    iclass: svg-icon email
      
     - title: GitHub
-      username: techrapport
-      url: https://github.com/
-      iclass: fa fa-github
+    username: techrapport
+    url: https://github.com/
+    iclass: fa fa-github
     
     - title: linkedin
       username: techrapport
