@@ -112,43 +112,8 @@ copyright: Tech Rapport - all rights reserved
                         <a href="#page-top"><i class="icon-Arrow-Up"></i></a>
                     </div>
                     <!-- //.page-scroll -->
-                    
-                    <ul class="list-inline social-icons">
-                        <li>
-                            <div class="item">
-                                <a href="{{ page.facebook-url }}" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </div>
-                            <!-- //.item -->
-                        </li>
-                        
-                        <li>
-                            <div class="item">
-                                <a href="{{ page.twitter-url }}" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </div>
-                            <!-- //.item -->
-                        </li>
-                        
-                        <li>
-                            <div class="item">
-                                <a href="{{ page.linkedin-url }}" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                            <!-- //.item -->
-                        </li>
-                        
-                        <li>
-                            <div class="item">
-                                <a href="{{ page.dribbble-url }}" target="_blank"><i class="fa fa-dribbble"></i></a>
-                            </div>
-                            <!-- //.item -->
-                        </li>
-                        
-                        <li>
-                            <div class="item">
-                                <a href="{{ page.facebook-url }}" target="_blank"><i class="fa fa-pinterest"></i></a>
-                            </div>
-                            <!-- //.item -->
-                        </li>
-                    </ul>
+                {% include social-icons.html  
+
                 </div>
                 <!-- //.col-md-12 -->
             </div>
@@ -195,7 +160,7 @@ copyright: Tech Rapport - all rights reserved
     
     <!-- Animation JS (Optional) -->
     <script src="/assets/js/animation.js"></script>
-
+    {% include analytics.html %}
 </body>
 
 </html>
