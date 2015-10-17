@@ -31,12 +31,12 @@ title: strengths
 
                             <div class="legend legend-right hidden-xs">
                                 <div class="item">
-                                    <h4>Superhero</h4>
+                                    <h4>Allstar</h4>
                                 </div>
                                 <!-- //.item -->
 
                                 <div class="item">
-                                    <h4>Preety Good</h4>
+                                    <h4>Pretty Great</h4>
                                 </div>
                                 <!-- //.item -->
 
@@ -46,77 +46,27 @@ title: strengths
                                 <!-- //.item -->
 
                                 <div class="item">
-                                    <h4>Newbie</h4>
+                                    <h4>Newb</h4>
                                 </div>
                                 <!-- //.item -->
                             </div>
                             <!-- //.legend -->
 
                             <div class="chart clearfix">
+                                {% for strength in site.strengths %}
                                 <div class="item">
                                     <div class="bar">
-                                        <span class="percent">92%</span>
+                                        <span class="percent">{{ strength.percentage }}</span>
 
-                                        <div class="item-progress" data-percent="92">
-                                            <span class="title uppercase">Creativity</span>
+                                        <div class="item-progress" data-percent="{{ strength.percentage }}">
+                                            <span class="title uppercase">{{ strength.percentage }}</span>
                                         </div>
                                         <!-- //.item-progress -->
                                     </div>
                                     <!-- //.bar -->
                                 </div>
                                 <!-- //.item -->
-
-                                <div class="item">
-                                    <div class="bar">
-                                        <span class="percent">71%</span>
-
-                                        <div class="item-progress" data-percent="71">
-                                            <span class="title uppercase">Reliable</span>
-                                        </div>
-                                        <!-- //.item-progress -->
-                                    </div>
-                                    <!-- //.bar -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item">
-                                    <div class="bar">
-                                        <span class="percent">82%</span>
-
-                                        <div class="item-progress" data-percent="82">
-                                            <span class="title uppercase">Comunication</span>
-                                        </div>
-                                        <!-- //.item-progress -->
-                                    </div>
-                                    <!-- //.bar -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item">
-                                    <div class="bar">
-                                        <span class="percent">58%</span>
-
-                                        <div class="item-progress" data-percent="58">
-                                            <span class="title uppercase">Leadership</span>
-                                        </div>
-                                        <!-- //.item-progress -->
-                                    </div>
-                                    <!-- //.bar -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item">
-                                    <div class="bar">
-                                        <span class="percent">67%</span>
-
-                                        <div class="item-progress" data-percent="67">
-                                            <span class="title uppercase">Persuasion</span>
-                                        </div>
-                                        <!-- //.item-progress -->
-                                    </div>
-                                    <!-- //.bar -->
-                                </div>
-                                <!-- //.item -->
+                                {% endfor %}
                             </div>
                             <!-- //.chart -->
                         </div>
