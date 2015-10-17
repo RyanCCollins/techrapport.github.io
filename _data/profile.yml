@@ -1,0 +1,17 @@
+name: Ryan Collins
+header: Hello, My Name is Ryan.
+subheader: "Ryan, 29 years of age, born and raised in New England, citizen of the world.  Highly motivated software and web developer with extensive and diverse experience developing and implementing software."
+
+p1: "I currently work as a freelance iOS, mobile and web developer.  I spend most of my time working on awesome projects for the iOS platform, but I also have an extensive background on many other platforms."
+
+p2: "Most recently, I have been working to develop Swift iOS applications.  I have worked for years developing and implementing large-scale applications, most of which are classified.  I am currently taking an extensive course in iOS development through Udacity.  Please take a look at my Portfolio."
+
+contactheader: CONTACT DETAILS
+contactname: Ryan C.
+contactaddress: ADDRESS
+contactphone: 617-299-9722
+contactemail: info@techrapport.com
+contactwebsite: http://techrapport.com
+
+image-description: Creative Developer
+imagepath: /assets/images/me-3.jpg

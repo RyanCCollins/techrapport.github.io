@@ -1,32 +1,41 @@
-    <!-- PROFILE SECTION START -->
+{% assign profile = site.data.profile %}
+
+   <!-- PROFILE SECTION START -->
     <section id="profile" class="section">
         <div class="container section-wrapper">
             <div class="section-content">
-                <div class="row">          
-                    <div class="col-md-7 match-height">
+                <div class="row">
+                    
+                    <!-- PROFILE PICTURE START -->
+                    <div class="col-md-4 hidden-xs hidden-sm match-height pp-wrapper">
+                        <div class="profile-picture style-two">
+                            <img src="{{ site.baseurl }}{{ profile.imagepath }}" alt="profile picture" class="img-responsive"/>
+                            
+                            <h4 class="title uppercase">{{ profile.image-description }}</h4>
+                        </div>
+                    </div>
+                    <!-- //PROFILE PICTURE END -->
+                    
+                    <div class="col-md-8 match-height">
 
                         <!-- PROFILE TEXT START -->
-                        <div class="profile-text padding-right-yes">
+                        <div class="profile-text padding-left-yes">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h2 class="section-title uppercase">
-
-                                        Hello, My Name is Ryan.
-
-                                    </h2>
+                                    <h2 class="section-title uppercase">{{ page.header }}</h2>
 
                                     <p>
-                                        Ryan, 29 years of age, born and raised in New England, citizen of the world.  Highly motivated software and web developer with extensive and diverse experience developing and implementing software.
+                                        {{ profile.subheader }}
                                     </p>
 
                                     <span class="divider"></span>
 
                                     <p class="text-grey">
-                                        I currently work as a freelance iOS, mobile and web developer.  I spend most of my time working on awesome projects for the iOS platform, but I also have an extensive background on many other platforms.
+                                        {{ profile.p1 }}
                                     </p>
 
                                     <p class="text-grey">
-                                        Most recently, I have been working to develop Swift iOS applications.  I have worked for years developing and implementing large-scale applications, most of which are classified.  I am currently taking an extensive course in iOS development through Udacity.  Please take a look at my Portfolio.
+                                        {{ profile.p2 }}
                                     </p>
                                 </div>
                                 <!-- //.col-md-12 -->
@@ -36,23 +45,23 @@
                         <!-- //PROFILE TEXT END -->
 
                         <!-- CONTACT DETAILS START -->
-                        <div class="contact-details padding-right-yes">
+                        <div class="contact-details padding-left-yes">
                             <div class="row">
                                 <div class="col-sm-6 col-md-5">
-                                    <h4 class="uppercase">Contact Details</h4>
+                                    <h4 class="uppercase">{{ profile.contactheader }}</h4>
 
                                     <ul class="list-unstyled text-grey">
-                                        <li>Ryan</li>
-                                        <li>ADDRESS</li>
-                                        <li>617-299-9722</li>
-                                        <li></li>
-                                        <li>www.techrapport.com</li>
+                                        <li>{{ profile.contactname }}</li>
+                                        <li>{{ profile.contactaddress }}</li>
+                                        <li>{{ profile.contactphone }}</li>
+                                        <li>{{ profile.contactemail }}</li>
+                                        <li>{{ profile.contactwebsite }}</li>
                                     </ul>
                                 </div>
                                 <!-- //.col-md-5 -->
 
                                 <div class="col-sm-6 col-md-7">
-                                    <a href="{{ site.baseurl }}/assets/docs/resume.pdf" class="btn btn-lg btn-custom">
+                                    <a href="#" class="btn btn-lg btn-custom">
                                         <i class="icon-File-Download"></i> Download Resume
                                     </a>
                                 </div>
@@ -63,15 +72,7 @@
                         <!-- //CONTACT DETAILS END -->
 
                     </div>
-                    <!-- //.col-md-7 -->
-
-                    <!-- PROFILE PICTURE START -->
-                    <div class="col-md-5 hidden-xs hidden-sm match-height pp-wrapper">
-                        <div class="profile-picture style-three">
-                            <img src="{{ site.baseurl }}/assets/images/me-3.jpg" alt="profile picture" class="img-responsive"/>
-                        </div>
-                    </div>
-                    <!-- //PROFILE PICTURE END -->
+                    <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
             </div>
@@ -79,4 +80,4 @@
         </div>
         <!-- //.container -->
     </section>
-    <!-- //PROFILE SECTION END -->
+    <!-- //page SECTION END -->

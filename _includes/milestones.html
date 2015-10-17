@@ -1,12 +1,17 @@
+{% assign milestone = site.data.milestones %}
     <!-- MILESTONES SECTION START -->
     <section id="milestones" class="section bg-image-yes">
         <div class="container-fluid section-wrapper">
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
-                        <h2 class="section-title uppercase">Milestones Achieved</h2>
+                        <h2 class="section-title uppercase">
+                            {{ milestone.title }}
+                        </h2>
 
-                        <p class="section-subtitle">My path has not been determined. I shall have more experiences and pass many more milestones.</p>
+                        <p class="section-subtitle">
+                            {{ milestone.subtitle }}
+                        </p>
 
                         <span class="divider center"></span>
                     </div>
@@ -23,7 +28,7 @@
                             </div>
                             <!-- //.circle -->
 
-                            <span class="number" data-from="10" data-to="5012" data-refresh-interval="100">
+                            <span class="number" data-from="10" data-to="{{ milestone.cups-of-coffee }}" data-refresh-interval="100">
                                 10
                             </span>
 
@@ -37,7 +42,7 @@
                             </div>
                             <!-- //.circle -->
 
-                            <span class="number" data-from="5" data-to="4210" data-refresh-interval="5">
+                            <span class="number" data-from="5" data-to="{{ milestone.hours }}" data-refresh-interval="5">
                                 10
                             </span>
 
@@ -51,11 +56,11 @@
                             </div>
                             <!-- //.circle -->
 
-                            <span class="number" data-from="10" data-to="505" data-refresh-interval="10">
+                            <span class="number" data-from="10" data-to="{{ milestone.projects }}" data-refresh-interval="10">
                                 10
                             </span>
 
-                            <h4>Succesful Projects</h4>
+                            <h4>Projects Finished</h4>
                         </div>
                         <!-- //.item -->
 
@@ -65,7 +70,7 @@
                             </div>
                             <!-- //.circle -->
 
-                            <span class="number" data-from="5" data-to="253" data-refresh-interval="5">
+                            <span class="number" data-from="5" data-to="{{ milestone.clients }}" data-refresh-interval="5">
                                 5
                             </span>
 
