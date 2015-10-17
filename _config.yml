@@ -4,7 +4,7 @@ collections:
 - projects
 
 footer-links:
-    -title: Email
+    - title: Email
     username: info@techrapport.com
     url: mailto
     iclass: svg-icon email
