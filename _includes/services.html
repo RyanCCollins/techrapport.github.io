@@ -23,21 +23,21 @@ title: services
                 <!-- SERVICES START -->
                 <div class="services">
                     <div class="row">
-                        {{ for service in site.services }}
+                        {% for service in site.services %}
                         <div class="col-sm-4 col-md-4 item top dark-bg match-height">
                             <div class="inner-content">
                                 <i class="icon-Chess colored-text"></i>
 
-                                <h4 class="uppercase">{{ service.title }}</h4>
+                                <h4 class="uppercase">{% service.title %}</h4>
 
                                 <p class="text-grey">
-                                    {{ service.content }}
+                                    {% service.content %}
                                 </p>
                             </div>
                             <!-- //.inner-content -->
                         </div>
                         <!-- //.item -->
-                        {{ endfor }}
+                        {% endfor %}
                     </div>
                     <!-- //.row -->
                 </div>
@@ -48,3 +48,4 @@ title: services
         <!-- //.container -->
     </section>
     <!-- //SERVICES SECTION END -->
+    
