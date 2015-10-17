@@ -1,6 +1,6 @@
 ---
 title: Software Implementation
-image_path: /images/squidink_flaticons/png_64/calendar.png
+image_path: ''
 ---
 
-Professional software implementation tailored to your business needs. &nbsp;Stay on track and deliver amazing software to your clients&nbsp;with professional software project planning and implementation.
+Professional software implementation tailored to your business needs.  Stay on track and deliver amazing software to your clients with professional software project planning and implementation.
