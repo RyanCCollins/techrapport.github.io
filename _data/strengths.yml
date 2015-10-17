@@ -1,0 +1,14 @@
+title: "My Strengths"
+subtitle: "Failure will never overtake me if my determination to succeed is strong enough."
+
+area:
+  - areatitle: "Work Ethic"
+    percentage: 100
+  - areatitle: "Adaptability"
+    category: 75
+  - areatitle: "Passion"
+    percentage: 89
+  - areatitle: "Ingenuity"
+    category: 83
+  - areatitle: "Design"
+    percentage: 91

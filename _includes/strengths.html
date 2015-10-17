@@ -1,12 +1,17 @@
+{% assign strengthdata = site.data.strengths %}
      <!-- STRENGTHS SECTION START -->
     <section id="strengths" class="section bg-image-yes">
         <div class="container-fluid section-wrapper">
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
-                        <h2 class="section-title uppercase">My Strengths</h2>
+                        <h2 class="section-title uppercase">
+                            {{ strengthdata.title }}
+                        </h2>
 
-                        <p class="section-subtitle">Failure will never overtake me if my determination to succeed is strong enough.</p>
+                        <p class="section-subtitle">
+                            {{strengthdata.subtitle }}
+                        </p>
 
                         <span class="divider center"></span>
                     </div>
@@ -26,7 +31,7 @@
 
                             <div class="legend legend-right hidden-xs">
                                 <div class="item">
-                                    <h4>Allstar</h4>
+                                    <h4>Excellent!</h4>
                                 </div>
                                 <!-- //.item -->
 
@@ -36,25 +41,25 @@
                                 <!-- //.item -->
 
                                 <div class="item">
-                                    <h4>Good</h4>
+                                    <h4>Getting there</h4>
                                 </div>
                                 <!-- //.item -->
 
                                 <div class="item">
-                                    <h4>Newb</h4>
+                                    <h4>New</h4>
                                 </div>
                                 <!-- //.item -->
                             </div>
                             <!-- //.legend -->
 
                             <div class="chart clearfix">
-                                {% for strength in site.strengths %}
+                                {% for strength in strengthdata.area %}
                                 <div class="item">
                                     <div class="bar">
                                         <span class="percent">{{ strength.percentage }}</span>
 
                                         <div class="item-progress" data-percent="{{ strength.percentage }}">
-                                            <span class="title uppercase">{{ strength.title }}</span>
+                                            <span class="title uppercase">{{ strength.areatitle }}</span>
                                         </div>
                                         <!-- //.item-progress -->
                                     </div>
