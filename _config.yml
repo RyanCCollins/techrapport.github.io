@@ -4,19 +4,35 @@ collections:
 - projects
 
 footer-links:
-  dribbble: 
-  email: info@techrapport.com
-  facebook:
-  flickr: techrapport
-  github: techrapport
-  instagram:
-  linkedin: techrapport
-  pinterest:
-  rss: work# just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: tech_rapport
-  stackoverflow: 
-  youtube: channel/UC2iYWXVQlPa76aQlADYocow
-  googleplus: /101168809038593931433/# anything in your profile username that comes after plus.google.com/
+    -title: Email
+     username: info@techrapport.com
+     url: mailto:
+     iclass: svg-icon email
+     
+    - title: GitHub
+      username: techrapport
+      url: https://github.com/
+      iclass: fa fa-github
+    
+    - title: linkedin
+      username: techrapport
+      url: https://www.linkedin.com/in/
+      iclass: fa fa-linkedin
+    
+    - title: Twitter
+      username: techrapport
+      url: https://www.twitter.com/
+      iclass: fa fa-twitter
+    
+    - title: 101168809038593931433/# anything in your profile username that comes after plus.google.com/
+      username: techrapport
+      url: https://plus.google.com/
+      iclass: svg-icon googleplus
+    
+    - title: channel/UC2iYWXVQlPa76aQlADYocow
+      username: techrapport
+      url: https://youtube.com/
+      iclass: svg-icon youtube
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
