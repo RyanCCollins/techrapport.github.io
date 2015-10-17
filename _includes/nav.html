@@ -15,6 +15,7 @@
             
             <div class="navbar-collapse collapse berg-collapse">
                 <ul class="nav navbar-nav">
+                    {% if page.url == '/index.html' %}
                     <li class="page-scroll">
                         <a href="#home">Home</a>
                     </li>
@@ -31,46 +32,82 @@
                         <a href="#services">Services</a>
                     </li>
                     
+                    <li>
+                        <a href="{{ site.baseurl }}/resume-index.html">Resume</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ site.baseurl }}/blog-index.html">Blog</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                    {% else %}
+
+                    <li>
+                        <a href="{{ site.baseurl }}/index.html">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="{{ site.baseurl }}/#profile">Profile</a>
+                    </li>
+                    
+                    <li>
+                        <a href="{{ site.baseurl }}/#portfolio">Portfolio</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <a href="#services">Services</a>
+                    </li>
+                    
                     {% if page.description == "Resume" %}
-                    <li class="page-scroll dropdown">
+                    <li class="page-scroll dropdown active">
                         <a href="{{ site.baseurl }}/resume-index.html" id="dropdown-resume" class="dropdown-toggle" data-toggle="dropdown" data-target="#references" role="button" aria-haspopup="true">
                             Resume <b class="caret"></b>
                         </a>
                         
                         <ul class="dropdown-menu" aria-labelledby="dropdown-references">
-                            <li>
+                            <li class="page-scroll">
                                 <a href="#strengths">Strengths</a>
                             </li>
-                            <li>
+                            <li class="page-scroll">
                                 <a href="#skills">Skills</a>
                             </li>
-                            <li>
+                            <li class="page-scroll">
                                 <a href="#knowledge">Knowledge</a>
                             </li>
 
-                            <li>
+                            <li class="page-scroll">
                                 <a href="#acolades">Acolades</a>
                             </li>
 
-                            <li>
+                            <li class="page-scroll">
                                 <a href="#references">References</a>
                             </li>
                             
                         </ul>
                     </li>
                     {% else %}
-                    <li class="page-scroll">
+                    <li>
                         <a href="{{ site.baseurl }}/resume-index.html">Resume</a>
                     </li>
                     {% endif %}
+
+                    {% if page.description == "Blog" %}
+                        <li class = "active">
+                    {% else %}
+                        <li>
+                    {% endif %}
+                        <a href="{{ site.baseurl }}/blog-index.html">Blog</a>
+                    </li>
                     
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
+                    {% endif %}
 
-                    <li class="page-scroll">
-                        <a href="{{ site.baseurl }}/blog-index.html">Blog</a>
-                    </li>
                 </ul>
             </div>
             <!-- //.navbar-collapse -->

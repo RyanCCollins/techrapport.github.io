@@ -20,9 +20,13 @@
                 <div class="services">
                     <div class="row">
                         {% for service in site.services %}
+                        {% if service.index % 2 == 0 %}
                         <div class="col-sm-4 col-md-4 item top dark-bg match-height">
+                        {% else %}
+                        <div class="col-sm-4 col-md-4 item top match-height">
+                        {% endif %}
                             <div class="inner-content">
-                                <i class="{{ icon-class }} colored-text"></i>
+                                <i class="{{ service.icon-class }} colored-text"></i>
 
                                 <h4 class="uppercase">{{ forloop.index }}. {{ service.title }}</h4>
 
@@ -44,4 +48,6 @@
         <!-- //.container -->
     </section>
     <!-- //SERVICES SECTION END -->
+
+
     
