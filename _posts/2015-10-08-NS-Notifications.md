@@ -4,6 +4,7 @@ title: "NSNotifications; what are they good for?"
 tags: "ios, ios development, software, iphone, ipad, swift, code"
 published: true
 category: swift
+imagepath: /assets/images/blog/blog-image-1.jpg
 ---
 
 ##A quick look at NSNotifications

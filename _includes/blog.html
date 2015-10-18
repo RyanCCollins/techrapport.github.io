@@ -1,10 +1,5 @@
----
-layout: default
-title: Blog
-description: Blog
----
-
-    <!-- BLOG SECTION START -->
+ 
+  <!-- BLOG SECTION START -->
     <section id="blog" class="section">
         <div class="container section-wrapper">
             <div class="section-content">
@@ -21,17 +16,18 @@ description: Blog
                 <!-- //.row -->
                 
                 <!-- BLOG POST START -->
+                {% for post in site.posts %}
                 <div class="row">
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
                             <div class="post-media">
-                                <img src="assets/images/blog/{{ post.image }}" class="img-responsive" alt=""/>
+                                <img src="{{ site.baseurl }}{{ post.imagepath }}" class="img-responsive" alt=""/>
                             </div>
                             <!-- //.post-media -->
 
                             <div class="post-meta match-height">
                                 <span class="date">
-                                    <span class="day">{{ post.date | date: '%d' }}</span> {{post.date | date: '%y' }}
+                                    <span class="day">{{ post.date | date: '%d' }}</span> sep{{ post.date | date: '%y' }}
                                 </span>
 
                                 <div class="post-title">
@@ -48,6 +44,7 @@ description: Blog
                     <!-- //.col-md-4 -->
                 </div>
                 <!-- //BLOG POST END -->
+                {% endfor %}
                 <div class="row">
                     <div class="col-md-12">
                         <div class="launch text-center">

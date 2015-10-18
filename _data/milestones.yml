@@ -1,8 +1,28 @@
 header: "Milestones Acheived"
 subtitle: "My path has not been determined. I shall have more experiences and pass many more milestones."
 
-cups-of-coffee: 3000
-hours: 5600
-projects: 412
-clients: 200
-
+milestones:
+  - title: "Hours Worked Professionally"
+    numFrom: 10
+    numTo: 13440
+    numString: "13,440"
+    numInterval: 100
+    icon: "icon-Business-Man"
+  - title: "Years Honing Skills"
+    numFrom: 5
+    numTo: 18
+    numString: "18"
+    numInterval: 5
+    icon: "icon-Open-Book"
+  - title: "Projects"
+    numFrom: 10
+    numTo: 78
+    numInterval: 10
+    numString: "78"
+    icon: "icon-Check"
+  - title: "Happy Clients"
+    numFrom: 5
+    numTo: 36
+    numString: "36"
+    numInterval: 5
+    icon: "icon-Smile"

@@ -4,6 +4,7 @@ layout: post
 title: Popover Views on the iPhone
 tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0, Popover, UIPopover, UIPopoverController, Popover Views, UIPopoverPresentationControllerDelegate"
 category: swift
+imagepath: /assets/images/blog/blog-image-1.jpg
 ---
 
 

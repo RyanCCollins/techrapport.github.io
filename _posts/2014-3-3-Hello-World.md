@@ -3,6 +3,7 @@ layout: post
 title: "Swift Blogging"
 category: swift
 published: true
+imagepath: /assets/images/blog/blog-image-1.jpg
 ---
 
 ## Hello World!

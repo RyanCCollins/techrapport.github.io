@@ -1,7 +1,8 @@
 ---
 layout: default
+key: 0
 category: iOS Apps
 title: Capstone
 project-page: ''
-image: /assets/images/portfolio/project-image-5.jpg
+image: /assets/images/portfolio/capstone-portfolio-image.png
 ---

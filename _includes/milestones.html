@@ -1,4 +1,4 @@
-{% assign milestone = site.data.milestones %}
+{% assign milestonedata = site.data.milestones %}
     <!-- MILESTONES SECTION START -->
     <section id="milestones" class="section bg-image-yes">
         <div class="container-fluid section-wrapper">
@@ -6,11 +6,11 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="section-title uppercase">
-                            {{ milestone.title }}
+                            {{ milestonedata.title }}
                         </h2>
 
                         <p class="section-subtitle">
-                            {{ milestone.subtitle }}
+                            {{ milestonedata.subtitle }}
                         </p>
 
                         <span class="divider center"></span>
@@ -22,61 +22,21 @@
                 <!-- MILESTONES START -->
                 <div class="milestones">
                     <div class="row">
+                        {% for milestone in milestonedata.milestones limit:4 %}
                         <div class="col-sm-6 col-md-3 item">
                             <div class="circle">
-                                <i class="icon-Coffee"></i>
+                                <i class="{{ milestone.icon }}"></i>
                             </div>
                             <!-- //.circle -->
 
-                            <span class="number" data-from="10" data-to="{{ milestone.cups-of-coffee }}" data-refresh-interval="100">
-                                10
+                            <span class="number" data-from="{{ milestone.numFrom }}" data-to="{{ milestone.numTo }}" data-refresh-interval="{{ milestone.numInterval }}">
+                                {{ milestone.numString }}
                             </span>
 
-                            <h4>Cups of Coffee</h4>
+                            <h4>{{ milestone.title }}</h4>
                         </div>
                         <!-- //.item -->
-
-                        <div class="col-sm-6 col-md-3 item">
-                            <div class="circle">
-                                <i class="icon-Clock"></i>
-                            </div>
-                            <!-- //.circle -->
-
-                            <span class="number" data-from="5" data-to="{{ milestone.hours }}" data-refresh-interval="5">
-                                10
-                            </span>
-
-                            <h4>Hours Worked</h4>
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="col-sm-6 col-md-3 item">
-                            <div class="circle">
-                                <i class="icon-Coding"></i>
-                            </div>
-                            <!-- //.circle -->
-
-                            <span class="number" data-from="10" data-to="{{ milestone.projects }}" data-refresh-interval="10">
-                                10
-                            </span>
-
-                            <h4>Projects Finished</h4>
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="col-sm-6 col-md-3 item">
-                            <div class="circle">
-                                <i class="icon-Smile"></i>
-                            </div>
-                            <!-- //.circle -->
-
-                            <span class="number" data-from="5" data-to="{{ milestone.clients }}" data-refresh-interval="5">
-                                5
-                            </span>
-
-                            <h4>Happy Clients</h4>
-                        </div>
-                        <!-- //.item -->
+                        {% endfor %}
                     </div>
                     <!-- //.row -->
                 </div>
