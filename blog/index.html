@@ -4,29 +4,45 @@ layout: blog
 permalink: /blog/index.html
 description: blog
 ---
-<section class="bg-dark">
-  <div class="text-center">
-    <h1>Swift Connection Blog</h1>
-  </div>
-</section>
+<div class="container">
 
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="posts">
-        {% for post in site.posts %}
-        <article class="post">
+        <div class="row">
 
-            <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+            <!-- Blog Entries Column -->
+            <div class="col-md-8">
+                
+                <h1 class="page-header">
+                    {{ blog_name }}
+                    <small>{{ blog_subheader }}</small>
+                </h1>
+                {% for post in site.posts limit:4 %}
+                <!-- First Blog Post -->
+                <h2>
+                    <a href="#">{{ post.title }}</a>
+                </h2>
+                <p class="lead">
+                    by <a href="index.php">{{ copyright }}</a>
+                </p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: "%d %B %Y" }}</p>
+                <hr>
+                <img class="img-responsive" {% if post.image != blank %} src="{{ post.image }}"{% else %}"http://placehold.it/900x300"{% endif %} alt="">
+                <hr>
+                <p>
+                  {{ post.excerpt }}
+                </p>
+                <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-        <div class="entry">
-        {{ post.excerpt }}
-        </div>
+                <hr>
+                {% endfor %}
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
-    </div>
-  </div>
-</section>
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="previous">
+                        <a href="#">&larr; Older</a>
+                    </li>
+                    <li class="next">
+                        <a href="#">Newer &rarr;</a>
+                    </li>
+                </ul>
+
+            </div>

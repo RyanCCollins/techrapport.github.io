@@ -8,6 +8,8 @@ paginate_path: "/blog/page:num"
 blog_name: "Swift Connection"
 blog_subheader: "A Swift Blog brought to you by TechRapport.com"
 
+copyright: "Tech Rapport"
+
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
