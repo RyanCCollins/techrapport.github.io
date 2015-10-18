@@ -23,7 +23,7 @@
                 <div class="circle-chart">
                     <div class="row">
 
-                        {% for skill in skilldata.area %}
+                        {% for skill in skilldata.area limit:6 %}
                         <div class="col-sm-4 col-md-2">
                         {% if skill.index == skilldata.count %}
                             <div class="item last">

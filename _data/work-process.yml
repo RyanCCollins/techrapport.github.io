@@ -1,0 +1,39 @@
+header: "Work Process"
+subheader: "Our time-tested design processes helps us to achieve greatness."
+
+sectionheader: "At Tech Rapport, we take great pride in our work.  Before we even write the first line of code for your project, we will extensively research it, work with you to document the specifications, and approach each stage of the process with the utmost scrutiny."
+sectionfooter: "Together, we can achieve greatness, for there is no problem too big or complex that we cannot solve by using our time-tested design process."
+
+steps:
+  - title: "Idea"
+    number: 1
+    icon: "icon-Light-Bulb2"
+    arrowicon: "icon-Arrow icon-Down-3"
+    divclass: "col-sm-2 col-md-2 item no-margin first"
+    span: "dot"
+  - title: "Drawing Board"
+    number: 2
+    icon: "icon-Pencil"
+    arrowicon: "icon-Arrow icon-up-3"
+    divclass: "col-sm-2 col-md-2 item"
+  - title: "Design"
+    number: 3
+    icon: "icon-Monitor-2"
+    arrowicon: "icon-Arrow icon-Down-3"
+    divclass: "col-sm-2 col-md-2 item no-margin"
+  - title: "Develop"
+    number: 4
+    icon: "icon-Coding"
+    arrowicon: "icon-Arrow icon-up-3"
+    divclass: "col-sm-2 col-md-2 item"
+  - title: "Test"
+    number: 5
+    icon: "icon-Bug"
+    arrowicon: "icon-Arrow icon-Down-3"
+    divclass: "col-sm-2 col-md-2 item no-margin"
+  - title: "Launch"
+    number: 6
+    icon: "icon-Rocket"
+    arrowicon: 
+    divclass: "col-sm-2 col-md-2 item last"
+    span: "dot"

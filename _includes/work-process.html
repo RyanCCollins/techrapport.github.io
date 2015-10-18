@@ -1,13 +1,16 @@
+{% assign workdata = site.data.work-process %}
     <!-- WORK PROCESS SECTION START -->
     <section id="work-process" class="section">
         <div class="container section-wrapper">
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="section-title uppercase">Work Process</h2>
+                        <h2 class="section-title uppercase">
+                            {{ workdata.header }}
+                        </h2>
 
                         <p class="section-subtitle">
-                            As a human being, I'm work in process.
+                            {{ workdata.subheader }}
                         </p>
 
                         <span class="divider center"></span>
@@ -19,7 +22,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="text-grey text-justify">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            {{ workdata.sectionheader }}
                         </p>
                     </div>
                     <!-- //.col-md-12 -->
@@ -29,79 +32,21 @@
                 <!-- WORK PROCESS START -->
                 <div class="work-process">
                     <div class="row">
-                        <div class="col-sm-2 col-md-2 item no-margin first">
+                        {% for step in workdata.steps %}
+                        <div class="{{ step.divclass }}">
                             <div class="inner-content">
-                                <i class="icon-Light-Bulb2"></i>
+                                <i class="{{ step.icon }}"></i>
 
-                                <span class="title">1. Idea</span>
+                                <span class="title">{{ step.number }}. {{ step.title }}</span>
 
-                                <span class="dot"></span>
+                                <span class="{{ step.span }}"></span>
                             </div>
                             <!-- //.inner-content -->
 
-                            <i class="icon-Arrow icon-Down-3"></i>
+                            <i class="{{ step.arrowicon }}"></i>
                         </div>
                         <!-- //.item -->
-
-                        <div class="col-sm-2 col-md-2 item">
-                            <div class="inner-content">
-                                <i class="icon-Pencil"></i>
-
-                                <span class="title">2. Sketch</span>
-                            </div>
-                            <!-- //.inner-content -->
-
-                            <i class="icon-Arrow icon-Up-3"></i>
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="col-sm-2 col-md-2 item no-margin">
-                            <div class="inner-content">
-                                <i class="icon-Monitor-2"></i>
-
-                                <span class="title">3. Design</span>
-                            </div>
-                            <!-- //.inner-content -->
-
-                            <i class="icon-Arrow icon-Down-3"></i>
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="col-sm-2 col-md-2 item">
-                            <div class="inner-content">
-                                <i class="icon-Coding"></i>
-
-                                <span class="title">4. Develop</span>
-                            </div>
-                            <!-- //.inner-content -->
-
-                            <i class="icon-Arrow icon-Up-3"></i>
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="col-sm-2 col-md-2 item no-margin">
-                            <div class="inner-content">
-                                <i class="icon-Bug"></i>
-
-                                <span class="title">5. Test</span>
-                            </div>
-                            <!-- //.inner-content -->
-
-                            <i class="icon-Arrow icon-Down-3"></i>
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="col-sm-2 col-md-2 item last">
-                            <div class="inner-content">
-                                <i class="icon-Rocket"></i>
-
-                                <span class="title">6. Launch</span>
-
-                                <span class="dot"></span>
-                            </div>
-                            <!-- //.inner-content -->
-                        </div>
-                        <!-- //.item -->
+                        {% endfor %}
                     </div>
                     <!-- //.row -->
                 </div>
@@ -110,7 +55,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="text-grey text-justify">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            {{ workdata.sectionfooter }}
                         </p>
                     </div>
                     <!-- //.col-md-12 -->

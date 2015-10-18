@@ -16,8 +16,9 @@
                 <!-- //.row -->
                 
                 <!-- BLOG POST START -->
-                {% for post in site.posts %}
                 <div class="row">
+                {% for post in site.posts limit:6 %}
+                
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
                             <div class="post-media">
@@ -42,9 +43,9 @@
                         <!-- //.blog-post -->
                     </div>
                     <!-- //.col-md-4 -->
+                    {% endfor %}
                 </div>
                 <!-- //BLOG POST END -->
-                {% endfor %}
                 <div class="row">
                     <div class="col-md-12">
                         <div class="launch text-center">

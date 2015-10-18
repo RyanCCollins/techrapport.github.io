@@ -10,7 +10,7 @@
                         </h2>
 
                         <p class="section-subtitle">
-                            {{strengthdata.subtitle }}
+                            {{ strengthdata.subtitle }}
                         </p>
 
                         <span class="divider center"></span>
@@ -55,7 +55,7 @@
                             <!-- //.legend -->
 
                             <div class="chart clearfix">
-                                {% for strength in strengthdata.area %}
+                                {% for strength in strengthdata.area limit:5 %}
                                 <div class="item">
                                     <div class="bar">
                                         <span class="percent">{{ strength.percentage }}</span>

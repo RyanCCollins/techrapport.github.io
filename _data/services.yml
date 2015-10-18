@@ -25,4 +25,4 @@ services:
   - title: "Consulting"
     key: 4
     icon: "icon-Consulting"
-    description: "We offer a wide range of IT consulting services.  [Contact us](#contact) now to talk about what we can do to help your business excel."
+    description: "We offer a wide range of IT consulting services.  Contact us now to talk about what we can do to help your business excel."
