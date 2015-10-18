@@ -1,6 +1,6 @@
 ---
-header: Swift Connection Blog
-subheader: "A blog about Tech Rapport's Swift Development"
+header: Tech Rapport
+subheader: What's New
 layout: blog
 permalink: /blog/index.html
 description: blog
@@ -26,11 +26,11 @@ copyright: "Tech Rapport"
                     by <a href="index.php">{{ page.copyright }}</a>
                 </p>
                 <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: "%d %B %Y" }}</p>
-                
+                <hr>
                 {% if post.image %}
                 <img class="img-responsive" src="{{ post.image }}" alt="">
-                {% endif %}
                 <hr>
+                {% endif %}
                 <p>
                   {{ post.excerpt }}
                 </p>
