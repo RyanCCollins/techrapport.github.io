@@ -1,5 +1,6 @@
 ---
-title: Swift Connection Blog
+header: Swift Connection Blog
+subheader: "A blog about Tech Rapport's Swift Development"
 layout: blog
 permalink: /blog/index.html
 description: blog
@@ -13,7 +14,7 @@ copyright: "Tech Rapport"
             <div class="col-md-8">
                 
                 <h1 class="page-header">
-                    {{ page.title}}
+                    {{ page.header }}
                     <small>{{ page.subheader }}</small>
                 </h1>
                 {% for post in site.posts limit:3 %}
@@ -26,7 +27,7 @@ copyright: "Tech Rapport"
                 </p>
                 <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: "%d %B %Y" }}</p>
                 <hr>
-                <img class="img-responsive" {% if post.image %} src="{{ post.image }}"{% else %}"http://placehold.it/900x300"{% endif %} alt="">
+                <img class="img-responsive" {% if post.image %} src="{{ post.image }}"{% else %}src="http://placehold.it/900x300"{% endif %} alt="">
                 <hr>
                 <p>
                   {{ post.excerpt }}
