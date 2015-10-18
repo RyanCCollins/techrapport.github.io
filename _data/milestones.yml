@@ -20,9 +20,9 @@ milestones:
     numInterval: 10
     numString: "78"
     icon: "icon-Check"
-  - title: "Happy Clients"
-    numFrom: 5
-    numTo: 36
-    numString: "36"
-    numInterval: 5
+  - title: "Lines of Code (on GitHub)"
+    numFrom: 10
+    numTo: 17,342
+    numString: "17,342"
+    numInterval: 100
     icon: "icon-Smile"
