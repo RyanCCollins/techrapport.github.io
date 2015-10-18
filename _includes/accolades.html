@@ -10,7 +10,7 @@
                         </h2>
 
                         <p class="section-subtitle">
-                            {{ accoladedata.subheader }}
+                            {{ accoladedata.sub_header }}
                         </p>
 
                         <span class="divider center"></span>
@@ -24,7 +24,7 @@
 
                         <!-- ACCOLADES START -->
                         <div class="accolades">
-                            {% for accolade in accoladedata | sort: 'key' %}
+                            {% for accolade in accoladedata.accolades %}
                             <div class="item">
                                 <i class="{{ accolade.icon }}"></i>
 
