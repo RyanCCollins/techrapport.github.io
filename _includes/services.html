@@ -1,13 +1,16 @@
+   {% assign servicedata = site.data.services | sort: key %}
    <!-- SERVICES SECTION START -->
     <section id="services" class="section">
         <div class="container section-wrapper">
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
-                        <h2 class="section-title uppercase">What I'm Doing</h2>
+                        <h2 class="section-title uppercase">
+                            {{ servicedata.header }}
+                        </h2>
 
                         <p class="section-subtitle">
-                            I love what I do. I take great pride in what I do. And I can't do something halfway, three-quarters, nine-tenths. If I'm going to do something, I go all the way.
+                            {{ servicedata.subheader }}
                         </p>
 
                         <span class="divider center"></span>
@@ -19,19 +22,19 @@
                 <!-- SERVICES START -->
                 <div class="services">
                     <div class="row">
-                        {% for service in site.services %}
+                        {% for service in servicedata %}
                         {% if service.index % 2 == 0 %}
                         <div class="col-sm-4 col-md-4 item top dark-bg match-height">
                         {% else %}
                         <div class="col-sm-4 col-md-4 item top match-height">
                         {% endif %}
                             <div class="inner-content">
-                                <i class="{{ service.icon-class }} colored-text"></i>
+                                <i class="{{ service.icon }} colored-text"></i>
 
                                 <h4 class="uppercase">{{ forloop.index }}. {{ service.title }}</h4>
 
                                 <p class="text-grey">
-                                    {{ service.content }}
+                                    {{ service.description }}
                                 </p>
                             </div>
                             <!-- //.inner-content -->

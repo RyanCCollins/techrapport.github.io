@@ -25,28 +25,30 @@
                         <!-- COLUMN CHART START -->
                         <div class="column-chart">
                             <div class="legend legend-left hidden-xs">
-                                <h3 class="legend-title">ME</h3>
+                                <h3 class="legend-title">
+                                    {{ strengthdata.yindex }}
+                                </h3>
                             </div>
                             <!-- //.legend -->
 
                             <div class="legend legend-right hidden-xs">
                                 <div class="item">
-                                    <h4>Excellent!</h4>
+                                    <h4>{{ strengthdata.top }}</h4>
                                 </div>
                                 <!-- //.item -->
 
                                 <div class="item">
-                                    <h4>Pretty Great</h4>
+                                    <h4>{{ strengthdata.midtop }}</h4>
                                 </div>
                                 <!-- //.item -->
 
                                 <div class="item">
-                                    <h4>Getting there</h4>
+                                    <h4>{{ strengthdata.midbot }}</h4>
                                 </div>
                                 <!-- //.item -->
 
                                 <div class="item">
-                                    <h4>New</h4>
+                                    <h4>{{ strengthdata.bot }}</h4>
                                 </div>
                                 <!-- //.item -->
                             </div>

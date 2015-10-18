@@ -1,0 +1,23 @@
+header: "Accolades"
+sub-header: "The accolades, just like the scrapes and bruises, fade in the end, and all you're left with is your ambition. - Nicole Krauss"
+
+accolades:
+  - title: "Award 1"
+    key: 0
+    icon: icon-Twitter
+    description: "Won award."
+  - title: "Award 2"
+    key: 1
+    icon: icon-Trophy
+    description: "Won award."
+    key: 2
+    icon: icon-Brush
+    description: "Award!"
+  - title: "Award 3"
+    key: 3
+    icon: "icon-Funky"
+    description: "Won another award."
+  - title: "Best Looking"
+    key: 4
+    icon: icon-Sun
+    description: "Voted best looking AND best dressed in middle school."

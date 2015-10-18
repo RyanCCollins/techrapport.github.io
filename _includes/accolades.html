@@ -1,0 +1,58 @@
+    {% assign accoladedata = site.data.accolades | sort: key %}
+    <!-- ACCOLADES SECTION START -->
+    <section id="accolades" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">
+                            {{ accoladedata.header }}
+                        </h2>
+
+                        <p class="section-subtitle">
+                            {{ accoladedata.subheader }}
+                        </p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+
+                        <!-- ACCOLADES START -->
+                        <div class="accolades">
+                            {% for accolade in accoladedata | sort: 'key' %}
+                            <div class="item">
+                                <i class="{{ accolade.icon }}"></i>
+
+                                <div class="content">
+                                    <h3>{{ accolade.title }}</h3>
+
+                                    <p class="text-grey">
+                                        {{ accolade.description }}
+                                    </p>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+                            {% endfor %}
+                        </div>
+                        <!-- //ACCOLADES END -->
+
+                        <div class="bookmark text-grey text-center">
+                            <i class="icon-Bookmark"></i>
+                        </div>
+                        <!-- //.bookmark -->
+                    </div>
+                    <!-- //.col-md-6 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //ACCOLADES SECTION END -->

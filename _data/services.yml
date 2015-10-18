@@ -1,0 +1,28 @@
+header: Our Services
+subheader: "FILL IN PLEASE"
+
+services:
+  - title: Web Development and Design
+    key: 0
+    icon: icon-Wifi
+    description: "Create beautiful websites and expand your web presence.  We can help you create websites and web applications that users will love to visit and use.  We can help you plan your website from the ground up or we can help you to redesign your website using the latest and greatest technologies."
+  - title: Software Implementation
+    key: 5
+    icon: icon-Calendar-4
+    description: "Professional software implementation tailored to your business needs.  Stay on track and deliver amazing software to your clients with professional software project planning and implementation."
+  - title: "Mobile Software"
+    key: 1
+    icon: icon-Phone-SMS
+    description: "Want to reach your customers, anywhere at any time?  There's an app for that. Contact us for custom designed mobile software tailored to meet your business needs and available on all mobile platforms."
+  - title: "Data Science & Architecture"
+    key: 3
+    icon: "icon-Big-Data"
+    description: "Let us help your business harness the power of big data.  We can help you design and implement scalable data sciences, utilize the world's most powerful APIs and help you use your data to its full potential."
+  - title: "SEO and Social Media"
+    key: 2
+    icon: icon-Cloud-Email
+    description: "We can help you to implement professional Search Engine Optimization, advertise on the world’s leading mobile and web platforms, utilize social networking and more!  Give your business the edge it needs to thrive."
+  - title: Consulting
+    key: 4
+    icon: icon-Consulting
+    description: "We offer a wide range of IT consulting services.  [Contact us](#contact) now to talk about what we can do to help your business excel."
