@@ -1,8 +1,23 @@
-header: "Milestones Acheived"
-subtitle: "My path has not been determined. I shall have more experiences and pass many more milestones."
+header: "Contact Us"
+subheader: "Have a project you'd like to discuss?"
 
-cups-of-coffee: 3000
-hours: 5600
-projects: 412
-clients: 200
+button_message: "Send Email"
 
+services:
+  - service: "Consulting"
+    forlabel: "consulting"
+  - service: "App Development"
+    forlabel: "app-development"
+  - service: "Web Design"
+    forlabel: "web-design"
+  - service: "Data Services"
+    forlabel: "data-services"
+  - service: "Other"
+    forlabel: "Other"
+
+email_subject:
+  - subject: "I have a project for Tech Rapport"
+  - subject: "Let's collaborate"
+  - subject: "I would like to invite Tech Rapport to an event"
+  - subject: "Commend us on a job well done"
+  - subject: "Other"
