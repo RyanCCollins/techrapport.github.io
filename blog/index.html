@@ -3,6 +3,7 @@ title: Swift Connection Blog
 layout: blog
 permalink: /blog/index.html
 description: blog
+copyright: "Tech Rapport"
 ---
 <div class="container">
 
@@ -12,20 +13,20 @@ description: blog
             <div class="col-md-8">
                 
                 <h1 class="page-header">
-                    {{ blog_name }}
-                    <small>{{ blog_subheader }}</small>
+                    {{ page.title}}
+                    <small>{{ page.subheader }}</small>
                 </h1>
-                {% for post in site.posts limit:1 %}
+                {% for post in site.posts limit:3 %}
                 <!-- First Blog Post -->
                 <h2>
                     <a href="#">{{ post.title }}</a>
                 </h2>
                 <p class="lead">
-                    by <a href="index.php">{{ copyright }}</a>
+                    by <a href="index.php">{{ page.copyright }}</a>
                 </p>
                 <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: "%d %B %Y" }}</p>
                 <hr>
-                <img class="img-responsive" {% if post.image != blank %} src="{{ post.image }}"{% else %}"http://placehold.it/900x300"{% endif %} alt="">
+                <img class="img-responsive" {% if post.image %} src="{{ post.image }}"{% else %}"http://placehold.it/900x300"{% endif %} alt="">
                 <hr>
                 <p>
                   {{ post.excerpt }}
