@@ -17,7 +17,7 @@ copyright: "Tech Rapport"
                     {{ page.header }}
                     <small>{{ page.subheader }}</small>
                 </h1>
-                {% for post in site.posts limit:3 %}
+                {% for post in paginator.post %}
                 <!-- First Blog Post -->
                 <h2>
                     <a href="#">{{ post.title }}</a>
@@ -42,10 +42,14 @@ copyright: "Tech Rapport"
                 <!-- Pager -->
                 <ul class="pager">
                     <li class="previous">
-                        <a href="#">&larr; Older</a>
+                    {% if paginator.previous_page %}
+                        <a href="{{ paginator.previous_page_path }}">&larr; Older</a>
+                    {% endif %}
                     </li>
                     <li class="next">
-                        <a href="#">Newer &rarr;</a>
+                    {% if paginator.next_page %}
+                        <a href="{{ paginator.next_page_path}}">Newer &rarr;</a>
+                    {% endif %}
                     </li>
                 </ul>
 
