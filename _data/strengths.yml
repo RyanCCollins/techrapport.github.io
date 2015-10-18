@@ -1,14 +1,15 @@
 title: "My Strengths"
-subtitle: "Failure will never overtake me if my determination to succeed is strong enough."
+subtitle: "Strength does not come from physical capacity. It comes from an indomitable will.
+-Mahatma Gandhi"
 
 area:
   - areatitle: "Work Ethic"
     percentage: 100
   - areatitle: "Adaptability"
-    category: 75
+    percentage: 75
   - areatitle: "Passion"
     percentage: 89
   - areatitle: "Ingenuity"
-    category: 83
+    percentage: 83
   - areatitle: "Design"
     percentage: 91

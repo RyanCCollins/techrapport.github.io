@@ -1,0 +1,26 @@
+title: "My Resume"
+subtitle: "If you call failures experiments, you can put them in your resume and claim them as achievements."
+
+sectiontitle: "Word Experience"
+years: "2008 - Present"
+
+jobs:
+  - name: "Tech Rapport"
+    jobtitle: "Chief Technical Officer"
+    dates: "2015 - Present"
+    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    key: 0
+  - name: "Job 2"
+    jobtitle: "Software Engineer"
+    dates: "2011-2015"
+    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. "
+    key: 1
+  - name: "Job 3"
+    jobtitle: "Data Scientist"
+    dates: "2009-2011"
+    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. "
+    key: 2
+  - name: "Bose Corporation"
+    jobtitle: "Technical Support Engineer"
+    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. "
+    key: 3
