@@ -26,8 +26,10 @@ copyright: "Tech Rapport"
                     by <a href="index.php">{{ page.copyright }}</a>
                 </p>
                 <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: "%d %B %Y" }}</p>
-                <hr>
-                <img class="img-responsive" {% if post.image %} src="{{ post.image }}"{% else %}src="http://placehold.it/900x300"{% endif %} alt="">
+                
+                {% if post.image %}
+                <img class="img-responsive" src="{{ post.image }}" alt="">
+                {% endif %}
                 <hr>
                 <p>
                   {{ post.excerpt }}
