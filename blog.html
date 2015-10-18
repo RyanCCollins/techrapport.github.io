@@ -1,3 +1,4 @@
+ 
   <!-- BLOG SECTION START -->
     <section id="blog" class="section">
         <div class="container section-wrapper">
@@ -15,7 +16,7 @@
                 <!-- //.row -->
                 
                 <!-- BLOG POST START -->
-                {% for post in site.posts limit:4 %}
+                {% for post in site.posts %}
                 <div class="row">
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
@@ -26,12 +27,12 @@
 
                             <div class="post-meta match-height">
                                 <span class="date">
-                                    <span class="day">{{ post.date | date: '%d' }}</span> {{post.date | date: '%y' }}
+                                    <span class="day">4{{ post.date | date: '%d' }}</span> sep{{ post.date | date: '%y' }}
                                 </span>
 
                                 <div class="post-title">
                                     <h4>
-                                        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                                        <a href="{{ site.baseurl }}{{ post.url }}">Title{{ post.title }}</a>
                                     </h4>
                                 </div>
                                 <!-- //.post-title -->

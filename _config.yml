@@ -1,6 +1,5 @@
 collections:
-- services
-- strengths
+- posts
 - projects
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
