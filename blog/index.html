@@ -15,7 +15,7 @@ description: blog
                     {{ blog_name }}
                     <small>{{ blog_subheader }}</small>
                 </h1>
-                {% for post in site.posts limit:4 %}
+                {% for post in site.posts limit:1 %}
                 <!-- First Blog Post -->
                 <h2>
                     <a href="#">{{ post.title }}</a>
@@ -32,7 +32,7 @@ description: blog
                 </p>
                 <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-                <hr>
+                
                 {% endfor %}
 
                 <!-- Pager -->
