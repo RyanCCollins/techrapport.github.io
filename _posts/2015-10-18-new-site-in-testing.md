@@ -2,7 +2,7 @@
 layout: post
 title: "Swift Blogging"
 published: true
-category: swift
+author: Tech Rapport
 imagepath: /assets/images/blog/blog-image-1.jpg
 ---
 

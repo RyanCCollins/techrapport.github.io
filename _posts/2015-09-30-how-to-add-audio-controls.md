@@ -2,7 +2,7 @@
 layout: post
 title: How would I add Audio Controls to an iOS App in Swift
 tags: "ios, ios development, software, iphone, ipad, swift, code"
-category: swift
+author: Tech Rapport
 published: false
 imagepath: /assets/images/blog/blog-image-1.jpg
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Swift Extensions Demystified"
-tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
-category: swift
+author: Tech Rapport
 imagepath: /assets/images/blog/blog-image-1.jpg
 ---
 

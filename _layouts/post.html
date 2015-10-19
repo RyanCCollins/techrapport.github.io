@@ -1,17 +1,40 @@
 ---
 layout: default
 ---
-
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
 </article>
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>{{ page.title }}</h1>
+
+                <!-- Author -->
+                <p class="lead">
+                    by <a href="#">{{ page.author }}</a>
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ page.date | date: "%B %e, %Y" }}</p>
+
+                {% if page.image %}
+                <hr>
+
+                <img class="img-responsive" src="{{site.baseurl}}{{ page.image }}" alt="">
+
+                <hr>
+                {% endif %}
+                <!-- Post Content -->
+                <p class="lead">
+                {% include blog-well.html %}
+                	{{ contect }}
+                	
+                </p>
+
+                
+
+                {% include disqus.html %}

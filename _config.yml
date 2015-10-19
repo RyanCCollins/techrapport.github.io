@@ -3,7 +3,7 @@ collections:
 - projects
 
 paginate: 5
-paginate_path: "/blog/page:num"
+paginate_path: "/blog/page:num/"
 
 blog_name: "Swift Connection"
 blog_subheader: "A Swift Blog brought to you by TechRapport.com"
