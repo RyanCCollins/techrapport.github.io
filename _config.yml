@@ -1,43 +1,72 @@
-collections:
-- posts
-- projects
-
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
-      path: ""
-      layout: "post"
-      author: "Tech Rapport"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-      author: "Tech Rapport"
-
 author: "Tech Rapport"
-
-paginate: 4
-paginate_path: "/blog/page:num/"
-
+blog_image_path: /assets/images/blog/
 blog_name: "Swift Connection"
 blog_subheader: "A Swift Blog brought to you by TechRapport.com"
-blog_image_path: "/assets/images/blog/"
-
+collections: 
+  - posts
+  - projects
 copyright: "Tech Rapport"
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
+defaults: 
+  - 
+    scope: 
+      path: ""
+      type: posts
+    values: 
+      author: "Tech Rapport"
+      layout: post
+      path: ""
+  - 
+    scope: 
+      path: ""
+      type: pages
+    values: 
+      author: "Tech Rapport"
+      layout: page
 disqus: techrapportcom
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-68833574-1
+footerlinks: 
+  - 
+    iclass: "fa fa-send-o"
+    title: Email
+    url: "mailto:"
+    username: info@techrapport.com
+  - 
+    iclass: "fa fa-github"
+    title: GitHub
+    url: "https://github.com/"
+    username: techrapport
+  - 
+    iclass: "fa fa-linkedin"
+    title: linkedin
+    url: "https://www.linkedin.com/in/"
+    username: techrapport
+  - 
+    iclass: "fa fa-stack-overflow"
+    title: linkedin
+    url: "https://www.stackoverflow.com/"
+    username: techrapport
+  - 
+    iclass: "fa fa-twitter"
+    title: Twitter
+    url: "https://www.twitter.com/"
+    username: techrapport
+  - 
+    iclass: "fa fa-google-plus"
+    title: techrapport
+    url: "https://plus.google.com/"
+    username: "101168809038593931433/"# anything in your profile username that comes after plus.google.com/
+  - 
+    iclass: "fa fa-youtube"
+    title: techrapport 
+    url: "https://youtube.com/"
+    username: "channel/UC2iYWXVQlPa76aQlADYocow/"
+  -
+    iclass: "fa fa-rss"
+    title: feed.xml
+    url: "{{ site.baseurl }}"
+    username: "feed.xml"
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: http://techrapport.com
+google_analytics: UA-68833574-1
+paginate: 4
+paginate_path: "/blog/page:num/"
+url: "http://techrapport.com"

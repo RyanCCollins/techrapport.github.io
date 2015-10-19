@@ -22,6 +22,7 @@ copyright: Tech Rapport - all rights reserved
     {% endif %}
     </title>
     
+    {% include meta.html %}
     <meta name="description" content="Tech Rapport, Creative Software Development">
     <meta name="keywords" content="Tech Rapport, creative, resume">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -87,7 +88,7 @@ copyright: Tech Rapport - all rights reserved
                 <div class="col-md-12">
                     <div class="copyright text-center">
                         <p class="text-grey">
-                            &copy; {{ date: "%Y" }} {{ page.copyright }}
+                            &copy; {{ date: "%Y" }} {{ site.author }}
                         </p>
                     </div>
                     <!-- //.copyright -->

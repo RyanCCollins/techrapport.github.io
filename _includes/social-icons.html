@@ -1,17 +1,11 @@
 
                     <ul class="list-inline social-icons">
-                        {% for icon in site.data.footerlinks %}
+                        {% for icon in site.footerlinks %}
                         <li>
                             <div class="item">
-                                <a href="{{ icon.url }}{{ icon.username }}" target="{{ footer-link.url }}"><i class="{{ footer-link.iclass }}"></i></a>
+                                <a href="{{ icon.url }}{{ icon.username }}" target="{{ icon.url }}"><i class="{{ icon.iclass }}"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
                         {% endfor %}
-                        
-                        <li>
-                            <div class="item"></div>
-                                <a href="{{ site.baseurl }}/feed.xml"><i class="svg-icon rss"></i></a>
-                            </div>
-                        </li>
                     </ul>
