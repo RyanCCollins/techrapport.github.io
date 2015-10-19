@@ -17,25 +17,26 @@ copyright: "Tech Rapport"
                     {{ page.header }}
                     <small>{{ page.subheader }}</small>
                 </h1>
-                {% for post in paginator.post %}
+                {% for post in paginator.posts %}
                 <!-- First Blog Post -->
                 <h2>
-                    <a href="#">{{ post.title }}</a>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
                 </h2>
                 <p class="lead">
                     by <a href="index.php">{{ page.copyright }}</a>
                 </p>
                 <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: "%d %B %Y" }}</p>
-                <hr>
+
                 {% if post.image %}
+                <hr>
                 <img class="img-responsive" src="{{ post.image }}" alt="">
                 <hr>
                 {% endif %}
                 <p>
                   {{ post.excerpt }}
                 </p>
-                <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
+                <a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <hr>
                 
                 {% endfor %}
 
