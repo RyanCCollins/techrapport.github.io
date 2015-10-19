@@ -21,10 +21,12 @@
                 
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
+                            {% if post.image %}
                             <div class="post-media">
-                                <img src="{{ site.baseurl }}{{ post.imagepath }}" class="img-responsive" alt=""/>
+                                <img src="{{ site.blog_image_path }}{{ post.image }}" class="img-responsive" alt=""/>
                             </div>
                             <!-- //.post-media -->
+                            {% endif %}
 
                             <div class="post-meta match-height">
                                 <span class="date">
@@ -49,7 +51,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="launch text-center">
-                            <a href="/blog-index.html" class="btn btn-lg btn-custom">See All Posts</a>
+                            <a href="/blog/" class="btn btn-lg btn-custom">See All Posts</a>
                         </div>
                         <!-- //.launch -->
                     </div>

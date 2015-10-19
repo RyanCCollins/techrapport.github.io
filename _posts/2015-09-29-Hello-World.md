@@ -3,7 +3,8 @@ layout: post
 title: "Swift Blogging"
 author: "Tech Rapport"
 published: true
-imagepath: /assets/images/blog/blog-image-1.jpg
+image_square: blog-image-1.jpg
+image: blog-place_rect.png
 ---
 
 ## Hello World!

@@ -1,10 +1,9 @@
 ---
-layout: post
 title: How would I add Audio Controls to an iOS App in Swift
 tags: "ios, ios development, software, iphone, ipad, swift, code"
-author: Tech Rapport
 published: false
-imagepath: /assets/images/blog/blog-image-1.jpg
+image_square: blog-image-1.jpg
+image: blog-place_rect.png
 ---
 
 ### How would you let the Pitch Perfect app manipulate the playback volume, you ask?
@@ -30,15 +29,15 @@ Let's begin by adding the volume slider and label to our storyboard.
 
 Go to the Objects Library and search for "Slider" as shown below:
 
-![how-to-add-audio-controls.png]({{site.baseurl}}/assets/images/how-to-add-audio-controls.png)
+![how-to-add-audio-controls.png]({{ site.blog_image_path }}how-to-add-audio-controls.png)
 
 Open the Main.Storyboard file and double click on the PlaySoundsViewController to select it and zoom in on it.
  Select the UISlider object and drag it onto the storyboard above the Stop Button.  Apple's handy dashed blue lines will help you to position the slider at an appropriate position.  While dragging the slider, position it to be centered Horizontally and drop it when you see the blue guide lines as shown below:
 
-![how-to-add-audio-controls-1.png]({{site.baseurl}}/assets/images/how-to-add-audio-controls-1.png)
+![how-to-add-audio-controls-1.png]({{ site.blog_image_path }}how-to-add-audio-controls-1.png)
 
  Next, resize the slider so that it is aligned to the leading edge of our buttons on the left-hand side, and to the trailing edge of the buttons on the right-hand side:
 
-![how-to-add-audio-controls-2.png]({{site.baseurl}}/assets/images/Uhow-to-add-audio-controls-2.png)
+![how-to-add-audio-controls-2.png]({{ site.blog_image_path }}how-to-add-audio-controls-2.png)
 
 I won't go through all of the steps of adding constraints, but here is a great link if you are interested: 

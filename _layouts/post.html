@@ -9,7 +9,7 @@ layout: blog
 
                 <!-- Author -->
                 <p class="lead">
-                    by <a href="#">{{ page.author }}</a>
+                    by <a href="{{site.baseurl }}/#profile">{{ page.author }}</a>
                 </p>
 
                 <hr>
@@ -20,15 +20,13 @@ layout: blog
                 {% if page.image %}
                 <hr>
 
-                <img class="img-responsive" src="{{site.baseurl}}{{ page.image }}" alt="">
+                <img class="img-responsive" src="{{ site.blog_image_path }}{{ page.image }}" alt="">
 
                 <hr>
                 {% endif %}
                 <!-- Post Content -->
                 <p class="lead">
-                
                 	{{ content }}
-                	
                 </p>
               	<hr>
 

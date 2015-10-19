@@ -17,13 +17,13 @@ copyright: "Tech Rapport"
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </h2>
                 <p class="lead">
-                    by <a href="index.php">{{ page.copyright }}</a>
+                    by <a href="index.php">{{ post.author }}</a>
                 </p>
                 <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: "%d %B %Y" }}</p>
 
                 {% if post.image %}
                 <hr>
-                <img class="img-responsive" src="{{ post.image }}" alt="">
+                <img class="img-responsive" src="{{ site.blog_image_path }}{{ post.image }}" alt="">
                 <hr>
                 {% endif %}
                 <p>

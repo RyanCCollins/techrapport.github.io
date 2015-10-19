@@ -1,11 +1,13 @@
 ---
-layout: post
-title: "Swift Blogging"
+title: "New Website in Testing"
 published: true
-author: Tech Rapport
-imagepath: /assets/images/blog/blog-image-1.jpg
+tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
+image_square: blog-image-1.jpg
+image: blog-place_rect.png
 ---
 
-## Hello World!
+## New site coming soon!
 
-This site was made specifically to share my journey through iOS development.  Stay tuned to learn more about this exciting journey!
+Hey folks,
+
+At Tech Rapport, we are happy to announce that we are putting the finishing touches on a brand new website!  We hope that you like it and we look forward to its release, which is scheduled to be on October 23rd, 2015.  We will have an all new admin area to keep track of user accounts, statistics, etc. and we will have a whole new design for you!

@@ -1,10 +1,9 @@
 ---
-layout: post
 title: "NSNotifications; what are they good for?"
 tags: "ios, ios development, software, iphone, ipad, swift, code"
 published: true
-imagepath: /assets/images/blog/blog-image-1.jpg
-author: Tech Rapport
+image_square: blog-image-1.jpg
+image: blog-place_rect.png
 ---
 
 ##A quick look at NSNotifications
