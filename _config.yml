@@ -63,7 +63,7 @@ footerlinks:
   -
     iclass: "fa fa-rss"
     title: feed.xml
-    url: "{{ site.baseurl }}"
+    url: 
     username: "feed.xml"
 
 google_analytics: UA-68833574-1
