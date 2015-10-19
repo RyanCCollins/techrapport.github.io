@@ -4,7 +4,7 @@ title: How would I add Audio Controls to an iOS App in Swift
 tags: "ios, ios development, software, iphone, ipad, swift, code"
 category: swift
 published: false
-imagepath: /assets/images/blog/blog-image-1.jpg
+image: /assets/images/blog/blog-image-1.jpg
 ---
 
 ### How would you let the Pitch Perfect app manipulate the playback volume, you ask?
