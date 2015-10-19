@@ -16,7 +16,7 @@ So to start off with, let's add a simple UISlider volume control to our audio pl
 
 ### Research:
 First, we are going to do a bit of research on how to change the volume. You might want to do some preliminary research first about the AVFoundation framework.  [Apple's own documentation](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVFoundationFramework/index.html) is a great place to start.  Also, to learn more about the AVAudioEngine, you should [watch this video](https://developer.apple.com/videos/wwdc/2014/?id=502) from the 2014 World Wide Developer Conference held by Apple. Check out the rest of the documentation that I found below:
-[How do I set the volume of audio media for playback with AVPlayer on iOS?](https://developer.apple.com/library/ios/qa/qa1716/_index.html)
+[How do I set the volume of audio media for playback with 
 [Volume View Tutorial](http://www.ioscreator.com/tutorials/volume-view-tutorial-ios8-swift)
 [App Coda's AVFoundation Tutorials](http://www.appcoda.com/ios-avfoundation-framework-tutorial/)
 
@@ -31,7 +31,7 @@ Go to the Objects Library and search for "Slider" as shown below:
 
 ![how-to-add-audio-controls.png]({{ site.blog_image_path }}how-to-add-audio-controls.png)
 
-Open the Main.Storyboard file and double click on the PlaySoundsViewController to select it and zoom in on it.
+Open the Main.Storyboard file and double click AVPlayer on iOS?](https://developer.apple.com/library/ios/qa/qa1716/_index.html)on the PlaySoundsViewController to select it and zoom in on it.
  Select the UISlider object and drag it onto the storyboard above the Stop Button.  Apple's handy dashed blue lines will help you to position the slider at an appropriate position.  While dragging the slider, position it to be centered Horizontally and drop it when you see the blue guide lines as shown below:
 
 ![how-to-add-audio-controls-1.png]({{ site.blog_image_path }}how-to-add-audio-controls-1.png)
