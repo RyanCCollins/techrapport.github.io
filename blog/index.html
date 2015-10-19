@@ -6,12 +6,6 @@ layout: blog
 description: blog
 copyright: "Tech Rapport"
 ---
-<div class="container">
-
-        <div class="row">
-
-            <!-- Blog Entries Column -->
-            <div class="col-md-8">
                 
                 <h1 class="page-header">
                     {{ page.header }}
@@ -36,22 +30,30 @@ copyright: "Tech Rapport"
                   {{ post.excerpt }}
                 </p>
                 <a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+
                 <hr>
                 
                 {% endfor %}
-
+                
                 <!-- Pager -->
                 <ul class="pager">
                     <li class="previous">
-                    {% if paginator.previous_page %}
-                        <a href="{{ paginator.previous_page_path }}">&larr; Older</a>
+                    {% if paginator.next_page %}
+                        <a href="{{ paginator.next_page_path }}">&larr; Older</a>
                     {% endif %}
                     </li>
                     <li class="next">
-                    {% if paginator.next_page %}
-                        <a href="{{ paginator.next_page_path}}">Newer &rarr;</a>
+                    {% if paginator.previous_page %}
+                        <a href="{{ paginator.previous_page_path}}">Newer &rarr;</a>
                     {% endif %}
                     </li>
                 </ul>
 
-            </div>
+                    <!-- jQuery -->
+    <script src="{{ site.baseurl }}/assets/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+
+            
+

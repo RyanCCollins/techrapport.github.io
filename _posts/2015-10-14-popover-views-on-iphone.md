@@ -25,16 +25,16 @@ For this project, I will demonstrate how I went about incorporating a color pick
 
 Here you can see the main view controller that will be presenting the popover views:
 
-![Screen Shot 2015-10-14 at 4.27.59 PM.png]({{site.baseurl}}/images/Screen Shot 2015-10-14 at 4.27.59 PM.png)
+![Screen Shot 2015-10-14 at 4.27.59 PM.png]({{site.baseurl}}/assets/images/Screen Shot 2015-10-14 at 4.27.59 PM.png)
 
 ###Setting up the Storyboard
 To start, create a bar button item, or button, on your main view controller.  Next, create a view and set it up so that it will use a preferred explicit size.  To do this, go to the _Attributes Inspector_, set the Size to _Freeform_, the _Status Bar_ to _None_, and check off the _Use Prefered Explicit Size_ check box.  For this example, I set the content size to be 300x300. 
 
-![Screen Shot 2015-10-14 at 4.31.51 PM.png]({{site.baseurl}}/images/Screen Shot 2015-10-14 at 4.31.51 PM.png)
+![Screen Shot 2015-10-14 at 4.31.51 PM.png]({{site.baseurl}}/assets/images/Screen Shot 2015-10-14 at 4.31.51 PM.png)
  
  Next, in the _Size Inspector_, once again select _Freeform_ and set the size to 300 x300.
  
-![Screen Shot 2015-10-14 at 4.34.09 PM.png]({{site.baseurl}}/images/Screen Shot 2015-10-14 at 4.34.09 PM.png)
+![Screen Shot 2015-10-14 at 4.34.09 PM.png]({{site.baseurl}}/assets/images/Screen Shot 2015-10-14 at 4.34.09 PM.png)
 
 For my example, I am going to show you how I added a UISlider to the view to set the font size.  I won't go into exactly how the views communicate with one another, but the basic idea is that there is a FontAttributes struct that stores the font data for each Meme.  Abstracting it this way helps us to stick to MVC and it makes the implementation of the view and controls much more flexible.  Each view gets passed a copy of the FontAttributes Model object.
 
@@ -42,11 +42,11 @@ Okay, now that we have that out of the way and we've added our UISlider, let's t
 
 First of all, in the Storyboard, control-click your button and drag it to the view that you would like to present modally. From the _Active Segue_ menu, select "Popover Presentation".
 
-![Screen Shot 2015-10-14 at 4.40.27 PM.png]({{site.baseurl}}/images/Screen Shot 2015-10-14 at 4.40.27 PM.png)
+![Screen Shot 2015-10-14 at 4.40.27 PM.png]({{site.baseurl}}/assets/images/Screen Shot 2015-10-14 at 4.40.27 PM.png)
 
 Next, select your newly created Segue by clicking the arrow that just appeared between the Main View and the Font Popover View and set the _StoryBoard Identifier_ field in the _Attributes Inspector_ to: "fontPopoverSegue".  You don't need to change anything else here, but I suggest you play around with the various settings.
 
-![Screen Shot 2015-10-14 at 4.43.52 PM.png]({{site.baseurl}}/images/Screen Shot 2015-10-14 at 4.43.52 PM.png)
+![Screen Shot 2015-10-14 at 4.43.52 PM.png]({{site.baseurl}}/assets/images/Screen Shot 2015-10-14 at 4.43.52 PM.png)
 
 ###Setting up the Presenting View Controller
 Within your main view controller class file, you will need to do the following:
@@ -116,6 +116,6 @@ In my case, I wanted the view to update the size and type of the font of the tex
     }
 
 Please take a look at my app in action in the following video: [Meme Maker Beta Test Flight](https://www.youtube.com/watch?v=2aUd8Y6TG0E)  You can also take a look at the images below and checkout my Meme Maker code here: [github.com/TechRapport/Meme-Me](https://github.com/TechRapport/Meme-Me)
-![bd721c87281c1eb293577962544ab57d1f4c8ca3.png]({{site.baseurl}}/images/bd721c87281c1eb293577962544ab57d1f4c8ca3.png) [9957fac4b23ef18266ca48437116a1c390b1b41a.png]({{site.baseurl}}/images/9957fac4b23ef18266ca48437116a1c390b1b41a.png)
+![bd721c87281c1eb293577962544ab57d1f4c8ca3.png]({{site.baseurl}}/images/bd721c87281c1eb293577962544ab57d1f4c8ca3.png) [9957fac4b23ef18266ca48437116a1c390b1b41a.png]({{site.baseurl}}/assets/images/9957fac4b23ef18266ca48437116a1c390b1b41a.png)
 
 Please feel free to leave me some comments if you got tripped up, or if you liked this guide and thanks for visiting
