@@ -8,3 +8,5 @@ Gemfile.lock
 node_modules
 package.json
 _includes/svg-icons.html
+techrapport.sublime-project
+techrapport.sublime-workspace
