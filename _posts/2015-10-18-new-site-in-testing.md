@@ -1,6 +1,7 @@
 ---
 title: "New Website in Testing - Tech Rapport Blog"
 description: "Tech Rapport's Blog - New Website in Testing."
+category: "Tech Rapport"
 published: true
 tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
 image_square: blog-image-1.jpg
