@@ -1,13 +1,14 @@
 ---
-title: Popover Views on the iPhone
+title: "Popover Views on the iPhone - Tech Rapport Blog"
+description: "Tech Rapport's Blog - Using Popover Views on the iPhone - UIPopover Views on the iPhone"
 published: true
 tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
 image_square: blog-image-1.jpg
 image: blog-place_rect.png
 ---
 
-
 ##UIPopoverController in Action
+###How to use UIPopover Views on the iPhone and why I think they are great
 
 With the expansion of screen size and resolution on the iOS platform, we as developers have to adapt our applications to make use of the amazing screens that we carry in our pockets.  
 

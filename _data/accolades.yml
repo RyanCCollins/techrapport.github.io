@@ -14,7 +14,11 @@ accolades:
     key: 3
     icon: "icon-Windows-Microsoft"
     description: "Certification completed in 2014"
-  - title: "Best Looking"
+  - title: "Google SEO & Analytics Training"
     key: 4
+    icon: icon-Google
+    description: "Extensive training in Google Search Engine Optimization and Analytics"
+  - title: "Best Looking"
+    key: 5
     icon: icon-Sun
     description: "Voted best looking AND best dressed in middle school."

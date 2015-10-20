@@ -1,5 +1,6 @@
 ---
-title: "Swift Extensions Demystified"
+title: "Swift Extensions Demystified - Tech Rapport Blog"
+description: "Tech Rapport - Swift Class Extensions Demystified - Cocoa Touch Programming & Development"
 tags: "ios, ios development, software, iphone, ipad, swift, code"
 published: true
 image_square: blog-image-1.jpg
