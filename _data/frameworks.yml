@@ -1,0 +1,16 @@
+title: "Frameworks I use the Most"
+subtitle: 
+
+area:
+  - areatitle: "Cocoa & Cocoa Touch"
+    percentage: 96
+  - areatitle: "Ruby on Rails"
+    percentage: 88
+  - areatitle: "React.js"
+    percentage: 95
+  - areatitle: "AngularJS"
+    percentage: 79
+  - areatitle: "Bootstrap"
+    percentage: 93
+  - areatitle: "Android SDK"
+    percentage: 87
