@@ -25,6 +25,7 @@
                     <div class="col-sm-6 col-md-6">
                         <div class="bar-chart">
                         {% for skill in knowledge.area limit:6 %}
+
                             <div class="item">
                                 <h4 class="uppercase">{{ skill.areatitle }}</h4>
 
@@ -35,6 +36,17 @@
                                 <!-- //.bar -->
                             </div>
                             <!-- //.item -->
+
+                        {% if forloop.count / forloop.index == 2 %}
+                        
+                        {% else %}
+                        </div>
+                        <!-- //.bar-chart -->
+                    </div>
+                    <!-- //.col-md-6 -->
+                    <div class="col-sm-6 col-md-6">
+                        <div class="bar-chart">
+                    {% endif %}
                         {% endfor %}
                         </div>
                         <!-- //.bar-chart -->
@@ -49,5 +61,3 @@
         
     </section>
     <!-- //KNOWLEDGE SECTION END -->
-    
-    
