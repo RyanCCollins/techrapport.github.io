@@ -22,7 +22,7 @@
                 <!-- SERVICES START -->
                 <div class="services">
                     <div class="row">
-                        {% for service in servicedata.services %}
+                        {% for service in servicedata.services | sort:"key" %}
                         {% assign mod = forloop.index0 | mod: 3 %}
                         {% if mod >= 0 %}
                         <div class="col-sm-4 col-md-4 item top match-height">

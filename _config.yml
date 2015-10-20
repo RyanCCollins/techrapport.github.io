@@ -37,6 +37,9 @@ exclude:
     - README.md
     - CNAME
 
+description: "Tech Rapport, creative software, web design, marketing, SEO, and data architecture. At TechRapport, we believe that technology and business go hand-in-hand.  Work with us to create a better future for your business and generate rapport with your technology now."
+
+
 #Defaults
 defaults: 
   - 
@@ -47,6 +50,7 @@ defaults:
       author: "Tech Rapport"
       layout: post
       path: ""
+      permalink: /blog/:year/:month/:day/:title/
   - 
     scope: 
       path: ""
@@ -54,6 +58,14 @@ defaults:
     values: 
       author: "Tech Rapport"
       layout: page
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      author: "Tech Rapport"
+      layout: default
+
 markdown: redcarpet
 highlighter: pygments
 
