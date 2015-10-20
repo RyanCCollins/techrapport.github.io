@@ -1,27 +1,24 @@
-title: "My Resume"
-subtitle: "If you call failures experiments, you can put them in your resume and claim them as achievements."
+sectiontitle: "My Work Experience"
+years: "2007 - Present"
 
-sectiontitle: "My Education"
-years: "2005 - Present"
-
-schools:
-  - name: "Udacity"
-    category: "Nanodegree / Coding Bootcamp"
-    dates: "2015 - Present"
-    description: "This year, I set out on a goal - to learn a new language every year.  Having a strong background in mobile web development, I decided to firm up my understanding of Swift and iOS development by taking an extensive Nanodegree on the subject.  During this course, I have spent 30-40 hours per week developing for the iPhone/iPad in Swift."
+jobs:
+  - name: "Commonwealth of Massachusetts"
+    jobtitle: "Software & Data Systems Coordinator"
+    dates: "2012 - Present"
+    description: ""
     key: 0
-  - name: "UMass Boston"
-    category: "Master's Degree in Computer Science"
-    dates: "2014 - Present"
-    description: "I began my Master's degree in early 2014 while working full-time.  I expect to be finished in 2016."
+  - name: "Commonwealth of Massachusetts"
+    jobtitle: "Research Analyst"
+    dates: "May 2010 - May 2012"
+    description: "• Championed business process changes as lead business analyst for OEMS between project team and software vendor to convert all OEMS data systems into a web-based electronic licensing and data tracking system <br>•   Worked with MATRIS project team and OEMS Clinical Coordinator to integrate business logic into MATRIS to ensure an increased level of data accuracy and compliance <br>•   Created training materials and conducted over a dozen training seminars to increase Ambulance Service compliance with mandated MATRIS data submission <br>•   Wrote SQL logic based validation rules for 140 data elements, built electronic EMS run forms within Adobe ColdFusion, developed the National EMS Information Standard compliant data dictionary and configured security profiles for The Massachusetts Ambulance Trip Record Information System (MATRIS) <br>•   Wrote a software system in .NET to streamline the recertification of approximately 10,000 Emergency Medical Technicians per year <br>•   Designed and implemented the electronic EMT continuing education roster submission program, eliminating approximately 80% of the tens of thousands of hard-copy attendance rosters OEMS receives and tracks each year"
     key: 1
-  - name: "New England Institute of Art "
-    category: "Bachelors of Science"
-    dates: "2006-2009"
-    description: "At NEiA, I studied Engineering and received my degree with a 3.8 Cumulitive GPA."
+  - name: "Commonwealth of Massachusetts"
+    jobtitle: "Program Coordinator"
+    dates: "2009 - May 2010"
+    description: "• Appointed Lead Administrator of MATRIS and assisted with the implementation and roll-out of the federally funded statewide data collection system <br>•   Designed, programmed and implemented automation software to boost productivity and managed all data systems utilized by OEMS <br>•   Reengineered the data structure and reprogrammed the Ambulance Regulation Program (ARP) Licensure and Inspection Tracking Application and created the OEMS Compliance Tracking Application, using .NET & SQL Server <br>•   Created ad-hoc reports for the OEMS Director and other staff members using internal and external data sources"
     key: 2
-  - name: "McNally Smith College of Music"
-    category: "Audio Engineering"
-    dates: "2005-2006"
-    description: "At McNally Smith, I studied Audio Engineering.  The curicullum was extremely extensive and although I loved it, I transferred after a year because I couldn't take the cold in Minnesota."
+  - name: "Bose Corporation"
+    jobtitle: "Product and Technical Support"
+    dates: "2008-2009"
+    description: "• Provided technical support and offered training to customers on a case-by-case basis <br>•   Tracked customer data and support notes using custom database software"
     key: 3
