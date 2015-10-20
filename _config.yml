@@ -1,15 +1,43 @@
+#Site variables
 author: "Tech Rapport"
+name: "Tech Rapport"
 header: "Creative Software"
-tagline: "Fostering relationships between businesses and technology is what we do best"
+tagline: "Fostering relationships between business and technology is what we do best"
 tagline_old: "Where Technology and Business Meet"
+copyright: "Tech Rapport"
+url: "http://techrapport.com"
 
+google_analytics: UA-68833574-1
+paginate: 4
+paginate_path: "/blog/page:num/"
+disqus: techrapportcom
+
+#Blog variables
 blog_image_path: /assets/images/blog/
 blog_name: "Swift Connection"
 blog_subheader: "A Swift Blog brought to you by TechRapport.com"
+
+#Collections:
 collections: 
   - posts
   - projects
-copyright: "Tech Rapport"
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jemoji
+  - jekyll-redirect-from
+  #- jekyll-mentions#--Doesn;t work, investigate html-pipeline error.
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME
+
+#Defaults
 defaults: 
   - 
     scope: 
@@ -26,8 +54,10 @@ defaults:
     values: 
       author: "Tech Rapport"
       layout: page
-disqus: techrapportcom
+markdown: redcarpet
+highlighter: pygments
 
+#Social icons:
 footerlinks: 
   - 
     iclass: "fa fa-send-o"
@@ -53,7 +83,7 @@ footerlinks:
     iclass: "fa fa-twitter"
     title: Twitter
     url: "https://www.twitter.com/"
-    username: techrapport
+    username: tech_rapport
   - 
     iclass: "fa fa-google-plus"
     title: techrapport
@@ -69,8 +99,3 @@ footerlinks:
     title: feed.xml
     url: 
     username: "feed.xml"
-
-google_analytics: UA-68833574-1
-paginate: 4
-paginate_path: "/blog/page:num/"
-url: "http://techrapport.com"
