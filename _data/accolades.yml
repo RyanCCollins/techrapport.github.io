@@ -1,22 +1,19 @@
-header: "Accolades"
+header: "Accolades & Certifications"
 sub_header: "The accolades, just like the scrapes and bruises, fade in the end, and all you're left with is your ambition. - Nicole Krauss"
 
 accolades:
-  - title: "Award 1"
+  - title: "iOS Developer Nanodegree"
     key: 0
-    icon: icon-Twitter
-    description: "Won award."
-  - title: "Award 2"
+    icon: icon-Cloud-Smartphone
+    description: "In progress, to be completed November, 2015."
+  - title: "MongoDB Developer Certification"
     key: 1
-    icon: icon-Trophy
-    description: "Won award."
-    key: 2
-    icon: icon-Brush
-    description: "Award!"
-  - title: "Award 3"
+    icon: icon-Big-Data
+    description: "In progress through MongoDB University"
+  - title: "SQL Server Certifification"
     key: 3
-    icon: "icon-Funky"
-    description: "Won another award."
+    icon: "icon-Windows-Microsoft"
+    description: "Certification completed in 2014"
   - title: "Best Looking"
     key: 4
     icon: icon-Sun
