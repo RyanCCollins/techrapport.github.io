@@ -13,15 +13,36 @@
                     <!-- //.col-md-12 -->
                 </div>
                 <!-- //.row -->
+
+                <!-- //.filter -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="filterable-portfolio-nav list-inline text-center">
+                            <li class="active">
+                                <a href="#" data-filter="*" class="btn btn-sm btn-custom disabled">All</a>
+                            </li>
+
+                        {% for category in site.projects.category | limit:5 %}
+                            <li>
+                                <a href="#" data-filter=".{{category}}" class="btn btn-sm btn-custom">{{category}}</a>
+                            </li>
+                        {% endfor %}
+
+                        </ul>
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
                 
                 <!-- PORTFOLIO START -->
                 <div class="portfolio">
                     <div class="row">
-                        {% for project in site.projects %}
+                        {% for project in site.projects | limit:5 | sort:'key' %}
+
                         <div class="item col-sm-6 col-md-3">
                             <div class="project-wrapper">
                                 <div class="project-link">
-                                    <a href="{{ site.baseurl }}{{ project.image }}" class="zoom" title="{{ project.title }}">
+                                    <a href="{{ site.baseurl }}{{ project.image }}" {% for category in project.categories %}data-filter="{% if category %}{{ category }}{% else %}*{% endif %}"{% endfor %} class="zoom" title="{{ project.title }}">
                                         <i class="icon-Full-Screen"></i>
                                     </a>
 
