@@ -1,5 +1,5 @@
 ---
-title: "New Website in Testing - Tech Rapport Blog"
+title: "New Website in Testing at Tech Rapport"
 description: "Tech Rapport's Blog - New Website in Testing."
 category: "Tech Rapport"
 published: true
