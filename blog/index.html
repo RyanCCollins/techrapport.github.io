@@ -15,10 +15,10 @@ description: "Tech Rapport's Blog - Creative Software"
                 <h2 class ="section-title">
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </h2>
-                <p class="lead">
+                <p class="lead section-subtitle">
                     by <a href="index.php">{{ post.author }}</a>
                 </p>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: "%d %B %Y" }}</p>
+                <p class="section-subtitle"><span class="glyphicon glyphicon-time"></span> Posted on {{ post.date | date: "%d %B %Y" }}</p>
                 <span class="divider center"></span>
                 {% if post.image %}
                 
@@ -28,7 +28,7 @@ description: "Tech Rapport's Blog - Creative Software"
                 <p>
                   {{ post.excerpt }}
                 </p>
-                <a class="btn btn-primary" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-small btn-custom" href="{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
                 <hr>
                 

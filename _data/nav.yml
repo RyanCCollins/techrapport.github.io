@@ -1,2 +1,16 @@
-links:
-  - title:
+# links:
+#   - title: "Home"
+#   	link: "/index.html"
+#   	key: 0
+#   - title: "Profile"
+#     link: "#profile"
+#     key: 1
+#   - title: "Portfolio"
+#     link: "Portfolio"
+#     key: 2
+#   - title: "Services"
+#     link: "#services"
+#     key: 3
+#   - title: "Resume"
+#     link: "/resume-index.html"
+#     key: 4
