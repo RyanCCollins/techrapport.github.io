@@ -19,3 +19,9 @@
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
     {% endif %}
+
+    {% if page.tags %}
+        <meta propert="keywords" content="{{ page.tags }}">
+    {% endif %}
+
+<!--     TODO: Add Alts to links & images -->

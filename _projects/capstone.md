@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 key: 0
 category: iOS Apps
 title: "Tech Rapport - Udacity iOS Nanodegree Capstone Project"
