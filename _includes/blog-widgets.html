@@ -13,8 +13,8 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-                            {% for category in site.posts.categories limit:8 %}
-                                <li><a href="/blog/{{ post.category }}">{{ post.category }}</a>
+                            {% for cat in site.categories limit:8 %}
+                                <li><a href="/blog/{{ cat[0] }}">{{ cat[0] }}</a>
                                 </li>
                             {% if forloop.index == 5 %}
                             </ul>

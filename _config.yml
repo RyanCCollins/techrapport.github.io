@@ -51,7 +51,7 @@ defaults:
       author: "Tech Rapport"
       layout: post
       path: ""
-      permalink: /blog/:year/:month/:day/:title/
+      permalink: /blog/:categories/:year/:month/:day/:title/
   - 
     scope: 
       path: ""
