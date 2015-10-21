@@ -5,7 +5,7 @@ categories: "Udacity, iOS Development"
 published: true
 tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0, Udacity, Nanodegree"
 image_square: blog-image-1.jpg
-image: blog-place_rect.png
+image: meme-me.jpg
 ---
 
 Today, I finished version 2.0 of the iOS Meme-Me meme maker app.  It has been submitted and I expect it to exceed specifications.

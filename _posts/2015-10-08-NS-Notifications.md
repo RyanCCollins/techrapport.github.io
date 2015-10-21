@@ -4,7 +4,7 @@ tags: "ios, ios development, software, iphone, ipad, swift, code"
 category: "Swift"
 published: true
 image_square: blog-image-1.jpg
-image: blog-place_rect.png
+image: NS-notifications-900x300.jpg
 ---
 
 Today, I decided to dive a little bit deeper into some of the design patterns, particularly NSNotifactions and delegation/protocols to a lesser extent, used in Apple's code libraries. 

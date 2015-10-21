@@ -26,9 +26,7 @@ blog_subheader: "A Swift Blog brought to you by TechRapport.com"
 #Collections:
 collections: 
   - posts
-
-
-
+  - projects
 
 # Use the following plug-ins
 gems:
