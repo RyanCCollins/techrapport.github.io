@@ -8,10 +8,10 @@ copyright: Tech Rapport
 url: "http://techrapport.com"
 image_path: /assets/images/
 
-author: Tech Rapport
-  - name: Ryan Collins
-    email: info@techrapport.com
-    company: Tech Rapport
+author: 
+  name: Ryan Collins
+  email: info@techrapport.com
+  company: "Tech Rapport"
 
 google_analytics: UA-68833574-1
 paginate: 4

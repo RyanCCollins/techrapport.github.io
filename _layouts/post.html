@@ -3,7 +3,12 @@ layout: blog
 ---
 
                 <!-- Blog Post -->
-
+                {% capture words %}
+  {{ content | number_of_words | minus: 180 }}
+{% endcapture %}
+{% unless words contains "-" %}
+  {{ words | plus: 180 | divided_by: 180 | append: " minutes to read" }}
+{% endunless %}
                 <!-- Title -->
                 <h1>{{ page.title }}</h1>
 
