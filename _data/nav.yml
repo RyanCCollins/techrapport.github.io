@@ -1,7 +1,7 @@
-nav:
+menus:
   - title: 'Home'
     link: '/'
-    sub:
+    submenu:
       - title: Profile
         link: '#profile'
       - title: 'Portfolio'
@@ -10,7 +10,7 @@ nav:
         link: '#services'
   - title: 'Resume'
     link: '/resume/'
-    sub:
+    submenu:
       - title: Strengths
         link: '#strengths'
       - title: 'Skills & Knowledge'
@@ -20,7 +20,7 @@ nav:
       - title: Certifications
         link: '#certifications'
     title: Blog
-    sub:
+    submenu:
       - title: 'All Posts'
         link: '/blog/'
       - title: 'Categories'
