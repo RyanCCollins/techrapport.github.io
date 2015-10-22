@@ -14,11 +14,13 @@ logo: images/logo.png
 
 owner:
   name: Ryan Collins
+  address: ADDRESS here
+  phone: 617-299-9722
   email: info@techrapport.com
-  company: "Tech Rapport"
+  company: Tech Rapport
   site:           http://techrapport.com
   avatar:         assets/images/avatar.jpg
-  bio:            "my bio"
+  bio:            "I am the founder and Chief Technical Officer of Tech Rapport, a company that creates innovative software, web and data solutions."
   email:          info@techrapport.com
   # Social networking links used in footer. Update and remove as you like.
   twitter: tech_rapport
