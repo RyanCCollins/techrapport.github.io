@@ -26,10 +26,11 @@
         {% if ((page.url contains menu.url and menu.url != '/') or (page.url == '/index.html' and menu.url == '/')) %}
             {% assign class = 'active page-scroll' %}
             {% assign op = '#' %}
+
         {% endif %}
 
             <li class="dropdown{%if class%} {{class}}{% endif %}">
-                <a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}<b class="caret"></b></a>
+                <a href="{{site.baseurl}}{{menu.url}}" class="dropdown-toggle" data-toggle="dropdown" data-target="#references" role="button" aria-haspopup="true">{{ menu.title }}<b class="caret"></b></a>
             
 
         {% if menu.submenus %}
@@ -37,7 +38,7 @@
             {% for submenu in menu.submenus %}
                 {% if submenu.title == 'Categories' %}
             <li class="dropdown">
-                <a href="{{site.baseurl}}{{submenu.url}}">{{submenu.title}}
+                <a href="{{site.baseurl}}{{submenu.url}}" class="dropdown-toggle" data-toggle="dropdown" data-target="#references" role="button" aria-haspopup="true">{{submenu.title}}
                 <b class="caret"></b></a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown-references">
                         {% for item in (0..site.categories.size) %}{% unless forloop.last %}
