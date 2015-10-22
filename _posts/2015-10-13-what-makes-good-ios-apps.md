@@ -1,6 +1,7 @@
 ---
 title: "What Makes a Good iOS App?"
 description: "Tech Rapport's Blog - What makes a good iOS App?"
+category: "iOS Dev"
 published: true
 tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
 image_square: blog-image-1.jpg

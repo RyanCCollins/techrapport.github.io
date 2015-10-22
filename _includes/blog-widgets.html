@@ -13,7 +13,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-                        {% for cat in site.categories limit:8 %}
+                        {% for cat in site.sorted_categories limit:8 %}
                             {% unless forloop.first %}<p>{% endunless %}
                             <li><a href="/blog/{{ cat[0] }}" data-filter=".{{ cat[0] }}" class="btn btn-sm btn-custom">{{ cat[0] }}</a>
                             </li>

@@ -1,7 +1,7 @@
 ---
 title: "How the Udacity iOS Nanodegree Changed my Life!"
 description: "Tech Rapport's Blog - How the Udacity iOS Nanodegree Changed my Life"
-category: "Udacity"
+category: "Tech Rapport"
 published: false
 tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0, Udacity, Nanodegree"
 image_square: blog-image-1.jpg

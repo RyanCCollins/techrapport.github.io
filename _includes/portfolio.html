@@ -24,7 +24,7 @@
 
                         {% for category in site.projects.category | limit:5 %}
                             <li>
-                                <a href="#" data-filter=".{{category}}" class="btn btn-sm btn-custom">{{category}}</a>
+                                <a href="#" data-filter=".{{category[0]}}" class="btn btn-sm btn-custom">{{category[0]}}</a>
                             </li>
                         {% endfor %}
 

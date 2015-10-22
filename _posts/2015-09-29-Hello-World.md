@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World - Tech Rapport's Blog"
 description: "Technology Blog - brought to you by Tech Rapport"
-category: "Site"
+category: "Tech Rapport"
 published: true
 image_square: blog-image-1.jpg
 image: blog-place_rect.png

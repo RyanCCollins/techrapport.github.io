@@ -2,7 +2,7 @@
 title: "Popover Views on the iPhone - Tech Rapport Blog"
 description: "Tech Rapport's Blog - Using Popover Views on the iPhone - UIPopover Views on the iPhone"
 published: true
-category: "Swift"
+category: "iOS Dev"
 tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
 image_square: blog-image-1.jpg
 image: blog-place_rect.png
