@@ -1,0 +1,57 @@
+   {% assign servicedata = site.data.services %}
+   <!-- SERVICES SECTION START -->
+    <section id="services" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">
+                            {{ servicedata.header }}
+                        </h2>
+
+                        <p class="section-subtitle">
+                            {{ servicedata.subheader }}
+                        </p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+            
+                <!-- SERVICES START -->
+                <div class="services">
+                    <div class="row">
+                        {% for service in servicedata.services | sort:"key" %}
+                        {% assign mod = forloop.index0 | mod: 3 %}
+                        {% if mod >= 0 %}
+                        <div class="col-sm-4 col-md-4 item top match-height">
+                        {% else %}
+                        <div class="col-sm-4 col-md-4 item match-height">
+                        {% endif %}
+                            <div class="inner-content">
+                                <i class="{{ service.icon }} colored-text"></i>
+
+                                <h4 class="uppercase">{{ forloop.index }}. {{ service.title }}</h4>
+
+                                <p class="text-grey">
+                                    {{ service.description }}
+                                </p>
+                            </div>
+                            <!-- //.inner-content -->
+                        </div>
+                        <!-- //.item -->
+                        {% endfor %}
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //SERVICES END -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //SERVICES SECTION END -->
+
+
+    

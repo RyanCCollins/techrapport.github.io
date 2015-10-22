@@ -1,0 +1,91 @@
+{% assign referencedata = site.data.references %}    
+    <!-- REFERENCES SECTION START -->
+    <section id="references" class="section bg-image-yes">
+        <div class="container-fluid section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="section-title uppercase">
+                            {{ referencedata.header }}
+                        </h2>
+
+                        <p class="section-subtitle">
+                            {{ referencedata.subheader }}
+                        </p>
+                        
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+                
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="flexslider references">
+                            <div class="slides">
+
+                            {% for reference in referencedata.references %}
+                                <div class="item">
+                                    <div class="animated" data-animation-effect="flipInX">
+                                        <div class="profile hidden-xs">
+                                            <img src="{{site.baseurl}}/assets/images/references/{{ reference.image }}" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                        </div>
+
+                                        <div class="content">
+                                            <h3>
+                                                {{ reference.company }}
+                                            </h3>
+
+                                            <p>
+                                                {{ reference.text }}
+                                            </p>
+
+                                            <p class="source">
+                                                {{ reference.source }}
+                                                <br>
+                                                <span>{{ reference.source_title }} - {{ reference.company }}</span>
+                                            </p>
+                                        </div>
+                                        <!-- //.content -->
+                                    </div>
+                                    <!-- //.animated -->
+                                </div>
+                                <!-- //.item -->
+                                {% endfor %}
+
+                            <div class="flexslider-controls">
+                                <ul class="flex-control-nav">
+                                    {% for reference in referencedata.references %}
+                                    <li>
+                                        <img src="/assets/images/references/{{ reference.image }}" alt="" class="img-responsive"/>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <!-- //.flexslider-controls -->
+
+                            <ul class="flex-direction-nav-custom list-inline hidden-xs">
+                                <li>
+                                    <a class="flex-prev" href="#">
+                                        <i class="icon-Left-3"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="flex-next" href="#">
+                                        <i class="icon-Right-3"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //.flexslider -->
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //REFERENCES SECTION END -->

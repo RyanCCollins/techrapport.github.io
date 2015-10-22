@@ -1,0 +1,83 @@
+{% assign profile = site.data.profile %}
+
+   <!-- PROFILE SECTION START -->
+    <section id="profile" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    
+                    <!-- PROFILE PICTURE START -->
+                    <div class="col-md-4 hidden-xs hidden-sm match-height pp-wrapper">
+                        <div class="profile-picture style-two">
+                            <img src="{{ site.baseurl }}{{ profile.imagepath }}" alt="profile picture" class="img-responsive"/>
+                            
+                            <h4 class="title uppercase">{{ profile.imagedescription }}</h4>
+                        </div>
+                    </div>
+                    <!-- //PROFILE PICTURE END -->
+                    
+                    <div class="col-md-8 match-height">
+
+                        <!-- PROFILE TEXT START -->
+                        <div class="profile-text padding-left-yes">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="section-title uppercase">{{ profile.header }}</h2>
+
+                                    <p>
+                                        {{ profile.subheader }}
+                                    </p>
+
+                                    <span class="divider"></span>
+
+                                    <p class="text-grey">
+                                        {{ profile.p1 }}
+                                    </p>
+
+                                    <p class="text-grey">
+                                        {{ profile.p2 }}
+                                    </p>
+                                </div>
+                                <!-- //.col-md-12 -->
+                            </div>
+                            <!-- //.row -->
+                        </div>
+                        <!-- //PROFILE TEXT END -->
+
+                        <!-- CONTACT DETAILS START -->
+                        <div class="contact-details padding-left-yes">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5">
+                                    <h4 class="uppercase">{{ profile.contactheader }}</h4>
+
+                                    <ul class="list-unstyled text-grey">
+                                        <li>{{ site.owner.name }}</li>
+                                        <li>{{ site.owner.address }}</li>
+                                        <li>{{ site.owner.phone }}</li>
+                                        <li>{{ site.owner.email }}</li>
+                                        <li>{{ site.owner.site }}</li>
+                                    </ul>
+                                </div>
+                                <!-- //.col-md-5 -->
+
+                                <div class="col-sm-6 col-md-7">
+                                    <a href="{{ site.baseurl }}/resume-index.html" class="btn btn-lg btn-custom">
+                                        <i class="fa fa-file-text-o"></i> See my Resume
+                                    </a>
+                                </div>
+                                <!-- //.col-md-6 -->
+                            </div>
+                            <!-- //.row -->
+                        </div>
+                        <!-- //CONTACT DETAILS END -->
+
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //page SECTION END -->

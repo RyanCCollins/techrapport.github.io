@@ -1,0 +1,49 @@
+{% assign milestonedata = site.data.milestones %}
+    <!-- MILESTONES SECTION START -->
+    <section id="milestones" class="section bg-image-yes">
+        <div class="container-fluid section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">
+                            {{ milestonedata.header }}
+                        </h2>
+
+                        <p class="section-subtitle">
+                            {{ milestonedata.subheader }}
+                        </p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <!-- MILESTONES START -->
+                <div class="milestones">
+                    <div class="row">
+                        {% for milestone in milestonedata.milestones limit:4 %}
+                        <div class="col-sm-6 col-md-3 item">
+                            <div class="circle">
+                                <i class="{{ milestone.icon }}"></i>
+                            </div>
+                            <!-- //.circle -->
+
+                            <span class="number" data-from="{{ milestone.numFrom }}" data-to="{{ milestone.numTo }}" data-refresh-interval="{{ milestone.numInterval }}">
+                                {{ milestone.numString }}
+                            </span>
+
+                            <h4>{{ milestone.title }}</h4>
+                        </div>
+                        <!-- //.item -->
+                        {% endfor %}
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //MILESTONES END -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //MILESTONES SECTION END -->
