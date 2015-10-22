@@ -1,19 +1,43 @@
 #Site variables
-
-name: Tech Rapport
+title: Tech Rapport
 header: "Creative Software"
+description: "Tech Rapport, creative software, web design, marketing, SEO, and data architecture. At TechRapport, we believe that technology and business go hand-in-hand.  Work with us to create a better future for your business and generate rapport with your technology now."
 tagline: "Fostering relationships between business and technology is what we do best"
-tagline_old: "Where Technology and Business Meet"
 copyright: Tech Rapport
-url: "http://techrapport.com"
+url: http://techrapport.com
 image_path: /assets/images/
+reading_time: true
+words_per_minute: 200
+logo: images/logo.png
 
-author: 
+#Delete author once all updated to owner:
+
+owner:
   name: Ryan Collins
   email: info@techrapport.com
   company: "Tech Rapport"
+  site:           http://techrapport.com
+  avatar:         assets/images/avatar.jpg
+  bio:            "my bio"
+  email:          info@techrapport.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter: tech_rapport
+  facebook:
+  github: techrapport
+  stackexchange: 
+  linkedin: 
+  instagram:
+  flickr:
+  tumblr:
+  # google plus id, include the '+', eg +AronBordin
+  google_plus:    +yourid
 
+# Analytics and webmaster tools stuff goes here
 google_analytics: UA-68833574-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
 paginate: 4
 paginate_path: "/blog/page:num/"
 disqus: techrapportcom
@@ -22,6 +46,23 @@ disqus: techrapportcom
 blog_image_path: /assets/images/blog/
 blog_name: "Swift Connection"
 blog_subheader: "A Swift Blog brought to you by TechRapport.com"
+#Markdown vars
+markdown: kramdown
+highlighter: pygments
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
 
 #Collections:
 collections: 
@@ -34,6 +75,9 @@ gems:
   - jemoji
   - jekyll-redirect-from
   #- jekyll-mentions#--Doesn;t work, investigate html-pipeline error.
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Exclude these files from your production _site
 exclude:
@@ -42,9 +86,6 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
-
-description: "Tech Rapport, creative software, web design, marketing, SEO, and data architecture. At TechRapport, we believe that technology and business go hand-in-hand.  Work with us to create a better future for your business and generate rapport with your technology now."
-
 
 #Defaults
 defaults: 
@@ -56,7 +97,7 @@ defaults:
       author: "Tech Rapport"
       layout: post
       path: ""
-      permalink: /blog/:categories/:year/:month/:day/:title/
+      permalink: /:categories/:title/
   - 
     scope: 
       path: ""
@@ -71,9 +112,6 @@ defaults:
     values:
       author: "Tech Rapport"
       layout: default
-
-markdown: redcarpet
-highlighter: pygments
 
 #Site Map Vars:
 sitemap:
