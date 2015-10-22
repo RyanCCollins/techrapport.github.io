@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 
-                <a class="navbar-brand visible-xs visible-sm" href="#page-top">TECH RAPPORT</a>
+                <a class="navbar-brand visible-xs visible-sm" href="{% if (page.url == '/index.html')%}#page-top{% else %}{{site.baseurl}}/index.html{% endif %}">TECH RAPPORT</a>
             </div>
             <!-- //.navbar-header -->
             
@@ -21,35 +21,45 @@
 
 {% for menu in site.data.nav.menus %}
     {% assign class = nil %}
-    {% assign scroll = nil %}
+    {% assign op = '/' %}
+
         {% if ((page.url contains menu.url and menu.url != '/') or (page.url == '/index.html' and menu.url == '/')) %}
             {% assign class = 'active page-scroll' %}
+            {% assign op = '#' %}
         {% endif %}
 
-        {% if menu.type == 'categories' %}
-            <li><a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}</a>
+            <li class="dropdown{%if class%} {{class}}{% endif %}">
+                <a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}<b class="caret"></b></a>
+            
+
+        {% if menu.submenus %}
+            <ul class="dropdown-menu" aria-labelledby="dropdown-references">
+            {% for submenu in menu.submenus %}
+                {% if submenu.title == 'Categories' %}
+            <li class="dropdown">
+                <a href="{{site.baseurl}}{{submenu.url}}">{{submenu.title}}
+                <b class="caret"></b></a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown-references">
-                    {% for item in (0..site.categories.size) %}{% unless forloop.last %}
+                        {% for item in (0..site.categories.size) %}{% unless forloop.last %}
                         {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
-                            <li><a href="{{site.baseurl}}/categories/#{{this_word}}">{{this_word}}</a></li>
-                    {% endunless %}{% endfor %}
+                    <li class="dropdown">
+                        <a href="/categories/#{{this_word}}" id="dropdown-references" class="dropdown-toggle" data-toggle="dropdown" data-target="#references" role="button" aria-haspopup="true">{{this_word}}</a>
+                    </li>
+                        {% endunless %}{% endfor %}
                 </ul>
+                        {% else %}
+            <li class="{{class}}">
+                <a href="{{site.baseurl}}{{submenu.url}}">{{submenu.title}}
+                {% endif %}
+                </a>
             </li>
-        {% elsif menu.submenu %}
-            <li class="{{class}}"><a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}</a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-references">
-                    {% for sub in menu.submenu %}
-                    <li class="{{class}}"><a href="{{site.baseurl}}{{submenu.url}}">{{submenu.title}}</a></li>
-                    {% endfor %}
-                </ul>
-            </li>
-        {% else %}
-            <li class="{{class}}"><a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}</a></li>
+            {% endfor %}
+            </ul>
         {% endif %}
+            </li>
 {% endfor %}
             <li><a href="{{site.baseurl}}/search"><i class="fa fa-search"></i></a></li>
             </ul>
- 
         </div>
         <!-- //.navbar-container -->
     </nav>
