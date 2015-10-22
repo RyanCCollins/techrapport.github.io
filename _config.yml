@@ -1,10 +1,11 @@
 #Site variables
 
+title: Tech Rapport
 name: Tech Rapport
 header: "Creative Software"
 tagline: "Fostering relationships between business and technology is what we do best"
-tagline_old: "Where Technology and Business Meet"
-copyright: Tech Rapport
+description: "Tech Rapport, creative software, web design, marketing, SEO, and data architecture. At TechRapport, we believe that technology and business go hand-in-hand.  Work with us to create a better future for your business and generate rapport with your technology now."
+copyright: Tech Rapport #move to author?
 url: "http://techrapport.com"
 image_path: /assets/images/
 
@@ -12,11 +13,34 @@ author:
   name: Ryan Collins
   email: info@techrapport.com
   company: "Tech Rapport"
+  #Make sure to reconfigure footer-links:
+  avatar:
+  bio:
+  twitter:
+  facebook:
+  github:         
+  stackexchange:  
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:    +yourid
 
+#webmaster stuff
 google_analytics: UA-68833574-1
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+#Jekyll & Markdown vars:
 paginate: 4
 paginate_path: "/blog/page:num/"
 disqus: techrapportcom
+markdown: kramdown
+highlighter: pygments
+future: true
+timezone: America/New_York
 
 #Blog variables
 blog_image_path: /assets/images/blog/
@@ -43,9 +67,6 @@ exclude:
     - README.md
     - CNAME
 
-description: "Tech Rapport, creative software, web design, marketing, SEO, and data architecture. At TechRapport, we believe that technology and business go hand-in-hand.  Work with us to create a better future for your business and generate rapport with your technology now."
-
-
 #Defaults
 defaults: 
   - 
@@ -71,9 +92,6 @@ defaults:
     values:
       author: "Tech Rapport"
       layout: default
-
-markdown: redcarpet
-highlighter: pygments
 
 #Site Map Vars:
 sitemap:

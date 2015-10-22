@@ -1,127 +1,29 @@
-
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    
-    <!-- Site Title -->
-    <title>
-    {% if page.title %}
-        {{ page.title }}
-    {% else %}
-        Default Page Title
-    {% endif %}
-    </title>
-    
-    {% include meta.html %}
-    <meta name="description" content="Tech Rapport, Creative Software Development">
-    <meta name="keywords" content="Tech Rapport, creative, resume">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-
-    <!-- atom feed -->
-    <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="/atom_feed.xml" />
-
-    <!-- Google Font -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-    
-    <!-- Bootstrap Core CSS -->
-    <link href="{{ site.baseurl }}/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    
-    <!-- Font icons CSS -->
-    <link href="{{ site.baseurl }}/assets/plugins/icons-mind/style.css" rel="stylesheet" type="text/css">
-    <link href="{{ site.baseurl }}/assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
-    <!-- Plugins CSS -->
-    <link href="{{ site.baseurl }}/assets/plugins/jpreloader/css/jpreloader.css" rel="stylesheet" type="text/css">
-    <link href="{{ site.baseurl }}/assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="{{ site.baseurl }}/assets/plugins/magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css">
-    <link href="{{ site.baseurl }}/assets/plugins/flexSlider/flexslider.css" rel="stylesheet" type="text/css">
-    <!-- Custom CSS -->
-    <link href="{{ site.baseurl }}/assets/css/blog-home.css" rel="stylesheet">
-    
-    <!-- Main CSS -->
-    <link href="{{ site.baseurl }}/assets/css/berg.css" rel="stylesheet" type="text/css">
-    
-    <!-- Color CSS -->
-    <link href="/assets/css/colors/blue.css" rel="stylesheet" type="text/css">
-    
-    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 8]>
-    <script src="/assets/plugins/modernizr.min.js"></script>
-    <![endif]-->
-</head>
+{% include main/browser-upgrade.html %}
+{% include main/head.html %}
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="66">
     <!--[if lt IE 10]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-        {% if page.description == "Home" %}{% include hero.html %}{% endif %}
+        {% if page.description == "Home" %}{% include main/hero.html %}{% endif %}
 
     <!-- //NAV START -->
-    {% include nav.html %}
+        {% include main/nav.html %}
     <!-- //NAV END -->
-    {{ content }}
+        {{ content }}
     <!-- FOOTER START -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="page-scroll">
-                        <a href="#page-top"><i class="icon-Arrow-Up"></i></a>
-                    </div>
-                    <!-- //.page-scroll -->
-                {% include social-icons.html %}
-                </div>
-                <!-- //.col-md-12 -->
-            </div>
-            <!-- //.row -->
-            
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copyright text-center">
-                        <p class="text-grey">
-                            &copy; {{ site.time | date: '%Y' }} {{ site.author.company }}
-                        </p>
-                    </div>
-                    <!-- //.copyright -->
-                </div>
-                <!-- //.col-md-12 -->
-            </div>
-            <!-- //.row -->
-        </div>
-        <!-- //.container -->
-    </footer>
+        {% if page.footer != nil %}
+    <div class="footer-wrapper">
+        <footer role="contentinfo">
+        {{ page.footer }}
+        </footer>
+    </div><!-- /.footer-wrapper -->
+        {% endif %}
     <!-- //FOOTER END -->
 
     
-    <!-- Plugins JS -->
-    <script src="{{ site.baseurl }}/assets/plugins/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/jpreloader/js/jpreloader.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/detectmobilebrowser/detectmobilebrowser.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/debouncer/debouncer.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/easing/jquery.easing.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/sticky/jquery.sticky.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/inview/jquery.inview.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/matchHeight/jquery.matchHeight-min.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/magnificPopup/jquery.magnific-popup.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/flexSlider/jquery.flexslider-min.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/countTo/jquery.countTo.js"></script>
-    <script src="{{ site.baseurl }}/assets/plugins/skrollr/skrollr.min.js"></script>
-    
-    <!-- Main JS -->
-    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
-    
-    <!-- Parallax JS -->
-    <script src="{{ site.baseurl }}/assets/js/parallax.js"></script>
-    
-    <!-- Animation JS (Optional) -->
-    <script src="{{ site.baseurl }}/assets/js/animation.js"></script>
+{% include main/scripts.html %}
 
 </body>
 

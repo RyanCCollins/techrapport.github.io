@@ -1,0 +1,42 @@
+    <!-- Plugins JS -->
+    <script src="{{ site.baseurl }}/assets/plugins/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/jpreloader/js/jpreloader.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/detectmobilebrowser/detectmobilebrowser.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/debouncer/debouncer.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/easing/jquery.easing.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/sticky/jquery.sticky.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/inview/jquery.inview.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/matchHeight/jquery.matchHeight-min.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/magnificPopup/jquery.magnific-popup.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/flexSlider/jquery.flexslider-min.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/countTo/jquery.countTo.js"></script>
+    <script src="{{ site.baseurl }}/assets/plugins/skrollr/skrollr.min.js"></script>
+    
+    <!-- Main JS -->
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+    
+    <!-- Parallax JS -->
+    <script src="{{ site.baseurl }}/assets/js/parallax.js"></script>
+    
+    <!-- Animation JS (Optional) -->
+    <script src="{{ site.baseurl }}/assets/js/animation.js"></script>
+
+
+
+
+{% if site.google_analytics %}
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+{% endif %}
+
+{% if page.comments != false %}{% include disqus.html %}{% endif %}
