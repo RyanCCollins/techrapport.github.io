@@ -4,13 +4,14 @@
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-{% include head.html %}
+{% include site/head.html %}
+{% include blog/blog_css.css %}
 </head>
 
 <body id="post" {% if page.image.feature %}class="feature"{% endif %}>
 
-{% include browser-upgrade.html %}
-{% include header.html %}
+{% include site/browser-upgrade.html %}
+{% include blog/header.html %}
 
 <div id="main" role="main">
   <article class="hentry">
@@ -22,20 +23,21 @@
         {% if page.modified %}<span>Updated on <span class="entry-date date updated"><time datetime="{{ page.modified }}">{{ page.modified | date: "%B %d, %Y" }}</time></span></span>
         {% endif %}
         <span class="author vcard"><span class="fn">{{ site.owner.name }}</span></span>
-        {% if page.share != false %}{% include social-share.html %}{% endif %}
+        {% if page.share != false %}{% include blog/social-share.html %}{% endif %}
       </footer>
     </div><!-- /.entry-content -->
-    {% include author.html %}
+    {% include blog/author.html %}
     {% if page.comments != false %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
-    {% if site.related_posts.size > 0 %}{% include read-more.html %}{% endif %}
+    {% if site.related_posts.size > 0 %}{% include blog/read-more.html %}{% endif %}
   </article>
 </div><!-- /#main -->
 
-{% include scripts.html %}
+{% include site/scripts.html %}
+{% include blog/scripts.html %}
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    {% include footer.html %}
+    {% include site/footer.html %}
   </footer>
 </div><!-- /.footer-wrapper -->
 

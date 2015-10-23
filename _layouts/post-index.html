@@ -4,23 +4,25 @@
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-{% include head.html %}
+{% include site/head.html %}
+{% include blog/blog_css.css %}
 </head>
 
 <body id="post-index">
 
-{% include browser-upgrade.html %}
-{% include header.html %}
+{% include site/browser-upgrade.html %}
+{% include blog/header.html %}
 
 <div id="main" role="main">
   {{ content }}
 </div><!-- /#main -->
 
-{% include scripts.html %}
+{% include site/scripts.html %}
+{% include blog/scripts.html %}
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    {% include footer.html %}
+    {% include site/footer.html %}
   </footer>
 </div><!-- /.footer-wrapper -->
 

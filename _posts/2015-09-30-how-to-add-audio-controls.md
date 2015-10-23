@@ -4,6 +4,7 @@ description: "Tech Rapport - Answer to the Udacity iOS Nanodegree question: How 
 category: "iOS Dev"
 tags: "ios, ios development, software, iphone, ipad, swift, code"
 published: false
+comments: true
 image_square: blog-image-1.jpg
 image: blog-place_rect.png
 ---

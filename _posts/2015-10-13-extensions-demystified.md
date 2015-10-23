@@ -4,6 +4,7 @@ description: "Tech Rapport - Swift Class Extensions Demystified - Cocoa Touch Pr
 category: "Swift"
 tags: "ios, ios development, software, iphone, ipad, swift, code"
 published: true
+comments: true
 image_square: swift-extensions.png
 image: swift-extensions.png
 ---

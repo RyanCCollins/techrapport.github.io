@@ -3,6 +3,7 @@ title: "Meme-Me App v2.0 Finished"
 description: "Tech Rapport's Blog - How the Udacity iOS Nanodegree Changed my Life"
 categories: "iOS Dev"
 published: true
+comments: true
 tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0, Udacity, Nanodegree"
 image_square: blog-image-1.jpg
 image: meme-me.jpg
