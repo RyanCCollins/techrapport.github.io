@@ -1,30 +1,26 @@
 menus:
   - title: 'Home'
-    url: '#menu'
-    target: '/'
+    url: '{{site.baseurl}}/#home'
     submenus:
-      - title: Home Page
-        url: '/'
       - title: Profile
-        url: '/#profile'
+        url: '{{site.baseurl}}/#profile'
       - title: 'Portfolio'
-        url: '/#portfolio'
+        url: '{{site.baseurl}}/#portfolio'
       - title: 'Services'
-        url: '/#services'
+        url: '{{site.baseurl}}/#services'
   - title: 'Resume'
-    url: '#menu'
-    target: '/resume/'
+    url: '{{site.baseurl}}/#resume'
     submenus:
       - title: Resume Home
         url: '/resume/'
       - title: Strengths
-        url: '#strengths'
+        url: '/resume/#strengths'
       - title: 'Skills & Knowledge'
-        url: '#skills'
+        url: '/resume/#skills'
       - title: References
-        url: '#referencs'
+        url: '/resume/#referencs'
       - title: Certifications
-        url: '#certifications'
+        url: '/resume/#certifications'
   - title: Blog
     url: '#menu'
     target: '/blog/'
@@ -32,6 +28,6 @@ menus:
       - title: 'All Posts'
         url: '/blog/'
       - title: 'Categories'
-        url: '/blog/categories'
+        url: '/blog/categories/'
       - title: 'Tags'
-        url: '/blog/tags'
+        url: '/blog/tags/'
