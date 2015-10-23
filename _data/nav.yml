@@ -3,13 +3,13 @@ menus:
     url: '{{site.baseurl}}/#home'
     submenus:
       - title: Profile
-        url: '{{site.baseurl}}/#profile'
+        url: '/#profile'
       - title: 'Portfolio'
-        url: '{{site.baseurl}}/#portfolio'
+        url: '/#portfolio'
       - title: 'Services'
         url: '{{site.baseurl}}/#services'
   - title: 'Resume'
-    url: '{{site.baseurl}}/#resume'
+    url: '/#resume'
     submenus:
       - title: Resume Home
         url: '/resume/'
@@ -22,8 +22,7 @@ menus:
       - title: Certifications
         url: '/resume/#certifications'
   - title: Blog
-    url: '#menu'
-    target: '/blog/'
+    url: '/blog/'
     submenus:
       - title: 'All Posts'
         url: '/blog/'
