@@ -1,6 +1,6 @@
 menus:
   - title: 'Home'
-    url: '{{site.baseurl}}/#home'
+    url: '/#home'
     submenus:
       - title: Profile
         url: '/#profile'
