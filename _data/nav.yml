@@ -30,3 +30,5 @@ menus:
         url: '/blog/categories/'
       - title: 'Tags'
         url: '/blog/tags/'
+      - title: 'Archive'
+        url: '/blog/posts/''
