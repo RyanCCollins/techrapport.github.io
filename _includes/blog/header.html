@@ -17,12 +17,12 @@
           {% assign class = 'active' %}
         {% endif %}
 
-        {% if menu.title == 'categories' %}
+        {% if menu.title == 'Categories' %}
           <li class="header-item {{class}}"><a href="{{site.baseurl}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
             <ul class="header-submenu">
               {% for item in (0..site.categories.size) %}{% unless forloop.last %}
                 {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
-                  <li class="sub-item"><a href="/categories/#{{this_word}}">{{this_word}}</a></li>
+                  <li class="sub-item"><a href="/blog/categories/#{{this_word}}">{{this_word}}</a></li>
               {% endunless %}{% endfor %}
             </ul>
           </li>
