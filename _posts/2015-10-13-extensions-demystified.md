@@ -14,7 +14,7 @@ Often times when one is learning a new concept, it is easy to get hung up on the
 I had read and studied Apple's [Swift documentation](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/) and taken the [iOS Swift Syntax Course](https://www.udacity.com/course/learn-swift-programming-syntax--ud902), both of which are excellent resources I might add, but it wasn't until I dug my teeth in that I really understood the power of the language.  After I had worked through the project, I decided to add some [extra credit features](https://discussions.udacity.com/t/added-a-some-extra-features-to-meme-me-color-picker-font-picker-font-size-would-like-some-feedback-check-out-the-video/34620) to change the font color, size and type.  You can see my code on [GitHub](https://github.com/TechRapport/Meme-Me).
 
 When I had finished this, I realized that a shake-to-reset feature would be a great for so that the user could reset to the default font. I started writing the code for this and I realized that I would have to write the same code in each of my view controllers. At that moment, a light bulb went off in my head and I went about creating an extension to UIViewController. It was brilliantly simple to add the functionality that I needed to the extension and then call a method or two from each view controller to customize the shake gesture. 
-
+\n\n
 Here is the Extension, in all of its glory:
 
     extension UIViewController {

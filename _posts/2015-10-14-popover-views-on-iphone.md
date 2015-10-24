@@ -23,7 +23,7 @@ What you have to be careful of is what happens to your view if the user is seein
 
 ###Setup:
 For this project, I will demonstrate how I went about incorporating a color picker and a font picker in UIPopover views in my Meme-Maker app.  If you are following along, feel free to start a new project and design a View Controller similiar to the MemeEditorViewController as shown below.  Make sure that you have a button or two to call the popover views.
-<!-- more -->
+\n\n
 Here you can see the main view controller that will be presenting the popover views:
 
 <figure class="one center">

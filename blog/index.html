@@ -31,13 +31,13 @@ comments: false
     {% endif %}
   </header>
   <div class="entry-content">
-    {% if post.content contains "<!-- more -->" %}
-    <p>{{ post.content | split:"<!-- more -->" | first % }} <a href="{{ site.baseurl }}{{ post.url }}">  Continue reading...</a></p>
+    {% if post.content contains "\n\n" %}
+    <p>{{ post.content | split:"\n\n" | first % }} <a href="{{ site.baseurl }}{{ post.url }}">  Continue reading...</a></p>
     <div class="launch text-center">
       <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-custom">Read More</a>
     </div>
     {% else %}
-      {{ post.content }}
+      {{ content }}
     {% endif %}
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
