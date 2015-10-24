@@ -4,7 +4,7 @@ description: "Tech Rapport's Blog - New Website in Testing."
 category: "Tech Rapport"
 published: true
 comments: true
-tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
+tags: [Tech Rapport, web development, website]
 image_square: blog-image-1.jpg
 image: tech-rapport-banner-900x300.png
 ---

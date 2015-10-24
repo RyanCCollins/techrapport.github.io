@@ -4,7 +4,7 @@ description: "Tech Rapport's Blog - Using Popover Views on the iPhone - UIPopove
 published: true
 comments: true
 category: "iOS Dev"
-tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0"
+tags: [ios development, software, swift, iPhone apps, xCode 7.0, programming, UIPopoverViews, UIKit]
 image_square: blog-image-1.jpg
 image: blog-place_rect.png
 ---
@@ -59,9 +59,9 @@ Within your main view controller class file, you will need to do the following:
 Let's take a look at how I've done this.
 
 First, after the class definition's parent class name insert a comma followed by: [UIPopoverPresentationViewControllerDelegate](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverPresentationControllerDelegate_protocol/index.html) as shown below (note: for brevity, I have removed all of the other delegates/protocols from the class definition.)
-
+'''
     class MemeEditorViewController: UIViewController,     UIPopoverPresentationControllerDelegate {
-
+'''
 
 Next, add the function below somewhere within your presenting view controller's class:
 
