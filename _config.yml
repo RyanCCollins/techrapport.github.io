@@ -6,9 +6,10 @@ tagline: "Fostering relationships between business and technology is what we do 
 copyright: Tech Rapport
 url: http://techrapport.com
 image_path: /assets/images/
+icon_path: /assets/images/icons/
 reading_time: true
 words_per_minute: 200
-logo: images/logo.png
+logo: /logo.png
 
 #Delete author once all updated to owner:
 
