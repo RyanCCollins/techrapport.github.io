@@ -6,19 +6,19 @@
     <ul>
       <li class="header-item-title header-toggle "><a href="#menu"><h2><i class="fa fa-bars"></i></h2></a></li>
       <li class="header-item-title">
-        <a href="{{site.url}}/">
-          <img class="logo" src="{{site.url}}/{{ site.logo }}" alt="{{ site.title }}">
+        <a href="{{site.baseurl}}/">
+          <img class="logo" src="{{site.baseurl}}/{{ site.logo }}" alt="{{ site.title }}">
           <h2 class="title"> {{ site.title }}</h2>
         </a>
       </li>
-      {% for menu in site.menu reversed %}
+      {% for menu in site.menus reversed %}
         {% assign class = nil %}
         {% if ((page.url contains menu.url and menu.url != '/') or (page.url == '/index.html' and menu.url == '/')) %}
           {% assign class = 'active' %}
         {% endif %}
 
         {% if menu.type == 'categories' %}
-          <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
+          <li class="header-item {{class}}"><a href="{{site.baseurl}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
             <ul class="header-submenu">
               {% for item in (0..site.categories.size) %}{% unless forloop.last %}
                 {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
@@ -26,19 +26,19 @@
               {% endunless %}{% endfor %}
             </ul>
           </li>
-        {% elsif menu.submenu %}
-          <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
+        {% elsif menu.submenus %}
+          <li class="header-item {{class}}"><a href="{{site.baseurl}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
             <ul class="header-submenu">
-              {% for sub in menu.submenu %}
-                <li class="sub-item"><a href="{{site.url}}{{sub.url}}">{{sub.title}}</a></li>
+              {% for sub in menu.submenus %}
+                <li class="sub-item"><a href="{{site.baseurl}}{{sub.url}}">{{sub.title}}</a></li>
               {% endfor %}
             </ul>
           </li>
         {% else %}
-          <li class="header-item {{class}}"><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a></li>
+          <li class="header-item {{class}}"><a href="{{site.baseurl}}{{menu.url}}"><h3>{{ menu.title }}</h3></a></li>
         {% endif %}
       {% endfor %}
-      <li class="header-item"><a href="{{site.url}}/search"><h3><i class="fa fa-search"></i></h3></a></li>
+      <li class="header-item"><a href="{{site.baseurl}}/search"><h3><i class="fa fa-search"></i></h3></a></li>
     </ul>
   </div>
   <div class="header-title">
@@ -64,24 +64,24 @@
   <ul>
     {% for menu in site.menu %}
       {% if menu.type == 'categories' %}
-        <li><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
+        <li><a href="{{site.baseurl}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
           <ul>
             {% for item in (0..site.categories.size) %}{% unless forloop.last %}
               {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
-                <li><a href="{{site.url}}/categories/#{{this_word}}">{{this_word}}</a></li>
+                <li><a href="{{site.baseurl}}/categories/#{{this_word}}">{{this_word}}</a></li>
             {% endunless %}{% endfor %}
           </ul>
         </li>
       {% elsif menu.submenu %}
-        <li><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
+        <li><a href="{{site.baseurl}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
           <ul>
             {% for sub in menu.submenu %}
-              <li><a href="{{site.url}}{{sub.url}}">{{sub.title}}</a></li>
+              <li><a href="{{site.baseurl}}{{sub.url}}">{{sub.title}}</a></li>
             {% endfor %}
           </ul>
         </li>
       {% else %}
-        <li><a href="{{site.url}}{{menu.url}}"><h3>{{ menu.title }}</h3></a></li>
+        <li><a href="{{site.baseurl}}{{menu.url}}"><h3>{{ menu.title }}</h3></a></li>
       {% endif %}
     {% endfor %}
   </ul>

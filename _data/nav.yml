@@ -7,7 +7,7 @@ menus:
       - title: 'Portfolio'
         url: '/#portfolio'
       - title: 'Services'
-        url: '{{site.baseurl}}/#services'
+        url: '/#services'
   - title: 'Resume'
     url: '/#resume'
     submenus:
