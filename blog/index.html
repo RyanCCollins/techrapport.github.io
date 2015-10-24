@@ -32,7 +32,7 @@ comments: false
   </header>
   <div class="entry-content">
     {% if post.content contains "<!-- more -->" %}
-    {{ post.content | split:"<!-- more -->" | first % }} <a href="{{ site.baseurl }}{{ post.url }}"> Continue reading...</a>
+    <p>{{ post.content | split:"<!-- more -->" | first % }} <a href="{{ site.baseurl }}{{ post.url }}">  Continue reading...</a></p>
     <div class="launch text-center">
       <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-custom">Read More</a>
     </div>

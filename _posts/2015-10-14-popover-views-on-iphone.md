@@ -92,7 +92,7 @@ The reason we implement this function is because we implemented the [UIPopoverPr
 This would be the place where we could set up checks to see what size screen the view is being presented on and we could choose to show a done button when the screen is small, or we could have it present modally on certain phones.  This is important, because our view could cover the entire screen and the user might not be able to dismiss it, which would be a hassle.
 
 Finally, we must override the prepareForSegue method in order to check for when the segue is called.  Within this method, we can set the presentation style, set the delegate and pass any data that needs to be passed.
-
+{% highlight swift %}
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //Check for the fontPopoverSegue
         if segue.identifier == "fontPopoverSegue" {
@@ -107,7 +107,7 @@ Finally, we must override the prepareForSegue method in order to check for when 
             popoverVC.popoverPresentationController!.delegate = self
             popoverVC.fontAttributes = fontAttributes
         }
-
+{% endhighlight %}
 
 This will get you up and running.  I'll leave it up to you to figure out how you implement this.  
 

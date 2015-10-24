@@ -6,12 +6,13 @@ published: true
 comments: true
 tags: [ios development, Udacity, Nanodegree]
 image_square: blog-image-1.jpg
-image: meme-me.jpg
+image: 
+  feature: meme-me.jpg
 ---
 
 Today, I finished version 2.0 of the iOS Meme-Me meme maker app.  It has been submitted and I expect it to exceed specifications.
 
-Check out the [ GitHub project page](http://techrapport.github.io/Meme-Me), or visit our [portolio site](http://techrapport.com/projects/).  Also, take a look at the [project specifications](https://docs.google.com/document/d/1G2onkzN_weWmiYErhQJw1lB9-zxM-2TQ0N5bNMAaI7I/pub?embedded=true) and [project rubric](https://docs.google.com/document/d/1ni0X5sjS0NreQqBHJpg8Z0foAYwegfGTPPdBKTPskPI/pub?embedded=true).  Once it has been evaluated, you will be able to see it on my Udacity profile.  Contact me if you have any questions, or would like to discuss this project.
+Check out the [GitHub project page](http://techrapport.github.io/Meme-Me), or visit our [portolio site](http://techrapport.com/projects/).  Also, take a look at the [project specifications](https://docs.google.com/document/d/1G2onkzN_weWmiYErhQJw1lB9-zxM-2TQ0N5bNMAaI7I/pub?embedded=true) and [project rubric](https://docs.google.com/document/d/1ni0X5sjS0NreQqBHJpg8Z0foAYwegfGTPPdBKTPskPI/pub?embedded=true).  Once it has been evaluated, you will be able to see it on my Udacity profile.  Contact me if you have any questions, or would like to discuss this project.
 
 Please note that I will be releasing this app to the [iOS App Store](http://www.apple.com/itunes/charts/free-apps/) once I have completed version 3.  I will be adding many new features, including a random meme generator, Flickr integration and more.  See the ReadMe file below for details on the project and get in touch with me if you like it!  Also, [subscribe to my blog](http://techrapport.com/feed.xml) to get alerted about when this app will be published to the app store.
 
@@ -32,8 +33,6 @@ The app offers the following features:
 
 See the extra credit features and what I intend to add next below.
 
-<!-- more -->
-
 ####Technologies and best practices used
 Some of the more notable technologies and best practices I used in this app are shown below. I also wrote about some of these subjects in [my blog](http://TechRapport.com/blog/) in the Swift development section.
 - UIKit
@@ -45,6 +44,7 @@ Some of the more notable technologies and best practices I used in this app are 
 - MVC
 - NSNotifications
 - Extensions
+<!-- more -->
 
 As I stated above, I developed this application using several important design paradigms and best practices. Most notably, I used Model View Controller (MVC) extensively. I created a Model object for storing and processing Memes, several View Controllers for controlling navigation, writing to the model and updating the display. I also utilized [class extensions](http://techrapport.com/blog/2015/10/13/extensions-demystified), [NSNotifications](http://techrapport.com/blog/2015/10/08/ns-notifications/), the delegate design pattern and more. I really enjoyed using Swift 2.0 and found that I was able to add a lot of functionality very easily using extensions. 
 
