@@ -75,7 +75,7 @@ collections:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jemoji
+  #- #jemoji
   - jekyll-redirect-from
   - jekyll-mentions #--Doesn;t work, investigate html-pipeline error.
 sass:
