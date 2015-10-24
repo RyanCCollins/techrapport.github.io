@@ -27,8 +27,8 @@ owner:
   twitter: tech_rapport
   facebook: 
   github: techrapport
-  stackexchange: 
-  linkedin: 
+  stackexchange: techrapport
+  linkedin: techrapport
   instagram:
   flickr:
   tumblr:
@@ -142,7 +142,7 @@ footerlinks:
     username: techrapport
   - 
     iclass: "fa fa-stack-overflow"
-    title: linkedin
+    title: stackoverflow
     url: "https://www.stackoverflow.com/"
     username: techrapport
   - 
