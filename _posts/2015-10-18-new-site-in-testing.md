@@ -1,10 +1,10 @@
 ---
 title: "New Website in Testing at Tech Rapport"
 description: "Tech Rapport's Blog - New Website in Testing."
-category: "Tech Rapport"
+category: [Tech Rapport]
 published: true
 comments: true
-tags: [Tech Rapport, web development, website]
+tags: [Tech Rapport, web development]
 image_square: blog-image-1.jpg
 image: tech-rapport-banner-900x300.png
 ---

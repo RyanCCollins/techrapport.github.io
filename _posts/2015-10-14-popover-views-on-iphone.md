@@ -1,10 +1,10 @@
 ---
-title: "Popover Views on the iPhone - Tech Rapport Blog"
+title: "Popover Views on the iPhone"
 description: "Tech Rapport's Blog - Using Popover Views on the iPhone - UIPopover Views on the iPhone"
 published: true
 comments: true
-category: "iOS Dev"
-tags: [ios development, software, swift, iPhone apps, xCode 7.0, programming, UIPopoverViews, UIKit]
+category: [iOS Dev, Meme-Me]
+tags: [ios development, Swift 2.0, Meme-Me, xCode 7.0, programming, UIPopoverViews, UIKit]
 image_square: blog-image-1.jpg
 image: blog-place_rect.png
 ---
@@ -28,7 +28,7 @@ For this project, I will demonstrate how I went about incorporating a color pick
 Here you can see the main view controller that will be presenting the popover views:
 
 <figure class="one center">
-    <img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.27.59 PM.png" alt="View controller">
+    <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.27.59 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.27.59 PM.png" alt="View controller"></a>
     <figcaption>Storyboard ViewController Screenshot</figcaption>
 </figure>
 
@@ -36,14 +36,14 @@ Here you can see the main view controller that will be presenting the popover vi
 To start, create a bar button item, or button, on your main view controller.  Next, create a view and set it up so that it will use a preferred explicit size.  To do this, go to the _Attributes Inspector_, set the Size to _Freeform_, the _Status Bar_ to _None_, and check off the _Use Prefered Explicit Size_ check box.  For this example, I set the content size to be 300x300. 
 
 <figure class="one center">
-<img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.31.51 PM.png" alt="Attribute Inspector">
+    <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.31.51 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.31.51 PM.png" alt="Attribute Inspector">
 <figcaption>Attribute Inspector Screenshot</figcaption>
 </figure>
  
  Next, in the _Size Inspector_, once again select _Freeform_ and set the size to 300 x300.
  
 <figure class="one center">
-<img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.34.09 PM.png" alt="Size Inspector">
+    <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.34.09 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.34.09 PM.png" alt="Size Inspector"></a>
 <figcaption>Size Inspector Screenshot</figcaption>
 </figure>
 
@@ -54,14 +54,14 @@ Okay, now that we have that out of the way and we've added our UISlider, let's t
 First of all, in the Storyboard, control-click your button and drag it to the view that you would like to present modally. From the _Active Segue_ menu, select "Popover Presentation".
 
 <figure class="one center">
-<img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.40.27 PM.png" alt="Popover Presentation">
-<figcaption>Popover Presentation Screenshot</figcaption>
+    <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.40.27 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.40.27 PM.png" alt="Popover Presentation"></a>
+    <figcaption>Popover Presentation Screenshot</figcaption>
 </figure>
 
 Next, select your newly created Segue by clicking the arrow that just appeared between the Main View and the Font Popover View and set the _StoryBoard Identifier_ field in the _Attributes Inspector_ to: "fontPopoverSegue".  You don't need to change anything else here, but I suggest you play around with the various settings.
 
 <figure class="one center">
-<img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.43.52 PM.png" alt="UIPopoverView Setting Screenshot">
+    <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.43.52 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.43.52 PM.png" alt="UIPopoverView Setting Screenshot">
 <figcaption>UIPopoverView Setting Screenshot</figcaption>
 </figure>
 
@@ -136,15 +136,16 @@ In my case, I wanted the view to update the size and type of the font of the tex
 Please take a look at my app in action in the following video.
 
 <figure class="one center">
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=2aUd8Y6TG0E" frameborder="0"> </iframe>
-    <figcaption="Meme-Me Test Flight">
+    <a href="https://www.youtube.com/watch?v=2aUd8Y6TG0E"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=2aUd8Y6TG0E" frameborder="0"> </iframe></a>
+    <figcaption>Meme-Me Test Flight</figcaption>
 </figure>
 
 You can also take a look at the images below and checkout my Meme Maker code on github here: [github.com/TechRapport/Meme-Me](https://github.com/TechRapport/Meme-Me)
 
 <figure class="half">
-<img src="{{site.blog_image_path}}bd721c87281c1eb293577962544ab57d1f4c8ca3.png" alt="Meme-Me Test Flight - TechRapport">
-<img src="{{site.blog_image_path}}9957fac4b23ef18266ca48437116a1c390b1b41a.png" alt="Meme-Me Test Flight - TechRapport">
-<figcaption
+    <a href="{{site.blog_image_path}}bd721c87281c1eb293577962544ab57d1f4c8ca3.png"><img src="{{site.blog_image_path}}bd721c87281c1eb293577962544ab57d1f4c8ca3.png" alt="Meme-Me Test Flight - TechRapport"></a>
+    <a href="{{site.blog_image_path}}9957fac4b23ef18266ca48437116a1c390b1b41a.png"><img src="{{site.blog_image_path}}9957fac4b23ef18266ca48437116a1c390b1b41a.png" alt="Meme-Me Test Flight - TechRapport"></a>
+    <figcaption>Meme Me Test Flight</figcaption>
+</figure>
 
 Please feel free to leave me some comments if you got tripped up, or if you liked this guide and thanks for visiting

@@ -33,14 +33,13 @@ comments: false
   <div class="entry-content">
     {% if post.content contains "<!-- more -->" %}
     {{ post.content | split:"<!-- more -->" | first % }} <a href="{{ site.baseurl }}{{ post.url }}">Continue reading</a></p>
-  
+    <div class="read-more-header">
+        <a href="{{ site.baseurl }}{{ page.previous.url }}" class="btn btn-info center">Read More</a>
+    </div>
     {% else %}
       {{ post.content }}
     {% endif %}
   </div><!-- /.entry-content -->
-    <div class="read-more-header text-center">
-        <a href="{{ site.baseurl }}{{ page.previous.url }}" class="btn btn-info center">Read More</a>
-    </div>
 </article><!-- /.hentry -->
 {% endfor %}
 
