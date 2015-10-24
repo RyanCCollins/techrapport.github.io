@@ -24,7 +24,7 @@ owner:
   email:          info@techrapport.com
   # Social networking links used in footer. Update and remove as you like.
   twitter: tech_rapport
-  facebook:
+  facebook: 
   github: techrapport
   stackexchange: 
   linkedin: 
@@ -49,7 +49,7 @@ blog_image_path: /assets/images/blog/
 blog_name: "Swift Connection"
 blog_subheader: "A Swift Blog brought to you by TechRapport.com"
 #Markdown vars
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 
 kramdown:
