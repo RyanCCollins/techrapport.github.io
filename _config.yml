@@ -20,7 +20,7 @@ owner:
   email: info@techrapport.com
   company: Tech Rapport
   site:           http://techrapport.com
-  avatar:         assets/images/avatar.jpg
+  avatar:         me-avatar.jpg
   bio:            "I am the founder and Chief Technical Officer of Tech Rapport, a company that creates innovative software, web and data solutions."
   email:          info@techrapport.com
   # Social networking links used in footer. Update and remove as you like.
@@ -32,7 +32,7 @@ owner:
   instagram:
   flickr:
   tumblr:
-  # google plus id, include the '+', eg +AronBordin
+  # google plus id, include the '+'
   google_plus:    +yourid
 
 # Analytics and webmaster tools stuff goes here
@@ -77,7 +77,7 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   #- #jemoji
   - jekyll-redirect-from
-  - jekyll-mentions #--Doesn;t work, investigate html-pipeline error.
+  - jekyll-mentions 
 sass:
   sass_dir: _sass
   style: compressed
