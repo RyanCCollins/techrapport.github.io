@@ -7,11 +7,11 @@
       <li class="header-item-title header-toggle "><a href="#menu"><h2><i class="fa fa-bars"></i></h2></a></li>
       <li class="header-item-title">
         <a href="{{site.baseurl}}/">
-          <img class="logo" src="{{site.baseurl}}/{{ site.logo }}" alt="{{ site.title }}">
+          <img class="logo" src="{{site.baseurl}}{{site.icon_path}}{{ site.logo }}" alt="{{ site.title }}">
           <h2 class="title"> {{ site.title }}</h2>
         </a>
       </li>
-      {% for menu in site.menus reversed %}
+      {% for menu in site.data.nav.menus reversed %}
         {% assign class = nil %}
         {% if ((page.url contains menu.url and menu.url != '/') or (page.url == '/index.html' and menu.url == '/')) %}
           {% assign class = 'active' %}
@@ -62,8 +62,8 @@
 
 <nav id="menu" style="display: none">
   <ul>
-    {% for menu in site.menu %}
-      {% if menu.type == 'categories' %}
+    {% for menu in site.data.nav.menus %}
+      {% if menu.title == 'Categories' %}
         <li><a href="{{site.baseurl}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
           <ul>
             {% for item in (0..site.categories.size) %}{% unless forloop.last %}
@@ -72,10 +72,10 @@
             {% endunless %}{% endfor %}
           </ul>
         </li>
-      {% elsif menu.submenu %}
+      {% elsif menu.submenus %}
         <li><a href="{{site.baseurl}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
           <ul>
-            {% for sub in menu.submenu %}
+            {% for sub in menu.submenus %}
               <li><a href="{{site.baseurl}}{{sub.url}}">{{sub.title}}</a></li>
             {% endfor %}
           </ul>
