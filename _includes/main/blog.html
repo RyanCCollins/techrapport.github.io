@@ -5,33 +5,27 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="section-title uppercase">Latest From our Swift Blog</h2>
-
-                        <p class="section-subtitle">Keep up-to-date with our lateset blog entries and subscribe to our <a href ="{{site.baseurl}}/feed.xml">RSS feed</a></p>
-
+                        <p class="section-subtitle">Keep up-to-date with our lateset blog entries and subscribe to our <a href ="{{site.baseurl}}/rssfeed.xml">RSS feed</a> or <a href=""{{site.baseurl}}/atom.xml">Atom Feed</a> (for Feed Readers)</p>
                         <span class="divider center"></span>
                     </div>
                     <!-- //.col-md-8 -->
                 </div>
                 <!-- //.row -->
-                
                 <!-- BLOG POST START -->
                 <div class="row">
                 {% for post in site.posts limit:6 %}
-                
                     <div class="col-sm-6 col-md-4">
                         <div class="blog-post">
                             {% if post.image %}
                             <div class="post-media">
-                                <img src="{{ site.blog_image_path }}{{ post.image }}" class="img-responsive" alt="Swift Extensions" />
+                                <img src="{{site.blog_image_path}}{%if post.image.feature%}{{ post.image.feature }}{%else%}/blog-place_rect.png{%endif%}" class="img-responsive" alt="{{post.image.alt}}" />
                             </div>
                             <!-- //.post-media -->
                             {% endif %}
-
                             <div class="post-meta match-height">
                                 <span class="date">
                                     <span class="day">{{ post.date | date: '%d' }}</span> sep{{ post.date | date: '%y' }}
                                 </span>
-
                                 <div class="post-title">
                                     <h4>
                                         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>

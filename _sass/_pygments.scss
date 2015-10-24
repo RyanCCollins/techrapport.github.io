@@ -1,5 +1,3 @@
----
----
 .highlight {
 	margin-bottom: 1.5em;
 	@include font(12);
@@ -13,7 +11,7 @@
 		padding: 1em;
 	}
 	.lineno { padding-right: 24px; color: #8f908a;}
-	.hll { background-color: #49483e }
+	.hll { background-color: #000000 }
 	.c { color: #75715e } /* Comment */
 	.err { color: #960050; background-color: #1e0010 } /* Error */
 	.k { color: #66d9ef } /* Keyword */
