@@ -1,0 +1,34 @@
+menus:
+  - title: 'Home'
+    url: '/#'
+    submenus:
+      - title: Profile
+        url: '/#profile'
+      - title: 'Portfolio'
+        url: '/#portfolio'
+      - title: 'Services'
+        url: '/#services'
+  - title: 'Resume'
+    url: '/#resume'
+    submenus:
+      - title: Resume Home
+        url: '/resume/'
+      - title: Strengths
+        url: '/resume/#strengths'
+      - title: 'Skills & Knowledge'
+        url: '/resume/#skills'
+      - title: References
+        url: '/resume/#referencs'
+      - title: Certifications
+        url: '/resume/#certifications'
+  - title: Blog
+    url: '/blog/'
+    submenus:
+      - title: 'All Posts'
+        url: '/blog/'
+      - title: 'Categories'
+        url: '/blog/categories/'
+      - title: 'Tags'
+        url: '/blog/tags/'
+      - title: 'Archive'
+        url: '/blog/posts/'

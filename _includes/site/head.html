@@ -1,0 +1,50 @@
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    
+    <!-- Site Title -->
+    <title>
+    {% if page.title %}
+        {{ page.title }}
+    {% else %}
+        Default Page Title
+    {% endif %}
+    </title>
+    
+    {% include site/meta.html %}
+    {% include site/favicons.html %}
+
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ site.baseurl }}/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Font icons CSS -->
+    <link href="{{ site.baseurl }}/assets/plugins/icons-mind/style.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}/assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Plugins CSS -->
+    <link href="{{ site.baseurl }}/assets/plugins/jpreloader/css/jpreloader.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}/assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}/assets/plugins/magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}/assets/plugins/flexSlider/flexslider.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="{{ site.baseurl }}/assets/css/blog-home.css" rel="stylesheet">
+    
+    <!-- TODO: Add logic to switch CSS here -->
+    {% unless page.url contains '/blog/' %}
+        {% include site/main_css.html %}
+    {% endunless %}
+    
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 8]>
+    <script src="/assets/plugins/modernizr.min.js"></script>
+    <![endif]-->
+</head>

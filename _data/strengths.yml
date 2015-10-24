@@ -1,0 +1,21 @@
+title: "My Strengths"
+subtitle: "Strength does not come from physical capacity. It comes from an indomitable will.
+-Mahatma Gandhi"
+yindex: "ME"
+
+top: "Perfect"
+midtop: "Adept"
+midbot: "Proficient"
+bot: "Beginner"
+
+area:
+  - areatitle: "Work Ethic"
+    percentage: 100
+  - areatitle: "Adaptability"
+    percentage: 89
+  - areatitle: "Passion"
+    percentage: 99
+  - areatitle: "Ingenuity"
+    percentage: 87
+  - areatitle: "Creativity"
+    percentage: 92

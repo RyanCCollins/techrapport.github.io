@@ -1,0 +1,27 @@
+title: "My Resume"
+subtitle: "If you call failures experiments, you can put them in your resume and claim them as achievements."
+
+sectiontitle: "My Education"
+years: "2005 - Present"
+
+schools:
+  - name: "Udacity"
+    category: "Nanodegree / Coding Bootcamp"
+    dates: "2015 - Present"
+    description: "Beginning in 2014, I set a goal to learn and become certified in a new technology every year.  Having a strong background in mobile software and web development, I decided to take my understanding of the Swift programming language and iOS app development to the next level by taking an extensive Nanodegree on the subject.  During this course, I have spent 30-40 hours per week developing for the iPhone/iPad in Swift."
+    key: 0
+  - name: "UMass Boston"
+    category: "Master's Degree in Computer Science"
+    dates: "2014 - Present"
+    description: "I began taking my Master's degree in computer science part-time in 2014 and expect to be finished in 2016."
+    key: 1
+  - name: "New England Institute of Art "
+    category: "Bachelors of Science"
+    dates: "2006-2009"
+    description: "At NEiA, I studied engineering, with a focus on web and media technologies, and received my BS degree with a 3.8 Cumulitive GPA."
+    key: 2
+  - name: "McNally Smith College of Music"
+    category: "Audio Engineering"
+    dates: "2005-2006"
+    description: "At McNally Smith, I studied Audio Engineering.  The curicullum was extremely extensive and although I loved it, I transferred after a year because I Minnesota was a little too cold for my tastes."
+    key: 3

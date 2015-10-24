@@ -1,0 +1,59 @@
+<!-- BLOG SECTION START -->
+    <section id="blog" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">Latest From our Swift Blog</h2>
+                        <p class="section-subtitle">Keep up-to-date with our lateset blog entries and subscribe to our <a href ="{{site.baseurl}}/rssfeed.xml">RSS feed</a> or <a href=""{{site.baseurl}}/atom.xml">Atom Feed</a> (for Feed Readers)</p>
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                <!-- BLOG POST START -->
+                <div class="row">
+                {% for post in site.posts limit:6 %}
+                    <div class="col-sm-6 col-md-4">
+                        <div class="blog-post">
+                            {% if post.image %}
+                            <div class="post-media">
+                                <img src="{{site.blog_image_path}}{%if post.image.feature%}{{ post.image.feature }}{%else%}/blog-place_rect.png{%endif%}" class="img-responsive" alt="{{post.image.alt}}" />
+                            </div>
+                            <!-- //.post-media -->
+                            {% endif %}
+                            <div class="post-meta match-height">
+                                <span class="date">
+                                    <span class="day">{{ post.date | date: '%d' }}</span> sep{{ post.date | date: '%y' }}
+                                </span>
+                                <div class="post-title">
+                                    <h4>
+                                        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                                    </h4>
+                                </div>
+                                <!-- //.post-title -->
+                            </div>
+                            <!-- //.post-meta -->
+                        </div>
+                        <!-- //.blog-post -->
+                    </div>
+                    <!-- //.col-md-4 -->
+                    {% endfor %}
+                </div>
+                <!-- //BLOG POST END -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="launch text-center">
+                            <a href="/blog/" class="btn btn-lg btn-custom">See All Posts</a>
+                        </div>
+                        <!-- //.launch -->
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //BLOG SECTION END -->

@@ -1,13 +1,15 @@
 ---
+title: "Popover Views on the iPhone"
+description: "Tech Rapport's Blog - Using Popover Views on the iPhone - UIPopover Views on the iPhone"
 published: true
-layout: post
-title: Popover Views on the iPhone
-tags: "ios, ios development, software, iphone, ipad, swift, code, tech rapport, techrapport, swift, extensions, xcode, swift 2.0, Popover, UIPopover, UIPopoverController, Popover Views, UIPopoverPresentationControllerDelegate"
-category: swift
+comments: true
+category: [iOS Dev, Meme-Me]
+tags: [ios development, Swift 2.0, Meme-Me, xCode 7.0, programming, UIPopoverViews, UIKit]
+image: 
+  feature: 
 ---
-
-
-##UIPopoverController in Action
+<br>
+###How to use UIPopoverViews on the iPhone<br>
 
 With the expansion of screen size and resolution on the iOS platform, we as developers have to adapt our applications to make use of the amazing screens that we carry in our pockets.  
 
@@ -21,19 +23,28 @@ What you have to be careful of is what happens to your view if the user is seein
 
 ###Setup:
 For this project, I will demonstrate how I went about incorporating a color picker and a font picker in UIPopover views in my Meme-Maker app.  If you are following along, feel free to start a new project and design a View Controller similiar to the MemeEditorViewController as shown below.  Make sure that you have a button or two to call the popover views.
-
+\n\n
 Here you can see the main view controller that will be presenting the popover views:
 
-![Screen Shot 2015-10-14 at 4.27.59 PM.png]({{site.baseurl}}/images/Screen Shot 2015-10-14 at 4.27.59 PM.png)
+<figure class="one center">
+    <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.27.59 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.27.59 PM.png" alt="View controller"></a>
+    <figcaption>Storyboard ViewController Screenshot</figcaption>
+</figure>
 
 ###Setting up the Storyboard
 To start, create a bar button item, or button, on your main view controller.  Next, create a view and set it up so that it will use a preferred explicit size.  To do this, go to the _Attributes Inspector_, set the Size to _Freeform_, the _Status Bar_ to _None_, and check off the _Use Prefered Explicit Size_ check box.  For this example, I set the content size to be 300x300. 
 
-![Screen Shot 2015-10-14 at 4.31.51 PM.png]({{site.baseurl}}/images/Screen Shot 2015-10-14 at 4.31.51 PM.png)
+<figure class="one center">
+    <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.31.51 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.31.51 PM.png" alt="Attribute Inspector"></a>
+<figcaption>Attribute Inspector Screenshot</figcaption>
+</figure>
  
  Next, in the _Size Inspector_, once again select _Freeform_ and set the size to 300 x300.
  
-![Screen Shot 2015-10-14 at 4.34.09 PM.png]({{site.baseurl}}/images/Screen Shot 2015-10-14 at 4.34.09 PM.png)
+<figure class="one center">
+    <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.34.09 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.34.09 PM.png" alt="Size Inspector"></a>
+<figcaption>Size Inspector Screenshot</figcaption>
+</figure>
 
 For my example, I am going to show you how I added a UISlider to the view to set the font size.  I won't go into exactly how the views communicate with one another, but the basic idea is that there is a FontAttributes struct that stores the font data for each Meme.  Abstracting it this way helps us to stick to MVC and it makes the implementation of the view and controls much more flexible.  Each view gets passed a copy of the FontAttributes Model object.
 
@@ -41,13 +52,20 @@ Okay, now that we have that out of the way and we've added our UISlider, let's t
 
 First of all, in the Storyboard, control-click your button and drag it to the view that you would like to present modally. From the _Active Segue_ menu, select "Popover Presentation".
 
-![Screen Shot 2015-10-14 at 4.40.27 PM.png]({{site.baseurl}}/images/Screen Shot 2015-10-14 at 4.40.27 PM.png)
+<figure class="one center">
+    <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.40.27 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.40.27 PM.png" alt="Popover Presentation"></a>
+    <figcaption>Popover Presentation Screenshot</figcaption>
+</figure>
 
 Next, select your newly created Segue by clicking the arrow that just appeared between the Main View and the Font Popover View and set the _StoryBoard Identifier_ field in the _Attributes Inspector_ to: "fontPopoverSegue".  You don't need to change anything else here, but I suggest you play around with the various settings.
 
-![Screen Shot 2015-10-14 at 4.43.52 PM.png]({{site.baseurl}}/images/Screen Shot 2015-10-14 at 4.43.52 PM.png)
+<figure class="one center">
+    <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.43.52 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.43.52 PM.png" alt="UIPopoverView Setting Screenshot"></a>
+<figcaption>UIPopoverView Setting Screenshot</figcaption>
+</figure>
 
 ###Setting up the Presenting View Controller
+
 Within your main view controller class file, you will need to do the following:
 1. Make the main view controller folow the UIPopoverPresentationControllerDelegate protocol
 2. Implement the Popover Delegate function(s)
@@ -57,13 +75,11 @@ Let's take a look at how I've done this.
 
 First, after the class definition's parent class name insert a comma followed by: [UIPopoverPresentationViewControllerDelegate](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverPresentationControllerDelegate_protocol/index.html) as shown below (note: for brevity, I have removed all of the other delegates/protocols from the class definition.)
 
-    class MemeEditorViewController: UIViewController,     UIPopoverPresentationControllerDelegate {
-
+    class MemeEditorViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
 Next, add the function below somewhere within your presenting view controller's class:
 
-
-    Mark: Popover delegate func
+//Popover delegate func
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) - UIModalPresentationStyle {
         return UIModalPresentationStyle.None
     }
@@ -74,16 +90,17 @@ This would be the place where we could set up checks to see what size screen the
 
 Finally, we must override the prepareForSegue method in order to check for when the segue is called.  Within this method, we can set the presentation style, set the delegate and pass any data that needs to be passed.
 
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //Check for the fontPopoverSegue
         if segue.identifier == "fontPopoverSegue" {
             
             //-Set the Type of the Destination View Controller
-            let popoverVC = segue.destinationViewController as! 	TextSizePopoverViewController 
+            let popoverVC = segue.destinationViewController as! TextSizePopoverViewController 
             
             //Set the presentation of the popover view controller to .Popover:
             popoverVC.modalPresentationStyle = UIModalPresentationStyle.Popover
-            
+
             //-Set the delegate of the popover vc to self and pass model data:
             popoverVC.popoverPresentationController!.delegate = self
             popoverVC.fontAttributes = fontAttributes
@@ -97,7 +114,8 @@ Just for the sake of clarity, I'll quickly show you what I did to have the popov
 
 In my case, I wanted the view to update the size and type of the font of the text in the main view.  To do this, I implemented a few methods in both the popover view controller and main view controller.  To increase the font size, I created an @IBAction that updated the TextSizePopoverViewController's fontAttributes object, passed the object back to the MemeEditor and then call a function to update the view in the MemeEditorViewController.  Check out this code below:
 
-    //In the TextPopoverViewController file:
+
+//In the TextPopoverViewController file:
     func updateMemeFont(){
         //update the MemeEditor font and reconfigure the view:
         let parent = presentingViewController as! MemeEditorViewController
@@ -114,7 +132,20 @@ In my case, I wanted the view to update the size and type of the font of the tex
         updateMemeFont()
     }
 
-Please take a look at my app in action in the following video: [Meme Maker Beta Test Flight](https://www.youtube.com/watch?v=2aUd8Y6TG0E)  You can also take a look at the images below and checkout my Meme Maker code here: [github.com/TechRapport/Meme-Me](https://github.com/TechRapport/Meme-Me)
-![bd721c87281c1eb293577962544ab57d1f4c8ca3.png]({{site.baseurl}}/images/bd721c87281c1eb293577962544ab57d1f4c8ca3.png) [9957fac4b23ef18266ca48437116a1c390b1b41a.png]({{site.baseurl}}/images/9957fac4b23ef18266ca48437116a1c390b1b41a.png)
+
+Please take a look at my app in action in the following video:
+
+<figure class="one center">
+    <a href="https://www.youtube.com/watch?v=2aUd8Y6TG0E"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=2aUd8Y6TG0E" frameborder="0"> </iframe></a>
+    <figcaption>Meme-Me Test Flight</figcaption>
+</figure>
+
+You can also take a look at the images below and checkout my Meme Maker code on github here: [github.com/TechRapport/Meme-Me](https://github.com/TechRapport/Meme-Me)
+
+<figure class="half">
+    <a href="{{site.blog_image_path}}bd721c87281c1eb293577962544ab57d1f4c8ca3.png"><img src="{{site.blog_image_path}}bd721c87281c1eb293577962544ab57d1f4c8ca3.png" alt="Meme-Me Test Flight - TechRapport"></a>
+    <a href="{{site.blog_image_path}}9957fac4b23ef18266ca48437116a1c390b1b41a.png"><img src="{{site.blog_image_path}}9957fac4b23ef18266ca48437116a1c390b1b41a.png" alt="Meme-Me Test Flight - TechRapport"></a>
+    <figcaption>Meme Me Test Flight</figcaption>
+</figure>
 
 Please feel free to leave me some comments if you got tripped up, or if you liked this guide and thanks for visiting

@@ -1,0 +1,81 @@
+    {% assign educationdata = site.data.education %}
+    <!-- RESUME SECTION START -->
+    <section id="resume" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title uppercase">
+                            {{ educationdata.title }}
+                        </h2>
+
+                        <p class="section-subtitle">
+                            {{ educationdata.subtitle }}
+                        </p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <!-- EDUCATION START -->
+                <div class="row education">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h3>
+                            {{ educationdata.sectiontitle }}
+                            <br>
+                            {{ educationdata.years }}
+                        </h3>
+
+                        <div class="panel-group resume" id="education">
+                            {% for school in educationdata.schools %}
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">{{ school.dates }}</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#education{{ school.key }}" data-toggle="collapse" data-parent="#education"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title">
+                                                {{ school.name }} - {{ school.category }}
+                                            </h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="education{{ school.key }}" class="panel-collapse collapse in">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                {{ school.description }}
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+                            <!-- //.resume-item -->
+                            {% endfor %}
+                        </div>
+                        <!-- //.panel-group -->
+                    </div>
+                    <!-- //.col-md-10 -->
+                </div>
+                <!-- //EDUCATION END -->
+                <!--  include jobexperience.html -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //RESUME SECTION END -->

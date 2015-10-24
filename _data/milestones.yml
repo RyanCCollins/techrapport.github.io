@@ -1,0 +1,28 @@
+header: "Milestones Acheived"
+subheader: "My path has not been determined. I shall have more experiences and pass many more milestones."
+
+milestones:
+  - title: "Hours Worked Professionally"
+    numFrom: 10
+    numTo: 13440
+    numString: "13,440"
+    numInterval: 100
+    icon: "icon-Business-Man"
+  - title: "Years Honing Skills"
+    numFrom: 5
+    numTo: 18
+    numString: "18"
+    numInterval: 5
+    icon: "icon-Open-Book"
+  - title: "Projects"
+    numFrom: 10
+    numTo: 78
+    numInterval: 10
+    numString: "78"
+    icon: "icon-Check"
+  - title: "Lines of Code (on GitHub)"
+    numFrom: 10
+    numTo: 37342
+    numString: "17,342"
+    numInterval: 100
+    icon: "icon-Code-Window"

@@ -1,3 +1,154 @@
-collections:
-- services
-- projects
+#Site variables
+title: Tech Rapport
+header: "Creative Software"
+description: "Tech Rapport, creative software, web design, marketing, SEO, and data architecture. At TechRapport, we believe that technology and business go hand-in-hand.  Work with us to create a better future for your business and generate rapport with your technology now."
+tagline: "Fostering relationships between business and technology is what we do best"
+copyright: Tech Rapport
+url: http://techrapport.com
+image_path: /assets/images/
+icon_path: /assets/images/icons/
+reading_time: true
+words_per_minute: 200
+logo: /logo.png
+
+#Delete author once all updated to owner:
+
+owner:
+  name: Ryan Collins
+  address: ADDRESS here
+  phone: 617-299-9722
+  email: info@techrapport.com
+  company: Tech Rapport
+  site:           http://techrapport.com
+  avatar:         me-avatar.jpg
+  bio:            "I am the founder and Chief Technical Officer of Tech Rapport, a company that creates innovative software, web and data solutions."
+  email:          info@techrapport.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter: tech_rapport
+  facebook: 
+  github: techrapport
+  stackexchange: techrapport
+  linkedin: techrapport
+  instagram:
+  flickr:
+  tumblr:
+  # google plus id, include the '+'
+  google_plus:    +yourid
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-68833574-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+paginate: 4
+paginate_path: "/blog/page:num/"
+disqus: techrapportcom
+
+#Blog variables
+blog_image_path: /assets/images/blog/
+blog_name: "Swift Connection"
+blog_subheader: "A Swift Blog brought to you by TechRapport.com"
+#Markdown vars
+markdown: redcarpet
+highlighter: pygments
+
+#Collections:
+collections: 
+  - posts
+  - projects
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  #- #jemoji
+  - jekyll-redirect-from
+  - jekyll-mentions
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME
+
+#Defaults
+defaults: 
+  - 
+    scope: 
+      path: ""
+      type: posts
+    values: 
+      author: "Tech Rapport"
+      layout: post
+      path: ""
+      permalink: /blog/:categories/:title/
+  - 
+    scope: 
+      path: ""
+      type: pages
+    values: 
+      author: "Tech Rapport"
+      layout: page
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      author: "Tech Rapport"
+      layout: default
+
+#Site Map Vars:
+sitemap:
+  lastmod: 2015-01-23
+  priority: 0.7
+  changefreq: monthly
+  exclude: yes
+
+#Social icons:
+footerlinks: 
+  - 
+    iclass: "fa fa-send-o"
+    title: Email
+    url: "mailto:"
+    username: info@techrapport.com
+  - 
+    iclass: "fa fa-github"
+    title: GitHub
+    url: "https://github.com/"
+    username: techrapport
+  - 
+    iclass: "fa fa-linkedin"
+    title: linkedin
+    url: "https://www.linkedin.com/in/"
+    username: techrapport
+  - 
+    iclass: "fa fa-stack-overflow"
+    title: stackoverflow
+    url: "https://www.stackoverflow.com/"
+    username: techrapport
+  - 
+    iclass: "fa fa-twitter"
+    title: Twitter
+    url: "https://www.twitter.com/"
+    username: tech_rapport
+  - 
+    iclass: "fa fa-google-plus"
+    title: techrapport
+    url: "https://plus.google.com/"
+    username: "101168809038593931433/"# anything in your profile username that comes after plus.google.com/
+  - 
+    iclass: "fa fa-youtube"
+    title: techrapport 
+    url: "https://youtube.com/"
+    username: "channel/UC2iYWXVQlPa76aQlADYocow/"
+  -
+    iclass: "fa fa-rss"
+    title: feed.xml
+    url: '/atom.xml'
+    username: "atom.xml"

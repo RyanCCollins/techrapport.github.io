@@ -1,0 +1,16 @@
+title: "Knowledge"
+subtitle: "Human behavior flows from three main sources: desire, emotion, and knowledge. -Plato"
+
+area:
+  - areatitle: "Mobile Development"
+    percentage: 95
+  - areatitle: "Data Science & Architecture"
+    percentage: 87
+  - areatitle: "Web Design & Development"
+    percentage: 89
+  - areatitle: "Web Marketing"
+    percentage: 79
+  - areatitle: "Software Implementation"
+    percentage: 93
+  - areatitle: "Engineering"
+    percentage: 87

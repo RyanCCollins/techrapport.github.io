@@ -1,0 +1,17 @@
+title: "Skill Level & Expertise"
+subtitle: "Only those who have patience to do simple things perfectly ever acquire the skill to do difficult things easily.
+-James J. Corbett"
+
+area:
+  - areatitle: "Swift & ObjC"
+    percentage: 96
+  - areatitle: "Java"
+    percentage: 75
+  - areatitle: "CSS3, SASS, & HTML 5"
+    percentage: 89
+  - areatitle: "Ruby"
+    percentage: 83
+  - areatitle: "JavaScript"
+    percentage: 91
+  - areatitle: "C#"
+    percentage: 95

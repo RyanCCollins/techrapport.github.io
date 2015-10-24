@@ -1,0 +1,16 @@
+<h4>Blog Search</h4>
+<div class="input-group">
+	<form action="get" id="site_search">
+		<input type="text" class="form-control">
+			<button class="btn btn-default" type="submit" value ="search">
+        	<span class="glyphicon glyphicon-search"></span>
+    		</button>
+	</form>
+</div>
+<!-- /.input-group -->
+
+<ul id="results"></ul>
+
+<script src="{{site.baseurl}}/assets/js/lunr.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{site.baseurl}}assets/js/search.js"></script>

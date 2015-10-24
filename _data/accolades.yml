@@ -1,0 +1,24 @@
+header: "Professional Certifications"
+sub_header: "The accolades, just like the scrapes and bruises, fade in the end, and all you're left with is your ambition. - Nicole Krauss"
+
+accolades:
+  - title: "iOS Developer Nanodegree"
+    key: 0
+    icon: icon-Cloud-Smartphone
+    description: "In progress, to be completed November, 2015."
+  - title: "MongoDB Developer Certification"
+    key: 1
+    icon: icon-Big-Data
+    description: "In progress through MongoDB University"
+  - title: "SQL Server Certifification"
+    key: 3
+    icon: "icon-Windows-Microsoft"
+    description: "Certification completed in 2014"
+  - title: "Google SEO & Analytics Training"
+    key: 4
+    icon: icon-Google
+    description: "Extensive training in Google Search Engine Optimization and Analytics"
+  - title: "Best Looking"
+    key: 5
+    icon: icon-Sun
+    description: "Voted best looking AND best dressed in middle school."
