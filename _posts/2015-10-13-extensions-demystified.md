@@ -5,8 +5,8 @@ category: "Swift"
 tags: [ios development, software, swift]
 published: true
 comments: true
-image_square: swift-extensions.png
-image: swift-extensions.png
+image:
+  feature: swift-extensions.png
 ---
 
 Often times when one is learning a new concept, it is easy to get hung up on the subject by overthinking it outside of the context of the intended use. That has been the case throughout my Swift learning experience and most recently I had a lightbulb moment about just how powerful Swift Extensions are when I was developing the Meme-Me app for the Udacity iOS nanodegree. 
@@ -16,7 +16,6 @@ I had read and studied Apple's [Swift documentation](https://developer.apple.com
 When I had finished this, I realized that a shake-to-reset feature would be a great for so that the user could reset to the default font. I started writing the code for this and I realized that I would have to write the same code in each of my view controllers. At that moment, a light bulb went off in my head and I went about creating an extension to UIViewController. It was brilliantly simple to add the functionality that I needed to the extension and then call a method or two from each view controller to customize the shake gesture. 
 
 Here is the Extension, in all of its glory:
-
 
     extension UIViewController {
         //#--MARK: Subsribe to shake   notifications:

@@ -6,7 +6,8 @@ published: false
 comments: true
 tags: [ios,  Udacity, Nanodegree]
 image_square: blog-image-1.jpg
-image: udacity-certificate-900x300.png
+image: 
+  feature: udacity-certificate-900x300.png
 ---
 
 In 2015, I embarked on a journey that would change my life.  I started taking the iOS Nanodegree through Udacity, an online MOOC (massively open onlince course) provider.  At the time, I was just looking to expand my knowledge and make better iPhone apps.  What I didn't know at the time was that it would cause a chain reaction that would push me so much further than I could ever anticipate in my pursuit of academic acheivement.

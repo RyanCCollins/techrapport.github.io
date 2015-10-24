@@ -5,8 +5,8 @@ published: true
 comments: true
 category: [iOS Dev, Meme-Me]
 tags: [ios development, Swift 2.0, Meme-Me, xCode 7.0, programming, UIPopoverViews, UIKit]
-image_square: blog-image-1.jpg
-image: blog-place_rect.png
+image: 
+  feature: 
 ---
 <br>
 ###How to use UIPopoverViews on the iPhone<br>
@@ -75,18 +75,14 @@ Let's take a look at how I've done this.
 
 First, after the class definition's parent class name insert a comma followed by: [UIPopoverPresentationViewControllerDelegate](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverPresentationControllerDelegate_protocol/index.html) as shown below (note: for brevity, I have removed all of the other delegates/protocols from the class definition.)
 
-{% highlight swift %}
     class MemeEditorViewController: UIViewController, UIPopoverPresentationControllerDelegate {
-{% endhighlight %}
 
 Next, add the function below somewhere within your presenting view controller's class:
 
-{% highlight swift %}
 //Popover delegate func
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) - UIModalPresentationStyle {
         return UIModalPresentationStyle.None
     }
-{% endhighlight %}
 
 The reason we implement this function is because we implemented the [UIPopoverPresentationControllerDelegate](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverPresentationControllerDelegate_protocol/index.html) and this function must return UIModalPresentationStyle.None in order for our view to be presented in a popover view.  There are other optional protocol methods, which you should read about in [Apple's Documention](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverPresentationControllerDelegate_protocol/index.html).
 
@@ -94,7 +90,7 @@ This would be the place where we could set up checks to see what size screen the
 
 Finally, we must override the prepareForSegue method in order to check for when the segue is called.  Within this method, we can set the presentation style, set the delegate and pass any data that needs to be passed.
 
-{% highlight swift %}
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //Check for the fontPopoverSegue
         if segue.identifier == "fontPopoverSegue" {
@@ -109,7 +105,7 @@ Finally, we must override the prepareForSegue method in order to check for when 
             popoverVC.popoverPresentationController!.delegate = self
             popoverVC.fontAttributes = fontAttributes
         }
-{% endhighlight %}
+
 
 This will get you up and running.  I'll leave it up to you to figure out how you implement this.  
 
@@ -118,7 +114,7 @@ Just for the sake of clarity, I'll quickly show you what I did to have the popov
 
 In my case, I wanted the view to update the size and type of the font of the text in the main view.  To do this, I implemented a few methods in both the popover view controller and main view controller.  To increase the font size, I created an @IBAction that updated the TextSizePopoverViewController's fontAttributes object, passed the object back to the MemeEditor and then call a function to update the view in the MemeEditorViewController.  Check out this code below:
 
-{% highlight swift %}
+
 //In the TextPopoverViewController file:
     func updateMemeFont(){
         //update the MemeEditor font and reconfigure the view:
@@ -135,7 +131,7 @@ In my case, I wanted the view to update the size and type of the font of the tex
         //Update the Meme's Font on the presenting view
         updateMemeFont()
     }
-{% endhighlight %}
+
 
 Please take a look at my app in action in the following video:
 
