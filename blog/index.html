@@ -11,11 +11,11 @@ comments: false
   <header>
     {% if post.image.feature %}
       <div class="entry-image-index">
-        <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.baseurl }}{{site.blog_image_path}}{{ post.image.feature }}" alt="{{ post.title }}"></a>
+        <a href="{{ site.baseurl }}{{ post_url }}" title="{{ post.title }}"><img src="{{ site.baseurl }}{{site.blog_image_path}}{{ post.image.feature }}" alt="{{ post.title }}"></a>
       </div><!-- /.entry-image -->
     {% endif %}
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.baseurl }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
+      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.baseurl }}{{ post_url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.baseurl }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
       {% if site.reading_time %}
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
@@ -25,16 +25,16 @@ comments: false
       {% endif %}
     </div><!-- /.entry-meta -->
     {% if post.link %}
-      <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
+      <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post_url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
     {% else %}
-      <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
+      <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post_url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
     {% endif %}
   </header>
   <div class="entry-content">
     {% if post.content contains "\n\n" %}
-    <p>{{ post.content | split:"\n\n" | first % }} <a href="{{ site.baseurl }}{{ post.url }}">  Continue reading...</a></p>
+    <p>{{ post.content | split:"\n\n" | first % }} <a href="{{ site.baseurl }}{{ post_url }}">  Continue reading...</a></p>
     <div class="launch text-center">
-      <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-custom">Read More</a>
+      <a href="{{ site.baseurl }}{{ post_url }}" class="btn btn-custom">Read More</a>
     </div>
     {% else %}
       {{ content }}
