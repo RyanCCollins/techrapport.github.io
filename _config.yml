@@ -77,7 +77,7 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jemoji
   - jekyll-redirect-from
-  #- jekyll-mentions#--Doesn;t work, investigate html-pipeline error.
+  - jekyll-mentions #--Doesn;t work, investigate html-pipeline error.
 sass:
   sass_dir: _sass
   style: compressed
