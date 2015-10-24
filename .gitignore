@@ -11,3 +11,4 @@ _includes/svg-icons.html
 techrapport.sublime-project
 techrapport.sublime-workspace
 .idea*
+gruntfile.js

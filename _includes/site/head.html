@@ -39,11 +39,9 @@
     <link href="{{ site.baseurl }}/assets/css/blog-home.css" rel="stylesheet">
     
     <!-- TODO: Add logic to switch CSS here -->
-    {% if page.url == "/blog/" %}
-        {% include blog_css.html %} 
-    {% else %}
-        {% include site/main_css.html %}
-    {% endif %}
+    {% unless page.url contains '/blog/'}
+    {% include site/main_css.html %}
+    {% endunless %}
     
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 8]>
