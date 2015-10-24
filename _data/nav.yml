@@ -31,4 +31,4 @@ menus:
       - title: 'Tags'
         url: '/blog/tags/'
       - title: 'Archive'
-        url: '/blog/posts/''
+        url: '/blog/posts/'
