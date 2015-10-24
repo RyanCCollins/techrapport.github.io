@@ -50,7 +50,7 @@ blog_image_path: /assets/images/blog/
 blog_name: "Swift Connection"
 blog_subheader: "A Swift Blog brought to you by TechRapport.com"
 #Markdown vars
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 
 kramdown:

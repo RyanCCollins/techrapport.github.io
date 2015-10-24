@@ -30,7 +30,9 @@ The app offers the following features:
 - View a saved Meme
 - Edit a saved Meme
 
-See the extra credit features and what I intend to add next below. 
+See the extra credit features and what I intend to add next below.
+
+<!-- more -->
 
 ####Technologies and best practices used
 Some of the more notable technologies and best practices I used in this app are shown below. I also wrote about some of these subjects in [my blog](http://TechRapport.com/blog/) in the Swift development section.
