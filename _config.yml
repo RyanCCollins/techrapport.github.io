@@ -10,7 +10,7 @@ icon_path: /assets/images/icons/
 reading_time: true
 words_per_minute: 200
 logo: /logo.png
-baseurl: http://techrapport.com/
+baseurl: http://techrapport.com
 
 #Delete author once all updated to owner:
 
