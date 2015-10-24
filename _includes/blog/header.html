@@ -17,7 +17,7 @@
           {% assign class = 'active' %}
         {% endif %}
 
-        {% if menu.type == 'categories' %}
+        {% if menu.title == 'categories' %}
           <li class="header-item {{class}}"><a href="{{site.baseurl}}{{menu.url}}"><h3>{{ menu.title }}</h3></a>
             <ul class="header-submenu">
               {% for item in (0..site.categories.size) %}{% unless forloop.last %}

@@ -42,7 +42,7 @@
                         {% for item in (0..site.categories.size) %}{% unless forloop.last %}
                         {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
                     <li class="dropdown">
-                        <a href="/categories/#{{this_word}}" id="dropdown-references" class="dropdown-toggle" data-toggle="dropdown" data-target="/categories" role="button" aria-haspopup="true">{{this_word}}</a>
+                        <a href="/blog/categories/#{{this_word}}" id="dropdown-references" class="dropdown-toggle" data-toggle="dropdown" data-target="/categories" role="button" aria-haspopup="true">{{this_word}}</a>
                     </li>
                         {% endunless %}{% endfor %}
                 </ul>
