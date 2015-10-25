@@ -3,6 +3,7 @@ title: "Popover Views on the iPhone"
 description: "Tech Rapport's Blog - Using Popover Views on the iPhone - UIPopover Views on the iPhone"
 published: true
 comments: true
+permalink: /ios%20dev/meme-me/2015/10/14/popover-views-on-iphone.html
 category: [iOS Dev, Meme-Me]
 tags: [ios development, Swift 2.0, Meme-Me, xCode 7.0, programming, UIPopoverViews, UIKit]
 image: 

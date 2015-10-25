@@ -1,10 +1,11 @@
 ---
 title: "Swift Extensions Demystified"
 description: "Tech Rapport - Swift Class Extensions Demystified - Cocoa Touch Programming & Development"
-category: "Swift"
+category: [Swift]
 tags: [ios development, software, swift]
 published: true
 comments: true
+permalink: /swift/2015/10/13/extensions-demystified.html
 image:
   feature: swift-extensions.png
 ---

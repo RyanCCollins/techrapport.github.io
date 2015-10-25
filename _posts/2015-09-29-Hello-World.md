@@ -2,7 +2,8 @@
 layout: post
 title: "Hello World - Tech Rapport's Blog"
 description: "Technology Blog - brought to you by Tech Rapport"
-category: "Tech Rapport"
+category: [Tech Rapport]
+permalink: /ios%20dev/2015/10/08/NS-Notifications.html
 published: true
 comments: true
 permalink: /ios%20dev/2015/10/13/what-makes-good-ios-apps.html
