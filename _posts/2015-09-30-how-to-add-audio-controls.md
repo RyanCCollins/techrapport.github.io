@@ -24,7 +24,7 @@ First, we are going to do a bit of research on how to change the volume. You mig
 [App Coda's AVFoundation Tutorials](http://www.appcoda.com/ios-avfoundation-framework-tutorial/)
 
  Also, we may want to research the UISlider class a bit to figure out how it works.  I found that Apple's UISlider Class documentation is very informative.
-
+/n/n
 Ok, let's jump right in and add a slider to control the playback volume in our app!
 
 ### Step 1:
