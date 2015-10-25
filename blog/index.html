@@ -25,16 +25,16 @@ comments: false
       {% endif %}
     </div><!-- /.entry-meta -->
     {% if post.link %}
-      <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post_url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
+      <h1 class="entry-title"><a href="{{ site.url }}{{ post_url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
     {% else %}
       <h1 class="entry-title"><a href="{{site.url}}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
     {% endif %}
   </header>
   <div class="entry-content">
     {% if post.content contains "\n\n" %}
-    <p>{{ post.content | split:"\n\n" | first % }} <a href="{{ site.url }}/blog/{{ post.url }}">  Continue reading...</a></p>
+    <p>{{ post.content | split:"\n\n" | first % }} <a href="{{ site.url }}{{ post.url }}">  Continue reading...</a></p>
     <div class="launch text-center">
-      <a href="{{ site.url }}/blog/{{ post.url }}" class="btn btn-custom">Read More</a>
+      <a href="{{ site.url }}{{ post.url }}" class="btn btn-custom">Read More</a>
     </div>
     {% else %}
       {{ content }}
