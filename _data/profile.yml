@@ -4,7 +4,7 @@ subheader: "I am the founder and Chief Technical Officer of Tech Rapport, a comp
 
 p1: "I specialize in creating first-class software for the iOS (iPhones and iPads), web and desktop platforms.  I also provide services for architecting scalable data-systems, mobile & web marketing and more.  See <a href='#services'>our list of services</a> and <a href='#contact'>contact us today</a> if you want to learn more."
 
-p2: "Before starting Tech Rapport, I worked for 7 years developing and implementing business-class applications, most of which are property of Uncle Sam.  I am fascinated by technology and am learning more all the time.  I spend my days walking on the beach, riding my bike, developing, doing research and staying up-to-date with the latest technologies.  I love to write in <a href='#blog'>my blog</a> and read <a href='{{ site.baseurl}}/blog/favorite-blogs.html'>my favorite blogs.</a>"
+p2: "Before starting Tech Rapport, I worked for 7 years developing and implementing business-class applications, most of which are property of Uncle Sam.  I am fascinated by technology and am learning more all the time.  I spend my days walking on the beach, riding my bike, developing, doing research and staying up-to-date with the latest technologies.  I love to write in <a href='#blog'>my blog</a> and read <a href='/blog/favorite-blogs.html'>my favorite blogs.</a>"
 
 imagedescription: Creative Developer
 imagepath: /assets/images/me-3.jpg

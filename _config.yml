@@ -10,7 +10,7 @@ icon_path: /assets/images/icons/
 reading_time: true
 words_per_minute: 200
 logo: /logo.png
-baseurl: http://techrapport.com
+baseurl: ''
 
 #Delete author once all updated to owner:
 
@@ -150,6 +150,6 @@ footerlinks:
     username: "channel/UC2iYWXVQlPa76aQlADYocow/"
   -
     iclass: "fa fa-rss"
-    title: feed.xml
-    url: '/atom.xml'
+    title: atom.xml
+    url: ''
     username: "atom.xml"

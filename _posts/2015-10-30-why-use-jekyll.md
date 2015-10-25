@@ -15,6 +15,6 @@ This website was designed using Jekyll, a fantastic static-site generator that u
 
 This post is part of a series of posts about my experience developing a website using Jekyll. 
 
-Checkout my other posts in my series of [Jekyll blog posts]({{site.baseurl}}/blog/categories/#Jekyll). Also, feel free to visit my [GitHub site]({{ site.githuburl }} to get started making a blog or website with Jekyll. 
+Checkout my other posts in my series of [Jekyll blog posts](/blog/categories/#Jekyll). Also, feel free to visit my [GitHub site]({{ site.githuburl }} to get started making a blog or website with Jekyll. 
 
 ###Why I use Jekyll?<br>

@@ -42,7 +42,7 @@
                         <div class="item col-sm-6 col-md-3">
                             <div class="project-wrapper">
                                 <div class="project-link">
-                                    <a href="{{ site.baseurl }}{{ project.image }}" {% for category in project.categories %}data-filter="{% if category %}{{ category }}{% else %}*{% endif %}"{% endfor %} class="zoom" title="{{ project.title }}">
+                                    <a href="{{ project.image }}" {% for category in project.categories %}data-filter="{% if category %}{{ category }}{% else %}*{% endif %}"{% endfor %} class="zoom" title="{{ project.title }}">
                                         <i class="icon-Full-Screen"></i>
                                     </a>
 
@@ -57,7 +57,7 @@
                                 </div>
                                 <!-- //.project-title -->
 
-                                <img src="{{ site.baseurl }}{{ project.image }}" alt="" class="img-responsive"/>
+                                <img src="{{ project.image }}" alt="" class="img-responsive"/>
                             </div>
                             <!-- //.project-wrapper -->
                         </div>

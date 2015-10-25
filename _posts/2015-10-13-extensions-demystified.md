@@ -74,6 +74,6 @@ Pretty cool, eh?
 
 I strongly recommend that you start using extensions in your code. It will save you a whole lot of time and I guarantee you will thank me later. 
 
-By the way, check out this post to read about how [I utilized popover views]({{site.baseurl}}/_posts/popover-views-on-iphone/) in my Meme Maker app. 
+By the way, check out this post to read about how [I utilized popover views](/ios%20dev/meme-me/2015/10/14/popover-views-on-iphone.html) in my Meme Maker app. 
 
 Thanks so much for visiting my site; please send me an [email](mailto:info@techrapport.com) and leave a comment below if you have any questions or would like to give me some feedback.

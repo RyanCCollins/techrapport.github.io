@@ -21,7 +21,7 @@ Checkout my other posts in my series of [Jekyll blog posts]({{site.baseurl}}/blo
 
 After getting used to Jekyll, which took about a week, I started developing a workflow to improve my efficiency. I know that everyone is different, but I think that this guide is a good place for you to start if you are just learning how to use Jekyll. 
 
-I'm going to assume that you have Jekyll installed. If not, check out the [Jekyll website](http://jekyllrb.com) and also check out the other blog posts in my [series on developing a site or blog in Jekyll]({{site.baseurl}}{{site.blogurl}}/jekyll). 
+I'm going to assume that you have Jekyll installed. If not, check out the [Jekyll website](http://jekyllrb.com) and also check out the other blog posts in my [series on developing a site or blog in Jekyll]({{site.blogurl}}/Jekyll). 
 
 I recommend starting with a template or designing your own either with bootstrap or liquid. Starting with a template will make your design process much smoother. If you don't know, [bootstrap](bootstrap todo: finish
 

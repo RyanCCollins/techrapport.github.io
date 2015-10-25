@@ -15,7 +15,7 @@ This website was designed using Jekyll, a fantastic static-site generator that u
 
 This post is part of a series of posts about my experience developing a website using Jekyll. 
 
-Checkout my other posts in my series of [Jekyll blog posts]({{site.baseurl}}/blog/categories/#Jekyll). Also, feel free to visit my [GitHub site]({{ site.githuburl }} to get started making a blog or website with Jekyll. 
+Checkout my other posts in my series of [Jekyll blog posts](/blog/categories/#Jekyll). Also, feel free to visit my [GitHub site]({{ site.githuburl }} to get started making a blog or website with Jekyll. 
 
 ###What is Jekyll?<br>
 Jekyll is a rapid blog and website development application that gives you the tools and freedom to develop your website how you want to. In other words, it doesn't make giant assumptions about how you want your site to work. Within three minutes of downloading Jekyll and [Jekyll Now](https://github.com/barryclark/jekyll-now), a starter template for a Jekyll blog created by Barry Clark, I was up and running. By examining the files included, I noticed a few things right off the bat. 

@@ -1,7 +1,7 @@
 ---
 layout: page
 key: 0
-category: iOS Apps
+category: [iOS Apps]
 title: "Tech Rapport - Udacity iOS Nanodegree Capstone Project"
 description: "Tech Rapport - Udacity iOS Nanodegree Capstone Project"
 project-page: ''
