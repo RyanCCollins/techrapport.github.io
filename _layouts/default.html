@@ -5,7 +5,7 @@
     <!--[if lt IE 10]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    {% if page.description == "Home" %}{% include main/hero.html %}{% endif %}
+    {% if page.hero %}{% include main/hero.html %}{% endif %}
 
     <!-- //NAV START -->
     {% include site/nav.html %}
