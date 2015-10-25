@@ -88,7 +88,7 @@ defaults:
       author: "Tech Rapport"
       layout: post
       path: "/blog/"
-      permalink: /:categories/:title/
+      permalink: /posts/:categories/:title/
   - 
     scope: 
       path: ""
