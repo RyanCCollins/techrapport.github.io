@@ -39,7 +39,7 @@
     <link href="{{ site.baseurl }}/assets/css/blog-home.css" rel="stylesheet">
     
     <!-- TODO: Add logic to switch CSS here -->
-    {% unless page.url contains '/blog/' %}
+    {% if (page.url contains '/resume') or (page.url == {{site.url}})  %}
         {% include site/main_css.html %}
     {% endunless %}
     
