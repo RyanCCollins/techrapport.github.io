@@ -10,7 +10,6 @@ image:
   feature:
 ---
 
-<br>
 This website was designed using Jekyll, a fantastic static-site generator that utilizes some great technologies to get you up on the web. 
 
 This post is part of a series of posts about my experience developing a website using Jekyll. 
@@ -62,7 +61,7 @@ Once I have my prototype down, I like to plit up common elements that will be us
 When I say split up the elements, what I mean is that I actually take the html, scripts, etc and chop it to bits. I make logical _include files that essentially encapsulate those elements. I also add logic to these components. Say, for example, I am splitting up my footer file into a footer.html _includes file. I'd want to think about how the footer will differ from page to page. A good example is with comments. you probably want to include [disqus] comments into your site, but likely only on blog pages. To do this, you would use Liquid, a rapid templating language made by [shopify](http://shopify.com)
 
 Here's a quick example of how I would add the logic to show the disqus comments:
-{% highlight liquid %}
+{% highlight liquid linenos %}
 	{% if post.comments %}{% include disqus.html %} {% endif %}
 }
 {% endhighlight %}
