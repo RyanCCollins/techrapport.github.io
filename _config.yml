@@ -42,7 +42,7 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-paginate: 4
+paginate: 5
 paginate_path: "/blog/page:num/"
 disqus: techrapportcom
 
@@ -82,12 +82,13 @@ exclude:
 defaults: 
   - 
     scope: 
-      path: ""
+      path: "/blog/"
       type: posts
     values: 
       author: "Tech Rapport"
       layout: post
       path: "/blog/"
+      permalink: permalink: /blog/:categories/:year/:month/:day/:title/
   - 
     scope: 
       path: ""
