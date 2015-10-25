@@ -82,13 +82,13 @@ exclude:
 defaults: 
   - 
     scope: 
-      path: "/blog/"
+      path: ""
       type: posts
     values: 
       author: "Tech Rapport"
       layout: post
       path: "/blog/"
-      permalink: /:categories/:year/:month/:day/:title/
+      permalink:
   - 
     scope: 
       path: ""
