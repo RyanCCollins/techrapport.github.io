@@ -11,6 +11,7 @@ reading_time: true
 words_per_minute: 200
 logo: /logo.png
 baseurl: ''
+excerpt-seperator: '<!-- more -->'
 
 #Delete author once all updated to owner:
 
@@ -54,6 +55,20 @@ blog_subheader: "A Swift Blog brought to you by TechRapport.com"
 markdown: redcarpet
 highlighter: pygments
 
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
 #Collections:
 collections: 
   - posts
@@ -62,9 +77,9 @@ collections:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  #- #jemoji
+  - jemoji
   - jekyll-redirect-from
-  - jekyll-mentions
+  # - jekyll-mentions
 
 sass:
   sass_dir: _sass

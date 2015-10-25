@@ -15,7 +15,7 @@ comments: false
       </div><!-- /.entry-image -->
     {% endif %}
     <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post_url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
+      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ post_url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
       {% if site.reading_time %}
       <span class="entry-reading-time">
         <i class="fa fa-clock-o"></i>
@@ -27,18 +27,14 @@ comments: false
     {% if post.link %}
       <h1 class="entry-title"><a href="{{ post_url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
     {% else %}
-      <h1 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
+      <h1 class="entry-title">{{ post.title }}</h1>
     {% endif %}
   </header>
   <div class="entry-content">
-    {% if post.content contains "\n\n" %}
-    <p>{{ post.content | split:"\n\n" | first % }} <a href="{{ post.url }}">  Continue reading...</a></p>
+    <p>{{post.excerpt}} <a href="{{ post.url }}">  Continue reading...</a></p>
     <div class="launch text-center">
-      <a href="{{ site.url }}{{ post.url }}" class="btn btn-custom">Read More</a>
+      <a href="{{ post.url }}" class="btn btn-custom">Read More</a>
     </div>
-    {% else %}
-      {{ content }}
-    {% endif %}
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}

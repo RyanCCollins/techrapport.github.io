@@ -29,7 +29,7 @@ You could write the best code, but without a good UI, you might as well stop!
 Apple is a company that is built on the idea that design is as important, if not moreso, than performance when it comes to personal computing.  This is what has kept them relevant and what has made them excel to become the most profitable company of our generation.
 
 Apple has done an incredible job at designing built-in design elements and implementing them into their frameworks and the iOS SDK.  They have also written a brilliant guide about how to design your iOS apps using familiar design paradigms and elements.  I suggest that every iOS developer read this [article](https://developer.apple.com/design/).  Apple is so keen on design, that they showcase the best app designs each year and give out [Apple Design Awards](https://en.wikipedia.org/wiki/Apple_Design_Awards) to the developers.
-\n\n
+<!-- more -->
 
 ####Here are a few links to other websites that have written about Apple's design:
 

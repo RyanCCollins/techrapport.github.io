@@ -21,10 +21,10 @@ On iPhones smaller than the iPhone 6, it makes sense to present views modally in
 Although Apple doesn't recommend the use of popover views on iPhones, I think that it makes perfect sense as long as you use a bit of caution.  It requires a little extra work to configure the views, but I think it is worth it from a design point-of-view.  Check out [Apple's documentation on UIPopoverController](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverController_class/index.html)
 
 What you have to be careful of is what happens to your view if the user is seeing it on a smaller phone.  There are several ways to handle smaller screens, which I will go into at a later time.  For now, let's look at how we can get UIPopoverViews to show on our favorite phablets.
-
+<!-- more -->
 ###Setup:
 For this project, I will demonstrate how I went about incorporating a color picker and a font picker in UIPopover views in my Meme-Maker app.  If you are following along, feel free to start a new project and design a View Controller similiar to the MemeEditorViewController as shown below.  Make sure that you have a button or two to call the popover views.
-\n\n
+
 Here you can see the main view controller that will be presenting the popover views:
 
 <figure class="one center">
@@ -75,23 +75,23 @@ Within your main view controller class file, you will need to do the following:
 Let's take a look at how I've done this.
 
 First, after the class definition's parent class name insert a comma followed by: [UIPopoverPresentationViewControllerDelegate](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverPresentationControllerDelegate_protocol/index.html) as shown below (note: for brevity, I have removed all of the other delegates/protocols from the class definition.)
-
+{% highlight swift linenos %}
     class MemeEditorViewController: UIViewController, UIPopoverPresentationControllerDelegate {
-
+{% endhighlight %}
 Next, add the function below somewhere within your presenting view controller's class:
-
-//Popover delegate func
+{% highlight swift linenos %}
+    //Popover delegate func
     func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) - UIModalPresentationStyle {
         return UIModalPresentationStyle.None
     }
-
+{% endhighlight %}
 The reason we implement this function is because we implemented the [UIPopoverPresentationControllerDelegate](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverPresentationControllerDelegate_protocol/index.html) and this function must return UIModalPresentationStyle.None in order for our view to be presented in a popover view.  There are other optional protocol methods, which you should read about in [Apple's Documention](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverPresentationControllerDelegate_protocol/index.html).
 
 This would be the place where we could set up checks to see what size screen the view is being presented on and we could choose to show a done button when the screen is small, or we could have it present modally on certain phones.  This is important, because our view could cover the entire screen and the user might not be able to dismiss it, which would be a hassle.
 
 Finally, we must override the prepareForSegue method in order to check for when the segue is called.  Within this method, we can set the presentation style, set the delegate and pass any data that needs to be passed.
 
-
+{% highlight swift linenos %}
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //Check for the fontPopoverSegue
         if segue.identifier == "fontPopoverSegue" {
@@ -106,7 +106,7 @@ Finally, we must override the prepareForSegue method in order to check for when 
             popoverVC.popoverPresentationController!.delegate = self
             popoverVC.fontAttributes = fontAttributes
         }
-
+{% endhighlight %}
 
 This will get you up and running.  I'll leave it up to you to figure out how you implement this.  
 
@@ -115,8 +115,8 @@ Just for the sake of clarity, I'll quickly show you what I did to have the popov
 
 In my case, I wanted the view to update the size and type of the font of the text in the main view.  To do this, I implemented a few methods in both the popover view controller and main view controller.  To increase the font size, I created an @IBAction that updated the TextSizePopoverViewController's fontAttributes object, passed the object back to the MemeEditor and then call a function to update the view in the MemeEditorViewController.  Check out this code below:
 
-
-//In the TextPopoverViewController file:
+{% highlight swift linenos %}
+    //In the TextPopoverViewController file:
     func updateMemeFont(){
         //update the MemeEditor font and reconfigure the view:
         let parent = presentingViewController as! MemeEditorViewController
@@ -132,12 +132,12 @@ In my case, I wanted the view to update the size and type of the font of the tex
         //Update the Meme's Font on the presenting view
         updateMemeFont()
     }
-
+{% endhighlight %}
 
 Please take a look at my app in action in the following video:
 
 <figure class="one center">
-    <a href="https://www.youtube.com/watch?v=2aUd8Y6TG0E"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=2aUd8Y6TG0E" frameborder="0"> </iframe></a>
+    <a href="https://www.youtube.com/watch?v=2aUd8Y6TG0E"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=2aUd8Y6TG0E&output=embed" frameborder="0"> </iframe></a>
     <figcaption>Meme-Me Test Flight</figcaption>
 </figure>
 

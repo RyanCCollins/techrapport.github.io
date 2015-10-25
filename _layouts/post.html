@@ -28,7 +28,7 @@
     </div><!-- /.entry-content -->
     {% include blog/author.html %}
     {% if site.related_posts.size > 0 %}{% include blog/read-more.html %}{% endif %}
-    {% if page.comments != false %}{% include blog/disqus_comments.html %}{% endif %}
+    {% if page.comments != false %}{% include disqus.html %}{% endif %}
   </article>
 </div><!-- /#main -->
 
