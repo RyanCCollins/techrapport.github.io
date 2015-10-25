@@ -6,6 +6,7 @@ published: true
 comments: true
 tags: [Tech Rapport, web development]
 image_square: blog-image-1.jpg
+redirect_from: new-site-in-testing/
 image: 
   feature: tech-rapport-banner-900x300.png
 ---

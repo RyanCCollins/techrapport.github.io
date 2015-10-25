@@ -6,6 +6,7 @@ published: true
 comments: true
 tags: [ios development, Udacity, Nanodegree]
 image_square: blog-image-1.jpg
+redirect_from: udacity-meme-me-app-completed/
 image: 
   feature: meme-me.jpg
 ---

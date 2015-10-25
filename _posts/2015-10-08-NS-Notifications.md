@@ -5,6 +5,7 @@ category: "iOS Dev"
 published: true
 comments: true
 image_square: blog-image-1.jpg
+redirect_from: ns-notifications/
 image: NS-notifications-900x300.jpg
 ---
 

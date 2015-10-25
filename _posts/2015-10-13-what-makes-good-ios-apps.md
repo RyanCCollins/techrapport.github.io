@@ -6,6 +6,7 @@ published: true
 comments: true
 tags: [ios development, software, swift, iPhone apps, xCode 7.0, programming]
 permalink: /ios%20dev/2015/10/13/what-makes-good-ios-apps.html
+redirect_from: what-makes-good-ios-apps/
 image: 
   feature: app-store.jpg
 ---

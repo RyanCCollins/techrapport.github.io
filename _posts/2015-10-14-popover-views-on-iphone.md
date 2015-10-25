@@ -6,6 +6,7 @@ comments: true
 permalink: /ios%20dev/meme-me/2015/10/14/popover-views-on-iphone.html
 category: [iOS Dev, Meme-Me]
 tags: [ios development, Swift 2.0, Meme-Me, xCode 7.0, programming, UIPopoverViews, UIKit]
+redirect_from: popover-views-on-the-iphone/
 image: 
   feature: 
 ---

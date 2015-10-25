@@ -9,6 +9,7 @@ comments: true
 permalink: /ios%20dev/2015/10/13/what-makes-good-ios-apps.html
 image_square: blog-image-1.jpg
 image: blog-place_rect.png
+redirect_from: hello-world/
 ---
 
 Hello World!
