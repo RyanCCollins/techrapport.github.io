@@ -87,7 +87,7 @@ defaults:
     values: 
       author: "Tech Rapport"
       layout: post
-
+      path: "/blog/"
   - 
     scope: 
       path: ""
