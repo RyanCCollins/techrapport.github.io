@@ -4,6 +4,8 @@
 {% if page.image.background or site.background %}
 {% capture background %}{% if page.image.background %}{{ page.image.background }}{% else %}{{ site.background }}{% endif %}{% endcapture %}
 {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}images/background/{{ background }}{% endcapture %}{% endunless %}
+
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <style type="text/css">body {background-image:url({{ background }});}</style>
 {% endif %}
 <script src="/assets/js/scripts.min.js"></script>

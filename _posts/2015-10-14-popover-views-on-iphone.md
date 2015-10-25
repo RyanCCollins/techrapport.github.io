@@ -9,8 +9,6 @@ tags: [ios development, Swift 2.0, Meme-Me, xCode 7.0, programming, UIPopoverVie
 image: 
   feature: 
 ---
-<br>
-###How to use UIPopoverViews on the iPhone<br>
 
 With the expansion of screen size and resolution on the iOS platform, we as developers have to adapt our applications to make use of the amazing screens that we carry in our pockets.  
 
