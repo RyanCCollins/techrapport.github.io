@@ -15,8 +15,8 @@ baseurl: ''
 #Delete author once all updated to owner:
 
 owner:
-  name: Ryan Collins
-  address: ADDRESS here
+  name: 
+  address: 
   phone: 617-299-9722
   email: info@techrapport.com
   company: Tech Rapport
