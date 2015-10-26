@@ -13,15 +13,16 @@ This website was designed using Jekyll, a fantastic static-site generator that u
 
 This post is part of a series of posts about my experience developing a website using Jekyll. 
 
-Checkout my other posts in my series of [Jekyll blog posts](/blog/categories/#Jekyll). Also, feel free to visit my [GitHub site](http://github.com/{{ site.owner.github }}) to get started making a blog or website with Jekyll. 
+Checkout my other posts in my series of [Jekyll blog posts](/blog/categories#jekyll). Also, feel free to visit my [GitHub site](http://github.com/{{ site.owner.github }}) to get started making a blog or website with Jekyll. 
 
 Ten Tips for Blogging in Jekyll
 
 ###1. Search Engine Optimization
 Read about how to implement SEO and what are the best practices for [search engine optimization in Jekyll](jekyll.tips/tutorials/seo/).  You can do some pretty amazing things and easily generate meta data for your site using Liquid.  The site linked above has some great information, but I also recommend adding the following along with your other Meta Tags:
- * Google & Bing verify 
- * [Google Tag Manager](https://www.google.com/tagmanager/) 
- * [Twitter cards](https://dev.twitter.com/cards/overview)
+
+* Google & Bing verify 
+* [Google Tag Manager](https://www.google.com/tagmanager/) 
+* [Twitter cards](https://dev.twitter.com/cards/overview)
 
 Here is an excerpt from this site, showing you how you can add a twitter card meta data using Liquid variables.  I put this code into a file called meta.html that I include in every template.  As you can see, I've included a twitter card that includes the site owner's twitter name (defined as a sitewide variable in config.yml) and I also include the feature image of a page if there is one.  
 
@@ -60,7 +61,9 @@ Also, here are some settings you can add, such as locale, type, title, et. al.
 {% endhighlight %}
 
 ###2. Think before you link, or it'll stink
-Think long and hard about what you would like your links to look like before you ever post your site online.  Remember that Jekyll doesn't make any exceptions l  You probably will want to [set up permalinks in Jekyll](http://jekyllrb.com/docs/permalinks/).  Permalinks define how Jekyll will create your links when you add an item to your blog or add a page to your collection.  If you mess this up, everything could be working fine while testing and when you build your site, all of your links might break.
+Think long and hard about what you would like your links to look like before you ever post your site online.  Remember that Jekyll doesn't make any assumptions about anything, so it's up to you to set up your link format and to stick with it.  If you do make a mistake and accidentally break your internal links, you can use a plugin called jekyll-redirect-from to set up redirects. 
+
+You probably will want to [set up permalinks in Jekyll](http://jekyllrb.com/docs/permalinks/).  Permalinks define how Jekyll will create your links when you add an item to your blog or add a page to your collection.  If you mess this up, everything could be working fine while testing and when you build your site, all of your links might break.
 
 You can use post.url, but I recommend using this plugin to make link generation easier: [Better post links with Jekyll](http://brm.io/jekyll-post-links/).  
 
