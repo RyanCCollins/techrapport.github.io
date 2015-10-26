@@ -10,6 +10,12 @@ image:
   feature: jekyll.jpeg
 ---
 
+This website was designed using Jekyll, a fantastic static-site generator that utilizes some great technologies to get you up on the web. 
+
+This post is part of a series of posts about my experience developing a website using Jekyll. 
+
+Checkout my other posts in my series of [Jekyll blog posts](/blog/categories/#Jekyll). Also, feel free to visit my [GitHub site](http://github.com/{{ site.owner.github }}) to get started making a blog or website with Jekyll. 
+
 Ten Tips for Blogging in Jekyll
 
 ###1. Search Engine Optimization
@@ -68,6 +74,12 @@ If you're going to be hosting in your root directory, leave baseurl alone.  Simp
 ##4. Model View Controller (MVC)
 
 As a developer, I am always thinking in MVC, even in languages / frameworks where it isn't built into the design necesarily.
+
+Because you don't have to use a relational database with Jekyll, what I would do for a simple site is use YAML data files for each of the section of a page. I do this to seperate the data from the view and I consider the liquid markup that I write in my HTML files to be the view controller. 
+
+Designing your site with MVC in mind is extremely important if you expect your site to grow. If I were to port this site to Rails, I could easily install a SQL or other database using the same schema as my YAML data files without too much of a headache. 
+
+I think this flexibility is what makes Jekyll so awesome.  You can quickly and easily scale your site, upgrade the UI and change storage & hosting if you use good practice when initially ceating your site. 
 
 ###5. Lint, lint, lint!
 
