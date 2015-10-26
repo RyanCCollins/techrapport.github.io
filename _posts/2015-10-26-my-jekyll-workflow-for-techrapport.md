@@ -1,5 +1,5 @@
 ---
-title: "Jekyll workflow tips and tricke"
+title: "Jekyll workflow tips and tricks"
 description: "Tips and Tricks for your Jekyll Workflow and a look at how I do things"
 category: [Jekyll]
 published: true
