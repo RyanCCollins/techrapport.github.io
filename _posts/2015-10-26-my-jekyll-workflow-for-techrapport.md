@@ -1,5 +1,5 @@
 ---
-title: "Jekyll workflow tips and tricks"
+title: "Jekyll Workflow Tips and Tricks"
 description: "Tips and Tricks for your Jekyll Workflow and a look at how I do things"
 category: [Jekyll]
 published: true
@@ -19,11 +19,11 @@ Checkout my other posts in my series of [Jekyll blog posts](/blog/categories/#Je
 
 After getting used to Jekyll, which took about a week, I started developing a workflow to improve my efficiency. I know that everyone is different, but I think that this guide is a good place for you to start if you are just learning how to use Jekyll. 
 
-I'm going to assume that you have Jekyll installed. If not, check out the [Jekyll website](http://jekyllrb.com) and also check out the other blog posts in my [series on developing a site or blog in Jekyll]({{site.url}}/blog/categories/Jekyll). 
+I'm going to assume that you have Jekyll installed. If not, check out the [Jekyll website](http://jekyllrb.com) and also check out the other blog posts in my [series on developing a site or blog in Jekyll]({{site.url}}/blog/categories#jekyll). 
 
-I recommend starting with a template or designing your own either with bootstrap or liquid. Starting with a template will make your design process much smoother. If you don't know, [bootstrap](bootstrap todo: finish
+I recommend starting with a template or designing your own either with bootstrap or whatever UI framework you like best. Starting with a template will make your design process much smoother. If you don't know, [bootstrap](http://getbootstrap.com) is a wonderful web UI franework made by Twitter. 
 
-###Break up the HTML into sections
+###Break up the HTML into sections:
 1. header
 2. footer
 3. nav
