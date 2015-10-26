@@ -13,7 +13,7 @@ This website was designed using Jekyll, a fantastic static-site generator that u
 
 This post is part of a series of posts about my experience developing a website using Jekyll. 
 
-Checkout my other posts in my series of [Jekyll blog posts]({{site.baseurl}}/blog/categories/#Jekyll). Also, feel free to visit my [GitHub site](http://github.com/{{ site.owner.github}} to get started making a blog or website with Jekyll. 
+Checkout my other posts in my series of [Jekyll blog posts](/blog/categories/#Jekyll). Also, feel free to visit my [GitHub site](http://github.com/{{ site.owner.github}}) to get started making a blog or website with Jekyll. 
 
 ###My Jekyll Workflow
 
@@ -83,18 +83,18 @@ For each image template, you could make an _include file named gallery and you c
 
 The _include file could look something like this:
 {% highlight raw %}
-{% if page.images %}
-{% for image in page.gallery %}
+{% if page.gallery %}
 <figure class="two center">
+{% for image in page.gallery %}
 	<a href="{{site.blog_image_path}}{{site.blog_image_path}}{{image.img}}"><img src="{{site.blog_image_path}}{{image.img}}" alt="{{image.title}}"></a>
 </figure>
-{% endif %}
 {% endfor %}
+{% endif %}
 {% endhighlight %}
 
 Then, in a post you could assign the YAML front matter like so:
 
-{% highlight YAML %}
+{% highlight raw %}
 ---
 gallery:
   - image: test.jpg
