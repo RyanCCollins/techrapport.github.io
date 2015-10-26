@@ -19,9 +19,9 @@ Ten Tips for Blogging in Jekyll
 
 ###1. Search Engine Optimization
 Read about how to implement SEO and what are the best practices for [search engine optimization in Jekyll](jekyll.tips/tutorials/seo/).  You can do some pretty amazing things and easily generate meta data for your site using Liquid.  The site linked above has some great information, but I also recommend adding the following along with your other Meta Tags:
-* Google & Bing verify 
-* [Google Tag Manager](https://www.google.com/tagmanager/) 
-* [Twitter cards](https://dev.twitter.com/cards/overview)
+ * Google & Bing verify 
+ * [Google Tag Manager](https://www.google.com/tagmanager/) 
+ * [Twitter cards](https://dev.twitter.com/cards/overview)
 
 Here is an excerpt from this site, showing you how you can add a twitter card meta data using Liquid variables.  I put this code into a file called meta.html that I include in every template.  As you can see, I've included a twitter card that includes the site owner's twitter name (defined as a sitewide variable in config.yml) and I also include the feature image of a page if there is one.  
 
@@ -47,15 +47,20 @@ Also, here are some settings you can add, such as locale, type, title, et. al.
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else if page.excerpt %}{{page.excerpt| strip_html }}{%else%}{{ site.description }}{% endif %}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}
+{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %} {{ page.description }}
+{% else if page.excerpt %}
+{{page.excerpt| strip_html }}
+{%else%}{{ site.description }}
+{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 {% endraw %}
 {% endhighlight %}
 
-###2. Think before you link
-Think long and hard about what you would like your links to look like before you ever post your site online.  You probably will want to [set up permalinks in Jekyll](http://jekyllrb.com/docs/permalinks/).  Permalinks define how Jekyll will create your links when you add an item to your blog or add a page to your collection.  If you mess this up, everything could be working fine while testing and when you build your site, all of your links might break.
+###2. Think before you link, or it'll stink
+Think long and hard about what you would like your links to look like before you ever post your site online.  Remember that Jekyll doesn't make any exceptions l  You probably will want to [set up permalinks in Jekyll](http://jekyllrb.com/docs/permalinks/).  Permalinks define how Jekyll will create your links when you add an item to your blog or add a page to your collection.  If you mess this up, everything could be working fine while testing and when you build your site, all of your links might break.
 
 You can use post.url, but I recommend using this plugin to make link generation easier: [Better post links with Jekyll](http://brm.io/jekyll-post-links/).  
 
@@ -253,4 +258,4 @@ You can also use slugify, strip_html, xml_escape and many others.  Take a look a
 
 Well, I hope you found this post useful and are well on your way to using Jekyll as your blogging / website platform.  It's a great platform and I think it makes the experience of creating a website or a blog so much better.  It takes a time investment up front, but after you are set up, maintenance and posting new content can be done without ever leaving your terminal / text editor.
 
-Have fun and get in touch with me at [info@techrapport.com](mailto:info@techrapport) with any questions or comments.
+Have fun and get in touch with me at [info@techrapport.com](mailto:info@techrapport) with any questions or comments
