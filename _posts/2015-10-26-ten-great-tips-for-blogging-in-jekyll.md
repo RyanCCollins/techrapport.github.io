@@ -43,6 +43,7 @@ Here is an excerpt from this site, showing you how you can add a twitter card me
 Also, here are some settings you can add, such as locale, type, title, et. al.
 
 {% highlight html %}
+{% raw %}
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
@@ -50,6 +51,7 @@ Also, here are some settings you can add, such as locale, type, title, et. al.
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else if page.excerpt %}{{page.excerpt| strip_html }}{%else%}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
+{% endraw %}
 {% endhighlight %}
 
 ###2. Think before you link
@@ -65,7 +67,9 @@ If you are creating a site that will sit in a directory that is above the root d
 
 For example, if your site was going to sit at http://techrapport.com/blog/ you would want your baseurl to be blog and all of your links should look something like:
 {% highlight html %}
+{% raw %}
 {{ site.baseurl }}{{ post.url }}
+{% endraw %}
 {% endhighlight %}
 
 If you're going to be hosting in your root directory, leave baseurl alone.  Simple, right?  If not, read this post: [Clearing up Confusion Around baseurl -- Again -- By Parker](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/).
@@ -165,10 +169,12 @@ There are many plugins for categories, but you don't need to use them.  If you w
 To create a category listing, you can use a layout similar to your blog post-index layout.  In fact, I used the same layout on my site.  Since my site's blog is a located in a subdirectory called blog, I created a directory within blog called categories and included an index.html file within that included the HTML and liquid to create my categories page.
 
 {% highlight bash %}
+{% raw %}
 |-- root
-   	|-- blog
-   	  	|-- categories
-      	    |-- index.html
+     |-- blog
+          |-- categories
+               |-- index.html
+{% endraw %}
 {% endhighlight %}
 
 In the [YAML front matter](http://jekyllrb.com/docs/frontmatter/) of your blog post markdown files, set an array containing one or more categories.  Make sure you use an array, because if you don't then any categories that are more than one word will get split into multiple categories.
@@ -230,6 +236,7 @@ You can use a bunch of the built in Liquid filters in your code to make tasks mu
 
 Outputting the content of a YAML front matter array or hash in JSON is as easy as adding | jsonify after the array.  
 {% highlight YAML %}
+{% raw %}
 ---
 list:
    - item1
@@ -237,6 +244,7 @@ list:
    - item3
 ---
 {{ page.list | jsonify }}
+{% endraw %}
 {% endhighlight %}
 
 You can also use slugify, strip_html, xml_escape and many others.  Take a look at the article on [Liquid in Jekyll at Jekyll Tips](http://jekyll.tips/tutorials/liquid/).
