@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 key: 5 
 category: Web Apps
 title: "Conference Planner - Web App for Conference Planning"
@@ -8,3 +8,4 @@ project-page: ''
 image: /assets/images/portfolio/conference-portfolio-image.JPG
 ---
 
+Coming Soon
