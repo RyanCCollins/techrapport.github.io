@@ -5,27 +5,26 @@ category: [Jekyll]
 published: false
 comments: true
 tags: [Jekyll, web development]
-image_square: blog-image-1.jpg
 image: 
-  feature:
+  feature: jekyll.jpeg
 ---
 
 This website was designed using Jekyll, a fantastic static-site generator that utilizes some great technologies to get you up on the web. 
 
 This post is part of a series of posts about my experience developing a website using Jekyll. 
 
-Checkout my other posts in my series of [Jekyll blog posts]({{site.baseurl}}/blog/categories/#Jekyll). Also, feel free to visit my [GitHub site]({{ site.githuburl }} to get started making a blog or website with Jekyll. 
+Checkout my other posts in my series of [Jekyll blog posts]({{site.baseurl}}/blog/categories/#Jekyll). Also, feel free to visit my [GitHub site](http://github.com/{{ site.owner.github}} to get started making a blog or website with Jekyll. 
 
 ###My Jekyll Workflow
 
 After getting used to Jekyll, which took about a week, I started developing a workflow to improve my efficiency. I know that everyone is different, but I think that this guide is a good place for you to start if you are just learning how to use Jekyll. 
 
-I'm going to assume that you have Jekyll installed. If not, check out the [Jekyll website](http://jekyllrb.com) and also check out the other blog posts in my [series on developing a site or blog in Jekyll]({{site.blogurl}}/Jekyll). 
+I'm going to assume that you have Jekyll installed. If not, check out the [Jekyll website](http://jekyllrb.com) and also check out the other blog posts in my [series on developing a site or blog in Jekyll]({{site.url}}/blog/categories/Jekyll). 
 
 I recommend starting with a template or designing your own either with bootstrap or liquid. Starting with a template will make your design process much smoother. If you don't know, [bootstrap](bootstrap todo: finish
 
 ###Break up the HTML into sections
-- header
+* header
 - footer
 - nav
 
