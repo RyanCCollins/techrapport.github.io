@@ -82,4 +82,7 @@ code {
 .highlight .vg { color: #268BD2 } /* Name.Variable.Global */
 .highlight .vi { color: #268BD2 } /* Name.Variable.Instance */
 .highlight .il { color: #2AA198 } /* Literal.Number.Integer.Long */
-.highlight pre { white-space: pre; overflow: auto; }
+// -- selector prefixed to the wrapper div for collision prevention
+.highlight pre code * { white-space: nowrap; }
+.highlight pre { overflow-x: auto; }
+.highlight pre code { white-space: pre; }
