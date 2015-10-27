@@ -35,7 +35,7 @@ owner:
   flickr:
   tumblr:
   # google plus id, include the '+'
-  google_plus:    +yourid
+  google_plus: +101168809038593931433
 
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-68833574-1
@@ -165,6 +165,6 @@ footerlinks:
     username: "channel/UC2iYWXVQlPa76aQlADYocow/"
   -
     iclass: "fa fa-rss"
-    title: atom.xml
+    title: rssfeed.xml
     url: ''
-    username: "atom.xml"
+    username: "rssfeed.xml"

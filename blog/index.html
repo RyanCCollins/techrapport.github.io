@@ -4,13 +4,14 @@ title: "Welcome to Tech Rapport's Blog"
 description: "A blog about the technologies we love to use."
 tags: [Jekyll]
 comments: false
+share: false
 ---
 
 {% for post in paginator.posts %}
 <article class="hentry">
   <header>
     {% if post.image.feature %}
-      <div class="entry-image-index">
+      <div class="entry-image-index" align="center">
         <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{site.blog_image_path}}{{ post.image.feature }}" alt="{{ post.title }}"></a>
       </div><!-- /.entry-image -->
     {% endif %}

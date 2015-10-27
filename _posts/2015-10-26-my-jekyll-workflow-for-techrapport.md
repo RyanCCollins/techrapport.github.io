@@ -64,10 +64,9 @@ Once I have my prototype down, I like to split up common elements that will be u
 When I say split up the elements, what I mean is that I actually take the html, scripts, etc and chop it to bits. I make logical _include files that essentially encapsulate those elements. I also add logic to these components using Liquid. Say, for example, I am splitting up my footer file into a footer.html _includes file. I'd want to think about how the footer will differ from page to page. A good example is with comments. you probably want to include [disqus] comments into your site, but likely only on blog pages. To do this, you would use Liquid, a rapid templating language made by [shopify](http://shopify.com).
 
 Here's a quick example of how I would add the logic to show the disqus comments:
-{% highlight raw %}
+{% raw %}
 	{% if post.comments %}{% include disqus.html %} {% endif %}
-}
-{% endhighlight %}
+{% endraw %}
 
 This is a good time to start thinking about site & section-wide variables, which I will touch on next. There are some built-in variables for site, collections, pages and posts. You can also define your own variables, just like you would in any language. 
 
@@ -87,8 +86,8 @@ The _include file could look something like this:
 <figure class="two center">
 {% for image in page.gallery %}
 	<a href="{{site.blog_image_path}}{{site.blog_image_path}}{{image.img}}"><img src="{{site.blog_image_path}}{{image.img}}" alt="{{image.title}}"></a>
-</figure>
 {% endfor %}
+</figure>
 {% endif %}
 {% endhighlight %}
 
