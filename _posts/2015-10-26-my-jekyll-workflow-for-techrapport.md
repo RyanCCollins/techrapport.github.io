@@ -6,7 +6,7 @@ published: true
 comments: true
 tags: [Jekyll, web development]
 image: 
-  feature: jekyll.jpeg
+  feature: jekyllrb.dark.png
 ---
 
 This website was designed using Jekyll, a fantastic static-site generator that utilizes some great technologies to get you up on the web. 
