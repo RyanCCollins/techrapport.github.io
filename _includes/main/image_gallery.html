@@ -1,0 +1,6 @@
+<figure{% if page.gallery.num_across%} class="{{gallery.num_across}} center"{% endif %}>
+{% for item in page.gallery %}
+{% assign this_image = item.image %}
+	<a href="{{site.blog_image_path}}{{this_image}}"><img src="{{site.blog_image_path}}{{this_image}}" alt="{{this_image.title}}"></a>
+{% endfor %}
+</figure>

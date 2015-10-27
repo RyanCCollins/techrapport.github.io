@@ -15,9 +15,9 @@ This post is part of a series of posts about my experience developing a website 
 
 Checkout my other posts in my series of [Jekyll blog posts](/blog/categories#jekyll). Also, feel free to visit my [GitHub site](http://github.com/{{ site.owner.github }}) to get started making a blog or website with Jekyll. 
 
-Ten Tips for Blogging in Jekyll
+## Ten Tips for Blogging in Jekyll
 
-###1. Search Engine Optimization
+### 1. Search Engine Optimization
 Read about how to implement SEO and what are the best practices for [search engine optimization in Jekyll](jekyll.tips/tutorials/seo/).  You can do some pretty amazing things and easily generate meta data for your site using Liquid.  The site linked above has some great information, but I also recommend adding the following along with your other Meta Tags:
 
 * Google & Bing verify 
@@ -82,7 +82,7 @@ For example, if your site was going to sit at http://techrapport.com/blog/ you w
 
 If you're going to be hosting in your root directory, leave baseurl alone.  Simple, right?  If not, read this post: [Clearing up Confusion Around baseurl -- Again -- By Parker](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/).
 
-##4. Model View Controller (MVC)
+### 4. Model View Controller (MVC)
 
 As a developer, I am always thinking in MVC, even in languages / frameworks where it isn't built into the design necesarily.
 
@@ -92,19 +92,19 @@ Designing your site with MVC in mind is extremely important if you expect your s
 
 I think this flexibility is what makes Jekyll so awesome.  You can quickly and easily scale your site, upgrade the UI and change storage & hosting if you use good practice when initially ceating your site. 
 
-###5. Lint, lint, lint!
+### 5. Lint, lint, lint!
 
 This is more of a tip for any type of development, but I think it earns a place in this article because liquid can get a bit unsightly and you want to make sure that you aren't inadvertantly adding any bugs or messing up your html.  I recommend using Sublime Text with [Sublime Linter](http://www.sublimelinter.com/).  You can add packages for all of the languages you write in and SublimeLinter will yell at you when you are leaving out something, or messed up your syntax.
 
 Also, I found that I am used to using tabs so I would often inadvertantly mess up my yaml.  I found a neat utility that will validate and lint your yaml and then spit it out in a nice format.  [Checkout the online YAMLint YAML Validator](http://www.yamllint.com/).
 
-###6. Use Octopress
+### 6. Use Octopress
 
 If you are familiar with using the command line, try setting up Octopress.  In fact, I recommend starting out with one of their templates to begin with so that you have all of the dependicies right.  Their template will also include a rakefile and a gemfile, as well as provide you with good organization.  Whether you use one of their templates, or you set up Octopress yourself, you will be able to breeze through the process of writing and posting your content.
 
 Head on over to [the Octopress website](octopress.org/) if you are interested.
 
-###7. CMS for your Jekyll site with [Cloud Cannon](http://cloudcannon.com/)
+### 7. CMS for your Jekyll site with [Cloud Cannon](http://cloudcannon.com/)
 
 Although, I have already written a lot about Cloud Cannon, I will say that it is a pretty great service for developers who want to create a site in Jekyll and then pass it off to a client who doesn't want to update their site from a command line or text editor.
 
@@ -124,7 +124,7 @@ Cloud Cannon also makes it easy for you to create new collections and is especia
 	<figcaption>Adding a new site with <a href="http://cloudcannon">Cloud Cannon</a>.</figcaption>
 </figure>
 
-###8. Add an RSS Feed
+### 8. Add an RSS Feed
 
 Everyone now adays uses RSS feed readers, so your site should be able to be read by an RSS Reader.  This is actually easier than you might think.  Simply, create a file in your root directory called feed.xml.  In it, create an xml file that pulls in variables from your blog.  Check out the guide [how to set up an RSS Feed in Jekyll](http://jekyll.tips/tutorials/rss-feed/) at Jekyll.tips or see the format I used to create an Atom feed below.
 
@@ -171,7 +171,7 @@ layout: null
 {% endraw %}
 {% endhighlight %}
 
-###9. Categories
+### 9. Categories
 There are many plugins for categories, but you don't need to use them.  If you would rather use one, Octopress has categories built in.
 
 To create a category listing, you can use a layout similar to your blog post-index layout.  In fact, I used the same layout on my site.  Since my site's blog is a located in a subdirectory called blog, I created a directory within blog called categories and included an index.html file within that included the HTML and liquid to create my categories page.

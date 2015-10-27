@@ -15,7 +15,7 @@ This post is part of a series of posts about my experience developing a website 
 
 Checkout my other posts in my series of [Jekyll blog posts](/blog/categories/#Jekyll). Also, feel free to visit my [GitHub site](http://github.com/{{ site.owner.github}}) to get started making a blog or website with Jekyll. 
 
-###My Jekyll Workflow
+## My Jekyll Workflow
 
 After getting used to Jekyll, which took about a week, I started developing a workflow to improve my efficiency. I know that everyone is different, but I think that this guide is a good place for you to start if you are just learning how to use Jekyll. 
 
@@ -23,19 +23,20 @@ I'm going to assume that you have Jekyll installed. If not, check out the [Jekyl
 
 I recommend starting with a template or designing your own either with bootstrap or whatever UI framework you like best. Starting with a template will make your design process much smoother. If you don't know, [bootstrap](http://getbootstrap.com) is a wonderful web UI franework made by Twitter. 
 
-###Break up the HTML into sections:
-1. header
-2. footer
-3. nav
-4. meta, etc. 
+### Break up the HTML into sections:
+* header
+* footer
+* nav
+* meta, 
+* etc. 
 
 Then, create a default layout that includes any common elements. You can then create a cascade of layouts for your blog home, blog posts, etc. While you're doing this, I recommend thinking ahead about a few things:
- * permalinks
- * collections
- * site wide variables, like name, author, company
+* permalinks
+* collections
+* site wide variables, like name, author, company
 * other data
 
-Thinking ahead will help you save time and energy in the future and allow you to "encapsulate" your includes and data files.
+>Thinking ahead will help you save time and energy in the future and allow you to "encapsulate" your includes and data files.
 
 This brings me to my next point...
 
@@ -74,7 +75,7 @@ Starting to think about what variables you will use site-wide, within each post 
 
 I also like to define templates for all of my collections, pages and posts, so that adding a new item is easy and all of the collection/post-wide variables are all ready to be instantiated for your new content. 
 
-A pro tip would be to also creat templates for pieces of code that you would use within a page. An example of this would be for image galleries. In my case, I use the same code over and over for images and I think it takes away the fluidity of posting to your blog if you have to write HTML when inserting an image. 
+A **pro tip** would be to also creat templates for pieces of code that you would use within a page. An example of this would be for image galleries. In my case, I use the same code over and over for images and I think it takes away the fluidity of posting to your blog if you have to write HTML when inserting an image. 
 
 A smart way to go about it would be to create an _includes file for each image class that you use. For example, you could have a class for posting images in a grid of one, two, three or more images side by side, which is responsive.  
 
