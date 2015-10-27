@@ -10,8 +10,8 @@ comments: false
     <input type="text" id="search-input"/>
   </div>
   <h3>Results:</h3>
-	<ul id="results-container">
-	</ul>
+  <ul id="results-container">
+  </ul>
 </article><!-- /.hentry -->
 
 <script>
@@ -20,7 +20,7 @@ comments: false
     new SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
-      json: '{{site.url}}/search.json',
+      json: '/search.json',
       searchResultTemplate: '<li class="entry-title"><a href="{url}" title="{title}">{title}</a></li>'
     });
   }

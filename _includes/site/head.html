@@ -42,7 +42,14 @@
     {% if page.template == 'main' %}
         {% include site/main_css.html %}
     {% endif %}
-    
+    <!-- Html Elements for Search -->
+    <div id="search-container">
+    <input type="text" id="search-input" placeholder="search...">
+    <ul id="results-container"></ul>
+    </div>
+
+<!-- Script pointing to jekyll-search.js -->
+<script src="{{ site.baseurl }}/bower_components/simple-jekyll-search/dest/jekyll-search.js" type="text/javascript"></script>
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 8]>
     <script src="/assets/plugins/modernizr.min.js"></script>

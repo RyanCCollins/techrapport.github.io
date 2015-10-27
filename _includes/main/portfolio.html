@@ -37,7 +37,7 @@
                 <!-- PORTFOLIO START -->
                 <div class="portfolio">
                     <div class="row">
-                        {% for project in site.projects | limit:5 | sort:'key' %}
+                        {% for project in site.projects | limit:8 | sort:'key' %}
 
                         <div class="item col-sm-6 col-md-3">
                             <div class="project-wrapper">
@@ -62,7 +62,12 @@
                             <!-- //.project-wrapper -->
                         </div>
                         <!-- //.item -->
-                        {% endfor %}
+                        {% if forloop.index == 4 %}
+                    </div>
+                    <!-- //.row -->
+                    <div class="row">
+                    {% endif %}
+                    {% endfor %}
                     </div>
                     <!-- //.row -->
                 </div>
