@@ -1,6 +1,8 @@
 #Site variables
 title: Tech Rapport
-header: "Creative Software"
+header:
+  descriptors: [Creative,Powerful,Advanced,Beautiful]
+  text: "Software"
 description: "Tech Rapport, creative software, web design, marketing, SEO, and data architecture. At TechRapport, we believe that technology and business go hand-in-hand.  Work with us to create a better future for your business and generate rapport with your technology now."
 tagline: "Fostering relationships between business and technology is what we do best"
 copyright: Tech Rapport
