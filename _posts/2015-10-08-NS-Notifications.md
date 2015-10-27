@@ -1,12 +1,13 @@
 ---
 title: "NSNotifications; what are they good for?"
 tags: [ios development, software, swift]
-category: "iOS Dev"
+category: [iOS Development]
 published: true
 comments: true
 image_square: blog-image-1.jpg
 redirect_from: ns-notifications/
-image: NS-notifications-900x300.jpg
+image: 
+  feature: NS-notifications-900x300.jpg
 ---
 
 Today, I decided to dive a little bit deeper into some of the design patterns, particularly NSNotifactions and delegation/protocols to a lesser extent, used in Apple's code libraries. 

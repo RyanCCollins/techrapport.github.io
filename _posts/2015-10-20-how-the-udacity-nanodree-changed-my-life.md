@@ -1,7 +1,7 @@
 ---
 title: "How the Udacity iOS Nanodegree Changed my Life!"
 description: "Tech Rapport's Blog - How the Udacity iOS Nanodegree Changed my Life"
-category: "Udacity"
+category: [Udacity]
 published: false
 comments: true
 tags: [ios,  Udacity, Nanodegree]

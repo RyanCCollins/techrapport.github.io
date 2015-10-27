@@ -7,7 +7,7 @@ comments: true
 tags: [Jekyll, web development]
 image_square: blog-image-1.jpg
 image: 
-  feature:
+  feature: jekyll-logo.jpeg
 ---
 
 <br>

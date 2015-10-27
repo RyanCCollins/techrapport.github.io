@@ -1,8 +1,8 @@
 ---
 title: "How would I add Audio Controls to an iOS App in Swift"
 description: "Tech Rapport - Answer to the Udacity iOS Nanodegree question: How would I do ____ in Swift?"
-category: "iOS Dev"
-tags: "ios, ios development, software, iphone, ipad, swift, code"
+category: [iOS Dev]
+tags: [ios, ios development, software, iphone, ipad, swift, code]
 published: false
 comments: true
 image_square: blog-image-1.jpg
