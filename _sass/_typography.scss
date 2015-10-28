@@ -123,3 +123,91 @@ pre {
 		@include rounded(4px);
 	}
 }
+
+/*---------------------------------------------------------------------*/
+/*  8. FOOTER
+/*---------------------------------------------------------------------*/
+footer.footer {
+  background-color: #171717;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+footer.footer .page-scroll > a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 48px;
+  height: 46px;
+  line-height: 48px;
+  margin-top: -94px;
+  margin-left: -24px;
+  background-color: #c80a48;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 3px 0 #970837;
+}
+
+footer.footer ul.social-icons {
+  margin: 0;
+  text-align: center;
+}
+
+footer.footer ul.social-icons > li:hover > .item img {
+  opacity: 0.7;
+}
+
+footer.footer ul.social-icons > li > .item {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: #2e2e2e;
+  border-radius: 4px;
+  box-shadow: 0 3px 0 #212121;
+}
+
+footer.footer ul.social-icons > li > .item > a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer.footer ul.social-icons > li > .item > a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer.footer ul.social-icons > li > .item img {
+  margin: 0 auto;
+  margin-top: 12px;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+footer.footer .copyright {
+  margin-top: 20px;
+}
+
+footer.footer .copyright p {
+  font-size: 14px;
+}
+
+/*---------------------------------------------------------------------*/
+/*  2. COMPONENTS
+/*  2.1. BUTTON
+/*---------------------------------------------------------------------*/
+.btn.btn-custom {
+  background-color: #006ca3;
+  box-shadow: 0 3px 0 #004a70;
+}

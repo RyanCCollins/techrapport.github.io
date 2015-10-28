@@ -73,11 +73,11 @@ collections:
   - projects
 
 # Use the following plug-ins
-# gems:
-#   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-#   - jemoji
-#   - jekyll-redirect-from
-#   - jekyll-mentions
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jemoji
+  - jekyll-redirect-from
+  # - jekyll-mentions
 
 sass:
   sass_dir: _sass
