@@ -12,3 +12,6 @@ techrapport.sublime-project
 techrapport.sublime-workspace
 .idea*
 gruntfile.js
+Rakefile.rb
+npm-debug.log
+/assets/images/unused/
