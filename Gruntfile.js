@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(grunt) {
-
+require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
   grunt.initConfig({
     jshint: {
       options: {
@@ -24,6 +24,24 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    htmlhint: {
+    build: {
+        options: {
+            'tag-pair': true,
+            'tagname-lowercase': true,
+            'attr-lowercase': true,
+            'attr-value-double-quotes': true,
+            'doctype-first': true,
+            'spec-char-escape': true,
+            'id-unique': true,
+            'head-script-disabled': true,
+            'style-disabled': true
+        },
+        src: ['index.html']
+    }
+},
+
     imagemin: {
       dist: {
         options: {
@@ -32,9 +50,9 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: 'images/',
+          cwd: 'assets/images/',
           src: '{,*/}*.{png,jpg,jpeg}',
-          dest: 'images/'
+          dest: 'assets/images/'
         }]
       }
     },
@@ -42,9 +60,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'images/',
+          cwd: 'assets/images/',
           src: '{,*/}*.svg',
-          dest: 'images/'
+          dest: 'assets/images/'
         }]
       }
     },
@@ -70,14 +88,14 @@ module.exports = function(grunt) {
 
   });
 
-  // Load tasks
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-svgmin');
-  grunt.loadNpmTasks('grunt-githooks');
+  // // Load tasks
+  // grunt.loadNpmTasks('grunt-contrib-clean');
+  // grunt.loadNpmTasks('grunt-contrib-jshint');
+  // grunt.loadNpmTasks('grunt-contrib-uglify');
+  // grunt.loadNpmTasks('grunt-contrib-watch');
+  // grunt.loadNpmTasks('grunt-contrib-imagemin');
+  // grunt.loadNpmTasks('grunt-svgmin');
+  // grunt.loadNpmTasks('grunt-githooks');
 
   // Register tasks
   grunt.registerTask('default', [
