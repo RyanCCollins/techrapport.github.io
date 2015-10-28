@@ -396,7 +396,7 @@ header.hero {
   z-index: 5;
   width: 100%;
   height: 100%;
-  background-image: url('../images/bg-hero.png');
+  background-image: url('../images/bg-hero.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
   -webkit-background-size: cover;
@@ -590,7 +590,7 @@ header.hero.parallax-yes > .parallax > .bcg {
   display: table;
   width: 100%;
   height: 100%;
-  background-image: url('../images/bg-hero.png');
+  background-image: url('../images/bg-hero.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
   -webkit-background-size: cover;
