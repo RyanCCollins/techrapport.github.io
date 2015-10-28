@@ -22,7 +22,7 @@
                     <div class="col-md-8 col-md-offset-2">
 
                         <!-- CONTACT FORM START -->
-                        <form action="/assets/contact/send_mail.php" method="post" name="contact-form" id="contact-form" class="contact-form validate" role="form">
+                        <form action="http://formspree.io/info@techrapport.com" method="post" name="contact-form" id="contact-form" class="contact-form validate" role="form">
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="form-group">
@@ -89,13 +89,25 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <button id="submit" type="submit">{{ contactdata.button_message }}</button>
+                                        <button id="submit" type="submit" class="form-control" type="text" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="My popover content.">{{ contactdata.button_message }}</button>
                                     </div>
                                     <!-- //.form-group -->
                                 </div>
                                 <!-- //.col-md-12 -->
                             </div>
                             <!-- //.row -->
+                            <div class ="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                       <div class="input-group input-group-lg">
+                                            <input type="text" name="_gotcha" style="display:none">
+                        
+                                        </div>
+                                        <!-- //.input-group -->
+                                    </div>
+                                    <!-- //.form-group -->
+                                </div>
+                            </div>
                         </form>
                         <!-- //CONTACT FORM END -->
 

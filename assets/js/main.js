@@ -336,7 +336,7 @@ $(function(){
         }
     };
     
-    if (jQuery.browser.mobile === false){
+    // if (jQuery.browser.mobile === false){
         var number = $('.milestones .number');
         
         number.one('inview', function(isInView) {
@@ -344,8 +344,8 @@ $(function(){
                 counter();
             }
         });
-    }
-    else{
-        counter();
-    }
+    // }
+    // else{
+    //     counter();
+    // }
 });
