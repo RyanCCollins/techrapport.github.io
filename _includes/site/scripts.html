@@ -12,7 +12,7 @@
     <script src="/assets/plugins/flexSlider/jquery.flexslider-min.js"></script>
     <script src="/assets/plugins/countTo/jquery.countTo.js"></script>
     <script src="/assets/plugins/skrollr/skrollr.min.js"></script>
-    
+
     <!-- Main JS -->
     <script src="/assets/js/main.js"></script>
     
@@ -21,3 +21,15 @@
     
     <!-- Animation JS (Optional) -->
     <script src="/assets/js/animation.js"></script>
+
+    <!-- Morphext -->
+    <script src="/assets/plugins/morphext/morphext.js"></script>
+    <script>
+            $("#js-rotating").Morphext({
+                animation: "pulse",
+                speed: 5000,
+                complete: function () {
+                    console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
+                }
+            });
+    </script>

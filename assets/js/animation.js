@@ -1,22 +1,22 @@
 $(function(){
     
     // Only animate elements when using non-mobile devices
-    if (jQuery.browser.mobile === false){
+    // if (jQuery.browser.mobile === false){
         
         /*-------------------------------------------------------------------*/
         /*  1. Section subtitle
         /*-------------------------------------------------------------------*/
-        $('.section-subtitle').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
-        });
+        // $('.section-subtitle').css('opacity', 0).one('inview', function(isInView){
+        //     if (isInView) {$(this).addClass('animated bounceInLeft').css('opacity', 1);}
+        // });
         
         
         /*-------------------------------------------------------------------*/
         /*  2. Section - Profile
         /*-------------------------------------------------------------------*/
-        $('.profile-text', '#profile').find('p:not(:first)').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated bounceInUp').css('opacity', 1);}
-        });
+         // $('.profile-text', '#profile').find('p:not(:first)').css('opacity', 0).one('inview', function(isInView){
+         //     if (isInView) {$(this).addClass('animated bounceInUp').css('opacity', 1);}
+         // });
         
         
         /*-------------------------------------------------------------------*/
@@ -119,9 +119,9 @@ $(function(){
         /*-------------------------------------------------------------------*/
         /*  8. Section - Contact
         /*-------------------------------------------------------------------*/
-        $('.contact-details', '#contact').css('opacity', 0).one('inview', function(isInView){
-            if (isInView) {$(this).addClass('animated flipInX').css('opacity', 1);}
-        });
+        // $('.contact-details', '#contact').css('opacity', 0).one('inview', function(isInView){
+        //     if (isInView) {$(this).addClass('animated flipInX').css('opacity', 1);}
+        // });
         
         
         /*-------------------------------------------------------------------*/
@@ -139,5 +139,5 @@ $(function(){
                 }
             });
         });
-    }
+    // }
 });
