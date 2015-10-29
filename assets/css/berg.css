@@ -2286,6 +2286,15 @@ button.mfp-arrow:active {
   background-image: url("../images/bg-milestones.jpg");
 }
 
+.milestones .pattern-overlay {
+  position: absolute;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/bg-pattern.png');
+  background-repeat: repeat;
+}
+
 .milestones {
   margin-top: 40px;
 }
