@@ -1,6 +1,6 @@
 menus:
   - title: 'Home'
-    url: '/#'
+    url: '/#home'
     submenus:
       - title: Profile
         url: '/#profile'
@@ -9,7 +9,7 @@ menus:
       - title: 'Services'
         url: '/#services'
   - title: 'Resume'
-    url: '/resume/#'
+    url: '/resume/'
     submenus:
       - title: Resume Home
         url: '/resume/'
