@@ -4,8 +4,8 @@ key: 4
 category: [iOS Apps]
 title: "Meme Me v.2.0"
 description: "Meme v2.0 - Udacity iOS Nanodegree"
-project-page: /projects/meme-me.html
-url: /projects/meme-me.html'
+project-page: 'https://github.com/techrapport/meme-me/'
+url: /projects/meme-me/'
 image: 
   file: /assets/images/portfolio/Meme-Me-portfolio-image.jpg
   alt: "Meme Me Udacity Portfolio Image"

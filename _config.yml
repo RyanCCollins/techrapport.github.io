@@ -111,11 +111,13 @@ defaults:
       layout: page
   -
     scope:
-      path: "/projects/"
+      path: ""
       type: projects
     values:
       author: "Tech Rapport"
-      layout: default
+      layout: project
+      permalink: '/projects/:path/'
+      output: true
 
 #Site Map Vars:
 sitemap:

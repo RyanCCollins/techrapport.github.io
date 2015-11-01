@@ -1,12 +1,13 @@
 ---
-layout: page
+layout: project
 key: 0
 category: [iOS Apps]
 title: "Tech Rapport - Udacity iOS Nanodegree Capstone Project"
 description: "Tech Rapport - Udacity iOS Nanodegree Capstone Project"
-project-page: ''
+project-page: 'https://github.com/techrapport/capstone/'
+url: '/projects/capstone/'
 image: 
-  file: /assets/images/portfolio/capstone-portfolio-image.png
+  file: '/assets/images/portfolio/capstone-portfolio-image.png'
   alt: "Udacity Capstone Project"
 ---
 
