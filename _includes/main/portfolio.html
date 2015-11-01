@@ -22,7 +22,7 @@
                                 <a href="#" data-filter="*" class="btn btn-sm btn-custom disabled">All</a>
                             </li>
 
-                        {% for category in site.projects.category | limit:5 %}
+                        {% for category in site.projects.categories | limit:5 %}
                             <li>
                                 <a href="#" data-filter=".{{category[0]}}" class="btn btn-sm btn-custom">{{category[0]}}</a>
                             </li>
@@ -42,7 +42,7 @@
                         <div class="item col-sm-6 col-md-3">
                             <div class="project-wrapper">
                                 <div class="project-link">
-                                    <a href="{{ project.image }}" {% for category in project.categories %}data-filter="{% if category %}{{ category }}{% else %}*{% endif %}"{% endfor %} class="zoom" title="{{ project.title }}">
+                                    <a href="{{ project.feature.image }}" {% for category in site.projects.categories %}data-filter="{% if category %}{{ category }}{% else %}*{% endif %}"{% endfor %} class="zoom" title="{{ project.title }}">
                                         <i class="icon-Full-Screen"></i>
                                     </a>
 
@@ -57,7 +57,7 @@
                                 </div>
                                 <!-- //.project-title -->
 
-                                <img src="{{ project.image.file }}" alt="{{project.image.alt}}" class="img-responsive"/>
+                                <img src="{{project.feature.image}}" alt="{{project.feature.alt}}" class="img-responsive"/>
                             </div>
                             <!-- //.project-wrapper -->
                         </div>

@@ -1,28 +1,32 @@
 ---
-layout: page
+layout: project
 key: 4
 category: [iOS Apps]
-title: "Meme Me v.2.0"
-description: "Meme v2.0 - Udacity iOS Nanodegree"
+title: "Meme Me"
+description: "Udacity iOS Nanodegree - Meme Me v.2.0 - iOS Meme Maker"
 project-page: 'https://github.com/techrapport/meme-me/'
+downloads: 
+  zip: 'https://github.com/TechRapport/Meme-Me/zipball/master'
+  tarball: 'https://github.com/TechRapport/Meme-Me/tarball/master'
 url: /projects/meme-me/'
-image: 
-  file: /assets/images/portfolio/Meme-Me-portfolio-image.jpg
+feature: 
+  image: /assets/images/portfolio/Meme-Me-portfolio-image.jpg
   alt: "Meme Me Udacity Portfolio Image"
+carousel:
+  image:
+    url: https://placehold.it/1920x540
+    caption: "Caption"
+    text: "Text description here"
+  image:
+    url: https://placehold.it/1920x540
+    caption: "Caption"
+    text: "Text description here"
+  image:
+    url: https://placehold.it/1920x540
+    caption: "Caption"
+    text: "Text description here"
+build-info: ['Version: 2.0', 'iPhone: 4S or later', 'iPad: N/A', 'xCode: Version 7.1', 'iOS: 9.0', 'Swift: 2.0']
 ---
-
-by [Ryan Collins](mailto:info@techrapport.com) - [http://techrapport.com](http://TechRapport.com)
-
-Build information
-__________________
-- Version: 2.0
-- xCode: Version 7.1
-- iOS: 9.0
-- Swift: 2.0
-- iPhone: 4S or later
-- iPad: N/A
-____________________
-
 
 This app was created as a project for the Udacity iOS Nanodegree. Before creating this app, I took a month long course on UIKit Fundamentals through Udacity. This course firmed up my working knowledge of Apple's UIKit framework, which is used extensively for UI design, control and navigation. 
 

@@ -1,27 +1,122 @@
 ---
 layout: default
 ---
+<section id="portfolio" class="section">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="{{page.project-page}}">View on GitHub</a>
-
-          <h1 id="project_title">{{page.title}}</h1>
-          <h2 id="project_tagline">{{page.description}}</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="{{page.project-page}}zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{page.project-page}}tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+      <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+          <div class="page-header">
+            <h2 class="section-title uppercase text-center">
+              {{page.title}}
+            </h2>
+              <p class="section-subtitle text-center">{{page.description}}</p>
+              <small class="text-center">By {{site.owner.author}}</small>
+              <span class="divider center"></span>
+          </div>
+          <p>
+            {{page.content}}
+          </p>
+          <div>
+          </div>
+          <p>
+          </p>
+        </div>
+        <div class="col-md-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                Download Links
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="btn-group">
+             
+              <button class="btn btn-default">
+                Download from Github
+              </button> 
+              <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+                <span class="caret"></span>
+              </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="{{page.downloads.zip}}">Zip</a>
+                  </li>
+                  <li>
+                    <a href="{{page.downloads.tarball}}">Tarball</a>
+                  </li>
+                  <li class="divider">
+                  </li>
+                  <li>
+                    <a href="{{page.downloads.repo}}">Clone Repo</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel-footer">
+                <a href="{{page.project-page}}">View on Github</a>
+            </div>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                Build Information
+              </h3>
+            </div>
+            <div class="panel-body">
+                {% for item in page.build-info %}
+                  <p class="text-grey">{{item}} {% unless forloop.last %}<br> {% endunless %}
+                {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  <br>
+  <div class="portfolio">
+    <div class="row">
+      <div class="page-header">
+            <h2 class="section-title uppercase text-center">
+              More Projects from my Portfolio
+            </h2>
+              <p class="section-subtitle text-center">Take a look at some of my other projects</p>
+              <span class="divider center"></span>
+      </div>
+      {% for project in site.projects | limit:4 | sort:'key' %}
+      <div class="item col-sm-5 col-md-3">
+      <div class="col-sm-1 col-md-2"></div>
+        <div class="project-wrapper">
+          <div class="project-link">
+              <a href="{{ project.image.file }}" class="zoom" title="{{ project.title }}">
+                <i class="icon-Full-Screen"></i>
+                </a>
 
+                <a href="{{ project.url }}" class="external-link">
+                <i class="icon-Link"></i>
+                </a>
+          </div>
+          <!-- //.project-link -->
 
-    <!-- MAIN CONTENT -->
-<div id="main_content_wrap" class="outer">
-    <section id="main_content" class="inner">
-	{{content}}
-
-   </section>
+          <div class="project-title">
+              <h4>{{ project.title }}</h4>
+          </div>
+              <!-- //.project-title -->
+              <img src="{{ project.feature.image }}" alt="{{project.feature.alt}}" class="img-responsive"/>
+        </div>
+        <!-- //.project-wrapper -->
+      </div>
+      <!-- //.item -->
+      {% endfor %}
+      <div class="col-sm-1 col-md-2"></div>
+    </div>
+    <!-- //.row -->
+  </div>
 </div>
+</section>
+<br>
+<br>

@@ -1,0 +1,321 @@
+/*-----------------------------------------------------------------------
+/*  Author : R. Collins
+/*  Description : Project page CSS
+/*  Version     : 1.0
+/*-----------------------------------------------------------------------
+
+
+/*---------------------------------------------------------------------*/
+/*  1. GLOBAL STYLES
+/*  1.1 GENERAL STYLES
+/*---------------------------------------------------------------------*/
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #0d0c0d;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 25px;
+  overflow-x: hidden;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  1.2. TEXT COLOR
+/*---------------------------------------------------------------------*/
+.text-grey {
+  color: #a1a1a1;
+}
+
+.colored-text {
+  color: #c80a48;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  1.3. ANCHOR
+/*---------------------------------------------------------------------*/
+a {
+  color: #c80a48;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: #c80a48;
+  outline: none;
+  text-decoration: none;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  1.4. HEADING
+/*---------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 5;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  2. COMPONENTS
+/*  2.1. BUTTON
+/*---------------------------------------------------------------------*/
+.btn.btn-custom {
+  background-color: #c80a48;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #970837;
+}
+
+.btn.btn-custom:hover {
+  background-color: #b0093f;
+}
+
+.btn.btn-custom > i {
+  padding-right: 2px;
+}
+
+@media (max-width: 767px) {
+  .btn.btn-lg.btn-custom {
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+  }
+}
+
+.btn.btn-custom.btn-circle {
+  width: 48px;
+  height: 48px;
+  line-height: 46px;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.btn.btn-sm.btn-custom.btn-circle {
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+}
+
+.btn.btn-lg.btn-custom.btn-circle {
+  width: 54px;
+  height: 54px;
+  line-height: 52px;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  2.2. DIVIDER
+/*---------------------------------------------------------------------*/
+span.divider {
+  display: block;
+  margin: 35px 0px;
+  width: 150px;
+  height: 2px;
+  background-color: #c80a48;
+}
+
+span.divider.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  2.3. UPPERCASE
+/*---------------------------------------------------------------------*/
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  2.4. SELECT BOXES CUSTOM
+/*---------------------------------------------------------------------*/
+.select2-container--default .select2-selection--single.select2-container-custom {
+  background-color: #0d0c0d;
+  height: 46px;
+  padding: 8px;
+  border-color: #3b3b3b;
+  border-radius: 0px;
+}
+
+.select2-container--default .select2-selection--single.select2-container-custom:focus {
+  outline: none;
+}
+
+.select2-container--default .select2-selection--single.select2-container-custom .select2-selection__rendered {
+  color: #a1a1a1;
+}
+
+.select2-container--default .select2-selection--single.select2-container-custom .select2-selection__arrow {
+  height: 46px;
+}
+
+.select2-container--default .select2-selection--single.select2-container-custom .select2-selection__arrow b {
+  border-color: #3b3b3b transparent transparent transparent;
+  border-width: 8px 6px 0 6px;
+  margin-left: -12px;
+  margin-top: -4px;
+}
+
+.select2-dropdown-custom {
+  background-color: #0d0c0d;
+  border-color: #3b3b3b;
+  border-radius: 0px;
+}
+
+.select2-dropdown-custom .select2-results > .select2-results__options {
+  max-height: 400px;
+}
+
+.select2-dropdown-custom .select2-results > .select2-results__options > .select2-results__option {
+  padding: 8px 15px;
+  color: #a1a1a1;
+}
+
+.select2-dropdown-custom .select2-results > .select2-results__options > .select2-results__option:hover {
+  background-color: #212121;
+}
+
+.select2-dropdown-custom .select2-results > .select2-results__options > .select2-results__option--highlighted[aria-selected] {
+  background-color: #212121;
+}
+
+.select2-dropdown-custom .select2-results > .select2-results__options > .select2-results__option[aria-selected=true] {
+  background-color: #c80a48;
+  color: #ffffff;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  2.5. RADIO BUTTON CUSTOM
+/*---------------------------------------------------------------------*/
+.form-group .radio {
+  margin-bottom: 5px;
+  padding-left: 1px;
+}
+
+.form-group .radio:last-child {
+  margin-bottom: 0px;
+}
+
+.form-group .radio > label {
+  display: inline-block;
+  position: relative;
+  padding-left: 26px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.form-group .radio > label:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  border: 1px solid #3b3b3b;
+  border-radius: 50%;
+}
+
+.form-group .radio input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.form-group .radio input[type=radio]:checked + label:before {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  font-weight: 400;
+  font-size: 10px;
+  color: #555555;
+  text-align: center;
+  line-height: 16px;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  2.6. CHECKBOX CUSTOM
+/*---------------------------------------------------------------------*/
+.form-group .checkbox {
+  margin-bottom: 5px;
+  padding-left: 1px;
+}
+
+.form-group .checkbox:last-child {
+  margin-bottom: 0px;
+}
+
+.form-group .checkbox > label {
+  display: inline-block;
+  position: relative;
+  padding-left: 26px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.form-group .checkbox > label:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  border: 1px solid #3b3b3b;
+  border-radius: 1px;
+}
+
+.form-group .checkbox input[type=checkbox] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.form-group .checkbox input[type=checkbox]:checked + label:before {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  font-weight: 400;
+  font-size: 10px;
+  color: #555555;
+  text-align: center;
+  line-height: 16px;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  3. PRELOADER
+/*---------------------------------------------------------------------*/
+#jpreOverlay {
+  background-color: #0d0c0d;
+}
+
+#jpreLoader {
+  width: 100%;
+  height: 5px;
+}
+
+#jpreBar {
+  background-color: #c80a48;
+}

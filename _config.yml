@@ -24,7 +24,8 @@ excerpt-seperator: '<!-- more -->'
 #Delete author once all updated to owner:
 
 owner:
-  name: 
+  name: Ryan
+  author: 'Ryan Collins'
   address: 
   phone: 617-299-9722
   email: info@techrapport.com
@@ -69,8 +70,9 @@ redcarpet:
 
 #Collections:
 collections: 
-  - posts
-  - projects
+  posts:
+  projects:
+    output: true
 
 # Use the following plug-ins
 gems:
@@ -84,12 +86,7 @@ sass:
   style: compressed
 
 # Exclude these files from your production _site
-exclude:
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
-    - CNAME
+exclude: [Gemfile, Gemfile.lock, LICENSE, README.md, CNAME, node_modules]
 
 #Defaults
 defaults: 
