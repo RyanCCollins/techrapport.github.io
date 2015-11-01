@@ -46,7 +46,7 @@
                                         <i class="icon-Full-Screen"></i>
                                     </a>
 
-                                    <a href="{{ project.project-page }}" class="external-link">
+                                    <a href="{{ project.url }}" class="external-link">
                                         <i class="icon-Link"></i>
                                     </a>
                                 </div>
@@ -57,7 +57,7 @@
                                 </div>
                                 <!-- //.project-title -->
 
-                                <img src="{{ project.image }}" alt="" class="img-responsive"/>
+                                <img src="{{ project.image.file }}" alt="{{project.image.alt}}" class="img-responsive"/>
                             </div>
                             <!-- //.project-wrapper -->
                         </div>

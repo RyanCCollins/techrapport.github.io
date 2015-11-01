@@ -90,7 +90,7 @@ This would be the place where we could set up checks to see what size screen the
 
 Finally, we must override the prepareForSegue method in order to check for when the segue is called.  Within this method, we can set the presentation style, set the delegate and pass any data that needs to be passed.
 
-{% highlight swift linenos %}
+{% highlight swift %}
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //Check for the fontPopoverSegue
         if segue.identifier == "fontPopoverSegue" {

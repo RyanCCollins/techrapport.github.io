@@ -21,41 +21,10 @@
 
 {% for menu in site.data.nav.menus %}
     {% assign class = nil %}
-    {% assign op = '/' %}
-
-        {% if ((page.url contains menu.url and menu.url != '/') or (page.url == '/index.html' and menu.url == '/')) %}
-            {% assign class = 'active page-scroll' %}
-        {% endif %}
-
-            <li class="dropdown{%if class%} {{class}}{% endif %}">
-                <a href="{{menu.url}}" class="dropdown-toggle" data-toggle="dropdown" data-target="{{op}}{{menu.url}}" role="button" aria-haspopup="true">{{ menu.title }}<b class="caret"></b></a>
-            
-
-        {% if menu.submenus %}
-            <ul class="dropdown-menu" aria-labelledby="dropdown-references">
-            {% for submenu in menu.submenus %}
-                {% if submenu.title == 'Categories' %}
-            <li class="dropdown">
-                <a href="{{submenu.url}}" class="dropdown-toggle" data-toggle="dropdown" data-target="{{op}}{{submenu.url}}" role="button" aria-haspopup="true">{{submenu.title}}
-                <b class="caret"></b></a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-references">
-                        {% for item in (0..site.categories.size) %}{% unless forloop.last %}
-                        {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
-                    <li class="dropdown">
-                        <a href="/blog/categories/#{{this_word}}" id="dropdown-references" class="dropdown-toggle" data-toggle="dropdown" data-target="/categories" role="button" aria-haspopup="true">{{this_word}}</a>
-                    </li>
-                        {% endunless %}{% endfor %}
-                </ul>
-                        {% else %}
-            <li class="{{class}}">
-                <a href="{{submenu.url}}">{{submenu.title}}
-                {% endif %}
-                </a>
-            </li>
-            {% endfor %}
-            </ul>
-        {% endif %}
-            </li>
+    
+                <li class="page-scroll">
+                        <a href="{{op}}{{menu.url}}">Profile</a>
+                </li>
 {% endfor %}
             <li><a href="/search"><i class="fa fa-search"></i></a></li>
             </ul>

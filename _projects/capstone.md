@@ -5,5 +5,9 @@ category: [iOS Apps]
 title: "Tech Rapport - Udacity iOS Nanodegree Capstone Project"
 description: "Tech Rapport - Udacity iOS Nanodegree Capstone Project"
 project-page: ''
-image: /assets/images/portfolio/capstone-portfolio-image.png
+image: 
+  file: /assets/images/portfolio/capstone-portfolio-image.png
+  alt: "Udacity Capstone Project"
 ---
+
+Coming Soon

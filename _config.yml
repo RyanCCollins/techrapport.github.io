@@ -111,7 +111,7 @@ defaults:
       layout: page
   -
     scope:
-      path: ""
+      path: "/projects/"
       type: projects
     values:
       author: "Tech Rapport"
