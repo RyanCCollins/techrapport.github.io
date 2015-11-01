@@ -136,7 +136,7 @@ In my case, I wanted the view to update the size and type of the font of the tex
 Please take a look at my app in action in the following video:
 
 <figure class="one center">
-    <a href="https://www.youtube.com/watch?v=2aUd8Y6TG0E"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=2aUd8Y6TG0E&output=embed" frameborder="0"> </iframe></a>
+    <a href="https://vimeo.com/user45412862"><iframe src="https://player.vimeo.com/video/144303012" width="500" height="888" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></a>
     <figcaption>Meme-Me Test Flight</figcaption>
 </figure>
 

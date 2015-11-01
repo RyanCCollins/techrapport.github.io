@@ -101,6 +101,10 @@ A special thanks goes to: "Christian Zimmermann" who wrote the code for the Swif
 
 Please take a look at my blog to learn about how Udacity has helped me succeed: [Tech Rapport's Blog](http://TechRapport.com/blog/)
 
+<figure class="center">
+  <a href="https://vimeo.com/user45412862"><iframe src="https://player.vimeo.com/video/144303012" width="250" height="444" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></a>
+</figure>
+
 Credit for the app icon goes to Udacity.
 
 <div>Icons made by <a href="http://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
