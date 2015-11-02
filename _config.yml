@@ -73,6 +73,7 @@ collections:
   posts:
   projects:
     output: true
+    render: true
 
 # Use the following plug-ins
 gems:
@@ -113,7 +114,8 @@ defaults:
     values:
       author: "Tech Rapport"
       layout: project
-      permalink: '/projects/:path/'
+      permalink: /:collection/:path/index.html
+      render: true
       output: true
 
 #Site Map Vars:
