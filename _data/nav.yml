@@ -1,6 +1,6 @@
 menus:
   - title: 'Home'
-    url: '/#home'
+    url: '/#Home'
     submenus:
       - title: Profile
         url: '/#profile'

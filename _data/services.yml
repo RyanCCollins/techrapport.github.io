@@ -1,19 +1,19 @@
-header: Our Services
-subheader: "What can we do for you?"
+header: Services
+subheader: What can we do for you?
 
 services:
   - title: "Web Design"
     key: 0
     icon: "icon-Wifi"
-    description: "Create beautiful websites and expand your web presence.  We can help you create websites and web applications that users will love to visit and use.  Get help planning your website from the ground up or redesign it with the most innovative technologies of today!"
+    description: "Create beautiful websites to showcase your talent and expand your web presence.  We can help you create websites and web applications that users will love to visit and use.  Get help planning your website from the ground up or redesign it with the most innovative technologies."
   - title: "Implementation"
     key: 5
     icon: "icon-Calendar-4"
-    description: "We offer professional software implementation tailored to your business needs.  Stay on track and deliver amazing software to your clients with professional software project planning and implementation."
+    description: "Professional software implementation tailored to your business needs.  Stay on track and deliver amazing software to your clients with professional software project planning and implementation."
   - title: "Mobile Software"
     key: 1
     icon: "icon-Smartphone-4"
-    description: "Want to reach your customers, anywhere at any time?  There can be an app for that. Contact us for custom designed mobile software tailored to meet your business needs and available on all mobile platforms."
+    description: "Our passion is mobile development and we believe in creating mobile first software and web applications.  With professional certification in iOS development and extensive experience in mobile web development, we can help you to reach your customers on their mobile devices."
   - title: "Data Architecture"
     key: 3
     icon: "icon-Big-Data"
@@ -21,7 +21,7 @@ services:
   - title: "SEO and Social Media"
     key: 2
     icon: "icon-Cloud-Email"
-    description: "We can help you to implement professional Search Engine Optimization, advertise on the world’s top mobile web platforms, utilize social networking and more!  Give your business the edge it needs to thrive."
+    description: "Harness the power of big data and use it to understand your consumers and directly market to your target audience.  With extensive training in Google SEO and Analytics, we can give your business the edge it needs to thrive."
   - title: "Consulting"
     key: 4
     icon: "icon-Consulting"
