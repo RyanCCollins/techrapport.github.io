@@ -15,9 +15,9 @@ This post is going to talk about some of the new tools that I've added to my too
 
 ### 1.  Wireframing / Sketching
 #### Sketch
-Sketch is a fantastic tool that has a very broad featureset.  What interests me most is the features that apply to the earlier stages of software design.  When I come up with an idea for a piece of software, I generally begin by parsing out the specifications and features, then move on to sketching out my thoughts for the design.  
+Sketch is a fantastic tool that has a very broad feature set.  What interests me most is the features that apply to the earlier stages of software design.  When I come up with an idea for a piece of software, I generally begin by parsing out the specifications and features, then move on to sketching out my thoughts for the design.  
 
-Whether it's an iOS App, a website or any other piece of software, I use Sketch to get my ideas onto paper.  Sketch comes with built in templates and UI components for the iOS platform.  
+Whether it's an iOS App, a website or any other piece of software, I use Sketch to get my ideas onto paper.  Sketch comes with built-in templates and UI components for the iOS platform.  
 
 ### 2. Prototyping
 #### Origami
@@ -37,12 +37,12 @@ I won't go into too much about project planning, it was a main part of my last j
 ### 4. Coding
 
 ####Sublime Text, Brackets and Xcode
-I am constantly evolving my workflow and I am especially fickle when it comes to the text editors that I use.  Lately I have been using [Sublime Text](www.sublimetext.com/) and XCode the most, but [Brackets (made by by Adobe)](http://brackets.io) has earned a space on my Dock.  I find XCode 7.0 to be good, but a bit clunky, so sometimes I like to code outside of XCode in Sublime Text.  
+I am constantly evolving my workflow and I am especially fickle when it comes to the text editors that I use.  Lately I have been using [Sublime Text](www.sublimetext.com/) and XCode the most, but [Brackets (made by Adobe)](http://brackets.io) has earned a space on my Dock.  I find XCode 7.0 to be good, but a bit clunky, so sometimes I like to code outside of XCode in Sublime Text.  
 
 What I like about Sublime is how lightweight it is and how customizable it is.  Brackets is a bit more interactive than Sublime Text and handles a few of the annoyances that I have with Sublime Text, like how I have to use a finder window for file management a lot of the time.  All three allow for third-party plugins, which is nice.  In the end, I think that the text editor that you choose to use is really up to your personal tastes.  
 
 ### 5. Monitoring, Verification and Testing
-I utilize several tools for monitoring my code, dependencies, etc.  It really depends what I am working on, but I've really started to love [node.js](http://nodejs.org) and [Grunt](http://gruntjs.com) for handling some of the grunt work, such as code verification, minificafion, and image compression for web development.  I have been using node and grunt in combination with Jekyll for the last few months and am really in love with the tools they provide for web design.  
+I utilize several tools for monitoring my code, dependencies, etc.  It really depends what I am working on, but I've really started to love [node.js](http://nodejs.org) and [Grunt](http://gruntjs.com) for handling some of the grunt work, such as code verification, minification, and image compression for web development.  I have been using node and grunt in combination with Jekyll for the last few months and am really in love with the tools they provide for web design.  
 
 For iOS development, of course I use instruments for testing.  I have also been integrating the fantastic language features for debugging that Swift has into my code, including using guard statements, error catching, multi-threading with GCD and more.  
 
@@ -55,11 +55,22 @@ For web development, I have been using [Cloud Cannon](http://cloudcannon.com) fo
 
 #### Wakatime
 
-I'd like to chat about a new discovery that I made recently, and that is [Wakatime](http://wakatime.com).  It's funny because in the process of designing my website resume, I wanted to incorporate stats about the type of work that I do, how much time I spend on it, and what [languages/frameworks I use the most](http://techrapport.com/resume/).  To do this, I made a plugin that pulled info from github stats.  Still, I wasn't able to get a good level of granularity.  In comes Wakatime.  
+I'd like to chat about a new discovery that I made recently, and that is [Wakatime](http://wakatime.com).  It's funny because in the process of designing my website resume, I wanted to incorporate stats about the type of work that I do, how much time I spend on it, and what [languages/frameworks I use the most](http://techrapport.com/resume/).  To do this, I made a plugin that pulled info from Github stats.  Still, I wasn't able to get a good level of granularity.  In comes Wakatime.  
 
-With Wakatime, you can set up an account and [follow their instructions for installing plugins](https://wakatime.com/editors) to your favorite code editors / IDEs.  I use Xcode, Sublime Text and Brackets the most, so I installed a plugin for each.  What the plugin does is really cool; it keeps track of how much time you spend writing code, what languages you use, and also analyzes your github commits to show you stats.  There is also an [interactive leaderboard](https://wakatime.com/leaders), which shows you the the top coders as far as time spent each week.  
+With Wakatime, you can set up an account and [follow their instructions for installing plugins](https://wakatime.com/editors) to your favorite code editors / IDEs.  I use Xcode, Sublime Text and Brackets the most, so I installed a plugin for each.  What the plugin does is really cool; it keeps track of how much time you spend writing code, what languages you use, and also analyzes your Github commits to show you stats.  There is also an [interactive leaderboard](https://wakatime.com/leaders), which shows you the top coders as far as time spent each week.  
 
-Another interesting piece of software for productivity is codeeval.  I won't go into it too much, but I will say that it offers a pretty unique set of features for keeping you on your toes as a developer and helps you to hone your skills.  
+Another interesting piece of software for productivity is Codeeval.  I won't go into it too much, but I will say that it offers a pretty unique set of features for keeping you on your toes as a developer and helps you to hone your skills.  
+
+### 8. Other - Honorable Mentions
+
+There are some other tools that I like to use that I didn't necessarily want to categorize.  Below are some honorable mentions for tools that I use all the time.
+* Prepo - for prepping icons and other assets for Xcode projects
+* Textastic - an iOS App for writing code
+* VMWare Fusion - for testing on a variety of platforms
+* MongoDB - for big data
+* R - for data analysis
+* Coda - for web design, although I have moved away from it, it still deserves a mention
+* Macdown - for writing and previewing Markdown
 
 ###Wrapup
 
