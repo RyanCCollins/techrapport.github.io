@@ -64,6 +64,7 @@ Another interesting piece of software for productivity is Codeeval.  I won't go 
 ### 8. Other - Honorable Mentions
 
 There are some other tools that I like to use that I didn't necessarily want to categorize.  Below are some honorable mentions for tools that I use all the time.
+
 + Prepo - for prepping icons and other assets for Xcode projects
 + Textastic - an iOS App for writing code
 + VMWare Fusion - for testing on a variety of platforms
