@@ -15,10 +15,10 @@ Think about some of your favorite iPhone applications.  What do they do better t
 
 I think it is the combination of several key factors.
 
-* User Interface/User Experience
-* Delivers on Features
-* Bug free!
-* Frequent Updates
++ User Interface/User Experience
++ Delivers on Features
++ Bug free!
++ Frequent Updates
 
 Let's first look into the User Interface/User Experience area, then we'll touch on each of these areas separately and provide examples where some apps excel and others fail.
 
@@ -33,16 +33,16 @@ Apple has done an incredible job at designing built-in design elements and imple
 
 ####Here are a few links to other websites that have written about Apple's design:
 
-* [Designshack.com's 15 design tips to learn from apple](http://designshack.net/articles/inspiration/15-design-tips-to-learn-from-apple)
-* [MEMET Circus' article on iOS UX](http://memetcircus.com/?p=87)
-* [Design Leadership Principles of Steve Jobs and the Apple ...](http://www.girvin.com/blog/?p=5202)
-* [The 6 Pillars Of Steve Jobs's Design Philosophy | Co.Design](http://www.fastcodesign.com/1665375/the-6-pillars-of-steve-jobss-design-philosophy)
++ [Designshack.com's 15 design tips to learn from apple](http://designshack.net/articles/inspiration/15-design-tips-to-learn-from-apple)
++ [MEMET Circus' article on iOS UX](http://memetcircus.com/?p=87)
++ [Design Leadership Principles of Steve Jobs and the Apple ...](http://www.girvin.com/blog/?p=5202)
++ [The 6 Pillars Of Steve Jobs's Design Philosophy | Co.Design](http://www.fastcodesign.com/1665375/the-6-pillars-of-steve-jobss-design-philosophy)
 
 My favorite apps that showcase great UI/UX and great design are:
 
-* [1Password](https://agilebits.com/onepassword) by AgileBits
-* [Paper](http://www.fiftythree.com/paper) by FiftyThree
-* [Workflow](https://my.workflow.is/) by DeskConnect
++ [1Password](https://agilebits.com/onepassword) by AgileBits
++ [Paper](http://www.fiftythree.com/paper) by FiftyThree
++ [Workflow](https://my.workflow.is/) by DeskConnect
 
 ####Here is a short video showcasing the User Interface of Paper:
 <figure class="one center">
