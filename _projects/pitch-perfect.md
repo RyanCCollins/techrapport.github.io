@@ -3,7 +3,7 @@ layout: project
 key: 4
 category: iOS Apps
 title: "Pitch Perfect iOS App"
-description: "Udacity iOS Nanodegree - Pitch Perfect iOS App - Created in Swift 2.0 using xCode for iOS 9, AVFoundation"
+description: "Udacity iOS Nanodegree - Pitch Perfect iOS App - Created in Swift 2.0 using XCode for iOS 9, AVFoundation"
 project-page: 'https://github.com/TechRapport/Pitch-Perfect/'
 url: '/projects/pitch-perfect/'
 document: '/projects/pitch-perfect-description.html'
@@ -28,5 +28,3 @@ carousel:
 I really enjoyed making this application and I definitely went above and beyond in the process. I experimented with adding motion & touch controls for the audio playback and effects, I added several other effects (revered & delay,) I added animations, et. al.
 
 ###App Description
-
-{% include {{page.document}} %}

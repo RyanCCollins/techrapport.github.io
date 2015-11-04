@@ -15,7 +15,7 @@ jobs:
   - name: "Commonwealth of Massachusetts"
     jobtitle: "Program Coordinator"
     dates: "2009 - May 2010"
-    description: "• Appointed Lead Administrator of MATRIS and assisted with the implementation and roll-out of the federally funded statewide data collection system <br>•   Designed, programmed and implemented automation software to boost productivity and managed all data systems utilized by OEMS <br>•   Reengineered the data structure and reprogrammed the Ambulance Regulation Program (ARP) Licensure and Inspection Tracking Application and created the OEMS Compliance Tracking Application, using .NET & SQL Server <br>•   Created ad-hoc reports for the OEMS Director and other staff members using internal and external data sources"
+    description: "• Appointed Lead Administrator of MATRIS and assisted with the implementation and roll-out of the federally funded statewide data collection system <br>•   Designed, programmed and implemented automation software to boost productivity and managed all data systems utilized by OEMS <br>•   Re-engineered the data structure and reprogrammed the Ambulance Regulation Program (ARP) Licensure and Inspection Tracking Application and created the OEMS Compliance Tracking Application, using .NET & SQL Server <br>•   Created ad-hoc reports for the OEMS Director and other staff members using internal and external data sources"
     key: 2
   - name: "Bose Corporation"
     jobtitle: "Product and Technical Support"

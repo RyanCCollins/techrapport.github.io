@@ -18,10 +18,10 @@ schools:
   - name: "New England Institute of Art "
     category: "Bachelors of Science"
     dates: "2006-2009"
-    description: "At NEiA, I studied engineering, with a focus on web and media technologies, and received my BS degree with a 3.8 Cumulitive GPA."
+    description: "At NEiA, I studied engineering, with a focus on web and media technologies, and received my BS degree with a 3.8 Cumulative GPA."
     key: 2
   - name: "McNally Smith College of Music"
     category: "Audio Engineering"
     dates: "2005-2006"
-    description: "At McNally Smith, I studied Audio Engineering.  The curicullum was extremely extensive and although I loved it, I transferred after a year because I Minnesota was a little too cold for my tastes."
+    description: "At McNally Smith, I studied Audio Engineering.  The curriculum was extremely extensive and although I loved it, I transferred after a year because I Minnesota was a little too cold for my tastes."
     key: 3
