@@ -24,17 +24,17 @@ I'm going to assume that you have Jekyll installed.  If not, check out the [Jeky
 I recommend starting with a template or designing your own either with bootstrap or whatever UI framework you like best.  Starting with a template will make your design process much smoother.  If you don't know, [bootstrap](http://getbootstrap.com) is a wonderful web UI framework made by Twitter.  
 
 ### Break up the HTML into sections:
-* header
-* footer
-* nav
-* meta, 
-* etc.  
++  header
++  footer
++  nav
++  meta, 
++  etc.  
 
 Then, create a default layout that includes any common elements.  You can then create a cascade of layouts for your blog home, blog posts, etc.  While you're doing this, I recommend thinking ahead about a few things:
-* permalinks
-* collections
-* site wide variables, like name, author, company
-* other data
++  permalinks
++  collections
++  site wide variables, like name, author, company
++  other data
 
 >Thinking ahead will help you save time and energy in the future and allow you to "encapsulate" your includes and data files.
 

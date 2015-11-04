@@ -20,9 +20,9 @@ Checkout my other posts in my series of [Jekyll blog posts](/blog/categories#jek
 ### 1. Search Engine Optimization
 Read about how to implement SEO and what are the best practices for [search engine optimization in Jekyll](jekyll.tips/tutorials/seo/).  You can do some pretty amazing things and easily generate meta data for your site using Liquid.  The site linked above has some great information, but I also recommend adding the following along with your other Meta Tags:
 
-* Google & Bing verify 
-* [Google Tag Manager](https://www.google.com/tagmanager/) 
-* [Twitter cards](https://dev.twitter.com/cards/overview)
++  Google & Bing verify 
++  [Google Tag Manager](https://www.google.com/tagmanager/) 
++  [Twitter cards](https://dev.twitter.com/cards/overview)
 
 Here is an excerpt from this site, showing you how you can add a twitter card meta data using Liquid variables.  I put this code into a file called meta.html that I include in every template.  As you can see, I've included a twitter card that includes the site owner's twitter name (defined as a site-wide variable in config.yml) and I also include the feature image of a page if there is one.  
 

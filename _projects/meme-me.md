@@ -31,35 +31,36 @@ build-info: ['Version: 2.0', 'iPhone: 4S or later', 'iPad: N/A', 'xCode: Version
 This app was created as a project for the Udacity iOS Nanodegree. Before creating this app, I took a month-long course on UIKit Fundamentals through Udacity. This course firmed up my working knowledge of Apple's UIKit framework, which is used extensively for UI design, control and navigation. 
 
 The app offers the following features:
-- Create a Meme by taking or selecting a photo
-- Add text to the top and bottom
-- Change the color, font and size of the text
-- Share and Save your Meme
-- View saved Memes in a UITableView and a UICollectionView
-- View a saved Meme
-- Edit a saved Meme
-- Delete saved Memes
+
++  Create a Meme by taking or selecting a photo
++  Add text to the top and bottom
++  Change the color, font and size of the text
++  Share and Save your Meme
++  View saved Memes in a UITableView and a UICollectionView
++  View a saved Meme
++  Edit a saved Meme
++  Delete saved Memes
 
 See the extra credit features and what I intend to add next below. 
 
 ####Technologies and best practices used
 Some of the more notable technologies and best practices I used in this app are listed below. I also wrote about some of these subjects in [my blog](http://TechRapport.com/blog/) in the Swift development section. 
-- UIKit
-  - UINavigationControllers
-  - UITableViews
-  - UICollectionViews
-  	- UICollectionViewFlowLayout
-  	- UICollectionViewCell
++  UIKit
+  +  UINavigationControllers
+  +  UITableViews
+  +  UICollectionViews
+  	+  UICollectionViewFlowLayout
+  	+  UICollectionViewCell
 
-- MotionKit
-- Delegation
-- MVC (Model View Controller)
-- NSNotifications
-- Extensions
++  MotionKit
++  Delegation
++  MVC (Model View Controller)
++  NSNotifications
++  Extensions
 
 As I stated above, I developed this application using several important design paradigms and best practices. Most notably, I used Model View Controller (MVC) extensively. I created a Meme struct model object, a font attributes struct model and a MemeCollection struct Model for storing and processing Memes.  At this point, the app does not use Core Data to persist the data, but it will in the next version.
 
-All Model, View and Controller components are completely separate of one another and Model and View objects only talk to one another through the view controller.  I used delegation & data source methods and key-value observation to insure this.  It will be very easy to utilize Core Data and networked data within this app since the Model is abstracted away from the View & View Controllers.  
+All Model, View and Controller components are completely separate of one another and Model and View objects only talk to one another through the view controller.  I used delegation & data source methods and key-value observation to insure this.  It will be very easy to utilize Core Data and networked data within this app since the Model is abstracted away from the View & View Controllers.
 
 I used optionals and unwrapped them when necessary.  To avoid bugs, I only used implicitly unwrapped optionals on values that I knew would never be null, otherwise I was safe and unwrapped optionals.
 
