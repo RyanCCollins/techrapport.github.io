@@ -24,7 +24,7 @@ Read about how to implement SEO and what are the best practices for [search engi
 * [Google Tag Manager](https://www.google.com/tagmanager/) 
 * [Twitter cards](https://dev.twitter.com/cards/overview)
 
-Here is an excerpt from this site, showing you how you can add a twitter card meta data using Liquid variables.  I put this code into a file called meta.html that I include in every template.  As you can see, I've included a twitter card that includes the site owner's twitter name (defined as a sitewide variable in config.yml) and I also include the feature image of a page if there is one.  
+Here is an excerpt from this site, showing you how you can add a twitter card meta data using Liquid variables.  I put this code into a file called meta.html that I include in every template.  As you can see, I've included a twitter card that includes the site owner's twitter name (defined as a site-wide variable in config.yml) and I also include the feature image of a page if there is one.  
 
 {% highlight html %}
 {% raw %}
@@ -84,23 +84,23 @@ If you're going to be hosting in your root directory, leave baseurl alone.  Simp
 
 ### 4. Model View Controller (MVC)
 
-As a developer, I am always thinking in MVC, even in languages / frameworks where it isn't built into the design necesarily.
+As a developer, I am always thinking in MVC, even in languages / frameworks where it isn't built into the design necessarily.
 
-Because you don't have to use a relational database with Jekyll, what I would do for a simple site is use YAML data files for each of the section of a page. I do this to seperate the data from the view and I consider the liquid markup that I write in my HTML files to be the view controller. 
+Because you don't have to use a relational database with Jekyll, what I would do for a simple site is use YAML data files for each of the section of a page. I do this to separate the data from the view and I consider the liquid markup that I write in my HTML files to be the view controller. 
 
 Designing your site with MVC in mind is extremely important if you expect your site to grow. If I were to port this site to Rails, I could easily install a SQL or other database using the same schema as my YAML data files without too much of a headache. 
 
-I think this flexibility is what makes Jekyll so awesome.  You can quickly and easily scale your site, upgrade the UI and change storage & hosting if you use good practice when initially ceating your site. 
+I think this flexibility is what makes Jekyll so awesome.  You can quickly and easily scale your site, upgrade the UI and change storage & hosting if you use good practice when initially creating your site. 
 
 ### 5. Lint, lint, lint!
 
-This is more of a tip for any type of development, but I think it earns a place in this article because liquid can get a bit unsightly and you want to make sure that you aren't inadvertantly adding any bugs or messing up your html.  I recommend using Sublime Text with [Sublime Linter](http://www.sublimelinter.com/).  You can add packages for all of the languages you write in and SublimeLinter will yell at you when you are leaving out something, or messed up your syntax.
+This is more of a tip for any type of development, but I think it earns a place in this article because liquid can get a bit unsightly and you want to make sure that you aren't inadvertently adding any bugs or messing up your html.  I recommend using Sublime Text with [Sublime Linter](http://www.sublimelinter.com/).  You can add packages for all of the languages you write in and SublimeLinter will yell at you when you are leaving out something, or messed up your syntax.
 
-Also, I found that I am used to using tabs so I would often inadvertantly mess up my yaml.  I found a neat utility that will validate and lint your yaml and then spit it out in a nice format.  [Checkout the online YAMLint YAML Validator](http://www.yamllint.com/).
+Also, I found that I am used to using tabs so I would often inadvertently mess up my YAML.  I found a neat utility that will validate and lint your yaml and then spit it out in a nice format.  [Checkout the online YAMLint YAML Validator](http://www.yamllint.com/).
 
 ### 6. Use Octopress
 
-If you are familiar with using the command line, try setting up Octopress.  In fact, I recommend starting out with one of their templates to begin with so that you have all of the dependicies right.  Their template will also include a rakefile and a gemfile, as well as provide you with good organization.  Whether you use one of their templates, or you set up Octopress yourself, you will be able to breeze through the process of writing and posting your content.
+If you are familiar with using the command line, try setting up Octopress.  In fact, I recommend starting out with one of their templates to begin with so that you have all of the dependencies right.  Their template will also include a rakefile and a gemfile, as well as provide you with good organization.  Whether you use one of their templates, or you set up Octopress yourself, you will be able to breeze through the process of writing and posting your content.
 
 Head on over to [the Octopress website](octopress.org/) if you are interested.
 
@@ -126,7 +126,7 @@ Cloud Cannon also makes it easy for you to create new collections and is especia
 
 ### 8. Add an RSS Feed
 
-Everyone now adays uses RSS feed readers, so your site should be able to be read by an RSS Reader.  This is actually easier than you might think.  Simply, create a file in your root directory called feed.xml.  In it, create an xml file that pulls in variables from your blog.  Check out the guide [how to set up an RSS Feed in Jekyll](http://jekyll.tips/tutorials/rss-feed/) at Jekyll.tips or see the format I used to create an Atom feed below.
+Everyone nowadays uses RSS feed readers, so your site should be able to be read by an RSS Reader.  This is actually easier than you might think.  Simply, create a file in your root directory called feed.xml.  In it, create an xml file that pulls in variables from your blog.  Check out the guide [how to set up an RSS Feed in Jekyll](http://jekyll.tips/tutorials/rss-feed/) at Jekyll.tips or see the format I used to create an Atom feed below.
 
 {% highlight xml %}
 {% raw %}
@@ -185,7 +185,7 @@ To create a category listing, you can use a layout similar to your blog post-ind
 {% endraw %}
 {% endhighlight %}
 
-In the [YAML front matter](http://jekyllrb.com/docs/frontmatter/) of your blog post markdown files, set an array containing one or more categories.  Make sure you use an array, because if you don't then any categories that are more than one word will get split into multiple categories.
+In the [YAML front matter](http://jekyllrb.com/docs/frontmatter/) of your blog post Markdown files, set an array containing one or more categories.  Make sure you use an array, because if you don't then any categories that are more than one word will get split into multiple categories.
 
 {% highlight YAML %}
 category: [category 1, category 2]

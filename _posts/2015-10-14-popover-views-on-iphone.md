@@ -20,9 +20,9 @@ On iPhones smaller than the iPhone 6, it makes sense to present views modally in
 Although Apple doesn't recommend the use of popover views on iPhones, I think that it makes perfect sense as long as you use a bit of caution.  It requires a little extra work to configure the views, but I think it is worth it from a design point-of-view.  Check out [Apple's documentation on UIPopoverController](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPopoverController_class/index.html)
 
 What you have to be careful of is what happens to your view if the user is seeing it on a smaller phone.  There are several ways to handle smaller screens, which I will go into at a later time.  For now, let's look at how we can get UIPopoverViews to show on our favorite phablets.
-<!-- more -->
+
 ###Setup:
-For this project, I will demonstrate how I went about incorporating a color picker and a font picker in UIPopover views in my Meme-Maker app.  If you are following along, feel free to start a new project and design a View Controller similiar to the MemeEditorViewController as shown below.  Make sure that you have a button or two to call the popover views.
+For this project, I will demonstrate how I went about incorporating a color picker and a font picker in UIPopover views in my Meme-Maker app.  If you are following along, feel free to start a new project and design a View Controller similar to the MemeEditorViewController as shown below.  Make sure that you have a button or two to call the popover views.
 
 Here you can see the main view controller that will be presenting the popover views:
 
@@ -39,7 +39,7 @@ To start, create a bar button item, or button, on your main view controller.  Ne
 <figcaption>Attribute Inspector Screenshot</figcaption>
 </figure>
  
- Next, in the _Size Inspector_, once again select _Freeform_ and set the size to 300 x300.
+ Next, in the _Size Inspector_, once again select _Freeform_ and set the size to 300 x 300.
  
 <figure class="one center">
     <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.34.09 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.34.09 PM.png" alt="Size Inspector"></a>
@@ -50,7 +50,7 @@ For my example, I am going to show you how I added a UISlider to the view to set
 
 Okay, now that we have that out of the way and we've added our UISlider, let's take a look at how we hook everything up and then let's dive into the code.
 
-First of all, in the Storyboard, control-click your button and drag it to the view that you would like to present modally. From the _Active Segue_ menu, select "Popover Presentation".
+First of all, in the Storyboard, control-click your button and drag it to the view that you would like to present modally.  From the _Active Segue_ menu, select "Popover Presentation".
 
 <figure class="one center">
     <a href="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.40.27 PM.png"><img src="{{site.blog_image_path}}Screen Shot 2015-10-14 at 4.40.27 PM.png" alt="Popover Presentation"></a>
@@ -67,7 +67,7 @@ Next, select your newly created Segue by clicking the arrow that just appeared b
 ###Setting up the Presenting View Controller
 
 Within your main view controller class file, you will need to do the following:
-1. Make the main view controller folow the UIPopoverPresentationControllerDelegate protocol
+1. Make the main view controller follow the UIPopoverPresentationControllerDelegate protocol
 2. Implement the Popover Delegate function(s)
 3. Override the prepareForSegue method of the presenting view controller.
 
@@ -140,7 +140,7 @@ Please take a look at my app in action in the following video:
     <figcaption>Meme-Me Test Flight</figcaption>
 </figure>
 
-You can also take a look at the images below and checkout my Meme Maker code on github here: [github.com/TechRapport/Meme-Me](https://github.com/TechRapport/Meme-Me)
+You can also take a look at the images below and checkout my Meme Maker code on Github here: [github.com/TechRapport/Meme-Me](https://github.com/TechRapport/Meme-Me)
 
 <figure class="half">
     <a href="{{site.blog_image_path}}bd721c87281c1eb293577962544ab57d1f4c8ca3.png"><img src="{{site.blog_image_path}}bd721c87281c1eb293577962544ab57d1f4c8ca3.png" alt="Meme-Me Test Flight - TechRapport"></a>

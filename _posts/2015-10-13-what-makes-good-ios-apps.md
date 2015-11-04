@@ -4,7 +4,7 @@ description: "Tech Rapport's Blog - What makes a good iOS App?"
 category: [iOS Development]
 published: true
 comments: true
-tags: [ios development, software, swift, iPhone apps, xCode 7.0, programming]
+tags: [ios development, software, swift, iPhone apps, XCode 7.0, programming]
 permalink: /ios%20dev/2015/10/13/what-makes-good-ios-apps.html
 redirect_from: what-makes-good-ios-apps/
 image: 
@@ -27,10 +27,9 @@ How many times have you read the description of an app and decided that it was w
 
 You could write the best code, but without a good UI, you might as well stop!
 
-Apple is a company that is built on the idea that design is as important, if not moreso, than performance when it comes to personal computing.  This is what has kept them relevant and what has made them excel to become the most profitable company of our generation.
+Apple is a company that is built on the idea that design is as important, if not more so, than performance when it comes to personal computing.  This is what has kept them relevant and what has made them excel to become the most profitable company of our generation.
 
 Apple has done an incredible job at designing built-in design elements and implementing them into their frameworks and the iOS SDK.  They have also written a brilliant guide about how to design your iOS apps using familiar design paradigms and elements.  I suggest that every iOS developer read this [article](https://developer.apple.com/design/).  Apple is so keen on design, that they showcase the best app designs each year and give out [Apple Design Awards](https://en.wikipedia.org/wiki/Apple_Design_Awards) to the developers.
-<!-- more -->
 
 ####Here are a few links to other websites that have written about Apple's design:
 
@@ -64,4 +63,4 @@ While bug free software is a myth, a developer can definitely do a lot of things
 
 ###Frequent Updates
 
-The best apps stay relevant over time by frequently updating their code to fix bugs, enhance performance and to implement new features when they are available.  They also test their apps on new versions of software and make sure that their apps work on all of the platforms and versions of iOS.  I can't stand when I buy an app, only to find that it crashes because the developers abandoned it.  I also like it when I get a new device with new features, such as 3D touch on the iPhone 6S plus, and my favorite apps have already implemented the new features in innovative ways.  Developers help to shape how functionality is used and often think of new ways to use the hardware & software jam-packed into our iOS devices.  For example, the most exciting games and apps that were available when the iPhone 3G came out were the ones that used the built in accelerometer.
+The best apps stay relevant over time by frequently updating their code to fix bugs, enhance performance and to implement new features when they are available.  They also test their apps on new versions of software and make sure that their apps work on all of the platforms and versions of iOS.  I can't stand when I buy an app, only to find that it crashes because the developers abandoned it.  I also like it when I get a new device with new features, such as 3D touch on the iPhone 6S Plus, and my favorite apps have already implemented the new features in innovative ways.  Developers help to shape how functionality is used and often think of new ways to use the hardware & software jam-packed into our iOS devices.  For example, the most exciting games and apps that were available when the iPhone 3G came out were the ones that used the built-in accelerometer.
