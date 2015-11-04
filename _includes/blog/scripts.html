@@ -1,6 +1,7 @@
 
 <!-- Load Modernizr -->
 <script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+<script src="/assets/plugins/detectmobilebrowser/detectmobilebrowser.js"></script>
 {% if page.image.background or site.background %}
 {% capture background %}{% if page.image.background %}{{ page.image.background }}{% else %}{{ site.background }}{% endif %}{% endcapture %}
 {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}images/background/{{ background }}{% endcapture %}{% endunless %}
@@ -9,5 +10,5 @@
 <style type="text/css">body {background-image:url({{ background }});}</style>
 {% endif %}
 <script src="/assets/js/scripts.min.js"></script>
-<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+<script async defer id="github-bjs" src="http://buttons.github.io/buttons.js"></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
