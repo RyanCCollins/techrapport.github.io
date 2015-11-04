@@ -65,14 +65,14 @@ $(document).ready(function(e) {
 $(document).ready(function(){
   $("#menu").attr('style', '');
   $("#menu").mmenu({
-    "extensions": [
-      "border-full",
-      "effect-zoom-menu",
-      "effect-zoom-panels",
-      "pageshadow",
-      "theme-dark"
+        "extensions": [
+        "border-none",
+        "effect-menu-slide",
+        "effect-listitems-slide",
+        null,
+        "pageshadow"
     ],
-    "counters": true,
+    "searchfield": true,
     "navbars": [
       {
         "position": "bottom",
