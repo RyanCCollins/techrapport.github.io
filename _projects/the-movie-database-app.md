@@ -29,13 +29,13 @@ carousel:
 build-info: ['Version: 1.0', 'iPhone: 4S or later', 'iPad: N/A', 'XCode: Version 7.1', 'iOS: 9.0', 'Swift: 2.1']
 ---
 
-I created this app as part of the Udacity iOS Nanodegree Swift Networking course.  This app uses networking, oauth and the tmdb API to query user's favorite movies, browse new movies in multiple categories, rate movies and more!  
+I created this app as part of the Udacity iOS Nanodegree Swift Networking course.  This app uses networking, OAuth user authentication and the tmdb API to query user's favorite movies, browse new movies in multiple categories, rate movies and more!  
 
 This app was built to showcase my working knowledge of networking in Swift 2.0.  The app connects to a database of movies, hosted by themoviedb.org, and shows a list of recent movies.  It allows the user to view their favorite movies, find new movies and interact with the movie ratings and favorite movies.  Changes get pushed to the tmdb server and stored in the user's login.
 
-This app is a proof of concept showing my ability to create an app that utilizes network, parses JSON data returned from a RESTful API, utilize HTTP Get and Post requests, OAuth for user authentification and more.
+This app is a proof of concept showing my ability to create an app that utilizes network, parses JSON data returned from a RESTful API, utilize HTTP Get and Post requests, OAuth for user authentication and more.
 
-Also, this app uses multithreading to implement Model View Controller best practices.  User interface updates are handled by a seperate thread to increase the responsiveness of the UI.
+Also, this app uses multithreading to implement Model View Controller best practices.  User interface updates are handled by a separate thread to increase the responsiveness of the UI.
 
 More features:
 

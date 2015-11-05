@@ -1,4 +1,28 @@
-##Tech Rapport
+---
+layout: project
+key: 9
+category: [Web Design]
+title: "Tech Rapport"
+description: "Tech Rapport - Personal Website"
+project-page: 'https://github.com/TechRapport/techrapport.github.io'
+url: '/projects/techrapport/'
+feature: 
+  image: /assets/images/portfolio/tech-rapport-portfolio-image.jpg
+  alt: "Tech Rapport Portfolio Image"
+carousel:
+  image:
+    url: http://placehold.it/1920x540
+    caption: "Caption"
+    text: "Text description here"
+  image:
+    url: https://placehold.it/1920x540
+    caption: "Caption"
+    text: "Text description here"
+  image:
+    url: https://placehold.it/1920x540
+    caption: "Caption"
+    text: "Text description here"
+---
 
 This website was built by me as a project to showcase my work.  
 

@@ -74,6 +74,7 @@ collections:
   projects:
     output: true
     render: true
+    categories: [Web Apps, iOS Apps, Web Design]
 
 # Use the following plug-ins
 gems:
@@ -115,9 +116,7 @@ defaults:
       author: "Tech Rapport"
       layout: project
       permalink: /:collection/:path/index.html
-      render: true
-      output: true
-
+      
 #Site Map Vars:
 sitemap:
   lastmod: 2015-01-23
