@@ -5,6 +5,9 @@ category: iOS Apps
 title: "Pitch Perfect iOS App"
 description: "Udacity iOS Nanodegree - Pitch Perfect iOS App - Created in Swift 2.0 using XCode for iOS 9, AVFoundation"
 project-page: 'https://github.com/TechRapport/Pitch-Perfect/'
+downloads: 
+  zip: 'https://github.com/TechRapport/Pitch-Perfect/zipball/master'
+  tarball: 'https://github.com/TechRapport/Pitch-Perfect/tarball/master'
 url: '/projects/pitch-perfect/'
 document: '/projects/pitch-perfect-description.html'
 feature: 

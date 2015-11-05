@@ -22,9 +22,9 @@
                                 <a href="#" data-filter="*" class="btn btn-sm btn-custom disabled">All</a>
                             </li>
 
-                        {% for category in site.projects.categories | limit:5 %}
+                        {% for category in site.projects.category | limit:5 %}
                             <li>
-                                <a href="#" data-filter=".{{category[0]}}" class="btn btn-sm btn-custom">{{category[0]}}</a>
+                                <a href="#" data-filter=".{{category[forloop.index0]}}" class="btn btn-sm btn-custom">{{category[forloop.index0]}}</a>
                             </li>
                         {% endfor %}
 
@@ -37,7 +37,7 @@
                 <!-- PORTFOLIO START -->
                 <div class="portfolio">
                     <div class="row">
-                        {% for project in site.projects | limit:8 | sort:'key' %}
+                        {% for project in site.projects | limit:8 | sort:'key' reversed %}
 
                         <div class="item col-sm-6 col-md-3">
                             <div class="project-wrapper">
