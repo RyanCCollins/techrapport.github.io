@@ -165,5 +165,5 @@ footerlinks:
   -
     iclass: "fa fa-rss"
     title: rssfeed.xml
-    url: ''
+    url: '{{site.url}}'
     username: "rssfeed.xml"

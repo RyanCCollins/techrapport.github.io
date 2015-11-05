@@ -2937,3 +2937,12 @@ footer.footer .copyright {
 footer.footer .copyright p {
   font-size: 14px;
 }
+
+/*Figure*/
+figure {
+    text-align: center;
+    }
+
+figcaption {
+    display: block;
+    }
