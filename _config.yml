@@ -112,7 +112,7 @@ defaults:
     values:
       author: "Tech Rapport"
       layout: project
-      permalink: /:collection/:path/index.html
+      permalink: /projects/:path/index.html
       output: true
       render: true
       categories: [Web Apps, iOS Apps, Web Design]
