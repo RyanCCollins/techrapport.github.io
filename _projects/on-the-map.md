@@ -26,8 +26,7 @@ carousel:
 build-info: ['Version: 1.0', 'iPhone: 4S or later', 'iPad: N/A', 'xCode: Version 7.1', 'iOS: 9.0', 'Swift: 2.0']
 ---
 
-COMING SOON
+I am working on this app right now!  Keep a watch on the progress at [Waka Time](http://wakatime.com/@techrapport).
 
-This app is currently in development.
-
-Check back soon, as it will certainly blow your socks off!
+Take a look at the project specifications:
+{% include {{page.document}} %}

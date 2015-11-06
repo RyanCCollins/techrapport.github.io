@@ -27,7 +27,7 @@ carousel:
     text: "Text description here"
 ---
 
-Coming Soon
+I am working on this app right now!  Keep a watch on the progress at [Waka Time](http://wakatime.com/@techrapport).
 
-Check out the project documentation in the meantime:
+Take a look at the project specifications:
 {% include {{page.document}} %}

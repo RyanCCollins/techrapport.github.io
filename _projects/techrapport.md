@@ -22,6 +22,7 @@ carousel:
     url: https://placehold.it/1920x540
     caption: "Caption"
     text: "Text description here"
+build-info: ['Version: 1.0', 'Jekyll: v,.2.5.4', 'Bootstrap: v. 3.5']
 ---
 
 This website was built by me as a project to showcase my work.  
