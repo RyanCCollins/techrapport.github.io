@@ -5,7 +5,9 @@ category: [iOS Apps]
 title: "Capstone Project"
 description: "Tech Rapport - Udacity iOS Nanodegree Capstone Project"
 project-page: 'https://github.com/techrapport/capstone/'
-url: '/projects/capstone/'
+url: '/projects/capstone/index.html'
+permalink: '/projects/capstone/index.html'
+redirect-from: /projects/capstone/
 document: '/projects/capstone-description.html'
 feature: 
   image: '/assets/images/portfolio/capstone-portfolio-image.png'
