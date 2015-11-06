@@ -70,11 +70,8 @@ redcarpet:
 
 #Collections:
 collections: 
-  posts:
-  projects:
-    output: true
-    render: true
-    categories: [Web Apps, iOS Apps, Web Design]
+  - posts
+  - projects
 
 # Use the following plug-ins
 gems:
@@ -116,6 +113,9 @@ defaults:
       author: "Tech Rapport"
       layout: project
       permalink: /:collection/:path/index.html
+      output: true
+      render: true
+      categories: [Web Apps, iOS Apps, Web Design]
       
 #Site Map Vars:
 sitemap:
