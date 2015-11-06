@@ -107,12 +107,12 @@ defaults:
       layout: page
   -
     scope:
-      path: ""
+      path: "projects"
       type: projects
     values:
       author: "Tech Rapport"
       layout: project
-      permalink: /:collection/:path/index.html
+#      permalink: /:collection/:path/index.html
       output: true
       render: true
       categories: [Web Apps, iOS Apps, Web Design]
