@@ -12,6 +12,7 @@ url: /projects/meme-me/'
 feature: 
   image: /assets/images/portfolio/Meme-Me-portfolio-image.jpg
   alt: "Meme Me Udacity Portfolio Image"
+  video: 'https://vimeo.com/144952948'
 carousel:
   image:
     url: https://placehold.it/1920x540
@@ -28,7 +29,7 @@ carousel:
 build-info: ['Version: 2.0', 'iPhone: 4S or later', 'iPad: N/A', 'xCode: Version 7.1', 'iOS: 9.0', 'Swift: 2.0']
 ---
 
-This app was created as a project for the Udacity iOS Nanodegree. Before creating this app, I took a month-long course on UIKit Fundamentals through Udacity. This course firmed up my working knowledge of Apple's UIKit framework, which is used extensively for UI design, control and navigation. 
+This app was created as a project for the Udacity iOS Nanodegree. Before creating this app, I took a month-long course on UIKit Fundamentals through Udacity. This course firmed up my working knowledge of Apple's UIKit framework, which is used extensively for UI design, control and navigation on the iOS platform. 
 
 The app offers the following features:
 
@@ -45,7 +46,7 @@ The app offers the following features:
 
 To run this app, please do the following:
 
- 1.  Download it to your computer using one of the download links above, or from the [GitHub project page]({{page.project-page}}) or from my [portfolio page]({{site.url}}{{page.url}}) on the right-hand side.  
+ 1.  Download it to your computer using one of the download links above, from the [GitHub project page]({{page.project-page}}) or from my [portfolio page]({{site.url}}{{page.url}}) on the right-hand side.  
  2.  Once downloaded, open the project folder and then open the Pitch Perfect.xcodeproj file.
     - Make sure that you are testing the application on a device that it will run efficiently on (see build information on the right.)  
     - I recommend running it on an iPhone 6 or newer, but it will run fine on anything newer than an iPhone 4S.
@@ -55,9 +56,16 @@ Below is a short video guide to illustrate how you could build and run the app o
 
 If you don't want to run it or can't for some reason, take a look at the video and screenshots below.
 
+<figure class="center">
+  <a href="{{page.feature.video}}"><iframe src="{{page.feature.video}}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></a>
+  <figcaption>Meme Me Walkthrough - Download and Run my App</figcaption>
+</figure>
+
+
 ####Technologies and best practices used
 Some of the more notable technologies and best practices I used in this app are listed below. I also wrote about some of these subjects in [my blog](http://TechRapport.com/blog/) in the Swift development section. 
-+  UIKit
+
++  UIKit:
   +  UINavigationControllers
   +  UITableViews
   +  UICollectionViews
