@@ -39,9 +39,10 @@
     <!-- TODO: Add logic to switch CSS here -->
     {% if page.layout == 'project' %}
         {% include blog/blog_css.html %}
+        {% include site/main_css.html %}
     {% endif %}
     
-    {% if page.layout == 'default' or page.layout == 'project' %}
+    {% if page.layout == 'default' %}
         {% include site/main_css.html %}
     {% endif %}
 
