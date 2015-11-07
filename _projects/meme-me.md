@@ -41,7 +41,19 @@ The app offers the following features:
 +  Edit a saved Meme
 +  Delete saved Memes
 
-See the extra credit features and what I intend to add next below. 
+###Test the App
+
+To run this app, please do the following:
+
+ 1.  Download it to your computer using one of the download links above, or from the [GitHub project page]({{page.project-page}}) or from my [portfolio page]({{site.url}}{{page.url}}) on the right-hand side.  
+ 2.  Once downloaded, open the project folder and then open the Pitch Perfect.xcodeproj file.
+    - Make sure that you are testing the application on a device that it will run efficiently on (see build information on the right.)  
+    - I recommend running it on an iPhone 6 or newer, but it will run fine on anything newer than an iPhone 4S.
+ 3.  If you are using the iPhone Simulator, please run it on a newer device such as the iPhone 6 or 6S Plus.  It should be compiled with XCode 7.0 or 7.1 in Swift 2.0.  I will update it over time when new versions of XCode are released.
+
+Below is a short video guide to illustrate how you could build and run the app on a Mac running OSX El Capitan.
+
+If you don't want to run it or can't for some reason, take a look at the video and screenshots below.
 
 ####Technologies and best practices used
 Some of the more notable technologies and best practices I used in this app are listed below. I also wrote about some of these subjects in [my blog](http://TechRapport.com/blog/) in the Swift development section. 

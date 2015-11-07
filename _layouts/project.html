@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<section id="portfolio" class="section">
+<section id="resume" class="section">
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
 
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-2">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="page-header">
             <h2 class="section-title uppercase text-center">
               {{page.title}}
@@ -18,58 +18,42 @@ layout: default
               <p class="text-center">By {{site.owner.author}}</p>
               <span class="divider center"></span>
           </div>
-          <p>
+            <div class="content">
             {{page.content}}
-          </p>
+            </div>
           <div>
           </div>
           <p>
           </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
         <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">
+              <h3 class="panel-title text-center">
                 Download Links
               </h3>
             </div>
-            <div class="panel-body">
+            <div class="panel-body text-center">
               <div class="btn-group">
-             
-              <button class="btn btn-default">
-                Download from Github
-              </button> 
-              <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
-                <span class="caret"></span>
-              </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="{{page.downloads.zip}}">Zip</a>
-                  </li>
-                  <li>
-                    <a href="{{page.downloads.tarball}}">Tarball</a>
-                  </li>
-                  <li class="divider">
-                  </li>
-                  <li>
-                    <a href="{{page.downloads.repo}}">Clone Repo</a>
-                  </li>
-                </ul>
+                    <a href="{{page.downloads.zip}}"><button type="button" class="btn btn-block btn-custom">Zip</button></a>
+
+                    <a href="{{page.downloads.tarball}}"><button type="button" class="btn btn-block btn-custom">Tarball</button></a>
+
+                    <a href="{{page.downloads.repo}}"><button type="button" class="btn btn-block btn-custom">Clone Repo</button></a>
+
+
               </div>
             </div>
-            <div class="panel-footer">
+            <div class="panel-footer text-center">
                 <a href="{{page.project-page}}">View on Github</a>
             </div>
           </div>
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">
-                Build Information
-              </h3>
-            </div>
-            <div class="panel-body">
-                {% for item in page.build-info %}
-                  <p class="text-grey">{{item}} {% unless forloop.last %}<br> {% endunless %}
+        <div class ="list-group text-center">
+           <a href="#" class="list-group-item active ">Build information</a>
+                    {% for item in page.build-info %}
+				    <div class="list-group-item">
+				        <span class="label label-info">{{item}}</span>
+				    </div> 
                 {% endfor %}
             </div>
           </div>
