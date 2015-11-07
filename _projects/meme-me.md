@@ -29,6 +29,13 @@ carousel:
 build-info: ['Version: 2.0', 'iPhone: 4S or later', 'iPad: N/A', 'xCode: Version 7.1', 'iOS: 9.0', 'Swift: 2.0']
 ---
 
+<figure class="center">
+  <iframe src="https://player.vimeo.com/video/144952948" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>Meme Me Walkthrough - Download and Run my App</figcaption>
+</figure>
+<br>
+
+###Summary
 This app was created as a project for the Udacity iOS Nanodegree. Before creating this app, I took a month-long course on UIKit Fundamentals through Udacity. This course firmed up my working knowledge of Apple's UIKit framework, which is used extensively for UI design, control and navigation on the iOS platform. 
 
 The app offers the following features:
@@ -41,7 +48,7 @@ The app offers the following features:
 +  View a saved Meme
 +  Edit a saved Meme
 +  Delete saved Memes
-
+<br>
 ###Test the App
 
 To run this app, please do the following:
@@ -54,15 +61,10 @@ To run this app, please do the following:
 
 Below is a short video guide to illustrate how you could build and run the app on a Mac running OSX El Capitan.
 
-If you don't want to run it or can't for some reason, take a look at the video and screenshots below.
-
-<figure class="center">
-  <a href="{{page.feature.video}}"><iframe src="{{page.feature.video}}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></a>
-  <figcaption>Meme Me Walkthrough - Download and Run my App</figcaption>
-</figure>
-
-
+If you don't want to run it or can't for some reason, take a look at the video at the top of the page or screenshots below.  You can follow along with the video, or read the instructions below.
+<br>
 ####Technologies and best practices used
+
 Some of the more notable technologies and best practices I used in this app are listed below. I also wrote about some of these subjects in [my blog](http://TechRapport.com/blog/) in the Swift development section. 
 
 +  UIKit:
@@ -87,33 +89,33 @@ I used optionals and unwrapped them when necessary.  To avoid bugs, I only used 
 I created several View Controllers for controlling navigation, writing to the model and updating the display. I also utilized extensions, [NSNotifications](http://techrapport.com/blog/), the delegate design pattern and more. I really enjoyed using Swift 2.0 and found that I was able to add a lot of functionality very easily using extensions. 
 
 I used storyboard on many occasions, but also built a some of the user interface in code.  I found that doing both helped to cement the ideas and to understand what is going on behind the scenes.  I used segues throughout my project, most of the time configured in storyboard, but also in code.  I used unwind segues to unwind to the main view after editing a saved meme.
-
+<br>
 ###Git & GitHub
 Although I have been using Git and other version control systems for many years, I have never used Github professionally because my professional work has been private. I used best practices when using Git and Github. I used separate branches for the two versions, wrote commit messages that were clear and concise, used Git to debug and I chose logical points to commit.
-
+<br>
 ###Extra Credit
 In order to receive extra credit and to receive Exceeds Specifications, I added additional functionality to v2.0 of Meme-Me. Some of the functionality that I added are shown below:
-
+<br>
 ####Color and font picker, which both show as UIPopoverViews. 
 
 The color picker is really great and allows the user to select a color by gliding their finger over a group of colors, each of which shows up inside of a magnifying glass, showing the user which color they selected. As the color is picked, the font is updated in the view and the color/font attributes are stored with that instance of the Meme, so the user can edit the meme at a later time. 
-
+<br>
 ####Shake to reset
 
 I added a shake to reset feature, which greatly improved the experience by allowing the user to shake the phone to reset the font back to default. I did this using a single extension, which extends UIViewController. 
-
+<br>
 ####Class extensions
 
 As I was developing this app, I realized that my code was getting a bit complex, especially after I added delegate functions for the text fields, UITableViews, UICollectionViews, and other UIKit components. In order to make the code more readable and manageable, I once again used UIViewController extensions in order to add the delegate functions for various UIKit components. I find that this is good practice as long as you contain the extensions in one file, preferably in the same file of the view controller that utilizes them. I would recommend utilizing extensions for basic delegate functionality that will be shared throughout your app. 
-
+<br>
 ####Other
 To make this project more professional, I added a launch screen with a small loading indicator, following [Apple's iOS Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LaunchImages.html).  I also made the interface look good while still following their guidelines.  
 
 I added helpful text to show the user what each view does and I used icons (see below for credit) to show what each button does.  Each icon used has all size classes in the XCode Assets file, so they will show nicely on any iPhone.
-
+<br>
 ####Wrap up
 All in all, this project helped me to learn a tremendous amount about developing for the iOS platform.  I feel that I have mastered UIKit, that I can do just about anything on the iOS platform now that I know how to navigate the user documentation, and I feel that I am building on my programming knowledge by utilizing best practices.  I am also taking the Stanford iOS development courses, which complements this course tremendously.  I am extremely confident that I will be developing professionally for the iOS platform in no time. 
-
+<br>
 ####More features
 
 Well, you'd think that I would be done with this app, but I am not. In the next iteration, I will be including Core Data to persist data, Flickr images and randomly generated Memes. Keep a watch out for the next revision as I plan to release it to the App Store.

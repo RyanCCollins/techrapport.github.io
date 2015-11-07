@@ -12,6 +12,7 @@ url: '/projects/pitch-perfect/'
 feature: 
   image: /assets/images/portfolio/Pitch-Perfect-portfolio-image.jpg
   alt: "Pitch Perfect Udacity Portfolio Image"
+  video: 'https://vimeo.com/144954289'
 carousel:
   image:
     url: http://placehold.it/1920
@@ -28,17 +29,24 @@ carousel:
 build-info: ['Version: 1.0', 'iPhone: 4S or later', 'iPad: N/A', 'xCode: Version 7.1', 'iOS: 9.0', 'Swift: 2.0']
 ---
 
+<figure class="center">
+  <iframe src="https://player.vimeo.com/video/144954289" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>Pitch Perfect Walkthrough - Download and Run my App</figcaption>
+</figure>
+
+###Summary
 I really enjoyed making this application and I definitely went above and beyond in the process. I experimented with adding motion & touch controls for the audio playback and effects, I added several other effects (revered & delay), I added animations, et. al.
 
-This app showcases my early Swift design.  I followed best practices early on and, without knowing very much about the Swift programming language, I believe that I did a very good job and enjoyed it thoroughly.  I have come a long way since making this application and before I am done with the iOS Nanodegree, I will go back and add Core Data, among other things, to this application.
+This app showcases my early Swift programming skills.  I followed best practices early on and, without knowing very much about the Swift programming language, I believe that I did a very good job and enjoyed it thoroughly.  I have come a long way since making this application and before I am done with the iOS Nanodegree, I will go back and add Core Data, among other things, to this application.
 
 I went above and beyond the specifications of this app.
 
+<br>
 ###Test the App
 
 To run this app, please do the following:
 
- 1.  Download it to your computer using one of the download links above, or from the [GitHub project page](https://github.com/TechRapport/Pitch-Perfect/) or from my [portfolio page]({{site.url}}{{page.url}}) on the right-hand side.  
+ 1.  Download it to your computer using one of the download links above, from the [GitHub project page]({{page.project-page}}) or from my [portfolio page]({{site.url}}{{page.url}}) on the right-hand side.  
  2.  Once downloaded, open the project folder and then open the Pitch Perfect.xcodeproj file.
     - Make sure that you are testing the application on a device that it will run efficiently on (see build information on the right.)  
     - I recommend running it on an iPhone 6 or newer, but it will run fine on anything newer than an iPhone 4S.
@@ -46,7 +54,8 @@ To run this app, please do the following:
 
 Below is a short video guide to illustrate how you could build and run the app on a Mac running OSX El Capitan.
 
-If you don't want to run it or can't for some reason, take a look at the video and screenshots below.
+If you don't want to run it or can't for some reason, take a look at the video at the top of the page or screenshots below.  You can follow along with the video, or read the instructions below.
+<br>
 
 ###Project Specifications
 
