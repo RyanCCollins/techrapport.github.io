@@ -37,6 +37,10 @@
     <link href="/assets/plugins/flexSlider/flexslider.css" rel="stylesheet" type="text/css">
     
     <!-- TODO: Add logic to switch CSS here -->
+    {% if page.layout == 'project' %}
+        {% include blog/blog_css.html %}
+    {% endif %}
+    
     {% if page.layout == 'default' or page.layout == 'project' %}
         {% include site/main_css.html %}
     {% endif %}

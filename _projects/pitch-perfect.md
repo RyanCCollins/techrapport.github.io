@@ -41,7 +41,7 @@ This app showcases my early Swift programming skills.  I followed best practices
 
 I went above and beyond the specifications of this app.
 
-<br>
+<p></p>
 ###Test the App
 
 To run this app, please do the following:
