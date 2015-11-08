@@ -99,10 +99,11 @@ At this point, the play sounds view will be in its original state. The microphon
 ##__Images__
 ---
 <figure class="third center">
+
 	<a href="/assets/images/portfolio/pitch-perfect-1.png"><img src="/assets/images/portfolio/pitch-perfect-1.png" alt=""></a>
-    <figcaption>Record Sounds View →</figcaption>
+
 	<a href="/assets/images/portfolio/pitch-perfect-2.png"><img src="/assets/images/portfolio/pitch-perfect-2.png" alt=""></a>
-    <figcaption>Recording in Progress →</figcaption>
+   
 	<a href="/assets/images/portfolio/pitch-perfect-3.png"><img src="/assets/images/portfolio/pitch-perfect-3.png" alt=""></a>
-	<figcaption>Play Sounds View</figcaption>
+	<figcaption>  Record Sounds View  →  Recording in Progress  →  Play Sounds View</figcaption>
 </figure>
