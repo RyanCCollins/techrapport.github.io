@@ -22,7 +22,7 @@ milestones:
     icon: "icon-Check"
   - title: "Lines of Code (on GitHub)"
     numFrom: 10
-    numTo: 37342
-    numString: "17,342"
+    numTo: 42342
+    numString: "37,342"
     numInterval: 100
     icon: "icon-Code-Window"
