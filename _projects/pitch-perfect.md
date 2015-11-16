@@ -30,8 +30,8 @@ build-info: ['Version: 1.0', 'iPhone: 4S or later', 'iPad: N/A', 'xCode: Version
 ---
 
 <figure class="video-responsive">
-  <iframe src="https://player.vimeo.com/video/144954289" width="500" height = "281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  <figcaption>Pitch Perfect Walkthrough - Download and Run my App</figcaption>
+  <iframe src="https://appetize.io/embed/cet3v1b7a4ct6m6hcdne9gkkt0?device=iphone6&scale=100&autoplay=true&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no"></iframe>
+  <figcaption>Pitch Perfect Walkthrough</figcaption>
 </figure>
 
 ##__Summary__

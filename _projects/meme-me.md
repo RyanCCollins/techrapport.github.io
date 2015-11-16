@@ -30,8 +30,8 @@ build-info: ['Version: 2.0', 'iPhone: 4S or later', 'iPad: N/A', 'XCode: Version
 ---
 
 <figure class="center video-responsive">
-  <iframe src="https://player.vimeo.com/video/144977322" width="750" height="421" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  <figcaption>Meme Me Walkthrough - Download and Run my App</figcaption>
+  <iframe src="https://appetize.io/embed/1e1252f7c6h7buqjzk162ygzur?device=iphone6&scale=100&autoplay=true&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no"></iframe>
+  <figcaption>Meme Me Walkthrough</figcaption>
 </figure>
 <br>
 
