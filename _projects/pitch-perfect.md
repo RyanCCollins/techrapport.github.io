@@ -29,10 +29,9 @@ carousel:
 build-info: ['Version: 1.0', 'iPhone: 4S or later', 'iPad: N/A', 'xCode: Version 7.1', 'iOS: 9.0', 'Swift: 2.0']
 ---
 
-<figure class="video-responsive">
-  <iframe src="https://appetize.io/embed/cet3v1b7a4ct6m6hcdne9gkkt0?device=iphone6&scale=100&autoplay=true&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no"></iframe>
-  <figcaption>Pitch Perfect Walkthrough</figcaption>
-</figure>
+
+<iframe src="https://appetize.io/embed/cet3v1b7a4ct6m6hcdne9gkkt0?device=iphone6&scale=100&autoplay=true&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no"></iframe>
+
 
 ##__Summary__
 ---
