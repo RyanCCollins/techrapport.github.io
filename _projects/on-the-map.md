@@ -25,7 +25,7 @@ carousel:
     text: "Text description here"
 build-info: ['Version: 1.0', 'iPhone: 4S or later', 'iPad: N/A', 'xCode: Version 7.1', 'iOS: 9.0', 'Swift: 2.0']
 ---
-<iframe src="https://appetize.io/embed/n0g9x3gjudb73c5paje7r3x7rw?device=iphone5s&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="378px" height="800px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://appetize.io/embed/n0g9x3gjudb73c5paje7r3x7rw?device=iphone5s&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="378px" height="800px" align="center" frameborder="0" scrolling="no"></iframe>
 
 I am working on this app right now!  Keep a watch on the progress at [Waka Time](http://wakatime.com/@techrapport).  I am spending extra time with this app because I will be implementing Parse as the backend for it.  I anticipate that it will be done November 27th.
 
