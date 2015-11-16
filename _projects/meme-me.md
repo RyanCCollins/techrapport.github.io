@@ -29,8 +29,7 @@ carousel:
 build-info: ['Version: 2.0', 'iPhone: 4S or later', 'iPad: N/A', 'XCode: Version 7.1', 'iOS: 9.0', 'Swift: 2.0']
 ---
 
-<iframe src="https://appetize.io/embed/1e1252f7c6h7buqjzk162ygzur?device=iphone6&scale=100&autoplay=true&orientation=portrait&deviceColor=black" width="416px" height="870px" align="center" frameborder="0" scrolling="no"></iframe>
-<br>
+<iframe src="https://appetize.io/embed/1e1252f7c6h7buqjzk162ygzur?device=iphone6&scale=75&autoplay=false&orientation=portrait&deviceColor=black" width="312px" height="653px" align="center" frameborder="0" scrolling="no"></iframe>
 
 ##__Summary__
 ---

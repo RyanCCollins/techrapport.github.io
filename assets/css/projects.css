@@ -319,3 +319,19 @@ span.divider.center {
 #jpreBar {
   background-color: #c80a48;
 }
+
+.appetize-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.appetize-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
