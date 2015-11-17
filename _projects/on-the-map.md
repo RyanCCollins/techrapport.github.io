@@ -30,6 +30,7 @@ build-info: ['Version: 1.0', 'iPhone: 4S or later', 'iPad: N/A', 'xCode: Version
 
 
 
+
 ##__On the Map__
 
 This application was created as the third project in the Udacity iOS Nanodegree.  It is called On the Map and showcases my ability to create a production ready iOS Application that utilizes networking to get and post data. 
@@ -44,16 +45,14 @@ Technologies used
 -  View locations where students have studied in a table view
 -  Post a geocoded location with a link to share with other students
 -  Authorize your account through Facebook.
--  
 
 ##__Technologies and Best Practices__
-During the development of 
-##__Installation__
+During the development of this application, I experimented with many different technologies and I utilized best practices.  I used CocoaPods to extend the capabilities of the app.  I used the 1Password extension to allow for easy login with a 1password account.  The main feature of this application is showing the usage of networking in Swift.  Read the description below to find out more.
 
 
 ##__Running the App__
 ---
-To run this app, please download the [project file]({{page.downloads.zip}}), open the OnTheMap.xcodeproj project file, select a device to run it on and press the run button.  You will need to authorize the application using a Udacity account and you can login with Facebook if your Udacity account is tied into your Facebook account.  Please get in touch with me if you have any issues.  Make sure to play around with all of the functionality and see all of the great features I added.
+To run this app, please download the [project file]({{page.downloads.zip}}), open the on-the-map.xcworkspace workspace file, select a device to run it on and press the run button.  You will need to authorize the application using a Udacity account and you can login with Facebook if your Udacity account is tied into your Facebook account.  Please get in touch with me if you have any issues.  Make sure to play around with all of the functionality and see all of the great features I added.
 
 Here is the flow of the applications
 1.  Log in to the application through Udacity or Facebook.  You can use the 1Password extension if it is available on your device.
@@ -130,5 +129,3 @@ Prime Font from: http://fontfabric.com/prime-free-font  by Max Pirsky
 Modeka Font From: http://freshhh.ritcreative.com/modeka.html
 
 Udacity Logo Copyright Udacity
-
-
