@@ -29,10 +29,7 @@ carousel:
 build-info: ['Version: 1.0', 'iPhone: 6 or later', 'iPad: N/A', 'xCode: Version 7.1', 'iOS: 9.0', 'Swift: 2.0']
 ---
 
-<iframe src="https://appetize.io/embed/n0g9x3gjudb73c5paje7r3x7rw?device=iphone5s&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="378px" height="800px" align="center" frameborder="0" scrolling="no"></iframe>
-
-
-
+<iframe src="https://appetize.io/embed/tbexrzuv81pjfyjjmr7k1pmk30?device=iphone5s&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="365px" height="782px" frameborder="0" scrolling="no"></iframe>
 
 ##__On the Map__
 
