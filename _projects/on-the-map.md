@@ -36,7 +36,7 @@ build-info: ['Version: 1.0', 'iPhone: 6 or later', 'iPad: N/A', 'xCode: Version 
 This application was created as the third project in the Udacity iOS Nanodegree.  It is called On the Map and showcases my ability to create a production ready iOS Application that utilizes networking to get and post data. 
 
 Technologies used
-`Parse` `Networking` `MapKit` `Onepassword` `TouchID` `OAuth` `CoreLocation` `RESTful API` `Facebook SDK` `Push Notifications` `Cocoa Pods´ ´Grand Central Dispatch´ ´Multithreading` `Model View Controller (MVC)` `Asynchronous & Concurrent Multithreading` `1Password` `Chameleon` `Objective C`
+`Parse` `Networking` `MapKit` `Onepassword` `TouchID` `OAuth` `CoreLocation` `RESTful API` `Facebook SDK` `Push Notifications` `Cocoa Pods` `Grand Central Dispatch` `Multithreading` `Model View Controller (MVC)` `Asynchronous & Concurrent Multithreading` `1Password` `Chameleon` `Objective C`
 ##__Features__
 
 -  Login using Udacity's authenication API
@@ -55,6 +55,7 @@ During the development of this application, I experimented with many different t
 To run this app, please download the [project file]({{page.downloads.zip}}), open the on-the-map.xcworkspace workspace file, select a device to run it on and press the run button.  You will need to authorize the application using a Udacity account and you can login with Facebook if your Udacity account is tied into your Facebook account.  Please get in touch with me if you have any issues.  Make sure to play around with all of the functionality and see all of the great features I added.
 
 Here is the flow of the applications
+
 1.  Log in to the application through Udacity or Facebook.  You can use the 1Password extension if it is available on your device.
 2.  View pins on the map and click them to see students locations and submitted URLs
 3.  Post a location and URL by pressing the Pin button in the right hand side of the navigation bar.
