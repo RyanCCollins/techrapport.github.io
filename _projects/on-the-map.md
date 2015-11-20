@@ -36,7 +36,7 @@ build-info: ['Version: 1.0', 'iPhone: 6 or later', 'iPad: N/A', 'xCode: Version 
 This application was created as the third project in the Udacity iOS Nanodegree.  It is called On the Map and showcases my ability to create a production ready iOS Application that utilizes networking to get and post data. 
 
 Technologies used
-´Parse´ ´Networking´ ´MapKit´ ´Onepassword´ ´TouchID´ ´OAuth´ ´CoreLocation´ ´RESTful API´ ´Facebook SDK´ ´Push Notifications´ ´Cocoa Pods´ ´Grand Central Dispatch´ ´Multithreading´ ´Model View Controller (MVC)´ ´Asynchronous & Concurrent Multithreading´ ´1Password´ ´Chameleon´ ´Objective C´
+`Parse` `Networking` `MapKit` `Onepassword` `TouchID` `OAuth` `CoreLocation` `RESTful API` `Facebook SDK` `Push Notifications` `Cocoa Pods´ ´Grand Central Dispatch´ ´Multithreading` `Model View Controller (MVC)` `Asynchronous & Concurrent Multithreading` `1Password` `Chameleon` `Objective C`
 ##__Features__
 
 -  Login using Udacity's authenication API
