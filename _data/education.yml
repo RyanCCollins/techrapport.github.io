@@ -7,13 +7,13 @@ years: "2005 - Present"
 schools:
   - name: "Udacity"
     category: "Nanodegree / Coding Bootcamp"
-    dates: "2014"
+    dates: "2015"
     description: "Beginning in 2014, I set a goal to learn and become certified in a new technology every year.  Having a strong background in mobile software and web development, I decided to take my understanding of the Swift programming language and iOS app development to the next level by taking a Nanodegree on the subject.  During this course, I spent a lot of time developing for the iPhone/iPad in Swift and completed 5 portfolio-worthy projects."
     key: 0
   - name: "UMass Boston"
     category: "Master's Degree in Computer Science"
-    dates: "2013 - 2014"
-    description: "I began taking my Master's degree in computer science part-time in 2013."
+    dates: "2014"
+    description: "I began taking my Master's degree in computer science part-time in 2014.  Due to a sudden move, I had to put my degree on hold and have been working on the Udacity iOS Nanodegree instead.  I will resume my Master's degree next year."
     key: 1
   - name: "New England Institute of Art "
     category: "Bachelors of Science"
