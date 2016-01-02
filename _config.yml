@@ -1,5 +1,5 @@
 #Site variables
-title: Pixel Forge
+title: Tech Rapport Consulting
 header:
   descriptors: 
     - Creative,
@@ -9,9 +9,9 @@ header:
     - Innovative
   text: Software
 
-description: "Pixel Forge, creative software, web design and development, marketing, SEO, and data architecture. At Pixel Forge, we believe that technology and business go hand-in-hand.  We think that automation is great and that doing the same things over and over is crazy."
+description: "Tech Rapport Consulting, creative software, web design and development, marketing, SEO, and data architecture. At TRC, we believe that technology and business go hand-in-hand.  We think that automation is great and that doing the same things over and over is crazy."
 tagline: "Fostering relationships between business and technology"
-copyright: Pixel Forge
+copyright: Tech Rapport Consulting
 url: http://techrapport.com
 image_path: /assets/images/
 icon_path: /assets/images/icons/
@@ -29,7 +29,7 @@ owner:
   address: 
   phone: 617-299-9722
   email: info@techrapport.com
-  company: Pixel Forge
+  company: Tech Rapport Consulting
   site:           http://techrapport.com
   avatar:         me-avatar150x150.jpeg
   bio:            "I am a passionate and creative software developer.  I love the work that I do and I love sharing it with the world.  Please get in touch with me if you want to work together to create something."
