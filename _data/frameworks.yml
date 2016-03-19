@@ -4,13 +4,13 @@ subtitle:
 frameworks:
   - areatitle: "Cocoa & Cocoa Touch"
     percentage: 96
-  - areatitle: "Ruby on Rails"
+  - areatitle: "SailsJS"
     percentage: 88
-  - areatitle: "React.js"
+  - areatitle: "React & Angular"
     percentage: 85
-  - areatitle: "AngularJS"
-    percentage: 67
-  - areatitle: "Bootstrap"
+  - areatitle: "Django"
+    percentage: 95
+  - areatitle: "Ruby on Rails"
     percentage: 93
-  - areatitle: "jQuery"
+  - areatitle: "Mongo, Express & Node"
     percentage: 87
