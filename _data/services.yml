@@ -6,10 +6,10 @@ services:
     key: 0
     icon: "icon-Wifi"
     description: "Create beautiful websites to showcase your talent and expand your web presence.  We can help you create websites and web applications that users will love to visit and use.  Get help planning your website from the ground up or redesign it with the most innovative technologies."
-  - title: "Machine Learning"
+  - title: "Implementation"
     key: 5
-    icon: "fa-graduation-cap"
-    description: "Use highly intelligent prediction and machine learning software to help drive your business decisions.  We can help you implement intelligent data systems and software that will work with you and your business."
+    icon: "icon-Calendar-4"
+    description: "Professional software implementation tailored to your business needs.  Stay on track and deliver amazing software to your clients with professional software project planning and implementation."
   - title: "Mobile Software"
     key: 1
     icon: "icon-Smartphone-4"
