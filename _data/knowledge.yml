@@ -4,13 +4,13 @@ subtitle: "Human behavior flows from three main sources: desire, emotion, and kn
 area:
   - areatitle: "Mobile Development"
     percentage: 95
-  - areatitle: "Data Science & Architecture"
-    percentage: 87
-  - areatitle: "Web Design & Development"
+  - areatitle: "Full Stack Web Development"
+    percentage: 98
+  - areatitle: "Front End Web Development"
     percentage: 89
-  - areatitle: "Web Marketing"
+  - areatitle: "DevOps"
     percentage: 79
-  - areatitle: "Software Implementation"
+  - areatitle: "Agile Software Development"
     percentage: 93
-  - areatitle: "Engineering"
+  - areatitle: "Data Architecture"
     percentage: 87

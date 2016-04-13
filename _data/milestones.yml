@@ -8,9 +8,9 @@ milestones:
     numString: "13,440"
     numInterval: 100
     icon: "icon-Business-Man"
-  - title: "Years Honing Skills"
+  - title: "Years Honing Skill"
     numFrom: 5
-    numTo: 18
+    numTo: 8
     numString: "18"
     numInterval: 5
     icon: "icon-Open-Book"

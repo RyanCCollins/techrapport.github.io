@@ -3,15 +3,15 @@ subtitle: "Only those who have patience to do simple things perfectly ever acqui
 -James J. Corbett"
 
 area:
-  - areatitle: "Swift & ObjC"
+  - areatitle: "Swift"
     percentage: 96
-  - areatitle: "Java"
-    percentage: 75
+  - areatitle: "Ruby"
+    percentage: 97
+  - areatitle: "JavaScript"
+    percentage: 93
   - areatitle: "Python"
     percentage: 55
-  - areatitle: "Ruby"
-    percentage: 83
-  - areatitle: "JavaScript"
-    percentage: 91
-  - areatitle: "C#"
-    percentage: 95
+  - areatitle: "Java"
+    percentage: 45
+  - areatitle: "C# .NET"
+    percentage: 65

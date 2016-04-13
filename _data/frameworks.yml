@@ -1,16 +1,16 @@
 title: "Frameworks I Use Most"
-subtitle: 
+subtitle:
 
 frameworks:
-  - areatitle: "Cocoa & Cocoa Touch"
-    percentage: 96
-  - areatitle: "SailsJS"
-    percentage: 88
-  - areatitle: "React & Angular"
-    percentage: 85
-  - areatitle: "Django"
-    percentage: 95
   - areatitle: "Ruby on Rails"
+    percentage: 96
+  - areatitle: "React JS"
+    percentage: 91
+  - areatitle: "Mongo, Express & Node JS"
+    percentage: 92
+  - areatitle:  "SailsJS"
     percentage: 93
-  - areatitle: "Mongo, Express & Node"
+  - areatitle: "Angular"
+    percentage: 98
+  - areatitle: "Django"
     percentage: 87
