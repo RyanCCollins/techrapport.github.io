@@ -9,24 +9,24 @@ schools:
     category: "Senior Web Developer Nanodegree"
     dates: "2016-2017"
     description: "The Senior Web Developer Nanodegree teaches bleeding edge skills to create progressive web applications, utilizing technologies that you probably have yet to hear of.  Sensor based device access, Google's Polymer library, Service Worker and others.  Taught by industry leaders, this degree focuses on teaching best practices to create offline first web applications built for the internet of things.  As a backend developer, mastering client-side development in great detail is fascinating and only serves to expand the array of technologies at my disposal.  I expect to work in a top level role at a bleeding edge company upon completion of this degree.  I am starting it in April, 2016 and will expect to receive the credential by the end of the year."
-    key: 0
+    key: 1
   - name: "Udacity"
     category: "Ruby Developer Nanodegree"
     dates: "2015"
     description: "The Ruby Nanodegree track is designed to teach best practices for creating powerful web applications built on the Ruby on Rails framework.  Having experience implementing Ruby on Rails applications in my past work has been beneficial to my education, however, the Udacity Ruby track will bring me well beyond the level of an ordinary Rails developer.  The track is broken into three components: Ruby Programming, Ruby on Rails and Senior Ruby on Rails.  As of February 2016, I am working on the Ruby Programming section of the course.  Some areas of focus include: OOP Ruby Programming, Ruby Meta-programming, MVC (fat model, skinny controller), Sinatra, Test Driven Development, Active Record, Gem creation and management and low-level "under-the-hood" Rails development1"
-    key: 1
+    key: 2
   - name: "Udacity"
     category: "iOS Developer Nanodegree"
     dates: "2015"
     description: "Beginning in 2014, I set a goal to learn and become certified in a new technology every year.  Having a strong background in mobile software and web development, I decided to take my understanding of the Swift programming language and iOS app development to the next level by taking a Nanodegree on the subject.  During this course, I spent a lot of time developing for the iPhone/iPad in Swift and completed 5 portfolio-worthy projects."
-    key: 2
+    key: 3
   - name: "New England Institute of Art "
     category: "Bachelors of Science"
     dates: "2006-2009"
     description: "At NEiA, I studied engineering, with a focus on web and media technologies, and received my BS degree with a 3.8 Cumulative GPA."
-    key: 3
+    key: 4
   - name: "McNally Smith College of Music"
     category: "Audio Engineering"
     dates: "2005-2006"
     description: "At McNally Smith, I studied Audio Engineering.  The curriculum was extremely extensive and although I loved it, I transferred after a year because I Minnesota was a little too cold for my tastes."
-    key: 4
+    key: 5
