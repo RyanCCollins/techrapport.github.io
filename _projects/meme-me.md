@@ -1,15 +1,15 @@
 ---
 layout: project
-key: 4
-category: [iOS Apps]
+key: 14
+category: [Mobile, iOS]
 title: "Meme Me"
-description: "Udacity iOS Nanodegree - Meme Me v.2.0 - iOS Meme Maker"
+description: "iOS Meme Maker"
 project-page: 'https://github.com/techrapport/meme-me/'
-downloads: 
+downloads:
   zip: 'https://github.com/TechRapport/Meme-Me/zipball/master'
   tarball: 'https://github.com/TechRapport/Meme-Me/tarball/master'
 url: /projects/meme-me/'
-feature: 
+feature:
   image: /assets/images/portfolio/Meme-Me-portfolio-image.jpg
   alt: "Meme Me Udacity Portfolio Image"
   video: 'https://vimeo.com/144952948'
@@ -33,7 +33,7 @@ build-info: ['Version: 2.0', 'iPhone: 4S or later', 'iPad: N/A', 'XCode: Version
 
 ##__Summary__
 ---
-This app was created as a project for the Udacity iOS Nanodegree. Before creating this app, I took a month-long course on `UIKit Fundamentals` through Udacity. This course firmed up my working knowledge of Apple's `UIKit framework`, which is used extensively for UI design, control and navigation on the iOS platform. 
+This app was created as a project for the Udacity iOS Nanodegree. Before creating this app, I took a month-long course on `UIKit Fundamentals` through Udacity. This course firmed up my working knowledge of Apple's `UIKit framework`, which is used extensively for UI design, control and navigation on the iOS platform.
 
 The app offers the following features:
 
@@ -52,9 +52,9 @@ The app offers the following features:
 
 To run this app, please do the following:
 
- 1.  Download it to your computer using one of the download links above, from the [GitHub project page]({{page.project-page}}) or from my [portfolio page]({{site.url}}{{page.url}}) on the right-hand side.  
+ 1.  Download it to your computer using one of the download links above, from the [GitHub project page]({{page.project-page}}) or from my [portfolio page]({{site.url}}{{page.url}}) on the right-hand side.
  2.  Once downloaded, open the project folder and then open the Pitch Perfect.xcodeproj file.
-    - Make sure that you are testing the application on a device that it will run efficiently on (see build information on the right.)  
+    - Make sure that you are testing the application on a device that it will run efficiently on (see build information on the right.)
     - I recommend running it on an iPhone 6 or newer, but it will run fine on anything newer than an iPhone 4S.
  3.  If you are using the iPhone Simulator, please run it on a newer device such as the iPhone 6 or 6S Plus.  It should be compiled with XCode 7.0 or 7.1 in Swift 2.0.  I will update it over time when new versions of XCode are released.
 
@@ -64,7 +64,7 @@ If you don't want to run it or can't for some reason, take a look at the video a
 
 ###__Technologies and best practices used__
 ---
-Some of the more notable technologies and best practices I used in this app are listed below. I also wrote about some of these subjects in [my blog](http://TechRapport.com/blog/) in the Swift development section. 
+Some of the more notable technologies and best practices I used in this app are listed below. I also wrote about some of these subjects in [my blog](http://TechRapport.com/blog/) in the Swift development section.
 
 __UIKit__:
 
@@ -80,7 +80,7 @@ All `Model`, `View` and `Controller` components are completely separate of one a
 
 I used Swift optionals and unwrapped them when necessary.  To avoid bugs, I only used implicitly unwrapped optionals on values that I knew would never be null, otherwise I was safe and unwrapped optionals.
 
-I created several View Controllers for controlling navigation, writing to the model and updating the display. I also utilized `class extensions`, [`NSNotifications`](http://techrapport.com/blog/), the delegate design pattern and more. I really enjoyed using Swift 2.0 and found that I was able to add a lot of functionality very easily using extensions. 
+I created several View Controllers for controlling navigation, writing to the model and updating the display. I also utilized `class extensions`, [`NSNotifications`](http://techrapport.com/blog/), the delegate design pattern and more. I really enjoyed using Swift 2.0 and found that I was able to add a lot of functionality very easily using extensions.
 
 I used storyboard on many occasions, but also built a some of the user interface in code.  I found that doing both helped to cement the ideas and to understand what is going on behind the scenes.  I used segues throughout my project, most of the time configured in storyboard, but also in code.  I used unwind segues to unwind to the main view after editing a saved meme.
 
@@ -92,27 +92,27 @@ Although I have been using Git and other version control systems for many years,
 ---
 In order to receive extra credit and to receive Exceeds Specifications, I added additional functionality to v2.0 of Meme-Me. Some of the functionality that I added are shown below:
 
-###__Color and Font Picker - UIPopoverViews__ 
+###__Color and Font Picker - UIPopoverViews__
 
-The color picker is really great and allows the user to select a color by gliding their finger over a group of colors, each of which shows up inside of a magnifying glass, showing the user which color they selected. As the color is picked, the font is updated in the view and the color/font attributes are stored with that instance of the Meme, so the user can edit the meme at a later time. 
+The color picker is really great and allows the user to select a color by gliding their finger over a group of colors, each of which shows up inside of a magnifying glass, showing the user which color they selected. As the color is picked, the font is updated in the view and the color/font attributes are stored with that instance of the Meme, so the user can edit the meme at a later time.
 
 ###__Shake to reset__
 
-I added a shake to reset feature, which greatly improved the experience by allowing the user to shake the phone to reset the font back to default. I did this using a single extension, which extends `UIViewController`. 
+I added a shake to reset feature, which greatly improved the experience by allowing the user to shake the phone to reset the font back to default. I did this using a single extension, which extends `UIViewController`.
 
 ###__Class extensions__
 
-As I was developing this app, I realized that my code was getting a bit complex, especially after I added delegate functions for the text fields, `UITableViews`, `UICollectionViews`, and other `UIKit` components. In order to make the code more readable and manageable, I once again used `UIViewController` extensions in order to add the delegate functions for various `UIKit` components. I find that this is good practice as long as you contain the extensions in one file, preferably in the same file of the view controller that utilizes them. I would recommend utilizing extensions for basic delegate functionality that will be shared throughout your app. 
+As I was developing this app, I realized that my code was getting a bit complex, especially after I added delegate functions for the text fields, `UITableViews`, `UICollectionViews`, and other `UIKit` components. In order to make the code more readable and manageable, I once again used `UIViewController` extensions in order to add the delegate functions for various `UIKit` components. I find that this is good practice as long as you contain the extensions in one file, preferably in the same file of the view controller that utilizes them. I would recommend utilizing extensions for basic delegate functionality that will be shared throughout your app.
 
 ##__Other__
 ___
-To make this project more professional, I added a launch screen with a small loading indicator, following [Apple's iOS Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LaunchImages.html).  I also made the interface look good while still following their guidelines.  
+To make this project more professional, I added a launch screen with a small loading indicator, following [Apple's iOS Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LaunchImages.html).  I also made the interface look good while still following their guidelines.
 
 I added helpful text to show the user what each view does and I used icons (see below for credit) to show what each button does.  Each icon used has all size classes in the XCode Assets file, so they will show nicely on any iPhone.
 
 ##__Wrap Up__
 ---
-All in all, this project helped me to learn a tremendous amount about developing for the iOS platform.  I feel that I have mastered `UIKit`, that I can do just about anything on the iOS platform now that I know how to navigate the user documentation, and I feel that I am building on my programming knowledge by utilizing best practices.  I am also taking the Stanford iOS development courses, which complements this course tremendously.  I am extremely confident that I will be developing professionally for the iOS platform in no time. 
+All in all, this project helped me to learn a tremendous amount about developing for the iOS platform.  I feel that I have mastered `UIKit`, that I can do just about anything on the iOS platform now that I know how to navigate the user documentation, and I feel that I am building on my programming knowledge by utilizing best practices.  I am also taking the Stanford iOS development courses, which complements this course tremendously.  I am extremely confident that I will be developing professionally for the iOS platform in no time.
 
 ###__More Features__
 

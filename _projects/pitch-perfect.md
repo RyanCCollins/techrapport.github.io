@@ -1,15 +1,15 @@
 ---
 layout: project
-key: 4
-category: iOS Apps
-title: "Pitch Perfect iOS App"
-description: "Udacity iOS Nanodegree - Pitch Perfect iOS App - Created in Swift 2.0 using XCode for iOS 9, AVFoundation"
+key: 15
+category: [Mobile, iOS]
+title: "Pitch Perfect"
+description: "iOS App for recording audion in AVFoundation"
 project-page: 'https://github.com/TechRapport/Pitch-Perfect/'
-downloads: 
+downloads:
   zip: 'https://github.com/TechRapport/Pitch-Perfect/zipball/master'
   tarball: 'https://github.com/TechRapport/Pitch-Perfect/tarball/master'
 url: '/projects/pitch-perfect/'
-feature: 
+feature:
   image: /assets/images/portfolio/Pitch-Perfect-portfolio-image.jpg
   alt: "Pitch Perfect Udacity Portfolio Image"
   video: 'https://vimeo.com/144954289'
@@ -42,9 +42,9 @@ I went above and beyond the specifications of this app.
 ---
 To run this app, please do the following:
 
- 1.  Download it to your computer using one of the download links above, from the [GitHub project page]({{page.project-page}}) or from my [portfolio page]({{site.url}}{{page.url}}) on the right-hand side.  
+ 1.  Download it to your computer using one of the download links above, from the [GitHub project page]({{page.project-page}}) or from my [portfolio page]({{site.url}}{{page.url}}) on the right-hand side.
  2.  Once downloaded, open the project folder and then open the Pitch Perfect.xcodeproj file.
-    - Make sure that you are testing the application on a device that it will run efficiently on (see build information on the right.)  
+    - Make sure that you are testing the application on a device that it will run efficiently on (see build information on the right.)
     - I recommend running it on an iPhone 6 or newer, but it will run fine on anything newer than an iPhone 4S.
  3.  If you are using the iPhone Simulator, please run it on a newer device such as the iPhone 6 or 6S Plus.  It should be compiled with XCode 7.0 or 7.1 in Swift 2.0.  I will update it over time when new versions of XCode are released.
 
@@ -99,7 +99,7 @@ At this point, the play sounds view will be in its original state. The microphon
 	<a href="/assets/images/portfolio/pitch-perfect-1.png"><img src="/assets/images/portfolio/pitch-perfect-1.png" alt=""></a>
 
 	<a href="/assets/images/portfolio/pitch-perfect-2.png"><img src="/assets/images/portfolio/pitch-perfect-2.png" alt=""></a>
-   
+
 	<a href="/assets/images/portfolio/pitch-perfect-3.png"><img src="/assets/images/portfolio/pitch-perfect-3.png" alt=""></a>
 	<figcaption>  Record Sounds View  →  Recording in Progress  →  Play Sounds View</figcaption>
 </figure>

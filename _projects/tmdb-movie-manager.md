@@ -2,10 +2,10 @@
 layout: project
 key: 7
 category: iOS Apps
-title: "The Movie Database - Movie Manager"
+title: "Movie Manager"
 description: "Interface with your Movie Database Account, browse top movies, favorite and rate.  Made for iOS created with Swift 2.0, xCode 7 for iOS 9"
 project-page: 'https://github.com/TechRapport/tmdb-movie-manager/'
-downloads: 
+downloads:
   zip: 'https://github.com/TechRapport/tmdb-movie-manager/zipball/master'
   tarball: 'https://github.com/TechRapport/tmdb-movie-manager/tarball/master'
 url: '/projects/tmdb-movie-manager/'
@@ -58,9 +58,9 @@ In creating this app, we were given a starter project that was not completely im
 I also added more functionality to the app, which I will go into below.
 
 ###__Movie Rating Custom Control__
-One feature that I wanted to add was the ability to rate movies and view top rated movies.  To do this, I had to think outside the box and create a control that could be used to rate movies.  I created a control that is a subclass of `UIView` in order to create a custom star rating control.  
+One feature that I wanted to add was the ability to rate movies and view top rated movies.  To do this, I had to think outside the box and create a control that could be used to rate movies.  I created a control that is a subclass of `UIView` in order to create a custom star rating control.
 
-I implemented a system of 5 star icons that, when tapped, triggers a POST request with the `TMDBClient` to set the rating of the movie.  I altered the TMDBMovie object to store a rating so that ratings could be pulled using a `GET request` from the TMDB server and the ratings for movies would be stored.  
+I implemented a system of 5 star icons that, when tapped, triggers a POST request with the `TMDBClient` to set the rating of the movie.  I altered the TMDBMovie object to store a rating so that ratings could be pulled using a `GET request` from the TMDB server and the ratings for movies would be stored.
 
 The control that I made used 5 star icons placed within `UIImageViews`, which would show empty or full depending on the rating.  Tapping one of the stars would fill the star and update the rating.  Ultimately, I decided to implement a control for collecting and showing ratings from [Cocoa Controls](https://www.cocoacontrols.com/controls/hcsstarratingview).  Although the control was written in Objective C, I was able to implement it in my Swift project by using an `Objective-C Bridging File`.
 
@@ -68,20 +68,20 @@ Also, I added a new `UITableViewController` subclass called `RatingViewControlle
 
 ##__Using the TMDBClient Engine in Your Project__
 ---
-Using the coding practices implemented in this project, I was able to create reusable code for connecting to a variety of networked APIs.  
+Using the coding practices implemented in this project, I was able to create reusable code for connecting to a variety of networked APIs.
 
 You can use this code in your application.  The first thing you should do is go to [the TMDB website](http://themoviedb.org) and sign up for an API Key.  __Make sure__ to put your API key into the `TMDBConstants.swift` file under the struct labeled Constant, like so:
 {% highlight raw %}
     // MARK: Constants
     struct Constants {
-        
+
         // MARK: API Key
         static let ApiKey : String = "YOUR_API_KEY_HERE!"
 {% endhighlight %}
 
 To use the built in functionality, implement the `TMDBClient` class and use the `TMDBConvenience` methods.  To add new methods, go to [themoviedb.org's API reference page](http://docs.themoviedb.apiary.io/#reference) and make sure to sign up for an account.  Within any view controllers, you can use GET and POST requests for any of the methods listed in the `TMDBConstants` extension.  To add more, you could subclass the `TMDBClient` class and add more methods and constants.
 
-Make sure to utilize the `TMDBClient.sharedSession NSURLSession` in any class that will be accessing the data.  
+Make sure to utilize the `TMDBClient.sharedSession NSURLSession` in any class that will be accessing the data.
 
 ###GET Requests
 For any GET requests, use the `taskForGETMethod:`, passing in the method call, parameters (excluding the api_key), and a completion handler for the callback method. The method returns an `NSURLSessionTask` object.

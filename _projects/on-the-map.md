@@ -1,11 +1,11 @@
 ---
 layout: project
-key: 6
-category: iOS Apps
+key: 13
+category: [Mobile, iOS]
 title: "On The Map"
-description: "On the Map iOS Application.  A networing application for the iPhone for sharing locations and links with Udacity Students - Udacity iOS Nanodegree"
+description: "A networing application for the iPhone for sharing locations and links with Udacity Students - Udacity iOS Nanodegree"
 project-page: 'https://github.com/TechRapport/On-the-Map'
-downloads: 
+downloads:
   zip: 'https://github.com/TechRapport/On-the-Map/archive/master.zip'
   tarball: 'http://techrapport.com/projects/on-the-map/index.html'
 document: 'projects/on-the-map-description.html'
@@ -33,7 +33,7 @@ build-info: ['Version: 1.0', 'iPhone: 6 or later', 'iPad: N/A', 'xCode: Version 
 
 ##__On the Map__
 
-This application was created as the third project in the Udacity iOS Nanodegree.  It is called On the Map and showcases my ability to create a production ready iOS Application that utilizes networking to get and post data. 
+This application was created as the third project in the Udacity iOS Nanodegree.  It is called On the Map and showcases my ability to create a production ready iOS Application that utilizes networking to get and post data.
 
 Technologies used
 `Parse` `Networking` `MapKit` `Onepassword` `TouchID` `OAuth` `CoreLocation` `RESTful API` `Facebook SDK` `Push Notifications` `Cocoa Pods` `Grand Central Dispatch` `Multithreading` `Model View Controller (MVC)` `Asynchronous & Concurrent Multithreading` `1Password` `Chameleon` `Objective C`
@@ -69,7 +69,7 @@ Here is the flow of the applications
 ---
 This app shows my ability to build software that incorporates networking and many modern Cocoa technologies.  I build a custom API client that connects to the Udacity API and also the Parse API.  It connects to the APIs and makes POST, GET, PUT, DELETE and Query requests.  It does this while utilizing MVC to the full extent in the sense that all API calls are done in the background while the view remains responsive.
 
-I abstracted away a lot of the functionality into the Model classes to keep my View Controller lightweight.  All of the API functionality happens in the API Model classes and the data gets returned via callback handlers to the client. 
+I abstracted away a lot of the functionality into the Model classes to keep my View Controller lightweight.  All of the API functionality happens in the API Model classes and the data gets returned via callback handlers to the client.
 
 To keep the UI responsive, I used Grand Central Dispatch to run UI Events on the one of three of the Global Queues.  Some of the network API calls also happen in a Utility GCD Queue.
 

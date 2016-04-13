@@ -1,13 +1,13 @@
 ---
 layout: project
-key: 1
-category: iOS Apps
-title: "Virtual Tourist - Travel the World from your couch!"
-description: "Tech Rapport - Virtual Tourist iOS App - Udacity iOS Nanodegree - Created in Swift 2.0 using XCode for iOS 9, MapKit"
+key: 12
+category: [Mobile, iOS]
+title: "Virtual Tourist"
+description: "Created in Swift 2.0 using XCode for iOS 9, MapKit"
 project-page: 'https://github.com/techrapport/virtual-tourist/'
 url: '/projects/virtual-tourist/'
 document: '/projects/virtual-tourist-description.html'
-feature: 
+feature:
   image: /assets/images/portfolio/Virtual-Tourist-portfolio-image.jpg
   alt: "Virtual Tourist Udacity Portfolio Image"
 carousel:
