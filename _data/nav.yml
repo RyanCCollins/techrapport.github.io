@@ -18,17 +18,6 @@ menus:
       - title: 'Skills & Knowledge'
         url: '/resume/#skills'
       - title: References
-        url: '/resume/#referencs'
+        url: '/resume/#references'
       - title: Certifications
         url: '/resume/#certifications'
-  - title: Blog
-    url: '/blog/'
-    submenus:
-      - title: 'All Posts'
-        url: '/blog/'
-      - title: 'Categories'
-        url: '/blog/categories/'
-      - title: 'Tags'
-        url: '/blog/tags/'
-      - title: 'Archive'
-        url: '/blog/posts/'
