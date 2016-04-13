@@ -9,6 +9,7 @@ schools:
     category: "Senior Web Developer Nanodegree"
     dates: "2016-2017"
     description: "The Senior Web Developer Nanodegree teaches bleeding edge skills to create progressive web applications, utilizing technologies that you probably have yet to hear of.  Sensor based device access, Google's Polymer library, Service Worker and others.  Taught by industry leaders, this degree focuses on teaching best practices to create offline first web applications built for the internet of things.  As a backend developer, mastering client-side development in great detail is fascinating and only serves to expand the array of technologies at my disposal.  I expect to work in a top level role at a bleeding edge company upon completion of this degree.  I am starting it in April, 2016 and will expect to receive the credential by the end of the year."
+    key: 0
   - name: "Udacity"
     category: "Ruby Language Nanodegree"
     dates: "2016"

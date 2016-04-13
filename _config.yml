@@ -1,7 +1,7 @@
 #Site variables
 title: Tech Rapport Consulting
 header:
-  descriptors: 
+  descriptors:
     - Creative,
     - Powerful,
     - Advanced,
@@ -26,7 +26,7 @@ excerpt-seperator: '<!-- more -->'
 owner:
   name: Ryan
   author: 'Ryan C.'
-  address: 
+  address:
   phone: 617-299-9722
   email: info@techrapport.com
   company: Tech Rapport Consulting
@@ -36,7 +36,7 @@ owner:
   email:          info@techrapport.com
   # Social networking links used in footer. Update and remove as you like.
   twitter: tech_rapport
-  facebook: 
+  facebook:
   github: techrapport
   stackexchange: techrapport
   linkedin: techrapport
@@ -69,7 +69,7 @@ redcarpet:
   extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "underline", "highlight", "quote", "footnote_ref"]
 
 #Collections:
-collections: 
+collections:
   posts:
   projects:
     permalink: /:collection/:path/index.html
@@ -79,7 +79,6 @@ collections:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jemoji
   - jekyll-redirect-from
   # - jekyll-mentions
 
@@ -91,21 +90,21 @@ sass:
 exclude: [Gemfile, Gemfile.lock, LICENSE, README.md, CNAME, node_modules]
 
 #Defaults
-defaults: 
-  - 
-    scope: 
+defaults:
+  -
+    scope:
       path: ""
       type: posts
-    values: 
+    values:
       author: "Ryan Collins"
       layout: post
       path: "/blog/"
       permalink:
-  - 
-    scope: 
+  -
+    scope:
       path: ""
       type: pages
-    values: 
+    values:
       author: "Tech Rapport"
       layout: page
   -
@@ -116,7 +115,7 @@ defaults:
       author: "Tech Rapport"
       layout: project
       categories: [Web Apps, iOS Apps, Web Design]
-      
+
 #Site Map Vars:
 sitemap:
   lastmod: 2015-01-23
@@ -125,40 +124,40 @@ sitemap:
   exclude: yes
 
 #Social icons:
-footerlinks: 
-  - 
+footerlinks:
+  -
     iclass: "fa fa-send-o"
     title: Email
     url: "mailto:"
     username: info@techrapport.com
-  - 
+  -
     iclass: "fa fa-github"
     title: GitHub
     url: "https://github.com/"
     username: techrapport
-  - 
+  -
     iclass: "fa fa-linkedin"
     title: linkedin
     url: "https://www.linkedin.com/in/"
     username: techrapport
-  - 
+  -
     iclass: "fa fa-stack-overflow"
     title: stackoverflow
     url: "https://www.stackoverflow.com/"
     username: techrapport
-  - 
+  -
     iclass: "fa fa-twitter"
     title: Twitter
     url: "https://www.twitter.com/"
     username: tech_rapport
-  - 
+  -
     iclass: "fa fa-google-plus"
     title: techrapport
     url: "https://plus.google.com/"
     username: "101168809038593931433/"# anything in your profile username that comes after plus.google.com/
-  - 
+  -
     iclass: "fa fa-youtube"
-    title: techrapport 
+    title: techrapport
     url: "https://youtube.com/"
     username: "channel/UC2iYWXVQlPa76aQlADYocow/"
   -
