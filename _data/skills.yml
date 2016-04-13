@@ -7,8 +7,8 @@ area:
     percentage: 96
   - areatitle: "Java"
     percentage: 75
-  - areatitle: "CSS3, SASS, & HTML 5"
-    percentage: 89
+  - areatitle: "Python"
+    percentage: 55
   - areatitle: "Ruby"
     percentage: 83
   - areatitle: "JavaScript"
