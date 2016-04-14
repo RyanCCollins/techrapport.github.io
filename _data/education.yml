@@ -12,7 +12,7 @@ schools:
     key: 0
   - name: "Udacity"
     category: "Ruby Developer Nanodegree"
-    dates: "2015"
+    dates: "2016"
     description: "The Ruby Nanodegree track is designed to teach best practices for creating powerful web applications built on the Ruby on Rails framework.  Having experience implementing Ruby on Rails applications in my past work has been beneficial to my education, however, the Udacity Ruby track will bring me well beyond the level of an ordinary Rails developer.  The track is broken into three components: Ruby Programming, Ruby on Rails and Senior Ruby on Rails.  As of February 2016, I am working on the Ruby Programming section of the course.  Some areas of focus include: OOP Ruby Programming, Ruby Meta-programming, MVC (fat model, skinny controller), Sinatra, Test Driven Development, Active Record, Gem creation and management and low-level under-the-hood Rails development."
     key: 1
   - name: "Udacity"

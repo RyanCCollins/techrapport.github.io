@@ -1,4 +1,4 @@
-header: "Contact Us"
+header: "Contact Me"
 subheader: "Have a project you'd like to discuss?"
 
 button_message: "Send Email"
@@ -16,8 +16,10 @@ services:
     forlabel: "Other"
 
 email_subject:
-  - subject: "I have a project for Tech Rapport"
+  - subject: "I have a project for Tech Rapport Consulting"
   - subject: "Let's collaborate"
-  - subject: "I would like to invite Tech Rapport to an event"
-  - subject: "Commend us on a job well done"
+  - subject: "I want to join the Hacksmiths"
+  - subject: "My non profit organization needs pro bono software development services"
+  - subject: "I would like to invite you to an event"
+  - subject: "Commend me on a job well done"
   - subject: "Other"
