@@ -4,7 +4,7 @@ $(function() {
   /*  Home Text Slider
   /*-------------------------------------------------------------------*/
   $('#text-slider').carousel({
-    interval: 3000,
+    interval: 5000,
     pause: true
   });
 });
