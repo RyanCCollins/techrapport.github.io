@@ -7,10 +7,10 @@ frameworks:
   - areatitle: "React JS"
     percentage: 97
   - areatitle: "Sails JS & MEAN JS"
-    percentage: 92
+    percentage: 95
   - areatitle:  "Angular JS"
     percentage: 88
   - areatitle: "Laravel"
-    percentage: 75
+    percentage: 85
   - areatitle: "Django"
-    percentage: 75
+    percentage: 78
