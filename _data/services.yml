@@ -2,11 +2,11 @@ header: Services
 subheader: What can we do for you?
 
 services:
-  - title: "Progressive Web Development"
+  - title: "Progressive Web"
     key: 0
     icon: "icon-Wifi"
     description: "I have years of experience and expertise building progressive web software built for the Internet of Things.  I have built software in use in appliances and smart products across the world and can help you to build out your product using the lateset and greatest web technologies available today."
-  - title: "Implementation"
+  - title: "Agile Project Management"
     key: 5
     icon: "icon-Calendar-4"
     description: "Agile software development helps you to get software into the hands of your client faster.  Utilizing Scrum and other Agile methodologies, I can help you to keep your project moving on schedule."
