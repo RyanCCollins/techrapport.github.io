@@ -9,7 +9,7 @@ url: '/projects/hacksmiths-fe/index.html'
 permalink: '/projects/ios-mock-interview/index.html'
 document:
 feature:
-  image: '/assets/images/portfolio/whiteboard.jpg'
+  image: '/assets/images/portfolio/whiteboard.jpeg'
   alt: "iOS Interview Dry Run"
 carousel:
   image:
