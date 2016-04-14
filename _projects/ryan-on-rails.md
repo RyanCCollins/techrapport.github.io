@@ -2,14 +2,14 @@
 layout: project
 key: 0
 category: [Backend, Rails]
-title: "The Rails Chronicles"
-description: "Ruby on Rails Project Management App"
+title: "Ryan on Rails"
+description: "Ruby on Rails Web App"
 project-page: 'https://github.com/RyanCCollins/rails-experiments'
 url: '/projects/rails-chronicles/index.html'
 permalink: '/projects/rails-chronicles/index.html'
 document:
 feature:
-  image: '/assets/images/portfolio/rails-chronicles.png'
+  image: '/assets/images/portfolio/ryan-on-rails.png'
   alt: "Hacksmiths iOS App"
 carousel:
   image:

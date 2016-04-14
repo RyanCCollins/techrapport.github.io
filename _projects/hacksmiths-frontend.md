@@ -9,7 +9,7 @@ url: '/projects/hacksmiths-fe/index.html'
 permalink: '/projects/hacksmiths-fe/index.html'
 document: '/projects/capstone-description.html'
 feature:
-  image: '/assets/images/portfolio/hacksmiths-frontend.png'
+  image: '/assets/images/portfolio/hacksmiths-front.png'
   alt: "Hacksmiths iOS App"
 carousel:
   image:
