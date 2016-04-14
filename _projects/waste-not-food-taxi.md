@@ -1,7 +1,7 @@
 ---
 layout: project
-key: 1
-category: [Backend]
+key: 25
+category: [Frontend]
 title: "Waste Not Food Taxi - Powered by Food Drivr"
 description: "Ruby on Rails API, iOS Mobile Application and ReactJS Frontend Web Application"
 project-page: 'https://github.com/teamhacksmiths'
