@@ -2,7 +2,7 @@
 layout: project
 key: 15
 category: [Frontend]
-title: "RyanCollins.io"
+title: "RyanCollins.io Blog"
 description: "Frontend Web"
 project-page: 'https://github.com/RyanCCollins/ryanccollins.github.io'
 url: '/projects/ryancollins-io-blog/index.html'

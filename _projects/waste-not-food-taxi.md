@@ -9,7 +9,7 @@ url: '/projects/waste-not-food-taxi/index.html'
 permalink: '/projects/waste-not-food-taxi/index.html'
 feature:
   image: '/assets/images/portfolio/waste-not-food-taxi.png'
-  alt: "Hacksmiths iOS App"
+  alt: "Waste Not Food Taxi"
 carousel:
   image:
     url: http://placehold.it/1920x540

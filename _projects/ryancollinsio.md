@@ -2,7 +2,7 @@
 layout: project
 key: 0
 category: [Front End]
-title: "RyanCollins.io"
+title: "RyanCollins.io Portfolio"
 description: "The official website of Ryan Collins"
 project-page: 'https://github.com/RyanCCollins/Ryancollins.io'
 url: '/projects/ryancollinsio/index.html'
