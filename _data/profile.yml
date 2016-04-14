@@ -4,7 +4,7 @@ subheader: "Welcome to my website.  I am a self-driven, creative software develo
 
 p1: "Ruby on Rails, NodeJS, ReactJS and native iOS development are a few of my areas of expertise.  I generate solid, reusable and production ready software with extreme efficiency using techniques that only come with experience."
 
-p2: "You can find me during my free-time contributing to open source projects on Github, challenging myself on CodeEval, organizing hackathon events for social good with the Hacksmiths organization I founded and mentoring aspiring developers in the Udacious People community."
+p2: "You can find me during my free-time contributing to open source projects on Github, challenging myself on CodeEval, organizing hackathon events for social good with the Hacksmiths organization I founded and mentoring aspiring developers in the Udacious People community.  Note: my professional blog has moved to <a href="http://ryancollins.io">RyanCollins.io</a>"
 
 imagedescription: Creative Developer
 imagepath: /assets/images/me-3.jpg
