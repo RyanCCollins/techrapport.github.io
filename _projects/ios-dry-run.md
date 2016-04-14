@@ -4,13 +4,13 @@ key: 4
 category: [Mobile]
 title: "iOS Mock Interview"
 description: "A mock interview and white-board excercises to demonstrate my knowledge and skill in the area of iOS software development."
-project-page: 'https://github.com/RyanCCollins/hacksmiths-app'
+project-page: 'https://github.com/RyanCCollins/ios-interview'
 url: '/projects/hacksmiths-fe/index.html'
 permalink: '/projects/ios-mock-interview/index.html'
 document:
 feature:
   image: '/assets/images/portfolio/whiteboard.jpg'
-  alt: "Hacksmiths iOS App"
+  alt: "iOS Interview Dry Run"
 carousel:
   image:
     url: http://placehold.it/1920x540

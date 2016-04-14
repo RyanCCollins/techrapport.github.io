@@ -25,3 +25,11 @@ carousel:
     caption: "Caption"
     text: "Text description here"
 ---
+
+The official Hacksmiths Hackathon Coordinator app is a professional and production ready iOS app built to promote and coordinate the Hacksmiths' volunteer hackathon for social good project.  It is a companion application to the Hacksmiths.io website.
+
+The application promotes the goals of the Hacksmiths' project by providing an overview of the project, along with a realtime leaderboard showing the top participants at any given time.
+
+Built utilizing a multitude of technologies and frameworks including CoreData, CoreNetworking, Swift 2.0, UIKit, etc. It utilizes best practices and conventional design patterns such as MVC, the Delegate pattern, Protocol Oriented and Object Oriented Swift programming and a number of Cocoa Pod based libraries.
+
+The app is in beta testing and will be released to the Apple App Store as early as April 1st, 2016. 
