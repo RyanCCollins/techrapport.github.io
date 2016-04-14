@@ -3,14 +3,14 @@ subtitle:
 
 frameworks:
   - areatitle: "Ruby on Rails"
-    percentage: 96
+    percentage: 99
   - areatitle: "React JS"
-    percentage: 91
-  - areatitle: "Mongo, Express & Node JS"
+    percentage: 97
+  - areatitle: "Sails, MEAN (NodeJS Fullstack Frameworks)"
     percentage: 92
-  - areatitle:  "SailsJS"
-    percentage: 93
-  - areatitle: "Angular"
-    percentage: 98
+  - areatitle:  "Angular JS"
+    percentage: 88
+  - areatitle: "Laravel"
+    percentage: 75
   - areatitle: "Django"
-    percentage: 87
+    percentage: 75
