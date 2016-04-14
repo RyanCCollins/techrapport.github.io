@@ -18,7 +18,7 @@ services:
     key: 3
     icon: "icon-Big-Data"
     description: "You don't need to be Google to employ an intelligent cloud computing system.  With nearly 8 years experience architecting scalable data systems, I can help you to implement the latest and greatest real-time distributed server technologies, including Docker, Jenkins, NodeJS and others."
-  - title: "SEO and Social Media"
+  - title: "Big Data"
     key: 2
     icon: "icon-Cloud-Email"
     description: "Harness the power of big data and use it to understand your consumers and directly market to your target audience.  With extensive experience in data and research analysis, I can help to give your business the edge it needs to thrive."
