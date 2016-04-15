@@ -21,8 +21,9 @@
                             <li class="active">
                                 <a href="#" data-filter="*" class="btn btn-sm btn-custom disabled">All</a>
                             </li>
-                        {% for category in site.projects.categories | limit:5 %}
+                        {% for category in site.projects | limit:5 %}
                             <li>
+                              category
                                 <a href="#" data-filter=".{{category[forloop.index0]}}" class="btn btn-sm btn-custom">{{category[forlook.index0]}}</a>
                             </li>
                         {% endfor %}
