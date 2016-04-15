@@ -9,15 +9,15 @@ services:
   - title: "Agile Project Management"
     key: 5
     icon: "icon-Calendar-4"
-    description: "Agile software development helps you to get software into the hands of your client faster.  Utilizing Scrum and other Agile methodologies, I can help you to keep your project moving on schedule."
+    description: "Agile software development helps you to get software into the hands of your end users faster.  Utilizing Scrum and other Agile methodologies, I can help you to keep your project moving on schedule."
   - title: "Mobile Software"
     key: 1
     icon: "icon-Smartphone-4"
-    description: "My passion is for building web and mobile software.  I have experience creating iOS applications with Swift, and cross-platform mobile applications with React Native and Ionic.  I focus on creating web software with a mobile-first approach using responsive web technologies and progressive JavaScript frameworks."
+    description: "I focus on creating web software with a mobile-first approach using responsive web technologies and progressive JavaScript frameworks.  Utilizing Swift for native iOS applications and React Native / Ionic, I can build you pixel perfect mobile applications."
   - title: "Data Architecture"
     key: 3
     icon: "icon-Big-Data"
-    description: "You don't need to be Google to employ an intelligent cloud computing system.  With nearly 8 years experience architecting scalable data systems, I can help you to implement the latest and greatest real-time distributed server technologies, including Docker, Jenkins, NodeJS and others."
+    description: "You don't need to be Google to employ an intelligent cloud computing system.  With nearly 8 years experience architecting scalable data systems, I can help you to implement the latest and greatest real-time distributed server technologies, including Docker, MongoDB, SQL, Puppet, Chef, et. al."
   - title: "Big Data"
     key: 2
     icon: "icon-Cloud-Email"
