@@ -4,7 +4,7 @@ sub_header: "The accolades, just like the scrapes and bruises, fade in the end, 
 accolades:
   - title: "Ruby Developer Nanodegree"
     key: 0
-    icon: 
+    icon: icon-Diamond
     description: "Ruby Developer Nanodegree Certification through Udacity"
   - title: "iOS Developer Nanodegree"
     key: 1
