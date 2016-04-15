@@ -24,7 +24,7 @@
                         {% assign sortedcategories = site.projects | sort: "category" %}
                         {% for category in sortedcategories | limit:5 %}
                             <li>
-                                <a href="#" data-filter=".{{category[forloop.index0]}}" class="btn btn-sm btn-custom">{{category[forloop.index0]}}</a>
+                                <a href="#" data-filter=".{{category}}" class="btn btn-sm btn-custom">{{category}}</a>
                             </li>
                         {% endfor %}
 
